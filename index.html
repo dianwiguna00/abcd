@@ -1,0 +1,705 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KELAS BELAJAR - Matematika SMP</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 10% 15%, #294d83 0%, transparent 30%),
+    radial-gradient(circle at 90% 80%, #59358c 0%, transparent 35%),
+    linear-gradient(135deg, #09152f, #171b45, #291c52);
+  overflow-x: hidden;
+  font-size: 20px;
+}
+
+/* DEKORASI MATEMATIKA */
+
+.math-symbol {
+  position: fixed;
+  color: rgba(255,255,255,0.07);
+  font-size: 65px;
+  font-weight: bold;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.symbol1 { top: 8%; left: 5%; }
+.symbol2 { top: 35%; right: 7%; }
+.symbol3 { bottom: 10%; left: 8%; }
+.symbol4 { top: 70%; right: 15%; }
+.symbol5 { top: 15%; right: 20%; }
+
+/* BACKGROUND GRID */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* CONTAINER */
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+/* HEADER */
+
+.header {
+  text-align: center;
+  padding: 35px 20px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 25px;
+  background: rgba(20,35,75,0.85);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  margin-bottom: 30px;
+}
+
+.logo {
+  display: inline-block;
+  background: linear-gradient(135deg,#2563eb,#9333ea);
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.header h1 {
+  color: #facc15;
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.header p {
+  color: #cbd5e1;
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+/* PANEL */
+
+.panel {
+  padding: 30px;
+  border-radius: 22px;
+  background: rgba(22,39,78,0.92);
+  border: 1px solid rgba(96,165,250,0.3);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+  margin-bottom: 20px;
+}
+
+.panel-title {
+  font-size: 25px;
+  color: #67e8f9;
+  margin-bottom: 12px;
+}
+
+.description {
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 22px;
+  font-size: 20px;
+}
+
+/* DROPDOWN */
+
+.select-wrapper {
+  position: relative;
+}
+
+select {
+  appearance: none;
+  width: 100%;
+  padding: 19px 55px 19px 20px;
+  border-radius: 15px;
+  border: 2px solid #38bdf8;
+  background: #101e40;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+select:focus {
+  border-color: #facc15;
+  box-shadow: 0 0 0 4px rgba(250,204,21,0.15);
+}
+
+select option {
+  background: #17264b;
+  color: white;
+}
+
+select:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.arrow {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #facc15;
+  font-size: 25px;
+}
+
+/* HASIL */
+
+.result {
+  display: none;
+  margin-top: 25px;
+  padding: 25px;
+  border-radius: 18px;
+  background: linear-gradient(135deg,#174b80,#413078);
+  border: 1px solid rgba(103,232,249,0.4);
+  animation: muncul 0.4s ease;
+}
+
+.result h2 {
+  color: #facc15;
+  font-size: 27px;
+  margin-bottom: 12px;
+}
+
+/* KARTU TP */
+
+.tp-card {
+  background: rgba(15,30,65,0.8);
+  border-left: 5px solid #38bdf8;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+/* KARTU TP YANG DAPAT DIKLIK */
+
+.tp-card-link {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.tp-card-link:hover {
+  transform: translateY(-3px);
+  border-left-color: #facc15;
+  background: rgba(30,60,110,0.95);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+}
+
+.tp-card-link:focus-visible {
+  outline: 3px solid #facc15;
+  outline-offset: 3px;
+}
+
+.tp-nomor {
+  color: #facc15;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.tp-isi {
+  color: #ffffff;
+  line-height: 1.7;
+  font-size: 20px;
+}
+
+.tp-action {
+  display: block;
+  margin-top: 15px;
+  color: #67e8f9;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.tp-card-link:hover .tp-action {
+  color: #facc15;
+}
+
+.tp-belum-ada {
+  display: block;
+  margin-top: 15px;
+  color: #fbbf24;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* JUMLAH TP */
+
+.jumlah {
+  color: #67e8f9;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* STATUS */
+
+.status {
+  text-align: center;
+  padding: 20px;
+  color: #cbd5e1;
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+.error {
+  color: #fecaca;
+  background: rgba(127,29,29,0.35);
+  padding: 15px;
+  border-radius: 10px;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+/* ANIMASI */
+
+@keyframes muncul {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* FOOTER */
+
+.footer {
+  text-align: center;
+  padding: 25px 10px;
+  color: #94a3b8;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:600px) {
+
+  .container {
+    padding: 15px 12px;
+  }
+
+  .header {
+    padding: 25px 15px;
+  }
+
+  .header h1 {
+    font-size: 27px;
+  }
+
+  .panel {
+    padding: 20px;
+  }
+
+  .panel-title {
+    font-size: 22px;
+  }
+
+  select {
+    padding: 17px 45px 17px 13px;
+  }
+
+  .math-symbol {
+    font-size: 45px;
+  }
+
+  .tp-card {
+    padding: 17px;
+  }
+
+  .result {
+    padding: 18px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- SIMBOL MATEMATIKA -->
+
+<div class="math-symbol symbol1">π</div>
+<div class="math-symbol symbol2">∑</div>
+<div class="math-symbol symbol3">√</div>
+<div class="math-symbol symbol4">∞</div>
+<div class="math-symbol symbol5">x²</div>
+
+<div class="container">
+
+  <!-- HEADER -->
+
+  <header class="header">
+
+    <div class="logo">✦ KELAS BELAJAR ✦</div>
+
+    <h1>MATEMATIKA SMP</h1>
+
+    <p>
+      Media Pembelajaran Interaktif
+      <br>
+      Tahun Ajaran 2025/2026
+    </p>
+
+  </header>
+
+  <!-- PANEL PILIH BAB -->
+
+  <section class="panel">
+
+    <h2 class="panel-title">
+      📚 Pilih Bab Pembelajaran
+    </h2>
+
+    <p class="description">
+      Silakan pilih salah satu bab untuk melihat
+      seluruh tujuan pembelajaran.
+      Klik tujuan pembelajaran untuk membuka
+      media pembelajaran yang tersedia.
+    </p>
+
+    <div class="select-wrapper">
+
+      <select id="pilihBab" onchange="tampilkanTP()" disabled>
+
+        <option value="">
+          Menghubungkan ke Google Sheets...
+        </option>
+
+      </select>
+
+      <span class="arrow">▼</span>
+
+    </div>
+
+    <!-- HASIL TUJUAN PEMBELAJARAN -->
+
+    <div class="result" id="hasilBab">
+
+      <h2 id="namaBab"></h2>
+
+      <div id="daftarTP"></div>
+
+      <p class="jumlah" id="jumlahTP"></p>
+
+    </div>
+
+    <!-- STATUS PEMUATAN -->
+
+    <div class="status" id="statusData">
+      Menghubungkan ke data Google Sheets...
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    DIAN WIGUNA © 2026
+
+    <br>
+
+    Belajar Matematika Menjadi Lebih Menyenangkan
+
+  </footer>
+
+</div>
+
+<script>
+
+/* =====================================
+   1. URL GOOGLE APPS SCRIPT
+===================================== */
+
+// Gunakan URL Web App hasil deployment terbaru.
+// Jika URL deployment berubah, ganti alamat di bawah.
+
+const API_URL =
+"https://script.google.com/macros/s/AKfycbwIAjB1en_6NaZWrT8aMv9_QN9FQEK-IFvbe8WEdDfrjB2VJ6Hd7Ejq_xAJI8BEe6cD/exec";
+
+
+/* =====================================
+   2. PENYIMPANAN DATA
+===================================== */
+
+let dataTP = [];
+
+
+/* =====================================
+   3. MENAMPILKAN PESAN STATUS
+===================================== */
+
+function tampilkanStatus(pesan, tipe = "normal") {
+
+  const status = document.getElementById("statusData");
+
+  status.style.display = "block";
+  status.textContent = pesan;
+
+  if (tipe === "error") {
+    status.className = "status error";
+  } else {
+    status.className = "status";
+  }
+
+}
+
+
+/* =====================================
+   4. MENGAMBIL DATA GOOGLE SHEETS
+===================================== */
+
+async function muatData() {
+
+  const dropdown =
+    document.getElementById("pilihBab");
+
+  const hasil =
+    document.getElementById("hasilBab");
+
+  dropdown.disabled = true;
+
+  dropdown.innerHTML =
+    '<option value="">Mengambil data...</option>';
+
+  tampilkanStatus("Menghubungkan ke Google Sheets...");
+
+  try {
+
+    const response = await fetch(API_URL);
+
+    if (!response.ok) {
+      throw new Error(
+        "Server memberikan respons " + response.status
+      );
+    }
+
+    const data = await response.json();
+
+    if (!Array.isArray(data)) {
+      throw new Error(
+        "Format data spreadsheet tidak sesuai."
+      );
+    }
+
+    dataTP = data;
+
+    if (dataTP.length === 0) {
+      throw new Error(
+        "Data bab tidak ditemukan."
+      );
+    }
+
+    // Mengosongkan dropdown
+    dropdown.innerHTML = "";
+
+    // Pilihan awal
+    const pilihanAwal =
+      document.createElement("option");
+
+    pilihanAwal.value = "";
+    pilihanAwal.textContent =
+      "-- PILIH BAB MATEMATIKA --";
+
+    dropdown.appendChild(pilihanAwal);
+
+    // Mengisi daftar bab
+    dataTP.forEach(function(item, index) {
+
+      const option =
+        document.createElement("option");
+
+      option.value = index;
+      option.textContent = item.bab;
+
+      dropdown.appendChild(option);
+
+    });
+
+    dropdown.disabled = false;
+
+    hasil.style.display = "none";
+
+    tampilkanStatus(
+      "Data berhasil dimuat. Silakan pilih bab pembelajaran."
+    );
+
+  } catch (error) {
+
+    console.error("Kesalahan:", error);
+
+    dropdown.innerHTML =
+      '<option value="">Gagal memuat data</option>';
+
+    dropdown.disabled = true;
+
+    hasil.style.display = "none";
+
+    tampilkanStatus(
+      "Data Google Sheets gagal dimuat. " +
+      "Periksa URL Deploy, izin akses, dan koneksi internet. " +
+      "Detail: " + error.message,
+      "error"
+    );
+
+  }
+
+}
+
+
+/* =====================================
+   5. MENAMPILKAN TUJUAN PEMBELAJARAN
+===================================== */
+
+function tampilkanTP() {
+
+  const index =
+    document.getElementById("pilihBab").value;
+
+  const hasil =
+    document.getElementById("hasilBab");
+
+  const namaBab =
+    document.getElementById("namaBab");
+
+  const daftar =
+    document.getElementById("daftarTP");
+
+  const jumlah =
+    document.getElementById("jumlahTP");
+
+  daftar.innerHTML = "";
+
+  if (index === "") {
+
+    hasil.style.display = "none";
+
+    return;
+
+  }
+
+  const bab = dataTP[Number(index)];
+
+  if (!bab) return;
+
+  namaBab.textContent = bab.bab;
+
+  // Menampilkan seluruh TP
+  bab.tujuan.forEach(function(tp, i) {
+
+    // Kartu menjadi link jika URL tersedia
+    const kartu = document.createElement(
+      tp.url ? "a" : "div"
+    );
+
+    kartu.className = tp.url
+      ? "tp-card tp-card-link"
+      : "tp-card";
+
+    // Link membuka halaman pada tab yang sama
+    if (tp.url) {
+
+      kartu.href = tp.url;
+
+    }
+
+    // Nomor TP
+    const nomor =
+      document.createElement("div");
+
+    nomor.className = "tp-nomor";
+
+    nomor.textContent =
+      "TUJUAN PEMBELAJARAN " + (i + 1);
+
+    // Isi TP
+    const isi =
+      document.createElement("div");
+
+    isi.className = "tp-isi";
+
+    isi.textContent = tp.teks;
+
+    kartu.appendChild(nomor);
+    kartu.appendChild(isi);
+
+    // Petunjuk klik atau status link
+    const petunjuk =
+      document.createElement("span");
+
+    if (tp.url) {
+
+      petunjuk.className = "tp-action";
+
+      petunjuk.textContent =
+        "▶ KLIK UNTUK MEMBUKA MEDIA PEMBELAJARAN";
+
+    } else {
+
+      petunjuk.className = "tp-belum-ada";
+
+      petunjuk.textContent =
+        "MPI belum ditautkan";
+
+    }
+
+    kartu.appendChild(petunjuk);
+
+    daftar.appendChild(kartu);
+
+  });
+
+  // Jumlah TP
+  jumlah.textContent =
+    "Jumlah Tujuan Pembelajaran: " +
+    bab.tujuan.length;
+
+  hasil.style.display = "block";
+
+}
+
+
+/* =====================================
+   6. MEMUAT DATA SAAT HALAMAN DIBUKA
+===================================== */
+
+window.addEventListener("load", muatData);
+
+</script>
+
+</body>
+</html>
