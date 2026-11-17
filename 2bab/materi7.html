@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101735"><title>Operasi Hitung Campuran Pecahan | KELAS BELAJAR</title>
+<style>
+:root{--bg:#080f27;--navy:#101735;--panel:#17234a;--panel2:#1d2d5d;--line:#35477d;--blue:#4da3ff;--cyan:#52e0e0;--purple:#9b78ff;--yellow:#ffd166;--text:#f4f6ff;--muted:#c2cce8;--green:#55d6a2;--red:#ff858e;--radius:22px;--shadow:0 18px 50px #02071880}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#33236c 0,transparent 34%),linear-gradient(135deg,#08132d,#101b42 55%,#25164f);color:var(--text);font:20px/1.6 "Trebuchet MS",Arial,sans-serif;min-height:100vh}button,input,textarea{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}p{color:var(--muted);margin:.45rem 0 1rem}h1,h2,h3{line-height:1.2;margin:0 0 14px}h1{font-size:clamp(34px,5vw,54px)}h2{font-size:clamp(28px,3.4vw,38px)}h3{font-size:25px}.app{display:grid;grid-template-columns:290px minmax(0,1fr);min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;padding:25px 18px;background:#0c1532eF;border-right:1px solid #344575;display:flex;flex-direction:column;gap:20px;z-index:5}.brand{padding:8px 10px 18px;border-bottom:1px solid #344575}.brand-mark{display:inline-grid;place-items:center;width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,var(--blue),var(--purple));font-size:25px;font-weight:900;margin-bottom:12px}.brand strong{display:block;font-size:24px;letter-spacing:.06em}.brand small{display:block;color:var(--cyan);font-size:20px}.nav-label{color:#9eacd4;font-size:20px;font-weight:800;padding:0 10px}.nav{display:grid;gap:10px}.nav button{width:100%;text-align:left;padding:14px 15px;border:1px solid transparent;border-radius:15px;background:transparent;color:var(--muted);font-weight:800;transition:.2s}.nav button:hover{background:#1b2a55}.nav button.active{background:linear-gradient(100deg,#24539b,#553b9b);border-color:#718be0;color:white;box-shadow:0 8px 22px #050a2080}.side-note{margin-top:auto;background:#15234a;border:1px solid #344575;border-radius:16px;padding:15px;color:var(--muted)}.side-note strong{color:var(--yellow)}.main{min-width:0;padding:24px clamp(16px,3vw,42px) 60px;max-width:1500px;width:100%;margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;margin-bottom:24px}.crumb{color:var(--cyan);font-weight:800}.tools{display:flex;gap:10px;flex-wrap:wrap}.tool-btn,.btn{border:1px solid #52679f;border-radius:13px;background:#1a2b59;padding:11px 16px;font-weight:800;min-height:48px}.tool-btn:hover,.btn:hover{filter:brightness(1.15);transform:translateY(-1px)}.btn.primary{background:linear-gradient(100deg,#2378d4,#7454d6);border:0}.btn.yellow{background:var(--yellow);color:#1b2140;border:0}.btn.ghost{background:transparent}.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}.screen{display:none;animation:fade .25s ease}.screen.active{display:block}@keyframes fade{from{opacity:.3;transform:translateY(8px)}to{opacity:1;transform:none}}.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:22px;align-items:center;padding:clamp(24px,4vw,46px);border:1px solid #4b5fa0;border-radius:28px;background:linear-gradient(120deg,#172c5b,#35276d);box-shadow:var(--shadow);overflow:hidden}.eyebrow{color:var(--cyan);font-weight:900;letter-spacing:.09em;text-transform:uppercase;margin-bottom:12px}.hero p{font-size:22px}.hero-art{min-height:230px;display:grid;place-items:center;background:radial-gradient(circle,#526bdc55,transparent 65%);position:relative}.orbit{width:min(260px,80%);aspect-ratio:1;border:3px dashed #8e9de8;border-radius:50%;display:grid;place-items:center;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;width:24px;height:24px;border-radius:50%;background:var(--yellow);box-shadow:0 0 24px #ffd166}.orbit:before{left:5%;top:48%}.orbit:after{right:5%;top:48%;background:var(--cyan)}.orbit strong{font-size:56px;color:white}.pill{display:inline-block;border-radius:99px;padding:7px 14px;background:#243d79;color:#dce8ff;font-weight:800}.grid{display:grid;gap:18px}.two{grid-template-columns:repeat(2,minmax(0,1fr))}.three{grid-template-columns:repeat(3,minmax(0,1fr))}.card{background:linear-gradient(145deg,#18264f,#121e40);border:1px solid #344879;border-radius:var(--radius);padding:22px;box-shadow:0 10px 30px #03091e45}.card h3{color:#fff}.card strong{color:#fff}.section-head{margin:8px 0 24px}.section-head p{max-width:900px;font-size:21px}.callout{border-left:5px solid var(--yellow);background:#26315b;padding:18px 20px;border-radius:0 16px 16px 0;margin:20px 0}.callout p{margin:6px 0 0}.step-list{padding-left:28px;color:var(--muted)}.step-list li{padding:5px 0}.numberline-wrap{padding:22px;background:#101a38;border-radius:18px;border:1px solid #40558d;margin:15px 0}.numberline{display:grid;grid-template-columns:repeat(41,minmax(22px,1fr));gap:4px;position:relative}.numberline:before{content:"";position:absolute;left:5%;right:5%;height:4px;background:#8094d2;top:27px;border-radius:5px}.point{position:relative;z-index:1;display:grid;justify-items:center;gap:10px;color:var(--muted);font-weight:900}.dot{width:18px;height:18px;border-radius:50%;background:var(--blue);border:3px solid #dce9ff}.point.zero .dot{background:var(--yellow);width:24px;height:24px}.point.current .dot{background:var(--green);box-shadow:0 0 0 7px #55d6a233}.sim-controls{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:18px}.sim-controls input{flex:1;min-width:180px;accent-color:var(--cyan)}.big-value{font-size:32px;font-weight:900;color:var(--yellow)}.choice-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:15px 0}.choice{padding:13px 16px;text-align:left;border:1px solid #53699f;background:#1b2c59;border-radius:13px;min-height:54px}.choice:hover:not(:disabled){background:#2a4079}.choice.selected{border:2px solid var(--cyan);background:#214a70}.choice.correct{border:2px solid var(--green);background:#164b48}.choice.incorrect{border:2px solid var(--red);background:#542b49}.feedback{min-height:32px;padding:8px 0;font-weight:800}.feedback.good{color:var(--green)}.feedback.try{color:var(--yellow)}.explain{background:#101a38;border:1px solid #3c5084;border-radius:14px;padding:15px;margin-top:10px;color:var(--muted)}.question-card{margin-bottom:17px}.meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--cyan);font-weight:800}.progress{height:10px;background:#34436e;border-radius:99px;overflow:hidden;margin:15px 0 25px}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--cyan),var(--purple));transition:width .25s}.result-score{font-size:54px;font-weight:900;color:var(--yellow)}.field{width:100%;background:#0e1937;border:1px solid #50649a;color:white;border-radius:14px;padding:14px;min-height:130px;resize:vertical}.field::placeholder{color:#a8b5d7}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.reflection-prompt{padding:15px;border:1px solid #43588c;border-radius:14px;background:#111d3d;margin:12px 0}.muted{color:var(--muted)}.small-note{font-size:20px;color:#aebbe0}.footer{text-align:center;color:#9eacd4;padding:30px 10px 0}.hidden{display:none!important}.toast{position:fixed;bottom:20px;right:20px;background:#1b3760;border:1px solid var(--cyan);padding:14px 18px;border-radius:14px;z-index:20;display:none}.mobile-title{display:none}
+@media(max-width:1000px){.app{grid-template-columns:240px minmax(0,1fr)}.three{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr .6fr}}
+@media(max-width:760px){.app{display:block}.sidebar{position:relative;height:auto;padding:14px;gap:12px;border-right:0;border-bottom:1px solid #344575}.brand{display:flex;align-items:center;gap:12px;padding:0 4px 10px}.brand-mark{margin:0;width:44px;height:44px}.brand strong{font-size:22px}.brand small{font-size:20px}.nav-label,.side-note{display:none}.nav{display:flex;overflow-x:auto;padding-bottom:5px}.nav button{width:auto;min-width:max-content;padding:11px 14px;font-size:20px}.main{padding:16px 14px 42px}.topbar{margin-bottom:16px}.hero{grid-template-columns:1fr}.hero-art{min-height:150px}.two,.three{grid-template-columns:1fr}.choice-list{grid-template-columns:1fr}.tools{width:100%}.tool-btn{flex:1}.numberline-wrap{overflow-x:auto}.numberline{min-width:1100px}}
+@media print{body{background:white!important;color:#111!important;font-size:20px}.sidebar,.topbar,.actions,.tools,.nav,.footer{display:none!important}.app{display:block}.main{padding:0;max-width:none}.screen{display:block!important;break-inside:avoid}.card,.hero,.callout,.numberline-wrap{background:white!important;color:#111!important;border:1px solid #777!important;box-shadow:none!important}.card p,.hero p,.section-head p,.callout p,.step-list,.muted{color:#222!important}.choice{background:white!important;color:#111!important;border:1px solid #777!important}.screen:not(.active){display:block!important}.field{border:1px solid #777;color:#111}.hero-art{display:none}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+ <div class="brand"><div class="brand-mark">KB</div><div><strong>KELAS BELAJAR</strong><small>MPI MATEMATIKA SMP</small></div></div>
+ <div class="nav-label">MENU PEMBELAJARAN</div>
+ <nav class="nav" aria-label="Menu pembelajaran">
+  <button class="active" data-screen="0">01 · Tujuan Pembelajaran</button>
+  <button data-screen="1">02 · Materi &amp; Simulasi</button>
+  <button data-screen="2">03 · Soal Interaktif</button>
+  <button data-screen="3">04 · Refleksi</button>
+ </nav>
+ <div class="side-note"><strong>Strategi belajar</strong><br>Amati contoh → pahami konsep → coba sendiri → evaluasi pemahaman.</div>
+</aside>
+<main class="main">
+ <div class="topbar"><div class="crumb" id="crumb">KELAS BELAJAR / TUJUAN PEMBELAJARAN</div><div class="tools"><button class="tool-btn" id="fullscreen">⛶ Layar penuh</button><button class="tool-btn" id="print">▤ Cetak</button></div></div>
+ <section class="screen active" id="screen-0">
+  <div class="hero">
+   <div><span class="pill">MATEMATIKA SMP · BILANGAN</span><p class="eyebrow">Ayo selesaikan operasi campuran pecahan</p>
+    <h1>Operasi Hitung Campuran Pecahan</h1>
+    <p>Pelajari urutan operasi hitung campuran dan cara memodelkan masalah sehari-hari yang melibatkan bilangan pecahan.</p>
+    <button class="btn yellow" data-go="1">Mulai belajar →</button></div>
+   <div class="hero-art"><svg viewBox="0 0 320 230" class="svg-fluid" role="img" aria-label="Ilustrasi operasi hitung campuran pecahan">
+    <text x="160" y="28" fill="#ffd166" font-size="20" text-anchor="middle" font-weight="bold">Urutan operasi</text>
+    <rect x="25" y="52" width="270" height="58" rx="12" fill="#273b76" stroke="#a8b9ff" stroke-width="2"/>
+    <text x="160" y="89" fill="#fff" font-size="25" text-anchor="middle" font-weight="bold">1/2 + 1/3 × 3/4</text>
+    <path d="M192 117V143" stroke="#52e0e0" stroke-width="3"/><path d="M184 135L192 145L200 135" fill="none" stroke="#52e0e0" stroke-width="3"/>
+    <rect x="58" y="151" width="204" height="43" rx="10" fill="#392c72" stroke="#9b78ff" stroke-width="2"/>
+    <text x="160" y="180" fill="#ffd166" font-size="23" text-anchor="middle" font-weight="bold">3/4 + 1/4 = 1</text>
+    <text x="160" y="219" fill="#52e0e0" font-size="16" text-anchor="middle">Kali / bagi lebih dahulu</text></svg></div>
+  </div>
+  <section class="card" style="margin-top:20px">
+   <p class="eyebrow">SEBELUM MEMULAI · AMATI PERMASALAHAN</p><h2>💡 Apersepsi: Menyiapkan Paket Kudapan</h2>
+   <p>Untuk satu paket kudapan diperlukan 1/2 kg buah. Ibu menyiapkan 3 paket, kemudian menggunakan 1/4 kg buah lagi untuk hiasan. Berapa kilogram buah yang digunakan seluruhnya? Kita dapat memodelkannya dengan operasi campuran: 3 × 1/2 + 1/4.</p>
+   <div class="grid two" style="margin-top:16px">
+    <article class="card"><h3>Memodelkan jumlah bahan</h3>
+     <svg viewBox="0 0 320 126" class="svg-fluid" role="img" aria-label="Tiga kelompok masing-masing setengah kilogram ditambah seperempat kilogram">
+      <g fill="#52e0e0"><rect x="12" y="20" width="42" height="38" rx="5"/><rect x="59" y="20" width="42" height="38" rx="5"/><rect x="106" y="20" width="42" height="38" rx="5"/></g>
+      <g fill="#273b76" stroke="#fff" stroke-width="1"><rect x="12" y="20" width="84" height="38" rx="5" opacity=".15"/><rect x="59" y="20" width="84" height="38" rx="5" opacity=".15"/></g>
+      <text x="160" y="48" fill="#ffd166" font-size="25" text-anchor="middle">+</text>
+      <rect x="185" y="20" width="112" height="38" rx="5" fill="#273b76" stroke="#fff" stroke-width="2"/>
+      <rect x="185" y="20" width="28" height="38" rx="4" fill="#9b78ff"/>
+      <path d="M213 20V58 M241 20V58 M269 20V58" stroke="#fff" stroke-width="1.5"/>
+      <text x="160" y="93" fill="#52e0e0" font-size="20" text-anchor="middle">3 × 1/2 + 1/4</text>
+      <text x="160" y="119" fill="#ffd166" font-size="18" text-anchor="middle">= 7/4 = 1 3/4 kg</text></svg>
+    </article>
+    <article class="card"><h3>Memperhatikan urutan</h3>
+     <div class="callout"><p>3 × 1/2 + 1/4</p><p><strong>Langkah 1:</strong> kalikan 3 × 1/2 = 3/2.</p><p><strong>Langkah 2:</strong> jumlahkan 3/2 + 1/4 = 6/4 + 1/4.</p><p><strong>Hasil:</strong> 7/4 = 1 3/4 kg.</p></div>
+    </article>
+   </div>
+   <div class="callout"><strong>Ayo pikirkan!</strong><p>Mengapa perkalian dikerjakan sebelum penjumlahan jika tidak ada tanda kurung? Bagaimana cara mengubah cerita sehari-hari menjadi kalimat matematika?</p></div>
+  </section>
+  <div class="grid two" style="margin-top:20px">
+   <article class="card"><h3>🎯 Tujuan pembelajaran</h3><p>Melalui penyajian soal dan permasalahan kontekstual, peserta didik mampu menyelesaikan operasi hitung campuran serta memodelkan dan menyelesaikan masalah kehidupan sehari-hari yang melibatkan bilangan pecahan dengan benar.</p><p>Secara khusus, peserta didik diharapkan mampu:</p>
+    <ol class="step-list"><li>Mengenali operasi penjumlahan, pengurangan, perkalian, dan pembagian pecahan dalam satu kalimat matematika.</li><li>Menerapkan urutan operasi hitung campuran dengan tepat.</li><li>Menggunakan tanda kurung untuk menunjukkan operasi yang harus dikerjakan terlebih dahulu.</li><li>Mengubah informasi dalam masalah kontekstual menjadi model matematika berbentuk operasi pecahan.</li><li>Menafsirkan hasil perhitungan sesuai konteks dan satuannya.</li></ol></article>
+   <article class="card"><h3>🧭 Cara menggunakan MPI</h3><ol class="step-list"><li>Amati permasalahan kontekstual pada apersepsi.</li><li>Pelajari urutan operasi hitung campuran pecahan.</li><li>Pelajari cara membuat model matematika dari soal cerita.</li><li>Gunakan simulasi tiga bilangan pecahan dan dua operasi.</li><li>Kerjakan aktivitas pemahaman, evaluasi, dan HOTS.</li></ol></article>
+  </div>
+  <article class="card" style="margin-top:20px"><h3>🌍 Manfaat dalam kehidupan sehari-hari</h3><p>Operasi campuran pecahan digunakan saat beberapa kegiatan atau perhitungan perlu digabungkan dalam satu masalah.</p>
+   <ol class="step-list"><li><strong>Memasak:</strong> menghitung total bahan untuk beberapa porsi resep lalu menambahkan bahan pelengkap.</li><li><strong>Belanja:</strong> menghitung total harga beberapa barang setelah memperhitungkan bagian atau jumlah tertentu.</li><li><strong>Kerajinan:</strong> menghitung panjang bahan yang dipakai berulang dan sisa bahan.</li><li><strong>Perjalanan:</strong> menghitung total jarak dari beberapa bagian rute yang dinyatakan dalam pecahan.</li></ol>
+  </article>
+  <div class="callout"><strong>Ingat urutan operasi!</strong><p>Kerjakan operasi di dalam tanda kurung terlebih dahulu. Berikutnya perkalian dan pembagian dari kiri ke kanan. Terakhir penjumlahan dan pengurangan dari kiri ke kanan. Samakan penyebut ketika melakukan penjumlahan atau pengurangan pecahan.</p></div>
+  <div class="actions"><button class="btn primary" data-go="1">Lanjut ke Materi &amp; Simulasi →</button></div>
+ </section>
+<section class="screen" id="screen-1">
+  <div class="section-head"><p class="eyebrow">BAGIAN 02 · PAHAMI KONSEP</p><h2>Operasi Hitung Campuran Bilangan Pecahan</h2><p>Operasi campuran menggabungkan dua atau lebih operasi hitung. Perhatikan urutan pengerjaan dan makna setiap informasi dalam soal cerita.</p></div>
+  <article class="card"><h3>📘 1. Urutan operasi hitung campuran</h3>
+   <ol class="step-list"><li>Kerjakan operasi yang berada di dalam tanda kurung.</li><li>Kerjakan perkalian dan pembagian dari kiri ke kanan.</li><li>Kerjakan penjumlahan dan pengurangan dari kiri ke kanan.</li></ol>
+   <div class="callout"><strong>Contoh tanpa tanda kurung</strong><div class="big-value">1/2 + 1/3 × 3/4</div><p>Kerjakan perkalian terlebih dahulu: 1/3 × 3/4 = 3/12 = 1/4.</p><p>Kemudian jumlahkan: 1/2 + 1/4 = 2/4 + 1/4 = 3/4.</p></div>
+  </article>
+  <article class="card" style="margin-top:18px"><h3>🔢 2. Operasi dengan tanda kurung</h3>
+   <p>Tanda kurung menunjukkan bagian yang harus dihitung terlebih dahulu.</p>
+   <div class="callout"><strong>Contoh</strong><div class="big-value">(1/2 + 1/3) × 3/4</div><p>Hitung dalam kurung: 1/2 + 1/3 = 3/6 + 2/6 = 5/6.</p><p>Lanjutkan perkalian: 5/6 × 3/4 = 15/24 = 5/8.</p></div>
+   <p>Perhatikan bahwa hasilnya berbeda dari contoh tanpa tanda kurung. Karena itu, tanda kurung tidak boleh diabaikan.</p>
+  </article>
+  <article class="card" style="margin-top:18px"><h3>🧩 3. Mengubah masalah kontekstual menjadi model matematika</h3>
+   <ol class="step-list"><li>Baca soal dan tentukan apa yang diketahui.</li><li>Tentukan hal yang ditanyakan.</li><li>Pilih operasi yang sesuai dengan hubungan antarbesaran.</li><li>Tuliskan model matematika menggunakan bilangan pecahan dan tanda operasi.</li><li>Hitung sesuai urutan operasi.</li><li>Tulis jawaban akhir beserta satuannya dan periksa kewajarannya.</li></ol>
+   <div class="grid two">
+    <div class="callout"><strong>Contoh: bahan untuk beberapa paket</strong><p>Setiap paket membutuhkan 2/3 kg tepung. Dibuat 3 paket, lalu digunakan lagi 1/4 kg.</p><p><strong>Model:</strong> 3 × 2/3 + 1/4</p><p><strong>Hitung:</strong> 2 + 1/4 = 9/4 = 2 1/4 kg.</p></div>
+    <div class="callout"><strong>Contoh: membagi persediaan</strong><p>Tersedia 2 1/2 liter sari buah. Setiap botol menampung 1/2 liter. Setelah dihitung, satu botol disisihkan.</p><p><strong>Model:</strong> (2 1/2 ÷ 1/2) − 1</p><p><strong>Hitung:</strong> 5 − 1 = 4 botol yang dapat digunakan.</p></div>
+   </div>
+  </article>
+  <article class="card" style="margin-top:18px"><h3>🪜 4. Strategi memeriksa jawaban</h3>
+   <ol class="step-list"><li>Periksa kembali model matematika apakah sesuai dengan cerita.</li><li>Periksa urutan operasi dan penggunaan tanda kurung.</li><li>Pastikan pecahan disederhanakan jika memungkinkan.</li><li>Periksa satuan dan apakah hasilnya masuk akal dalam konteks.</li></ol>
+  </article>
+  <article class="card" style="margin-top:18px"><h3>🎮 Simulasi Interaktif: Rangkaian Operasi Pecahan</h3>
+   <p>Masukkan tiga pecahan. Bilangan bulat diisi 0 jika menggunakan pecahan biasa. Pilih dua operasi untuk membentuk kalimat matematika. Simulasi menghitung sesuai urutan operasi standar.</p>
+   <div class="grid three">
+    <div class="card"><h3>Pecahan A</h3><div class="grid two"><div><label for="whole1"><strong>Bulat</strong></label><input id="whole1" class="field" type="number" min="0" max="10" value="1"></div><div><label for="num1"><strong>Pembilang</strong></label><input id="num1" class="field" type="number" min="0" max="30" value="1"></div><div><label for="den1"><strong>Penyebut</strong></label><input id="den1" class="field" type="number" min="1" max="20" value="2"></div></div></div>
+    <div class="card"><h3>Pecahan B</h3><div class="grid two"><div><label for="whole2"><strong>Bulat</strong></label><input id="whole2" class="field" type="number" min="0" max="10" value="0"></div><div><label for="num2"><strong>Pembilang</strong></label><input id="num2" class="field" type="number" min="0" max="30" value="1"></div><div><label for="den2"><strong>Penyebut</strong></label><input id="den2" class="field" type="number" min="1" max="20" value="3"></div></div></div>
+    <div class="card"><h3>Pecahan C</h3><div class="grid two"><div><label for="whole3"><strong>Bulat</strong></label><input id="whole3" class="field" type="number" min="0" max="10" value="0"></div><div><label for="num3"><strong>Pembilang</strong></label><input id="num3" class="field" type="number" min="0" max="30" value="3"></div><div><label for="den3"><strong>Penyebut</strong></label><input id="den3" class="field" type="number" min="1" max="20" value="4"></div></div></div>
+   </div>
+   <div class="grid two">
+    <div class="sim-controls"><label for="op1"><strong>Operasi pertama</strong></label><select id="op1" class="field"><option value="+">Penjumlahan (+)</option><option value="-">Pengurangan (−)</option><option value="*">Perkalian (×)</option><option value="/">Pembagian (÷)</option></select></div>
+    <div class="sim-controls"><label for="op2"><strong>Operasi kedua</strong></label><select id="op2" class="field"><option value="*">Perkalian (×)</option><option value="/">Pembagian (÷)</option><option value="+">Penjumlahan (+)</option><option value="-">Pengurangan (−)</option></select></div>
+   </div>
+   <div class="callout"><strong>Kalimat matematika:</strong><div id="expressionPreview" class="big-value" aria-live="polite">1 1/2 + 1/3 × 3/4</div><p>Untuk mencoba tanda kurung, pelajari contoh pada materi. Simulasi ini menerapkan urutan operasi standar: kali/bagi lebih dahulu, lalu tambah/kurang.</p></div>
+   <div class="actions"><button class="btn primary" id="calculateFractions">Hitung hasil</button><button class="btn ghost" id="fractionReset">Atur ulang</button></div>
+   <div id="conversionResult" class="card" style="margin-top:16px" aria-live="polite"></div>
+  </article>
+  <div class="actions"><button class="btn primary" data-go="2">Lanjut ke Soal Interaktif →</button></div>
+ </section>
+<section class="screen" id="screen-2">
+  <div class="section-head"><p class="eyebrow">BAGIAN 03 · LATIHAN DAN TANTANGAN</p><h2>Soal Interaktif: Operasi Hitung Campuran Pecahan</h2><p>Selesaikan operasi hitung campuran dan soal kontekstual pecahan. Setelah memeriksa, baca umpan balik dan langkah penyelesaiannya.</p></div>
+  <div class="card"><div class="meta"><span>AKTIVITAS PEMAHAMAN</span><span>3 soal · masing-masing 4 pilihan</span></div><div id="practice"></div></div>
+  <div class="card" style="margin-top:18px"><div class="meta"><span>EVALUASI PEMBELAJARAN</span><span>6 soal</span></div><div class="progress"><span id="quizProgress"></span></div><div id="quiz"></div><div class="actions"><button class="btn primary" id="finishQuiz">Lihat hasil evaluasi</button><button class="btn ghost" id="resetQuiz">Ulangi evaluasi</button></div><p class="feedback" id="quizNotice" aria-live="polite"></p><div id="quizResult" class="callout hidden" aria-live="polite"></div></div>
+  <div class="card" style="margin-top:18px"><div class="meta"><span>TANTANGAN HOTS</span><span>5 soal pilihan ganda · 4 opsi</span></div><p>Analisis setiap situasi, pilih satu dari empat jawaban, lalu tekan Periksa jawaban untuk melihat umpan balik dan cara penyelesaiannya.</p><div id="hots"></div></div>
+  <div class="actions"><button class="btn ghost" data-go="1">← Kembali ke Materi</button><button class="btn primary" data-go="3">Lanjut ke Refleksi →</button></div>
+ </section>
+ <section class="screen" id="screen-3">
+  <div class="section-head"><p class="eyebrow">BAGIAN 04 · PIKIRKAN KEMBALI</p><h2>Refleksi Pembelajaran</h2><p>Refleksi membantu kamu menyadari apa yang sudah dipahami dan bagian mana yang masih perlu dipelajari.</p></div>
+  <div class="grid two">
+   <article class="card"><h3>💡 Coba jelaskan dengan kata-katamu</h3><div class="reflection-prompt"><strong>1. Mengapa perkalian dan pembagian dikerjakan sebelum penjumlahan dan pengurangan?</strong></div><textarea class="field" id="reflect1" placeholder="Tuliskan jawabanmu di sini..."></textarea><div class="reflection-prompt"><strong>2. Bagaimana cara mengubah informasi dalam soal cerita menjadi model matematika?</strong></div><textarea class="field" id="reflect2" placeholder="Tuliskan jawabanmu di sini..."></textarea><div class="reflection-prompt"><strong>3. Buat model matematika dari masalah tiga paket yang masing-masing memerlukan 1/2 kg bahan, kemudian ditambah 1/4 kg bahan lain.</strong></div><textarea class="field" id="reflect3" placeholder="Tuliskan contoh dan penjelasannya..."></textarea><div class="actions"><button class="btn primary" id="saveReflection">Simpan refleksi di halaman ini</button><button class="btn ghost" id="clearReflection">Hapus jawaban</button></div><p class="small-note" id="reflectStatus" aria-live="polite">Jawaban refleksi tidak dikirim ke server.</p></article>
+   <article class="card"><h3>✅ Cek pemahaman diri</h3><p>Berikan tanda centang pada pernyataan yang sudah dapat kamu lakukan.</p><label><input type="checkbox"> Saya dapat menerapkan urutan operasi hitung campuran pecahan.</label><br><br><label><input type="checkbox"> Saya dapat menggunakan tanda kurung dengan tepat dalam operasi campuran.</label><br><br><label><input type="checkbox"> Saya dapat mengubah soal cerita menjadi model matematika.</label><br><br><label><input type="checkbox"> Saya dapat menafsirkan hasil operasi campuran sesuai konteks dan satuannya.</label><div class="callout"><strong>Pesan belajar</strong><p>Jika masih ada yang belum kamu kuasai, kembali ke bagian Materi &amp; Simulasi. Belajar kembali adalah bagian dari proses memahami.</p></div></article>
+  </div>
+  <div class="actions"><button class="btn ghost" data-go="2">← Kembali ke Soal</button><button class="btn yellow" id="restartAll">Ulangi dari awal ↺</button></div>
+ </section>
+ <div class="footer">KELAS BELAJAR · Amati · Pahami · Coba · Refleksi</div>
+</main>
+</div><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(()=>{
+ const screens=[...document.querySelectorAll('.screen')],nav=[...document.querySelectorAll('[data-screen]')],crumb=document.getElementById('crumb');
+ const names=['TUJUAN PEMBELAJARAN','MATERI & SIMULASI','SOAL INTERAKTIF','REFLEKSI'];
+ function go(n){n=Math.max(0,Math.min(3,Number(n)));screens.forEach((s,i)=>s.classList.toggle('active',i===n));nav.forEach((b,i)=>{b.classList.toggle('active',i===n);if(i===n)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current')});crumb.textContent='KELAS BELAJAR / '+names[n];window.scrollTo({top:0,behavior:'smooth'});}
+ nav.forEach(b=>b.addEventListener('click',()=>go(b.dataset.screen)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
+ document.getElementById('fullscreen').addEventListener('click',async()=>{try{if(!document.fullscreenElement)await document.documentElement.requestFullscreen();else await document.exitFullscreen()}catch(e){toast('Mode layar penuh tidak didukung pada browser ini.')}});
+ document.getElementById('print').addEventListener('click',()=>window.print());
+ function toast(t){const el=document.getElementById('toast');el.textContent=t;el.style.display='block';setTimeout(()=>el.style.display='none',2600)}
+
+
+ // Simulasi operasi campuran tiga bilangan pecahan dengan prioritas operasi.
+ const ids=['whole1','num1','den1','whole2','num2','den2','whole3','num3','den3'];
+ const fields=ids.map(id=>document.getElementById(id));
+ const op1=document.getElementById('op1'),op2=document.getElementById('op2');
+ const out=document.getElementById('conversionResult'),preview=document.getElementById('expressionPreview');
+ const gcd=(a,b)=>b===0?Math.abs(a):gcd(b,a%b);
+ function rat(n,d){if(d===0)throw Error('Penyebut tidak boleh nol.');if(d<0){n=-n;d=-d;}const g=gcd(Math.abs(n),d)||1;return {n:n/g,d:d/g};}
+ function add(x,y){return rat(x.n*y.d+y.n*x.d,x.d*y.d);}
+ function sub(x,y){return rat(x.n*y.d-y.n*x.d,x.d*y.d);}
+ function mul(x,y){return rat(x.n*y.n,x.d*y.d);}
+ function div(x,y){if(y.n===0)throw Error('Tidak dapat membagi dengan nol.');return rat(x.n*y.d,x.d*y.n);}
+ function show(x){if(x.d===1)return String(x.n);const w=Math.floor(Math.abs(x.n)/x.d),r=Math.abs(x.n)%x.d,sg=x.n<0?'-':'';return w?`${sg}${w} ${r}/${x.d}`:`${x.n}/${x.d}`;}
+ function readFraction(index){
+  const w=Number(document.getElementById('whole'+index).value),n=Number(document.getElementById('num'+index).value),d=Number(document.getElementById('den'+index).value);
+  if(![w,n,d].every(Number.isInteger)||w<0||w>10||n<0||n>30||d<1||d>20||(w>0&&n>=d)||(w===0&&n===0))throw Error('Periksa isian pecahan: bilangan bulat 0–10, pembilang 0–30, penyebut 1–20. Pecahan campuran harus memiliki pembilang lebih kecil dari penyebut.');
+  return rat(w*d+n,d);
+ }
+ function symbol(op){return {'+':'+','-':'−','*':'×','/':'÷'}[op];}
+ function refreshPreview(){
+  try{const vals=[1,2,3].map(readFraction);preview.textContent=`${show(vals[0])} ${symbol(op1.value)} ${show(vals[1])} ${symbol(op2.value)} ${show(vals[2])}`;}
+  catch(e){preview.textContent='Lengkapi isian pecahan dengan benar.';}
+ }
+ function calculateFractions(){
+  try{
+   const vals=[1,2,3].map(readFraction),ops=[op1.value,op2.value];
+   const tokens=[vals[0],vals[1],vals[2]],steps=[];
+   let i=0;
+   while(i<ops.length){
+    if(ops[i]==='*'||ops[i]==='/'){
+     const left=tokens[i],right=tokens[i+1],result=ops[i]==='*'?mul(left,right):div(left,right);
+     steps.push(`${show(left)} ${symbol(ops[i])} ${show(right)} = ${show(result)} (dikerjakan lebih dahulu)`);
+     tokens.splice(i,2,result);ops.splice(i,1);
+    }else i++;
+   }
+   let result=tokens[0];
+   for(let j=0;j<ops.length;j++){
+    const before=result;result=ops[j]==='+'?add(result,tokens[j+1]):sub(result,tokens[j+1]);
+    steps.push(`${show(before)} ${symbol(ops[j])} ${show(tokens[j+1])} = ${show(result)}`);
+   }
+   const expression=`${show(vals[0])} ${symbol(op1.value)} ${show(vals[1])} ${symbol(op2.value)} ${show(vals[2])}`;
+   out.innerHTML=`<div class="callout"><strong>Kalimat matematika</strong><p>${expression}</p></div>
+    <div class="callout"><strong>Urutan penyelesaian</strong><ol class="step-list">${steps.map(x=>`<li>${x}</li>`).join('')}</ol></div>
+    <div class="callout"><strong>Hasil akhir</strong><div class="big-value">${show(result)}</div><p>Hasil ditampilkan dalam bentuk pecahan paling sederhana.</p></div>`;
+  }catch(e){out.innerHTML=`<p class="feedback try">${e.message}</p>`;}
+ }
+ fields.forEach(el=>el.addEventListener('input',refreshPreview));
+ [op1,op2].forEach(el=>el.addEventListener('change',refreshPreview));
+ document.getElementById('calculateFractions').addEventListener('click',calculateFractions);
+ document.getElementById('fractionReset').addEventListener('click',()=>{
+  const defaults=[1,1,2,0,1,3,0,3,4];fields.forEach((el,i)=>el.value=defaults[i]);
+  op1.value='+';op2.value='*';refreshPreview();calculateFractions();
+ });
+ refreshPreview();calculateFractions();
+
+
+ const practices=[
+  {q:'Hasil dari 1/2 + 1/3 × 3/4 adalah …',c:['3/4','5/8','1/2','1'],a:0,e:'Kerjakan perkalian lebih dahulu: 1/3 × 3/4 = 1/4. Kemudian 1/2 + 1/4 = 3/4.'},
+  {q:'Hasil dari (1/2 + 1/4) × 2/3 adalah …',c:['1/2','3/4','2/3','1/4'],a:0,e:'Kerjakan dalam kurung: 1/2 + 1/4 = 3/4. Lalu 3/4 × 2/3 = 6/12 = 1/2.'},
+  {q:'Kalimat matematika yang sesuai untuk “dua kali 3/4 liter, kemudian dikurangi 1/2 liter” adalah …',c:['2 × 3/4 − 1/2','2 + 3/4 × 1/2','2 × (3/4 − 1/2)','2 ÷ 3/4 − 1/2'],a:0,e:'“Dua kali 3/4” dimodelkan dengan 2 × 3/4, kemudian “dikurangi 1/2” sehingga modelnya 2 × 3/4 − 1/2.'}
+ ];
+ const questions=[
+  {cat:'Urutan operasi',q:'Hasil dari 1/4 + 1/2 × 2/3 adalah …',c:['7/12','1/2','5/6','1/4'],a:0,e:'Kerjakan perkalian: 1/2 × 2/3 = 1/3. Lalu 1/4 + 1/3 = 3/12 + 4/12 = 7/12.'},
+  {cat:'Tanda kurung',q:'Hasil dari (2/3 − 1/6) × 3/5 adalah …',c:['1/5','1/2','3/10','2/5'],a:2,e:'Dalam kurung: 2/3 − 1/6 = 4/6 − 1/6 = 3/6 = 1/2. Kemudian 1/2 × 3/5 = 3/10.'},
+  {cat:'Operasi dari kiri ke kanan',q:'Hasil dari 3/4 ÷ 1/2 × 2/3 adalah …',c:['1','3/4','1/2','2'],a:0,e:'Pembagian dan perkalian dikerjakan dari kiri ke kanan: 3/4 ÷ 1/2 = 3/2, lalu 3/2 × 2/3 = 1.'},
+  {cat:'Pemodelan masalah',q:'Setiap kantong berisi 2/5 kg beras. Ada 4 kantong, kemudian digunakan 1/2 kg. Model untuk menghitung sisa beras adalah …',c:['4 × 2/5 − 1/2','4 + 2/5 × 1/2','4 × (2/5 − 1/2)','4 ÷ 2/5 + 1/2'],a:0,e:'Jumlah beras mula-mula adalah 4 × 2/5 kg. Setelah digunakan 1/2 kg, model sisanya 4 × 2/5 − 1/2.'},
+  {cat:'Menghitung model',q:'Nilai dari 3 × 1/4 + 1/2 adalah …',c:['1 1/4','1','3/4','1 1/2'],a:0,e:'Kerjakan perkalian: 3 × 1/4 = 3/4. Tambahkan 1/2 = 2/4. Hasilnya 5/4 = 1 1/4.'},
+  {cat:'Menafsirkan hasil',q:'Pita sepanjang 2 1/2 meter dipotong menjadi bagian-bagian yang masing-masing 1/2 meter. Model untuk menentukan banyak potongan adalah …',c:['2 1/2 ÷ 1/2','2 1/2 × 1/2','2 1/2 − 1/2','2 1/2 + 1/2'],a:0,e:'Banyak potongan diperoleh dengan membagi panjang seluruh pita dengan panjang setiap potongan, yaitu 2 1/2 ÷ 1/2.'}
+ ];
+ const hots=[
+  {q:'Sebuah resep untuk satu loyang membutuhkan 3/4 kg tepung. Akan dibuat 2 1/2 resep, kemudian 1/2 kg tepung disisihkan. Berapa kg tepung yang digunakan?',c:['1 3/8 kg','1 1/2 kg','2 kg','2 3/8 kg'],a:0,e:'Modelnya 2 1/2 × 3/4 − 1/2. Ubah 2 1/2 = 5/2. Perkalian 5/2 × 3/4 = 15/8. Kurangi 1/2 = 4/8, sehingga 11/8 = 1 3/8 kg.'},
+  {q:'Satu wadah berisi 3 1/2 liter minuman. Minuman dituangkan ke botol berukuran 1/4 liter. Setelah 2 botol disisihkan, berapa botol yang masih dapat digunakan?',c:['10 botol','12 botol','14 botol','16 botol'],a:1,e:'Jumlah botol mula-mula 3 1/2 ÷ 1/4 = 7/2 × 4 = 14 botol. Setelah 2 botol disisihkan, tersisa 12 botol.'},
+  {q:'Rani menghitung 1/2 + 1/3 × 3/4 dengan mengerjakan penjumlahan terlebih dahulu. Mengapa cara tersebut tidak tepat?',c:['Perkalian harus dikerjakan sebelum penjumlahan jika tidak ada tanda kurung','Penjumlahan selalu dikerjakan paling akhir setelah pengurangan','Penyebut pecahan harus selalu dikalikan terlebih dahulu','Semua operasi harus dikerjakan dari kanan ke kiri'],a:0,e:'Tanpa tanda kurung, perkalian memiliki prioritas lebih tinggi daripada penjumlahan. Jadi 1/3 × 3/4 harus dihitung terlebih dahulu.'},
+  {q:'Untuk kegiatan kelas, diperlukan 2/3 meter pita untuk setiap kelompok. Ada 3 kelompok dan tersedia tambahan 1/2 meter. Berapa meter pita seluruhnya?',c:['2 1/2 meter','2 meter','1 1/2 meter','3 meter'],a:0,e:'Modelnya 3 × 2/3 + 1/2. Hasil perkalian adalah 2 meter. Tambahkan 1/2 meter, sehingga totalnya 2 1/2 meter.'},
+  {q:'Persediaan 4 1/2 liter cat digunakan untuk mengecat 3 bagian dinding sama banyak. Setiap bagian kemudian membutuhkan tambahan 1/4 liter. Berapa liter cat yang diperlukan untuk satu bagian setelah tambahan?',c:['1 3/4 liter','1 1/2 liter','1 1/4 liter','2 liter'],a:0,e:'Cat awal per bagian adalah 4 1/2 ÷ 3 = 9/2 ÷ 3 = 3/2 liter. Tambahkan 1/4 liter: 3/2 + 1/4 = 6/4 + 1/4 = 7/4 = 1 3/4 liter.'}
+ ];
+
+ function buildChoiceQuestion(item,index,container,kind){const el=document.createElement('article');el.className='question-card';el.innerHTML=`<div class="meta"><span>${kind} ${index+1}</span><span>Pilih satu jawaban</span></div><h3>${item.q}</h3><div class="choice-list">${item.c.map((c,j)=>`<button class="choice" type="button" aria-pressed="false">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="actions"><button type="button" class="btn ghost check">Periksa jawaban</button><button type="button" class="btn ghost retry">Coba lagi</button></div><div class="feedback" aria-live="polite"></div><div class="explain hidden"></div>`;container.appendChild(el);let selected=null;const buttons=[...el.querySelectorAll('.choice')],feedback=el.querySelector('.feedback'),explain=el.querySelector('.explain');buttons.forEach((b,j)=>b.addEventListener('click',()=>{selected=j;buttons.forEach((x,k)=>{x.classList.toggle('selected',k===j);x.setAttribute('aria-pressed',String(k===j));x.classList.remove('correct','incorrect')});feedback.textContent='Pilihan tersimpan. Tekan Periksa jawaban untuk melihat umpan balik.';feedback.className='feedback';explain.classList.add('hidden')}));el.querySelector('.check').addEventListener('click',()=>{if(selected===null){feedback.textContent='Pilih satu jawaban terlebih dahulu.';feedback.className='feedback try';return}buttons.forEach((b,j)=>{b.classList.remove('correct','incorrect');if(j===selected)b.classList.add(j===item.a?'correct':'incorrect')});feedback.textContent=selected===item.a?'Tepat! Jawabanmu benar.':'Belum tepat. Tidak apa-apa, pelajari kembali alasannya.';feedback.className='feedback '+(selected===item.a?'good':'try');explain.textContent='Pembahasan dan cara penyelesaian: '+item.e;explain.classList.remove('hidden')});el.querySelector('.retry').addEventListener('click',()=>{selected=null;buttons.forEach(b=>{b.classList.remove('selected','correct','incorrect');b.setAttribute('aria-pressed','false')});feedback.textContent='Silakan pilih jawaban lagi.';feedback.className='feedback';explain.classList.add('hidden')});return {getSelected:()=>selected};}
+ const practiceRoot=document.getElementById('practice');practices.forEach((q,i)=>buildChoiceQuestion(q,i,practiceRoot,'Aktivitas'));
+ // Evaluation
+ const quizRoot=document.getElementById('quiz');let quizState=[];
+ function renderQuiz(){quizRoot.innerHTML='';quizState=questions.map(()=>({selected:null,checked:false}));questions.forEach((q,i)=>{const el=document.createElement('article');el.className='question-card card';el.innerHTML=`<div class="meta"><span>${q.cat}</span><span>Soal ${i+1} dari ${questions.length}</span></div><h3>${q.q}</h3><div class="choice-list">${q.c.map((c,j)=>`<button type="button" class="choice" aria-pressed="false">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="actions"><button class="btn ghost check" type="button">Periksa jawaban</button></div><div class="feedback" aria-live="polite"></div><div class="explain hidden"></div>`;quizRoot.appendChild(el);const st=quizState[i],bs=[...el.querySelectorAll('.choice')],fb=el.querySelector('.feedback'),ex=el.querySelector('.explain');bs.forEach((b,j)=>b.addEventListener('click',()=>{st.selected=j;st.checked=false;bs.forEach((x,k)=>{x.classList.toggle('selected',j===k);x.classList.remove('correct','incorrect');x.setAttribute('aria-pressed',String(j===k))});fb.textContent='Pilihan diperbarui. Periksa kembali jawabanmu.';fb.className='feedback';ex.classList.add('hidden');updateProgress()}));el.querySelector('.check').addEventListener('click',()=>{if(st.selected===null){fb.textContent='Pilih satu jawaban sebelum memeriksa.';fb.className='feedback try';return}st.checked=true;bs.forEach((b,j)=>{b.classList.remove('correct','incorrect');if(j===st.selected)b.classList.add(j===q.a?'correct':'incorrect')});fb.textContent=st.selected===q.a?'Benar! Kamu memahami konsep ini.':'Belum tepat. Baca pembahasan, lalu ubah pilihan jika diperlukan.';fb.className='feedback '+(st.selected===q.a?'good':'try');ex.textContent='Pembahasan: '+q.e;ex.classList.remove('hidden');updateProgress()})});updateProgress()}
+ function updateProgress(){const done=quizState.filter(s=>s.checked).length;document.getElementById('quizProgress').style.width=(done/questions.length*100)+'%'}
+ renderQuiz();document.getElementById('resetQuiz').addEventListener('click',()=>{renderQuiz();document.getElementById('quizResult').classList.add('hidden');document.getElementById('quizNotice').textContent='Evaluasi sudah diatur ulang.'});
+ document.getElementById('finishQuiz').addEventListener('click',()=>{const missing=quizState.findIndex(s=>!s.checked);const notice=document.getElementById('quizNotice'),result=document.getElementById('quizResult');if(missing!==-1){notice.textContent=`Periksa jawaban soal ${missing+1} terlebih dahulu.`;notice.className='feedback try';quizRoot.children[missing].scrollIntoView({behavior:'smooth',block:'center'});return}const score=quizState.reduce((sum,s,i)=>sum+(s.selected===questions[i].a?1:0),0),pct=Math.round(score/questions.length*100);const weak=[...new Set(questions.filter((q,i)=>quizState[i].selected!==q.a).map(q=>q.cat))];result.innerHTML=`<h3>Hasil evaluasi: <span class="result-score">${pct}</span></h3><p>${score} dari ${questions.length} jawaban benar.</p><p>${pct===100?'Luar biasa! Semua jawaban tepat.':pct>=67?'Bagus! Kamu sudah memahami sebagian besar materi. Pelajari kembali soal yang belum tepat.':'Terus berlatih. Baca ulang materi tentang perkalian dan pembagian pecahan berpenyebut sama maupun berbeda.'}</p><p><strong>Bagian yang perlu ditinjau:</strong> ${weak.length?weak.join(', '):'Tidak ada. Semua kategori terjawab benar.'}</p>`;result.classList.remove('hidden');notice.textContent='Hasil berhasil dihitung berdasarkan pilihan terakhir yang sudah diperiksa.';notice.className='feedback good';result.scrollIntoView({behavior:'smooth',block:'center'})});
+ const hotsRoot=document.getElementById('hots');hots.forEach((q,i)=>buildChoiceQuestion(q,i,hotsRoot,'HOTS'));
+ document.getElementById('saveReflection').addEventListener('click',()=>{document.getElementById('reflectStatus').textContent='Refleksi sudah tersimpan sementara pada halaman ini. Untuk menyimpan permanen, cetak halaman atau salin jawabanmu.';toast('Refleksi tercatat pada halaman ini.')});document.getElementById('clearReflection').addEventListener('click',()=>{['reflect1','reflect2','reflect3'].forEach(id=>document.getElementById(id).value='');document.getElementById('reflectStatus').textContent='Jawaban refleksi telah dikosongkan.'});document.getElementById('restartAll').addEventListener('click',()=>{go(0);toast('Kamu dapat memulai pembelajaran kembali.')});
+})();
+</script>
+</body></html>

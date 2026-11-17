@@ -1,0 +1,194 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101735"><title>Menyelesaikan SPLDV dengan Metode Eliminasi | KELAS BELAJAR V86.0</title><style>
+:root{--bg:#080f27;--navy:#101735;--panel:#17234a;--panel2:#1d2d5d;--line:#35477d;--blue:#4da3ff;--cyan:#52e0e0;--purple:#9b78ff;--yellow:#ffd166;--text:#f4f6ff;--muted:#c2cce8;--green:#55d6a2;--red:#ff858e;--radius:22px;--shadow:0 18px 50px #02071880}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#33236c 0,transparent 34%),linear-gradient(135deg,#08132d,#101b42 55%,#25164f);color:var(--text);font:20px/1.6 "Trebuchet MS",Arial,sans-serif;min-height:100vh}button,input,textarea{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}p{color:var(--muted);margin:.45rem 0 1rem}h1,h2,h3{line-height:1.2;margin:0 0 14px}h1{font-size:clamp(34px,5vw,54px)}h2{font-size:clamp(28px,3.4vw,38px)}h3{font-size:25px}.app{display:grid;grid-template-columns:290px minmax(0,1fr);min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;padding:25px 18px;background:#0c1532eF;border-right:1px solid #344575;display:flex;flex-direction:column;gap:20px;z-index:5}.brand{padding:8px 10px 18px;border-bottom:1px solid #344575}.brand-mark{display:inline-grid;place-items:center;width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,var(--blue),var(--purple));font-size:25px;font-weight:900;margin-bottom:12px}.brand strong{display:block;font-size:24px;letter-spacing:.06em}.brand small{display:block;color:var(--cyan);font-size:20px}.nav-label{color:#9eacd4;font-size:20px;font-weight:800;padding:0 10px}.nav{display:grid;gap:10px}.nav button{width:100%;text-align:left;padding:14px 15px;border:1px solid transparent;border-radius:15px;background:transparent;color:var(--muted);font-weight:800;transition:.2s}.nav button:hover{background:#1b2a55}.nav button.active{background:linear-gradient(100deg,#24539b,#553b9b);border-color:#718be0;color:white;box-shadow:0 8px 22px #050a2080}.side-note{margin-top:auto;background:#15234a;border:1px solid #344575;border-radius:16px;padding:15px;color:var(--muted)}.side-note strong{color:var(--yellow)}.main{min-width:0;padding:24px clamp(16px,3vw,42px) 60px;max-width:1500px;width:100%;margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;margin-bottom:24px}.crumb{color:var(--cyan);font-weight:800}.tools{display:flex;gap:10px;flex-wrap:wrap}.tool-btn,.btn{border:1px solid #52679f;border-radius:13px;background:#1a2b59;padding:11px 16px;font-weight:800;min-height:48px}.tool-btn:hover,.btn:hover{filter:brightness(1.15);transform:translateY(-1px)}.btn.primary{background:linear-gradient(100deg,#2378d4,#7454d6);border:0}.btn.yellow{background:var(--yellow);color:#1b2140;border:0}.btn.ghost{background:transparent}.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}.screen{display:none;animation:fade .25s ease}.screen.active{display:block}@keyframes fade{from{opacity:.3;transform:translateY(8px)}to{opacity:1;transform:none}}.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:22px;align-items:center;padding:clamp(24px,4vw,46px);border:1px solid #4b5fa0;border-radius:28px;background:linear-gradient(120deg,#172c5b,#35276d);box-shadow:var(--shadow);overflow:hidden}.eyebrow{color:var(--cyan);font-weight:900;letter-spacing:.09em;text-transform:uppercase;margin-bottom:12px}.hero p{font-size:22px}.hero-art{min-height:230px;display:grid;place-items:center;background:radial-gradient(circle,#526bdc55,transparent 65%);position:relative}.orbit{width:min(260px,80%);aspect-ratio:1;border:3px dashed #8e9de8;border-radius:50%;display:grid;place-items:center;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;width:24px;height:24px;border-radius:50%;background:var(--yellow);box-shadow:0 0 24px #ffd166}.orbit:before{left:5%;top:48%}.orbit:after{right:5%;top:48%;background:var(--cyan)}.orbit strong{font-size:56px;color:white}.pill{display:inline-block;border-radius:99px;padding:7px 14px;background:#243d79;color:#dce8ff;font-weight:800}.grid{display:grid;gap:18px}.two{grid-template-columns:repeat(2,minmax(0,1fr))}.three{grid-template-columns:repeat(3,minmax(0,1fr))}.card{background:linear-gradient(145deg,#18264f,#121e40);border:1px solid #344879;border-radius:var(--radius);padding:22px;box-shadow:0 10px 30px #03091e45}.card h3{color:#fff}.card strong{color:#fff}.section-head{margin:8px 0 24px}.section-head p{max-width:900px;font-size:21px}.callout{border-left:5px solid var(--yellow);background:#26315b;padding:18px 20px;border-radius:0 16px 16px 0;margin:20px 0}.callout p{margin:6px 0 0}.step-list{padding-left:28px;color:var(--muted)}.step-list li{padding:5px 0}.numberline-wrap{padding:22px;background:#101a38;border-radius:18px;border:1px solid #40558d;margin:15px 0}.numberline{display:grid;grid-template-columns:repeat(41,minmax(22px,1fr));gap:4px;position:relative}.numberline:before{content:"";position:absolute;left:5%;right:5%;height:4px;background:#8094d2;top:27px;border-radius:5px}.point{position:relative;z-index:1;display:grid;justify-items:center;gap:10px;color:var(--muted);font-weight:900}.dot{width:18px;height:18px;border-radius:50%;background:var(--blue);border:3px solid #dce9ff}.point.zero .dot{background:var(--yellow);width:24px;height:24px}.point.current .dot{background:var(--green);box-shadow:0 0 0 7px #55d6a233}.sim-controls{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:18px}.sim-controls input{flex:1;min-width:180px;accent-color:var(--cyan)}.big-value{font-size:32px;font-weight:900;color:var(--yellow)}.choice-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:15px 0}.choice{padding:13px 16px;text-align:left;border:1px solid #53699f;background:#1b2c59;border-radius:13px;min-height:54px}.choice:hover:not(:disabled){background:#2a4079}.choice.selected{border:2px solid var(--cyan);background:#214a70}.choice.correct{border:2px solid var(--green);background:#164b48}.choice.incorrect{border:2px solid var(--red);background:#542b49}.feedback{min-height:32px;padding:8px 0;font-weight:800}.feedback.good{color:var(--green)}.feedback.try{color:var(--yellow)}.explain{background:#101a38;border:1px solid #3c5084;border-radius:14px;padding:15px;margin-top:10px;color:var(--muted)}.question-card{margin-bottom:17px}.meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--cyan);font-weight:800}.progress{height:10px;background:#34436e;border-radius:99px;overflow:hidden;margin:15px 0 25px}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--cyan),var(--purple));transition:width .25s}.result-score{font-size:54px;font-weight:900;color:var(--yellow)}.field{width:100%;background:#0e1937;border:1px solid #50649a;color:white;border-radius:14px;padding:14px;min-height:130px;resize:vertical}.field::placeholder{color:#a8b5d7}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.reflection-prompt{padding:15px;border:1px solid #43588c;border-radius:14px;background:#111d3d;margin:12px 0}.muted{color:var(--muted)}.small-note{font-size:20px;color:#aebbe0}.footer{text-align:center;color:#9eacd4;padding:30px 10px 0}.hidden{display:none!important}.toast{position:fixed;bottom:20px;right:20px;background:#1b3760;border:1px solid var(--cyan);padding:14px 18px;border-radius:14px;z-index:20;display:none}.mobile-title{display:none}
+@media(max-width:1000px){.app{grid-template-columns:240px minmax(0,1fr)}.three{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr .6fr}}
+@media(max-width:760px){.app{display:block}.sidebar{position:relative;height:auto;padding:14px;gap:12px;border-right:0;border-bottom:1px solid #344575}.brand{display:flex;align-items:center;gap:12px;padding:0 4px 10px}.brand-mark{margin:0;width:44px;height:44px}.brand strong{font-size:22px}.brand small{font-size:20px}.nav-label,.side-note{display:none}.nav{display:flex;overflow-x:auto;padding-bottom:5px}.nav button{width:auto;min-width:max-content;padding:11px 14px;font-size:20px}.main{padding:16px 14px 42px}.topbar{margin-bottom:16px}.hero{grid-template-columns:1fr}.hero-art{min-height:150px}.two,.three{grid-template-columns:1fr}.choice-list{grid-template-columns:1fr}.tools{width:100%}.tool-btn{flex:1}.numberline-wrap{overflow-x:auto}.numberline{min-width:1100px}}
+@media print{body{background:white!important;color:#111!important;font-size:20px}.sidebar,.topbar,.actions,.tools,.nav,.footer{display:none!important}.app{display:block}.main{padding:0;max-width:none}.screen{display:block!important;break-inside:avoid}.card,.hero,.callout,.numberline-wrap{background:white!important;color:#111!important;border:1px solid #777!important;box-shadow:none!important}.card p,.hero p,.section-head p,.callout p,.step-list,.muted{color:#222!important}.choice{background:white!important;color:#111!important;border:1px solid #777!important}.screen:not(.active){display:block!important}.field{border:1px solid #777;color:#111}.hero-art{display:none}}
+</style></head><body>
+<div class="app">
+<aside class="sidebar">
+ <div class="brand"><div class="brand-mark">KB</div><div><strong>KELAS BELAJAR</strong><small>MPI MATEMATIKA SMP</small></div></div>
+ <div class="nav-label">MENU PEMBELAJARAN</div>
+ <nav class="nav" aria-label="Menu pembelajaran">
+  <button class="active" data-screen="0">01 · Tujuan Pembelajaran</button>
+  <button data-screen="1">02 · Materi &amp; Simulasi</button>
+  <button data-screen="2">03 · Soal Interaktif</button>
+  <button data-screen="3">04 · Refleksi</button>
+ </nav>
+ <div class="side-note"><strong>Strategi belajar</strong><p>Susun tabel nilai, temukan titik potong sumbu, lalu plot titik pada bidang koordinat untuk membentuk grafik garis lurus. suku yang belum diketahui.</p></div>
+</aside>
+<main class="main">
+ <div class="topbar"><div class="crumb" id="crumb">KELAS BELAJAR / TUJUAN PEMBELAJARAN</div><div class="tools"><button class="tool-btn" id="fullscreen">⛶ Layar penuh</button><button class="tool-btn" id="print">▤ Cetak</button></div></div>
+      
+
+
+
+<section class="screen active" id="screen-0">
+ <div class="hero"><div><p class="eyebrow">MPI MATEMATIKA SMP · V86.0</p><h1>Menyelesaikan SPLDV dengan Metode Eliminasi</h1><p>Pelajari cara menghilangkan salah satu variabel dengan menjumlahkan atau mengurangkan dua persamaan, lalu menentukan pasangan penyelesaiannya.</p><span class="pill">KELAS BELAJAR · Belajar Aktif</span></div><div class="hero-art" aria-hidden="true"><div class="orbit"><strong>x + y = 10</strong></div></div></div>
+ <div class="section-head" style="margin-top:28px"><p class="eyebrow">BAGIAN 01 · TUJUAN PEMBELAJARAN</p><h2>Penyelesaian SPLDV dengan Metode Eliminasi</h2></div>
+ <div class="grid two"><article class="card"><h3>🎯 Tujuan Pembelajaran</h3><p>Melalui pengamatan contoh dan latihan soal, peserta didik mampu menentukan penyelesaian SPLDV menggunakan metode eliminasi dengan benar.</p></article><article class="card"><h3>🔎 Apersepsi</h3><p>Bayangkan dua informasi tentang jumlah dan selisih dua bilangan. Jika kedua informasi ditulis sebagai persamaan, kita dapat menggabungkan persamaan tersebut sehingga salah satu bilangan tidak lagi muncul. Cara ini disebut eliminasi.</p></article></div>
+ <article class="card" style="margin-top:18px"><h3>💡 Pertanyaan Pemantik</h3><ol class="step-list"><li>Bagaimana menghilangkan salah satu variabel dari dua persamaan?</li><li>Kapan persamaan perlu dikalikan sebelum dijumlahkan atau dikurangkan?</li><li>Bagaimana memastikan pasangan nilai memenuhi kedua persamaan awal?</li></ol></article>
+ <div class="grid two" style="margin-top:18px"><article class="card"><h3>✅ Indikator Keberhasilan</h3><ul class="step-list"><li>Menentukan variabel yang akan dieliminasi.</li><li>Menyamakan koefisien variabel dengan perkalian yang tepat.</li><li>Menjumlahkan atau mengurangkan persamaan untuk memperoleh satu variabel.</li><li>Menentukan variabel lainnya dan memeriksa pasangan penyelesaian.</li></ul></article><article class="card"><h3>🧭 Peta Belajar</h3><ul class="step-list"><li>Memahami dua persamaan linear.</li><li>Memilih variabel yang akan dihilangkan.</li><li>Menyamakan koefisien dan melakukan eliminasi.</li><li>Menentukan pasangan serta memeriksa hasil.</li></ul></article></div>
+ <article class="card" style="margin-top:18px"><h3>🌱 Manfaat dalam Kehidupan</h3><p>Metode eliminasi dapat digunakan untuk mencari dua nilai yang belum diketahui dari dua informasi, misalnya harga dua jenis barang, jumlah dua kelompok, atau kombinasi dua jenis tiket.</p></article>
+ <div class="actions"><button class="btn primary" data-go="1">Mulai Materi & Simulasi →</button></div>
+</section>
+ <section class="screen" id="screen-1">
+ <div class="section-head"><p class="eyebrow">BAGIAN 02 · MATERI & SIMULASI</p><h2>Menghilangkan Variabel secara Teratur</h2><p>Metode eliminasi dilakukan dengan menjumlahkan atau mengurangkan persamaan agar salah satu variabel hilang.</p></div>
+ <article class="card"><h3>1. Contoh SPLDV</h3><div class="callout"><div class="equation">2x + y = 11  ...(1)<br>x + y = 8  ...(2)</div><p>Kita akan menghilangkan variabel y karena koefisien y pada kedua persamaan sudah sama.</p></div></article>
+ <article class="card" style="margin-top:18px"><h3>2. Eliminasi variabel y</h3><p>Kurangkan persamaan (1) dengan persamaan (2):</p><div class="equation">2x + y = 11<br>x + y = 8<br>────────── −<br>x = 3</div><p>Nilai x adalah 3.</p></article>
+ <article class="card" style="margin-top:18px"><h3>3. Tentukan variabel y</h3><p>Substitusikan x = 3 ke salah satu persamaan, misalnya persamaan (2):</p><div class="equation">3 + y = 8<br>y = 5</div><p>Jadi, pasangan penyelesaian adalah <strong>(x,y) = (3,5)</strong>.</p></article>
+ <article class="card" style="margin-top:18px"><h3>4. Jika koefisien belum sama</h3><p>Misalnya persamaan 2x + 3y = 13 dan x + y = 5. Untuk menghilangkan x, kalikan persamaan kedua dengan 2 sehingga koefisien x sama:</p><div class="equation">2x + 3y = 13<br>2x + 2y = 10<br>────────── −<br>y = 3</div><p>Setelah y diketahui, substitusikan kembali untuk memperoleh x.</p></article>
+ <article class="card" style="margin-top:18px"><h3>5. Periksa hasil</h3><div class="grid two"><div class="callout"><strong>Persamaan pertama</strong><p>2(3) + 5 = 11 ✓</p></div><div class="callout"><strong>Persamaan kedua</strong><p>3 + 5 = 8 ✓</p></div></div><p>Pasangan penyelesaian harus memenuhi kedua persamaan awal.</p></article>
+ <article class="card" style="margin-top:18px"><h3>6. Simulasi interaktif metode eliminasi</h3><p>Masukkan koefisien dua persamaan ax + by = c dan dx + ey = f. Pilih variabel yang akan dieliminasi. Simulasi menyamakan koefisien, melakukan operasi, dan memeriksa hasilnya.</p>
+  <div class="grid two">
+   <div><label for="ea"><strong>Persamaan 1 · koefisien x (a)</strong></label><input class="field" id="ea" type="number" value="2"></div>
+   <div><label for="eb"><strong>Persamaan 1 · koefisien y (b)</strong></label><input class="field" id="eb" type="number" value="1"></div>
+   <div><label for="ec"><strong>Persamaan 1 · konstanta (c)</strong></label><input class="field" id="ec" type="number" value="11"></div>
+   <div><label for="ed"><strong>Persamaan 2 · koefisien x (d)</strong></label><input class="field" id="ed" type="number" value="1"></div>
+   <div><label for="ee"><strong>Persamaan 2 · koefisien y (e)</strong></label><input class="field" id="ee" type="number" value="1"></div>
+   <div><label for="ef"><strong>Persamaan 2 · konstanta (f)</strong></label><input class="field" id="ef" type="number" value="8"></div>
+  </div>
+  <div class="field-group"><label for="eliminateVariable"><strong>Pilih variabel yang akan dieliminasi</strong></label><select class="field" id="eliminateVariable"><option value="y">Eliminasi y</option><option value="x">Eliminasi x</option></select></div>
+  <div class="actions"><button class="btn primary" id="solveElimination">Selesaikan dengan eliminasi</button><button class="btn ghost" id="resetElimination">Kembalikan contoh</button></div>
+  <div id="eliminationStatus" class="callout" aria-live="polite"></div>
+  <div class="card" style="margin-top:12px"><h3>Langkah eliminasi</h3><div id="eliminationSteps" class="equation">2x + y = 11<br>x + y = 8<br>Kurangkan kedua persamaan<br>x = 3<br>y = 5</div></div>
+  <div class="callout" style="margin-top:12px"><strong>Hasil dan pemeriksaan</strong><p id="eliminationCheck">Pasangan (3, 5) memenuhi kedua persamaan.</p></div>
+ </article>
+ <div class="actions"><button class="btn ghost" data-go="0">← Kembali</button><button class="btn primary" data-go="2">Kerjakan Soal Interaktif →</button></div>
+</section>
+ <section class="screen" id="screen-2">
+ <div class="section-head"><p class="eyebrow">BAGIAN 03 · SOAL INTERAKTIF</p><h2>Latihan Metode Eliminasi</h2><p>Pilih jawaban terlebih dahulu, lalu periksa untuk melihat umpan balik, kunci, dan pembahasan.</p></div>
+ <div class="card"><div class="meta"><span>AKTIVITAS PEMAHAMAN</span><span>3 soal · 4 pilihan</span></div><div id="practice"></div></div>
+ <div class="card" style="margin-top:18px"><div class="meta"><span>EVALUASI PEMBELAJARAN</span><span>6 soal</span></div><div class="progress"><span id="quizProgress"></span></div><div id="quiz"></div><div class="actions"><button class="btn primary" id="finishQuiz">Lihat hasil evaluasi</button><button class="btn ghost" id="resetQuiz">Ulangi evaluasi</button></div><p class="feedback" id="quizNotice" aria-live="polite"></p><div id="quizResult" class="callout hidden" aria-live="polite"></div></div>
+ <div class="card" style="margin-top:18px"><div class="meta"><span>TANTANGAN HOTS</span><span>5 soal · 4 pilihan</span></div><p>Analisis pemilihan variabel, operasi antarpersamaan, dan periksa kemungkinan penyelesaian.</p><div id="hots"></div></div>
+ <div class="actions"><button class="btn ghost" data-go="1">← Kembali ke Materi</button><button class="btn primary" data-go="3">Lanjut ke Refleksi →</button></div>
+</section>
+ <section class="screen" id="screen-3">
+ <div class="section-head"><p class="eyebrow">BAGIAN 04 · REFLEKSI</p><h2>Refleksi Pembelajaran</h2><p>Renungkan proses menghilangkan variabel untuk menyelesaikan SPLDV.</p></div>
+ <article class="card"><h3>📝 Cek pemahaman diri</h3>
+  <div class="reflection-prompt"><label for="reflect1"><strong>1. Mengapa koefisien variabel perlu disamakan sebelum eliminasi?</strong></label><textarea id="reflect1" class="field" placeholder="Tuliskan alasanmu..."></textarea></div>
+  <div class="reflection-prompt"><label for="reflect2"><strong>2. Kapan kita menggunakan penjumlahan dan kapan menggunakan pengurangan persamaan?</strong></label><textarea id="reflect2" class="field" placeholder="Tuliskan jawabanmu..."></textarea></div>
+  <div class="reflection-prompt"><label for="reflect3"><strong>3. Mengapa hasil eliminasi masih perlu diperiksa ke dua persamaan awal?</strong></label><textarea id="reflect3" class="field" placeholder="Jelaskan dengan bahasamu sendiri..."></textarea></div>
+  <div class="actions"><button class="btn primary" id="saveReflection">Simpan refleksi sementara</button><button class="btn ghost" id="clearReflection">Kosongkan jawaban</button></div><p id="reflectStatus" class="feedback" aria-live="polite"></p>
+ </article>
+ <article class="card" style="margin-top:18px"><h3>⭐ Rangkuman</h3><ul class="step-list"><li>Metode eliminasi menghilangkan salah satu variabel dari dua persamaan.</li><li>Jika koefisien belum sama, kalikan persamaan dengan bilangan yang sesuai.</li><li>Gunakan penjumlahan atau pengurangan agar koefisien variabel menjadi nol.</li><li>Tentukan variabel yang tersisa, lalu cari variabel lainnya.</li><li>Periksa pasangan penyelesaian pada kedua persamaan awal.</li></ul></article>
+ <article class="card" style="margin-top:18px"><h3>🏁 Pesan Belajar</h3><p>Teliti saat menyamakan koefisien dan melakukan operasi. Perhatikan tanda positif dan negatif, kemudian periksa kembali pasangan penyelesaian agar yakin kedua persamaan terpenuhi.</p></article>
+ <div class="actions"><button class="btn ghost" data-go="2">← Kembali ke Soal</button><button class="btn primary" data-go="0">Kembali ke Beranda</button></div>
+</section>
+ <div class="footer">KELAS BELAJAR · MPI Matematika SMP · V82.0</div>
+
+<script>
+(()=>{
+ const screens=[...document.querySelectorAll('.screen')],nav=[...document.querySelectorAll('[data-screen]')],crumb=document.getElementById('crumb'),names=['TUJUAN PEMBELAJARAN','MATERI & SIMULASI','SOAL INTERAKTIF','REFLEKSI'];
+ function go(n){n=Math.max(0,Math.min(3,Number(n)));screens.forEach((s,i)=>s.classList.toggle('active',i===n));nav.forEach((b,i)=>{b.classList.toggle('active',i===n);if(i===n)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current')});crumb.textContent='KELAS BELAJAR / '+names[n];window.scrollTo({top:0,behavior:'smooth'})}
+ nav.forEach(b=>b.addEventListener('click',()=>go(b.dataset.screen)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
+ document.getElementById('fullscreen').addEventListener('click',async()=>{try{if(!document.fullscreenElement)await document.documentElement.requestFullscreen();else await document.exitFullscreen()}catch(e){toast('Mode layar penuh tidak didukung browser ini.')}});
+ document.getElementById('print').addEventListener('click',()=>window.print());
+ function toast(t){const el=document.getElementById('toast');el.textContent=t;el.style.display='block';setTimeout(()=>el.style.display='none',2600)}
+
+
+
+
+
+
+
+
+
+ function fmtElimEq(a,b,c){
+  let s='';
+  if(a)s+=(a===1?'':a===-1?'−':a)+'x';
+  if(b){if(s)s+=(b>0?' + ':' − ');else if(b<0)s+='−';s+=(Math.abs(b)===1?'':Math.abs(b))+'y';}
+  return (s||'0')+' = '+c;
+ }
+ function solveElimination(){
+  const v=['ea','eb','ec','ed','ee','ef'].map(id=>Number(document.getElementById(id).value));
+  const mode=document.getElementById('eliminateVariable').value;
+  const status=document.getElementById('eliminationStatus');
+  const steps=document.getElementById('eliminationSteps');
+  const check=document.getElementById('eliminationCheck');
+  if(!v.every(Number.isFinite)||(!v[0]&&!v[1])||(!v[3]&&!v[4])){
+   status.textContent='Masukkan bilangan yang valid. Setiap persamaan harus memiliki koefisien variabel yang tidak semuanya nol.';return;
+  }
+  const [a,b,c,d,e,f]=v;
+  const det=a*e-b*d;
+  const clean=n=>Number(n.toFixed(6));
+  const show=n=>String(clean(n));
+  const eq1=fmtElimEq(a,b,c),eq2=fmtElimEq(d,e,f);
+  const lines=[eq1,eq2];
+  if(Math.abs(det)<1e-10){
+   if(Math.abs(a*f-c*d)<1e-10&&Math.abs(b*f-c*e)<1e-10){
+    status.innerHTML='<strong>Sistem memiliki tak hingga banyak penyelesaian.</strong><p>Kedua persamaan setara dan mewakili hubungan yang sama.</p>';
+    lines.push('Kedua persamaan merupakan kelipatan yang setara.');
+    check.textContent='Tidak ada satu pasangan tunggal; semua pasangan pada garis yang sama memenuhi kedua persamaan.';
+   }else{
+    status.innerHTML='<strong>Sistem tidak memiliki penyelesaian.</strong><p>Kedua persamaan saling bertentangan sehingga tidak ada pasangan yang memenuhi keduanya.</p>';
+    lines.push('Terjadi pertentangan antarpersamaan.');
+    check.textContent='Tidak ditemukan pasangan yang memenuhi kedua persamaan sekaligus.';
+   }
+  }else{
+   let k1,k2,r1,r2,label;
+   if(mode==='y'){
+    k1=b;k2=e;r1=c;r2=f;label='y';
+   }else{
+    k1=a;k2=d;r1=c;r2=f;label='x';
+   }
+   let m1=1,m2=1;
+   if(Math.abs(k1)>1e-10&&Math.abs(k2)>1e-10){
+    m1=Math.abs(k2);m2=Math.abs(k1);
+    if(k1*k2>0)m2=-m2;
+   }else if(Math.abs(k1)<1e-10&&Math.abs(k2)<1e-10){
+    status.textContent='Variabel yang dipilih tidak muncul pada kedua persamaan. Pilih variabel lainnya.';return;
+   }else{
+    m1=Math.abs(k2)>1e-10?1:0;
+    m2=Math.abs(k1)>1e-10?1:0;
+   }
+   const A1=a*m1,B1=b*m1,C1=c*m1;
+   const A2=d*m2,B2=e*m2,C2=f*m2;
+   const ax=A1+A2,by=B1+B2,cc=C1+C2;
+   const axMinus=A1-A2,byMinus=B1-B2,ccMinus=C1-C2;
+   let usePlus=Math.abs(mode==='y'?by:ax)<1e-9;
+   const AA=usePlus?ax:axMinus,BB=usePlus?by:byMinus,CC=usePlus?cc:ccMinus;
+   const operation=usePlus?'Jumlahkan':'Kurangkan';
+   const x=(c*e-b*f)/det,y=(a*f-c*d)/det;
+   lines.push('Kalikan persamaan 1 dengan '+show(m1)+'.');
+   lines.push('Kalikan persamaan 2 dengan '+show(m2)+'.');
+   lines.push(fmtElimEq(A1,B1,C1));
+   lines.push(fmtElimEq(A2,B2,C2));
+   lines.push(operation+' kedua persamaan:');
+   lines.push(fmtElimEq(AA,BB,CC));
+   if(mode==='y'){
+    lines.push(''+show(AA)+'x = '+show(CC));
+    lines.push('x = '+show(x));
+    lines.push('Substitusi x ke salah satu persamaan menghasilkan y = '+show(y)+'.');
+   }else{
+    lines.push(''+show(BB)+'y = '+show(CC));
+    lines.push('y = '+show(y));
+    lines.push('Substitusi y ke salah satu persamaan menghasilkan x = '+show(x)+'.');
+   }
+   status.innerHTML='<strong>Penyelesaian ditemukan.</strong><p>Pasangan penyelesaian adalah ('+show(x)+', '+show(y)+').</p><p>Perhatikan penyamaan koefisien dan operasi yang menghilangkan variabel '+label+'.</p>';
+   const check1=a*x+b*y,check2=d*x+e*y;
+   check.textContent='Pemeriksaan: persamaan 1 menghasilkan '+show(check1)+' = '+show(c)+'; persamaan 2 menghasilkan '+show(check2)+' = '+show(f)+'. '+(Math.abs(check1-c)<1e-7&&Math.abs(check2-f)<1e-7?'Keduanya terpenuhi.':'Periksa kembali pembulatan yang ditampilkan.');
+  }
+  steps.innerHTML=lines.map(t=>'<div>'+t+'</div>').join('');
+ }
+ document.getElementById('solveElimination').addEventListener('click',solveElimination);
+ document.getElementById('resetElimination').addEventListener('click',()=>{
+  [['ea',2],['eb',1],['ec',11],['ed',1],['ee',1],['ef',8]].forEach(([id,v])=>document.getElementById(id).value=v);
+  document.getElementById('eliminateVariable').value='y';
+  solveElimination();
+ });
+ solveElimination();
+
+ const practices=[{"q":"Pada sistem 2x + y = 9 dan x + y = 6, operasi yang tepat untuk menghilangkan y adalah ...","c":["Menjumlahkan persamaan","Mengurangkan persamaan pertama dengan kedua","Mengalikan kedua persamaan dengan 2","Membagi persamaan pertama dengan 2"],"a":1,"e":"Koefisien y sama-sama 1. Pengurangan membuat y − y = 0."},{"q":"Jika persamaan 1 adalah 3x + 2y = 12 dan persamaan 2 adalah 3x − y = 3, untuk menghilangkan x kita dapat ...","c":["Menjumlahkan kedua persamaan","Mengurangkan persamaan kedua dari pertama","Mengalikan persamaan pertama dengan 3","Membagi persamaan kedua dengan 2"],"a":1,"e":"Koefisien x sama-sama 3. Pengurangan kedua persamaan menghilangkan suku 3x."},{"q":"Mengapa persamaan boleh dikalikan 2 sebelum eliminasi?","c":["Agar nilai penyelesaiannya berubah","Agar persamaan menjadi tidak linear","Karena kedua ruas dikalikan bilangan yang sama sehingga persamaan tetap setara","Agar salah satu variabel selalu bernilai nol"],"a":2,"e":"Mengalikan kedua ruas dengan bilangan yang sama dan tidak nol menghasilkan persamaan yang setara."}],questions=[{"q":"Pada sistem 2x + y = 10 dan 2x − y = 4, operasi untuk menghilangkan x adalah ...","c":["Menjumlahkan kedua persamaan","Mengurangkan persamaan kedua dari pertama","Mengalikan persamaan pertama dengan 2","Membagi persamaan kedua dengan 2"],"a":1,"e":"Koefisien x sama-sama 2. Pengurangan menghilangkan suku 2x."},{"q":"Sistem x + 2y = 9 dan x + y = 5. Hasil pengurangan persamaan pertama dengan kedua adalah ...","c":["y = 4","y = 5","3y = 4","2x + y = 4"],"a":0,"e":"(x + 2y) − (x + y) = 9 − 5, sehingga y = 4."},{"q":"Untuk menghilangkan y dari 2x + 3y = 13 dan x + 2y = 8, koefisien y dapat disamakan dengan mengalikan ...","c":["Persamaan pertama dengan 2 dan kedua dengan 3","Persamaan pertama dengan 3 dan kedua dengan 2","Persamaan pertama dengan 1 dan kedua dengan 2","Persamaan pertama dengan 2 dan kedua dengan 1"],"a":1,"e":"Kelipatan persekutuan koefisien 3 dan 2 adalah 6. Kalikan persamaan pertama dengan 2 dan persamaan kedua dengan 3."},{"q":"Diketahui 2x + y = 11 dan x + y = 8. Pasangan penyelesaiannya adalah ...","c":["(2, 6)","(3, 5)","(5, 3)","(4, 4)"],"a":1,"e":"Kurangkan persamaan kedua dari pertama: x = 3. Substitusi ke x + y = 8 memberi y = 5. Pemeriksaan: 2(3)+5=11 dan 3+5=8."},{"q":"Jika dua persamaan setelah eliminasi menghasilkan 0 = 5, kesimpulan sistem adalah ...","c":["Memiliki satu penyelesaian","Memiliki tak hingga banyak penyelesaian","Tidak memiliki penyelesaian","Penyelesaiannya x = 0 dan y = 5"],"a":2,"e":"Pernyataan 0 = 5 merupakan kontradiksi, sehingga tidak ada pasangan yang memenuhi kedua persamaan."},{"q":"Dari sistem 3x + y = 14 dan x + y = 6, nilai x yang diperoleh dengan eliminasi adalah ...","c":["2","3","4","5"],"a":2,"e":"Kurangkan persamaan kedua dari pertama: 2x = 8, sehingga x = 4."}],hots=[{"q":"Dua persamaan adalah 4x + 3y = 18 dan 2x − 3y = 0. Langkah eliminasi yang paling efisien untuk menghilangkan y adalah ...","c":["Menjumlahkan kedua persamaan secara langsung","Mengurangkan persamaan kedua dari pertama","Mengalikan kedua persamaan dengan 3","Membagi persamaan pertama dengan 4"],"a":0,"e":"Koefisien y adalah 3 dan −3. Penjumlahan langsung menghasilkan 6x = 18."},{"q":"Siswa ingin menghilangkan x dari 2x + 3y = 12 dan 3x + 2y = 13. Ia mengalikan persamaan pertama dengan 3 dan persamaan kedua dengan 2. Operasi berikutnya yang tepat adalah ...","c":["Menjumlahkan hasil agar x hilang","Mengurangkan hasil agar koefisien x menjadi sama","Membagi kedua hasil dengan 3","Mengganti y dengan x"],"a":1,"e":"Koefisien x menjadi 6 pada kedua persamaan. Pengurangan menghilangkan 6x."},{"q":"Dari sistem 2x + 3y = 13 dan x + y = 5, diperoleh y = 3 melalui eliminasi. Nilai x dan pemeriksaan yang benar adalah ...","c":["x = 1; 2(1)+3(3)=11 dan 1+3=4","x = 2; 2(2)+3(3)=13 dan 2+3=5","x = 3; 2(3)+3(3)=15 dan 3+3=6","x = 4; 2(4)+3(3)=17 dan 4+3=7"],"a":1,"e":"Dari x + 3 = 5 diperoleh x = 2. Pemeriksaan: 4+9=13 dan 2+3=5."},{"q":"Sistem 2x + 4y = 12 dan x + 2y = 6 diselesaikan dengan eliminasi. Kesimpulan yang tepat adalah ...","c":["Tidak ada penyelesaian","Tepat satu penyelesaian","Tak hingga banyak penyelesaian karena persamaan pertama dua kali persamaan kedua","Penyelesaiannya hanya (0,0)"],"a":2,"e":"Persamaan pertama adalah dua kali persamaan kedua. Keduanya setara sehingga terdapat tak hingga banyak pasangan penyelesaian."},{"q":"Dua persamaan 2x + y = 7 dan 4x + 2y = 15 menghasilkan apa jika persamaan pertama dikalikan 2 lalu dikurangkan dari persamaan kedua?","c":["0 = 1, sehingga tidak ada penyelesaian","0 = 0, sehingga satu penyelesaian","2x = 1, sehingga x = 1/2","2y = 1, sehingga y = 1/2"],"a":0,"e":"Dua kali persamaan pertama adalah 4x + 2y = 14. Kurangkan dari persamaan kedua: 0 = 1, kontradiksi."}];
+ function buildQuestion(item,index,container,kind){const el=document.createElement('article');el.className='question-card';el.innerHTML=`<div class="meta"><span>${kind} ${index+1}</span><span>Pilih satu jawaban</span></div><h3>${item.q}</h3><div class="choice-list">${item.c.map((c,j)=>`<button class="choice" type="button" aria-pressed="false">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="actions"><button type="button" class="btn ghost check">Periksa jawaban</button><button type="button" class="btn ghost retry">Coba lagi</button></div><div class="feedback" aria-live="polite"></div><div class="explain hidden"></div>`;container.appendChild(el);let selected=null;const buttons=[...el.querySelectorAll('.choice')],fb=el.querySelector('.feedback'),ex=el.querySelector('.explain');buttons.forEach((b,j)=>b.addEventListener('click',()=>{selected=j;buttons.forEach((x,k)=>{x.classList.toggle('selected',k===j);x.setAttribute('aria-pressed',String(k===j));x.classList.remove('correct','incorrect')});fb.textContent='Pilihan tersimpan. Tekan Periksa jawaban untuk melihat umpan balik.';fb.className='feedback';ex.classList.add('hidden')}));el.querySelector('.check').addEventListener('click',()=>{if(selected===null){fb.textContent='Pilih satu jawaban terlebih dahulu.';fb.className='feedback try';return}buttons.forEach((b,j)=>{b.classList.remove('correct','incorrect');if(j===selected)b.classList.add(j===item.a?'correct':'incorrect')});fb.textContent=selected===item.a?'Tepat! Jawabanmu benar.':'Belum tepat. Periksa setiap anggota domain dan gunakan aturan hubungan untuk menyelesaikan masalah.';fb.className='feedback '+(selected===item.a?'good':'try');ex.textContent='Kunci jawaban: '+item.c[item.a]+'. Pembahasan: '+item.e;ex.classList.remove('hidden')});el.querySelector('.retry').addEventListener('click',()=>{selected=null;buttons.forEach(b=>{b.classList.remove('selected','correct','incorrect');b.setAttribute('aria-pressed','false')});fb.textContent='Silakan pilih jawaban lagi.';fb.className='feedback';ex.classList.add('hidden')})}
+ const practiceRoot=document.getElementById('practice');practices.forEach((q,i)=>buildQuestion(q,i,practiceRoot,'Aktivitas'));
+ const quizRoot=document.getElementById('quiz');let state=[];function renderQuiz(){quizRoot.innerHTML='';state=questions.map(()=>({selected:null,checked:false}));questions.forEach((q,i)=>{const el=document.createElement('article');el.className='question-card card';el.innerHTML=`<div class="meta"><span>${q.cat}</span><span>Soal ${i+1} dari ${questions.length}</span></div><h3>${q.q}</h3><div class="choice-list">${q.c.map((c,j)=>`<button type="button" class="choice" aria-pressed="false">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="actions"><button class="btn ghost check" type="button">Periksa jawaban</button></div><div class="feedback" aria-live="polite"></div><div class="explain hidden"></div>`;quizRoot.appendChild(el);const st=state[i],bs=[...el.querySelectorAll('.choice')],fb=el.querySelector('.feedback'),ex=el.querySelector('.explain');bs.forEach((b,j)=>b.addEventListener('click',()=>{st.selected=j;st.checked=false;bs.forEach((x,k)=>{x.classList.toggle('selected',j===k);x.classList.remove('correct','incorrect');x.setAttribute('aria-pressed',String(j===k))});fb.textContent='Pilihan diperbarui. Periksa kembali jawabanmu.';fb.className='feedback';ex.classList.add('hidden');progress()}));el.querySelector('.check').addEventListener('click',()=>{if(st.selected===null){fb.textContent='Pilih satu jawaban sebelum memeriksa.';fb.className='feedback try';return}st.checked=true;bs.forEach((b,j)=>{b.classList.remove('correct','incorrect');if(j===st.selected)b.classList.add(j===q.a?'correct':'incorrect')});fb.textContent=st.selected===q.a?'Benar! Kamu mengidentifikasi persamaan garis lurus serta menyelesaikan masalah hubungan dua variabel dengan tepat.':'Belum tepat. Baca pembahasan dan periksa kembali anggota dan pasangan fungsi.';fb.className='feedback '+(st.selected===q.a?'good':'try');ex.textContent='Kunci jawaban: '+q.c[q.a]+'. Pembahasan: '+q.e;ex.classList.remove('hidden');progress()})});progress()}
+ function progress(){document.getElementById('quizProgress').style.width=(state.filter(s=>s.checked).length/questions.length*100)+'%'}renderQuiz();
+ document.getElementById('resetQuiz').addEventListener('click',()=>{renderQuiz();document.getElementById('quizResult').classList.add('hidden');document.getElementById('quizNotice').textContent='Evaluasi sudah diatur ulang.'});
+ document.getElementById('finishQuiz').addEventListener('click',()=>{const missing=state.findIndex(s=>!s.checked),notice=document.getElementById('quizNotice'),result=document.getElementById('quizResult');if(missing!==-1){notice.textContent='Periksa jawaban soal '+(missing+1)+' terlebih dahulu.';notice.className='feedback try';quizRoot.children[missing].scrollIntoView({behavior:'smooth',block:'center'});return}const score=state.reduce((sum,s,i)=>sum+(s.selected===questions[i].a?1:0),0),pct=Math.round(score/questions.length*100);result.innerHTML=`<h3>Hasil evaluasi: <span class="result-score">${pct}</span></h3><p>${score} dari ${questions.length} jawaban benar.</p><p>${pct===100?'Luar biasa! Semua jawaban tepat.':pct>=67?'Bagus! Tinjau kembali soal yang belum tepat.':'Terus berlatih membedakan ciri pola bilangan dan memeriksa aturan pembentuknya.'}</p>`;result.classList.remove('hidden');notice.textContent='Hasil berhasil dihitung.';notice.className='feedback good';result.scrollIntoView({behavior:'smooth',block:'center'})});
+ const hotsRoot=document.getElementById('hots');hots.forEach((q,i)=>buildQuestion(q,i,hotsRoot,'HOTS'));
+ document.getElementById('saveReflection').addEventListener('click',()=>{document.getElementById('reflectStatus').textContent='Refleksi tercatat sementara pada halaman ini. Untuk menyimpan permanen, cetak halaman atau salin jawabanmu.';toast('Refleksi tercatat pada halaman ini.')});
+ document.getElementById('clearReflection').addEventListener('click',()=>{['reflect1','reflect2','reflect3'].forEach(id=>document.getElementById(id).value='');document.getElementById('reflectStatus').textContent='Jawaban refleksi telah dikosongkan.'});
+ document.getElementById('restartAll').addEventListener('click',()=>{go(0);toast('Kamu dapat memulai pembelajaran kembali.')});
+})();
+</script></body></html>

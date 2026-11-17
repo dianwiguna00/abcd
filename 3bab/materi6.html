@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101735"><title>Penjumlahan dan Pengurangan Bentuk Aljabar | KELAS BELAJAR</title>
+<style>
+:root{--bg:#080f27;--navy:#101735;--panel:#17234a;--panel2:#1d2d5d;--line:#35477d;--blue:#4da3ff;--cyan:#52e0e0;--purple:#9b78ff;--yellow:#ffd166;--text:#f4f6ff;--muted:#c2cce8;--green:#55d6a2;--red:#ff858e;--radius:22px;--shadow:0 18px 50px #02071880}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#33236c 0,transparent 34%),linear-gradient(135deg,#08132d,#101b42 55%,#25164f);color:var(--text);font:20px/1.6 "Trebuchet MS",Arial,sans-serif;min-height:100vh}button,input,textarea{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}p{color:var(--muted);margin:.45rem 0 1rem}h1,h2,h3{line-height:1.2;margin:0 0 14px}h1{font-size:clamp(34px,5vw,54px)}h2{font-size:clamp(28px,3.4vw,38px)}h3{font-size:25px}.app{display:grid;grid-template-columns:290px minmax(0,1fr);min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;padding:25px 18px;background:#0c1532eF;border-right:1px solid #344575;display:flex;flex-direction:column;gap:20px;z-index:5}.brand{padding:8px 10px 18px;border-bottom:1px solid #344575}.brand-mark{display:inline-grid;place-items:center;width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,var(--blue),var(--purple));font-size:25px;font-weight:900;margin-bottom:12px}.brand strong{display:block;font-size:24px;letter-spacing:.06em}.brand small{display:block;color:var(--cyan);font-size:20px}.nav-label{color:#9eacd4;font-size:20px;font-weight:800;padding:0 10px}.nav{display:grid;gap:10px}.nav button{width:100%;text-align:left;padding:14px 15px;border:1px solid transparent;border-radius:15px;background:transparent;color:var(--muted);font-weight:800;transition:.2s}.nav button:hover{background:#1b2a55}.nav button.active{background:linear-gradient(100deg,#24539b,#553b9b);border-color:#718be0;color:white;box-shadow:0 8px 22px #050a2080}.side-note{margin-top:auto;background:#15234a;border:1px solid #344575;border-radius:16px;padding:15px;color:var(--muted)}.side-note strong{color:var(--yellow)}.main{min-width:0;padding:24px clamp(16px,3vw,42px) 60px;max-width:1500px;width:100%;margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;margin-bottom:24px}.crumb{color:var(--cyan);font-weight:800}.tools{display:flex;gap:10px;flex-wrap:wrap}.tool-btn,.btn{border:1px solid #52679f;border-radius:13px;background:#1a2b59;padding:11px 16px;font-weight:800;min-height:48px}.tool-btn:hover,.btn:hover{filter:brightness(1.15);transform:translateY(-1px)}.btn.primary{background:linear-gradient(100deg,#2378d4,#7454d6);border:0}.btn.yellow{background:var(--yellow);color:#1b2140;border:0}.btn.ghost{background:transparent}.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}.screen{display:none;animation:fade .25s ease}.screen.active{display:block}@keyframes fade{from{opacity:.3;transform:translateY(8px)}to{opacity:1;transform:none}}.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:22px;align-items:center;padding:clamp(24px,4vw,46px);border:1px solid #4b5fa0;border-radius:28px;background:linear-gradient(120deg,#172c5b,#35276d);box-shadow:var(--shadow);overflow:hidden}.eyebrow{color:var(--cyan);font-weight:900;letter-spacing:.09em;text-transform:uppercase;margin-bottom:12px}.hero p{font-size:22px}.hero-art{min-height:230px;display:grid;place-items:center;background:radial-gradient(circle,#526bdc55,transparent 65%);position:relative}.orbit{width:min(260px,80%);aspect-ratio:1;border:3px dashed #8e9de8;border-radius:50%;display:grid;place-items:center;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;width:24px;height:24px;border-radius:50%;background:var(--yellow);box-shadow:0 0 24px #ffd166}.orbit:before{left:5%;top:48%}.orbit:after{right:5%;top:48%;background:var(--cyan)}.orbit strong{font-size:56px;color:white}.pill{display:inline-block;border-radius:99px;padding:7px 14px;background:#243d79;color:#dce8ff;font-weight:800}.grid{display:grid;gap:18px}.two{grid-template-columns:repeat(2,minmax(0,1fr))}.three{grid-template-columns:repeat(3,minmax(0,1fr))}.card{background:linear-gradient(145deg,#18264f,#121e40);border:1px solid #344879;border-radius:var(--radius);padding:22px;box-shadow:0 10px 30px #03091e45}.card h3{color:#fff}.card strong{color:#fff}.section-head{margin:8px 0 24px}.section-head p{max-width:900px;font-size:21px}.callout{border-left:5px solid var(--yellow);background:#26315b;padding:18px 20px;border-radius:0 16px 16px 0;margin:20px 0}.callout p{margin:6px 0 0}.step-list{padding-left:28px;color:var(--muted)}.step-list li{padding:5px 0}.numberline-wrap{padding:22px;background:#101a38;border-radius:18px;border:1px solid #40558d;margin:15px 0}.numberline{display:grid;grid-template-columns:repeat(41,minmax(22px,1fr));gap:4px;position:relative}.numberline:before{content:"";position:absolute;left:5%;right:5%;height:4px;background:#8094d2;top:27px;border-radius:5px}.point{position:relative;z-index:1;display:grid;justify-items:center;gap:10px;color:var(--muted);font-weight:900}.dot{width:18px;height:18px;border-radius:50%;background:var(--blue);border:3px solid #dce9ff}.point.zero .dot{background:var(--yellow);width:24px;height:24px}.point.current .dot{background:var(--green);box-shadow:0 0 0 7px #55d6a233}.sim-controls{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:18px}.sim-controls input{flex:1;min-width:180px;accent-color:var(--cyan)}.big-value{font-size:32px;font-weight:900;color:var(--yellow)}.choice-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:15px 0}.choice{padding:13px 16px;text-align:left;border:1px solid #53699f;background:#1b2c59;border-radius:13px;min-height:54px}.choice:hover:not(:disabled){background:#2a4079}.choice.selected{border:2px solid var(--cyan);background:#214a70}.choice.correct{border:2px solid var(--green);background:#164b48}.choice.incorrect{border:2px solid var(--red);background:#542b49}.feedback{min-height:32px;padding:8px 0;font-weight:800}.feedback.good{color:var(--green)}.feedback.try{color:var(--yellow)}.explain{background:#101a38;border:1px solid #3c5084;border-radius:14px;padding:15px;margin-top:10px;color:var(--muted)}.question-card{margin-bottom:17px}.meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--cyan);font-weight:800}.progress{height:10px;background:#34436e;border-radius:99px;overflow:hidden;margin:15px 0 25px}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--cyan),var(--purple));transition:width .25s}.result-score{font-size:54px;font-weight:900;color:var(--yellow)}.field{width:100%;background:#0e1937;border:1px solid #50649a;color:white;border-radius:14px;padding:14px;min-height:130px;resize:vertical}.field::placeholder{color:#a8b5d7}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.reflection-prompt{padding:15px;border:1px solid #43588c;border-radius:14px;background:#111d3d;margin:12px 0}.muted{color:var(--muted)}.small-note{font-size:20px;color:#aebbe0}.footer{text-align:center;color:#9eacd4;padding:30px 10px 0}.hidden{display:none!important}.toast{position:fixed;bottom:20px;right:20px;background:#1b3760;border:1px solid var(--cyan);padding:14px 18px;border-radius:14px;z-index:20;display:none}.mobile-title{display:none}
+@media(max-width:1000px){.app{grid-template-columns:240px minmax(0,1fr)}.three{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr .6fr}}
+@media(max-width:760px){.app{display:block}.sidebar{position:relative;height:auto;padding:14px;gap:12px;border-right:0;border-bottom:1px solid #344575}.brand{display:flex;align-items:center;gap:12px;padding:0 4px 10px}.brand-mark{margin:0;width:44px;height:44px}.brand strong{font-size:22px}.brand small{font-size:20px}.nav-label,.side-note{display:none}.nav{display:flex;overflow-x:auto;padding-bottom:5px}.nav button{width:auto;min-width:max-content;padding:11px 14px;font-size:20px}.main{padding:16px 14px 42px}.topbar{margin-bottom:16px}.hero{grid-template-columns:1fr}.hero-art{min-height:150px}.two,.three{grid-template-columns:1fr}.choice-list{grid-template-columns:1fr}.tools{width:100%}.tool-btn{flex:1}.numberline-wrap{overflow-x:auto}.numberline{min-width:1100px}}
+@media print{body{background:white!important;color:#111!important;font-size:20px}.sidebar,.topbar,.actions,.tools,.nav,.footer{display:none!important}.app{display:block}.main{padding:0;max-width:none}.screen{display:block!important;break-inside:avoid}.card,.hero,.callout,.numberline-wrap{background:white!important;color:#111!important;border:1px solid #777!important;box-shadow:none!important}.card p,.hero p,.section-head p,.callout p,.step-list,.muted{color:#222!important}.choice{background:white!important;color:#111!important;border:1px solid #777!important}.screen:not(.active){display:block!important}.field{border:1px solid #777;color:#111}.hero-art{display:none}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+ <div class="brand"><div class="brand-mark">KB</div><div><strong>KELAS BELAJAR</strong><small>MPI MATEMATIKA SMP</small></div></div>
+ <div class="nav-label">MENU PEMBELAJARAN</div>
+ <nav class="nav" aria-label="Menu pembelajaran">
+  <button class="active" data-screen="0">01 · Tujuan Pembelajaran</button>
+  <button data-screen="1">02 · Materi &amp; Simulasi</button>
+  <button data-screen="2">03 · Soal Interaktif</button>
+  <button data-screen="3">04 · Refleksi</button>
+ </nav>
+ <div class="side-note"><strong>Strategi belajar</strong><br>Amati contoh → pahami konsep → coba sendiri → evaluasi pemahaman.</div>
+</aside>
+<main class="main">
+ <div class="topbar"><div class="crumb" id="crumb">KELAS BELAJAR / TUJUAN PEMBELAJARAN</div><div class="tools"><button class="tool-btn" id="fullscreen">⛶ Layar penuh</button><button class="tool-btn" id="print">▤ Cetak</button></div></div>
+
+
+ <section class="screen active" id="screen-0">
+  <div class="hero">
+   <div><span class="pill">MATEMATIKA SMP · ALJABAR</span><p class="eyebrow">Menggabungkan suku sejenis dan sifat distributif</p>
+    <h1>Penjumlahan dan Pengurangan Bentuk Aljabar</h1>
+    <p>Gabungkan suku-suku sejenis dan gunakan sifat distributif untuk memperoleh bentuk paling sederhana.</p>
+    <button class="btn yellow" data-go="1">Mulai belajar →</button></div>
+   <div class="hero-art"><svg viewBox="0 0 320 230" class="svg-fluid" role="img" aria-label="Ilustrasi penjumlahan dan pengurangan bentuk aljabar">
+    <rect x="22" y="42" width="276" height="142" rx="20" fill="#1d2d5d" stroke="#52e0e0" stroke-width="3"/>
+    <text x="160" y="88" fill="#ffd166" font-size="27" text-anchor="middle" font-weight="bold">3x + 2x − 4</text>
+    <path d="M160 102 L160 133" stroke="#52e0e0" stroke-width="4" stroke-linecap="round"/>
+    <path d="M149 123 L160 136 L171 123" fill="none" stroke="#52e0e0" stroke-width="4" stroke-linecap="round"/>
+    <text x="160" y="165" fill="#fff" font-size="25" text-anchor="middle">(3x + 2) + (4x + 5) = 7x + 7</text></svg></div>
+  </div>
+  <section class="card" style="margin-top:20px">
+   <p class="eyebrow">SEBELUM MEMULAI · AMATI CONTOH</p><h2>💡 Apersepsi: Menggabungkan Jumlah Barang</h2>
+   <p>Dua kotak pertama masing-masing berisi x pensil dan kotak berikutnya berisi 3x pensil. Jika semua pensil digabung, jumlahnya ditulis 2x + 3x = 5x. Jika kemudian 2x pensil dibagikan, sisa pensil dinyatakan 5x − 2x = 3x. Penjumlahan dan pengurangan dapat dilakukan langsung pada suku sejenis.</p>
+   <div class="callout"><strong>Perhatikan model penjumlahan dan pengurangan</strong><div class="grid three" style="margin-top:12px">
+    <div class="card"><strong>Jumlah pensil</strong><div class="big-value">2x + 3x</div></div>
+    <div class="card"><strong>Gabungkan suku</strong><div class="big-value">(2 + 3)x</div></div>
+    <div class="card"><strong>Jumlah akhir</strong><div class="big-value">5x</div></div>
+   </div><p>Pada pengurangan, koefisien dikurangkan. Bagian variabel dan pangkat yang sama tetap dipertahankan.</p></div>
+  </section>
+  <div class="grid two" style="margin-top:20px">
+   <article class="card"><h3>🎯 Tujuan pembelajaran</h3><p>Melalui simulasi dan latihan interaktif, peserta didik mampu menyelesaikan operasi penjumlahan dan pengurangan bentuk aljabar dengan benar.</p><p>Secara khusus, peserta didik diharapkan mampu:</p>
+    <ol class="step-list"><li>Mengenali suku sejenis yang dapat dijumlahkan atau dikurangkan.</li><li>Menjumlahkan bentuk aljabar dengan menggabungkan koefisien suku sejenis.</li><li>Mengurangkan bentuk aljabar dengan memperhatikan tanda setiap suku.</li><li>Menyelesaikan operasi penjumlahan dan pengurangan yang memuat tanda kurung.</li><li>Menerapkan operasi penjumlahan dan pengurangan bentuk aljabar pada masalah kontekstual.</li></ol></article>
+   <article class="card"><h3>🧭 Cara menggunakan MPI</h3><ol class="step-list"><li>Amati model visual penggabungan dan pengurangan kelompok benda.</li><li>Pelajari aturan penjumlahan dan pengurangan suku sejenis.</li><li>Gunakan simulasi untuk menyelesaikan penjumlahan dan pengurangan bentuk aljabar.</li><li>Kerjakan aktivitas pemahaman, evaluasi, dan HOTS.</li><li>Baca umpan balik dan pembahasan setelah memeriksa jawaban.</li></ol></article>
+  </div>
+  <article class="card" style="margin-top:20px"><h3>🌍 Manfaat dalam kehidupan sehari-hari</h3><p>Operasi bentuk aljabar dapat digunakan untuk menghitung gabungan jumlah barang, perubahan persediaan, serta ukuran yang dinyatakan dengan variabel.</p>
+   <ol class="step-list"><li><strong>Koperasi:</strong> menjumlahkan persediaan barang dari beberapa kotak dengan isi yang dinyatakan menggunakan variabel.</li><li><strong>Persediaan:</strong> menghitung sisa barang setelah sebagian dibagikan atau terjual.</li><li><strong>Tabungan:</strong> menyatakan gabungan setoran dan pengambilan uang.</li><li><strong>Geometri:</strong> menggabungkan atau mengurangkan ekspresi panjang sisi.</li></ol>
+  </article>
+  <div class="callout"><strong>Ingat langkah utamanya!</strong><p>Jumlahkan atau kurangkan koefisien pada suku sejenis. Saat mengurangkan bentuk dalam tanda kurung, ubah tanda setiap suku di dalam kurung.</p></div>
+  <div class="actions"><button class="btn primary" data-go="1">Lanjut ke Materi &amp; Simulasi →</button></div>
+ </section>
+
+
+<section class="screen" id="screen-1">
+  <div class="section-head"><p class="eyebrow">BAGIAN 02 · PAHAMI KONSEP</p><h2>Penjumlahan dan Pengurangan Bentuk Aljabar</h2><p>Gabungkan suku sejenis dan gunakan sifat distributif untuk menulis bentuk yang setara dan lebih sederhana.</p></div>
+  <article class="card"><h3>📘 1. Penjumlahan bentuk aljabar</h3><p>Penjumlahan bentuk aljabar dilakukan dengan menggabungkan suku-suku sejenis. Jumlahkan koefisiennya, sedangkan variabel dan pangkatnya tetap.</p>
+   <div class="callout"><strong>Contoh: (3x + 2) + (4x + 5)</strong><ol class="step-list"><li>Hilangkan tanda kurung: 3x + 2 + 4x + 5.</li><li>Kelompokkan suku sejenis: (3x + 4x) + (2 + 5).</li><li>Jumlahkan: 7x + 7.</li></ol><div class="big-value">Hasil = 7x + 7</div></div>
+  </article>
+  <article class="card" style="margin-top:18px"><h3>✍️ 2. Pengurangan bentuk aljabar</h3><p>Pengurangan dilakukan dengan mengurangkan suku sejenis. Jika terdapat tanda kurung yang didahului tanda minus, ubah tanda semua suku di dalam kurung.</p><div class="callout"><strong>Contoh: (6a + 4) − (2a + 1)</strong><ol class="step-list"><li>Ubah tanda suku di dalam kurung kedua: 6a + 4 − 2a − 1.</li><li>Kelompokkan suku sejenis: (6a − 2a) + (4 − 1).</li><li>Hitung: 4a + 3.</li></ol><div class="big-value">Hasil = 4a + 3</div></div></article>
+  <article class="card" style="margin-top:18px"><h3>🔢 3. Aturan tanda pada pengurangan</h3><p>Ketika tanda minus berada di depan tanda kurung, setiap tanda suku di dalam kurung berubah. Hal ini penting agar hasil pengurangan tepat.</p><div class="callout"><strong>Contoh: 5x − (2x − 3)</strong><ol class="step-list"><li>Ubah tanda di dalam kurung: 5x − 2x + 3.</li><li>Gabungkan suku x: (5 − 2)x + 3.</li><li>Hasilnya 3x + 3.</li></ol><div class="big-value">5x − (2x − 3) = 3x + 3</div></div></article>
+  <article class="card" style="margin-top:18px"><h3>🧮 4. Operasi gabungan penjumlahan dan pengurangan</h3><p>Kerjakan tanda kurung terlebih dahulu, kemudian kelompokkan suku-suku sejenis. Perhatikan tanda positif dan negatif pada setiap suku.</p><div class="callout"><strong>Contoh: (4p + 3) + (2p − 5) − (p + 1)</strong><ol class="step-list"><li>Hilangkan kurung dengan memperhatikan tanda: 4p + 3 + 2p − 5 − p − 1.</li><li>Kelompokkan: (4p + 2p − p) + (3 − 5 − 1).</li><li>Hitung koefisien dan konstanta: 5p − 3.</li></ol><div class="big-value">Hasil = 5p − 3</div></div></article>
+  <article class="card" style="margin-top:18px"><h3>🎮 5. Simulasi Interaktif: Penjumlahan dan Pengurangan</h3><p>Pilih operasi, lalu amati perubahan bentuk aljabar dan pengelompokan suku sejenis.</p>
+   <label for="expressionSelect"><strong>Pilih contoh operasi</strong></label><select id="expressionSelect" class="field" style="min-height:58px">
+    <option value="0">(3x + 2) + (4x + 5)</option><option value="1">(7a − 3) + (2a + 6)</option><option value="2">(6x + 4) − (2x + 1)</option><option value="3">5y − (2y − 3)</option><option value="4">(4p + 3) + (2p − 5) − (p + 1)</option><option value="5">(8m − 2n) − (3m + 4n)</option>
+   </select>
+   <div class="grid two" style="margin-top:15px;display:none">
+    <div class="callout"><label for="valueA"><strong>Koefisien atau faktor (tidak perlu diubah)</strong></label><input id="valueA" class="field" type="number" value="4" step="1" style="min-height:58px"><p id="labelA">Pilih bentuk aljabar</p></div>
+    <div class="callout"><label for="valueB"><strong>Kontrol tambahan</strong></label><input id="valueB" class="field" type="number" value="2" step="1" style="min-height:58px"><p id="labelB">Tidak digunakan</p></div>
+   </div>
+   <div class="callout"><p><strong>Bentuk operasi</strong></p><div class="big-value" id="substitutedExpression">3x + 2x − 4</div><p><strong>Hasil operasi</strong></p><div class="big-value" id="substitutionResult">5x − 4</div><p id="substitutionSteps">Langkah: (3 + 2)x − 4 = 5x − 4</p></div>
+   <div class="actions"><button class="btn primary" id="calculateSubstitution">Sederhanakan</button><button class="btn ghost" id="resetSubstitution">Atur ulang</button></div>
+  </article>
+  <div class="actions"><button class="btn primary" data-go="2">Lanjut ke Soal Interaktif →</button></div>
+ </section>
+
+<section class="screen" id="screen-2">
+  <div class="section-head"><p class="eyebrow">BAGIAN 03 · LATIHAN DAN TANTANGAN</p><h2>Soal Interaktif: Penjumlahan dan Pengurangan Bentuk Aljabar</h2><p>Jawab soal tentang suku sejenis dan sifat distributif. Setelah memeriksa, baca umpan balik dan pembahasannya.</p></div>
+  <div class="card"><div class="meta"><span>AKTIVITAS PEMAHAMAN</span><span>3 soal · masing-masing 4 pilihan</span></div><div id="practice"></div></div>
+  <div class="card" style="margin-top:18px"><div class="meta"><span>EVALUASI PEMBELAJARAN</span><span>6 soal</span></div><div class="progress"><span id="quizProgress"></span></div><div id="quiz"></div><div class="actions"><button class="btn primary" id="finishQuiz">Lihat hasil evaluasi</button><button class="btn ghost" id="resetQuiz">Ulangi evaluasi</button></div><p class="feedback" id="quizNotice" aria-live="polite"></p><div id="quizResult" class="callout hidden" aria-live="polite"></div></div>
+  <div class="card" style="margin-top:18px"><div class="meta"><span>TANTANGAN HOTS</span><span>5 soal pilihan ganda · 4 opsi</span></div><p>Analisis setiap situasi, pilih satu dari empat jawaban, lalu tekan Periksa jawaban untuk melihat umpan balik dan cara penyelesaiannya.</p><div id="hots"></div></div>
+  <div class="actions"><button class="btn ghost" data-go="1">← Kembali ke Materi</button><button class="btn primary" data-go="3">Lanjut ke Refleksi →</button></div>
+ </section>
+
+
+ <section class="screen" id="screen-3">
+  <div class="section-head"><p class="eyebrow">BAGIAN 04 · PIKIRKAN KEMBALI</p><h2>Refleksi Pembelajaran</h2><p>Renungkan langkah penjumlahan dan pengurangan bentuk aljabar serta ketelitian menjaga tanda.</p></div>
+  <div class="grid two">
+   <article class="card"><h3>💡 Coba jelaskan dengan kata-katamu</h3><div class="reflection-prompt"><strong>1. Mengapa suku sejenis dapat dijumlahkan atau dikurangkan?</strong></div><textarea class="field" id="reflect1" placeholder="Tuliskan jawabanmu di sini..."></textarea><div class="reflection-prompt"><strong>2. Apa yang terjadi pada tanda setiap suku ketika mengurangkan bentuk dalam tanda kurung?</strong></div><textarea class="field" id="reflect2" placeholder="Tuliskan jawabanmu di sini..."></textarea><div class="reflection-prompt"><strong>3. Sederhanakan (7x − 3) − (2x + 4) + (x + 1). Tuliskan setiap langkahnya.</strong></div><textarea class="field" id="reflect3" placeholder="Tuliskan cara dan hasil perhitunganmu..."></textarea><div class="actions"><button class="btn primary" id="saveReflection">Simpan refleksi di halaman ini</button><button class="btn ghost" id="clearReflection">Hapus jawaban</button></div><p class="small-note" id="reflectStatus" aria-live="polite">Jawaban refleksi tidak dikirim ke server.</p></article>
+   <article class="card"><h3>✅ Cek pemahaman diri</h3><p>Berikan tanda centang pada pernyataan yang sudah dapat kamu lakukan.</p><label><input type="checkbox"> Saya dapat mengenali suku-suku sejenis.</label><br><br><label><input type="checkbox"> Saya dapat menjumlahkan bentuk aljabar dengan benar.</label><br><br><label><input type="checkbox"> Saya dapat mengurangkan bentuk aljabar dengan memperhatikan perubahan tanda.</label><br><br><label><input type="checkbox"> Saya dapat menyelesaikan masalah kontekstual dengan operasi penjumlahan dan pengurangan bentuk aljabar.</label><div class="callout"><strong>Pesan belajar</strong><p>Saat mengurangkan bentuk dalam kurung, ubah tanda setiap suku di dalam kurung sebelum menggabungkan suku sejenis.</p></div></article>
+  </div>
+  <div class="actions"><button class="btn ghost" data-go="2">← Kembali ke Soal</button><button class="btn yellow" id="restartAll">Ulangi dari awal ↺</button></div>
+ </section>
+
+ <div class="footer">KELAS BELAJAR · Amati · Pahami · Coba · Refleksi</div>
+</main>
+</div><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(()=>{
+ const screens=[...document.querySelectorAll('.screen')],nav=[...document.querySelectorAll('[data-screen]')],crumb=document.getElementById('crumb');
+ const names=['TUJUAN PEMBELAJARAN','MATERI & SIMULASI','SOAL INTERAKTIF','REFLEKSI'];
+ function go(n){n=Math.max(0,Math.min(3,Number(n)));screens.forEach((s,i)=>s.classList.toggle('active',i===n));nav.forEach((b,i)=>{b.classList.toggle('active',i===n);if(i===n)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current')});crumb.textContent='KELAS BELAJAR / '+names[n];window.scrollTo({top:0,behavior:'smooth'});}
+ nav.forEach(b=>b.addEventListener('click',()=>go(b.dataset.screen)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
+ document.getElementById('fullscreen').addEventListener('click',async()=>{try{if(!document.fullscreenElement)await document.documentElement.requestFullscreen();else await document.exitFullscreen()}catch(e){toast('Mode layar penuh tidak didukung pada browser ini.')}});
+ document.getElementById('print').addEventListener('click',()=>window.print());
+ function toast(t){const el=document.getElementById('toast');el.textContent=t;el.style.display='block';setTimeout(()=>el.style.display='none',2600)}
+
+
+
+
+ // Simulasi penjumlahan dan pengurangan bentuk aljabar.
+ const expressionSelect=document.getElementById('expressionSelect');
+ const valueA=document.getElementById('valueA'),valueB=document.getElementById('valueB');
+ const operationCases=[
+  {expr:'(3x + 2) + (4x + 5)',result:'7x + 7',steps:'Hilangkan kurung: 3x + 2 + 4x + 5. Gabungkan: (3 + 4)x + (2 + 5) = 7x + 7.'},
+  {expr:'(7a − 3) + (2a + 6)',result:'9a + 3',steps:'Hilangkan kurung: 7a − 3 + 2a + 6. Gabungkan: (7 + 2)a + (−3 + 6) = 9a + 3.'},
+  {expr:'(6x + 4) − (2x + 1)',result:'4x + 3',steps:'Ubah tanda kurung kedua: 6x + 4 − 2x − 1. Gabungkan: (6 − 2)x + (4 − 1) = 4x + 3.'},
+  {expr:'5y − (2y − 3)',result:'3y + 3',steps:'Ubah tanda di dalam kurung: 5y − 2y + 3. Gabungkan: (5 − 2)y + 3 = 3y + 3.'},
+  {expr:'(4p + 3) + (2p − 5) − (p + 1)',result:'5p − 3',steps:'Hilangkan kurung: 4p + 3 + 2p − 5 − p − 1. Gabungkan: (4 + 2 − 1)p + (3 − 5 − 1) = 5p − 3.'},
+  {expr:'(8m − 2n) − (3m + 4n)',result:'5m − 6n',steps:'Ubah tanda kurung kedua: 8m − 2n − 3m − 4n. Gabungkan: (8 − 3)m + (−2 − 4)n = 5m − 6n.'}
+ ];
+ function updateSubstitution(){
+  const d=operationCases[Number(expressionSelect.value)];
+  valueA.disabled=true;valueB.disabled=true;
+  document.getElementById('labelA').textContent='Simulasi otomatis';
+  document.getElementById('labelB').textContent='Pilih contoh di atas';
+  document.getElementById('substitutedExpression').textContent=d.expr;
+  document.getElementById('substitutionResult').textContent=d.result;
+  document.getElementById('substitutionSteps').textContent='Pembahasan: '+d.steps;
+ }
+ expressionSelect.addEventListener('change',updateSubstitution);
+ document.getElementById('calculateSubstitution').addEventListener('click',updateSubstitution);
+ document.getElementById('resetSubstitution').addEventListener('click',()=>{expressionSelect.value='0';updateSubstitution()});
+ updateSubstitution();
+
+ const practices=[
+  {q:'Sederhanakan (2x + 3) + (4x + 1).',c:['6x + 4','6x + 2','2x + 4','8x + 4'],a:0,e:'Hilangkan kurung lalu gabungkan suku sejenis: (2x + 4x) + (3 + 1) = 6x + 4.'},
+  {q:'Hasil dari (7a + 5) − (3a + 2) adalah …',c:['10a + 7','4a + 3','4a + 7','10a + 3'],a:1,e:'Ubah tanda kurung kedua: 7a + 5 − 3a − 2 = (7 − 3)a + (5 − 2) = 4a + 3.'},
+  {q:'Sederhanakan 5m − (2m − 4).',c:['3m − 4','7m − 4','3m + 4','7m + 4'],a:2,e:'Tanda di dalam kurung berubah: 5m − 2m + 4 = 3m + 4.'}
+ ];
+ const questions=[
+  {cat:'Penjumlahan',q:'Hasil dari (3x + 4) + (5x − 2) adalah …',c:['8x + 2','8x + 6','2x + 2','8x − 6'],a:0,e:'Gabungkan 3x + 5x = 8x dan 4 − 2 = 2, sehingga 8x + 2.'},
+  {cat:'Pengurangan',q:'Sederhanakan (9a + 7) − (4a + 3).',c:['13a + 10','5a + 4','5a + 10','13a + 4'],a:1,e:'Ubah tanda kurung kedua: 9a + 7 − 4a − 3 = 5a + 4.'},
+  {cat:'Tanda kurung negatif',q:'Bentuk sederhana dari 6p − (2p − 5) adalah …',c:['4p − 5','8p − 5','4p + 5','8p + 5'],a:2,e:'Tanda di dalam kurung berubah: 6p − 2p + 5 = 4p + 5.'},
+  {cat:'Suku berbeda',q:'Sederhanakan (4x + 3y) + (2x − y).',c:['6x + 2y','6xy + 2','2x + 4y','6x + 4y'],a:0,e:'Gabungkan x: 4x + 2x = 6x. Gabungkan y: 3y − y = 2y. Hasil 6x + 2y.'},
+  {cat:'Pengurangan dua variabel',q:'Hasil dari (7m − 2n) − (3m + 5n) adalah …',c:['4m + 3n','10m + 3n','4m − 7n','10m − 7n'],a:2,e:'Ubah tanda kurung kedua: 7m − 2n − 3m − 5n. Hasilnya 4m − 7n.'},
+  {cat:'Kontekstual',q:'Persediaan awal sebuah toko adalah (5x + 8) buku. Toko menerima tambahan (2x + 3) buku. Bentuk aljabar jumlah buku sekarang adalah …',c:['7x + 11','7x + 5','3x + 11','10x + 24'],a:0,e:'Jumlahkan persediaan: (5x + 8) + (2x + 3) = 7x + 11.'}
+ ];
+ const hots=[
+  {q:'Sederhanakan (8x − 3) − (2x + 5) + (x − 4).',c:['7x − 12','7x + 6','11x − 12','5x − 12'],a:0,e:'Hilangkan kurung: 8x − 3 − 2x − 5 + x − 4. Koefisien x: 8 − 2 + 1 = 7. Konstanta: −3 − 5 − 4 = −12. Hasil 7x − 12.'},
+  {q:'Panjang pita merah adalah (4a + 7) cm. Pita biru  (a + 3) cm lebih pendek daripada pita merah. Jika panjang kedua pita dijumlahkan, hasilnya adalah …',c:['8a + 11 cm','7a + 11 cm','7a + 14 cm','9a + 17 cm'],a:1,e:'Pita biru = (4a + 7) − (a + 3) = 3a + 4. Jumlah keduanya = (4a + 7) + (3a + 4) = 7a + 11 cm.'},
+  {q:'Raka menghitung (6m + 4) − (2m − 3) sebagai 4m + 1. Perbaikan yang benar adalah …',c:['4m + 7','8m + 7','4m − 1','8m + 1'],a:0,e:'Pengurangan mengubah tanda di dalam kurung: 6m + 4 − 2m + 3 = 4m + 7.'},
+  {q:'Sebuah wadah berisi (3x + 5) kelereng. Ditambahkan (2x − 1) kelereng, lalu dikeluarkan (x + 2) kelereng. Sisa kelereng adalah …',c:['4x + 2','6x + 2','4x + 4','2x + 2'],a:0,e:'(3x + 5) + (2x − 1) − (x + 2) = 3x + 5 + 2x − 1 − x − 2 = 4x + 2.'},
+  {q:'Sederhanakan (5p − 2q + 6) − (2p + 3q − 4) + (p − q).',c:['4p − 6q + 10','8p − 6q + 2','4p + 2q + 10','4p − 4q + 10'],a:0,e:'Hilangkan kurung: 5p − 2q + 6 − 2p − 3q + 4 + p − q. Gabungkan: (5 − 2 + 1)p + (−2 − 3 − 1)q + (6 + 4) = 4p − 6q + 10.'}
+ ];
+
+ function buildChoiceQuestion(item,index,container,kind){const el=document.createElement('article');el.className='question-card';el.innerHTML=`<div class="meta"><span>${kind} ${index+1}</span><span>Pilih satu jawaban</span></div><h3>${item.q}</h3><div class="choice-list">${item.c.map((c,j)=>`<button class="choice" type="button" aria-pressed="false">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="actions"><button type="button" class="btn ghost check">Periksa jawaban</button><button type="button" class="btn ghost retry">Coba lagi</button></div><div class="feedback" aria-live="polite"></div><div class="explain hidden"></div>`;container.appendChild(el);let selected=null;const buttons=[...el.querySelectorAll('.choice')],feedback=el.querySelector('.feedback'),explain=el.querySelector('.explain');buttons.forEach((b,j)=>b.addEventListener('click',()=>{selected=j;buttons.forEach((x,k)=>{x.classList.toggle('selected',k===j);x.setAttribute('aria-pressed',String(k===j));x.classList.remove('correct','incorrect')});feedback.textContent='Pilihan tersimpan. Tekan Periksa jawaban untuk melihat umpan balik.';feedback.className='feedback';explain.classList.add('hidden')}));el.querySelector('.check').addEventListener('click',()=>{if(selected===null){feedback.textContent='Pilih satu jawaban terlebih dahulu.';feedback.className='feedback try';return}buttons.forEach((b,j)=>{b.classList.remove('correct','incorrect');if(j===selected)b.classList.add(j===item.a?'correct':'incorrect')});feedback.textContent=selected===item.a?'Tepat! Jawabanmu benar.':'Belum tepat. Tidak apa-apa, pelajari kembali alasannya.';feedback.className='feedback '+(selected===item.a?'good':'try');explain.textContent='Pembahasan dan cara penyelesaian: '+item.e;explain.classList.remove('hidden')});el.querySelector('.retry').addEventListener('click',()=>{selected=null;buttons.forEach(b=>{b.classList.remove('selected','correct','incorrect');b.setAttribute('aria-pressed','false')});feedback.textContent='Silakan pilih jawaban lagi.';feedback.className='feedback';explain.classList.add('hidden')});return {getSelected:()=>selected};}
+ const practiceRoot=document.getElementById('practice');practices.forEach((q,i)=>buildChoiceQuestion(q,i,practiceRoot,'Aktivitas'));
+ // Evaluation
+ const quizRoot=document.getElementById('quiz');let quizState=[];
+ function renderQuiz(){quizRoot.innerHTML='';quizState=questions.map(()=>({selected:null,checked:false}));questions.forEach((q,i)=>{const el=document.createElement('article');el.className='question-card card';el.innerHTML=`<div class="meta"><span>${q.cat}</span><span>Soal ${i+1} dari ${questions.length}</span></div><h3>${q.q}</h3><div class="choice-list">${q.c.map((c,j)=>`<button type="button" class="choice" aria-pressed="false">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="actions"><button class="btn ghost check" type="button">Periksa jawaban</button></div><div class="feedback" aria-live="polite"></div><div class="explain hidden"></div>`;quizRoot.appendChild(el);const st=quizState[i],bs=[...el.querySelectorAll('.choice')],fb=el.querySelector('.feedback'),ex=el.querySelector('.explain');bs.forEach((b,j)=>b.addEventListener('click',()=>{st.selected=j;st.checked=false;bs.forEach((x,k)=>{x.classList.toggle('selected',j===k);x.classList.remove('correct','incorrect');x.setAttribute('aria-pressed',String(j===k))});fb.textContent='Pilihan diperbarui. Periksa kembali jawabanmu.';fb.className='feedback';ex.classList.add('hidden');updateProgress()}));el.querySelector('.check').addEventListener('click',()=>{if(st.selected===null){fb.textContent='Pilih satu jawaban sebelum memeriksa.';fb.className='feedback try';return}st.checked=true;bs.forEach((b,j)=>{b.classList.remove('correct','incorrect');if(j===st.selected)b.classList.add(j===q.a?'correct':'incorrect')});fb.textContent=st.selected===q.a?'Benar! Kamu memahami konsep ini.':'Belum tepat. Baca pembahasan, lalu ubah pilihan jika diperlukan.';fb.className='feedback '+(st.selected===q.a?'good':'try');ex.textContent='Pembahasan: '+q.e;ex.classList.remove('hidden');updateProgress()})});updateProgress()}
+ function updateProgress(){const done=quizState.filter(s=>s.checked).length;document.getElementById('quizProgress').style.width=(done/questions.length*100)+'%'}
+ renderQuiz();document.getElementById('resetQuiz').addEventListener('click',()=>{renderQuiz();document.getElementById('quizResult').classList.add('hidden');document.getElementById('quizNotice').textContent='Evaluasi sudah diatur ulang.'});
+ document.getElementById('finishQuiz').addEventListener('click',()=>{const missing=quizState.findIndex(s=>!s.checked);const notice=document.getElementById('quizNotice'),result=document.getElementById('quizResult');if(missing!==-1){notice.textContent=`Periksa jawaban soal ${missing+1} terlebih dahulu.`;notice.className='feedback try';quizRoot.children[missing].scrollIntoView({behavior:'smooth',block:'center'});return}const score=quizState.reduce((sum,s,i)=>sum+(s.selected===questions[i].a?1:0),0),pct=Math.round(score/questions.length*100);const weak=[...new Set(questions.filter((q,i)=>quizState[i].selected!==q.a).map(q=>q.cat))];result.innerHTML=`<h3>Hasil evaluasi: <span class="result-score">${pct}</span></h3><p>${score} dari ${questions.length} jawaban benar.</p><p>${pct===100?'Luar biasa! Semua jawaban tepat.':pct>=67?'Bagus! Kamu sudah memahami sebagian besar materi. Pelajari kembali soal yang belum tepat.':'Terus berlatih. Baca ulang aturan tanda pada pengurangan dan cara menggabungkan suku sejenis.'}</p><p><strong>Bagian yang perlu ditinjau:</strong> ${weak.length?weak.join(', '):'Tidak ada. Semua kategori terjawab benar.'}</p>`;result.classList.remove('hidden');notice.textContent='Hasil berhasil dihitung berdasarkan pilihan terakhir yang sudah diperiksa.';notice.className='feedback good';result.scrollIntoView({behavior:'smooth',block:'center'})});
+ const hotsRoot=document.getElementById('hots');hots.forEach((q,i)=>buildChoiceQuestion(q,i,hotsRoot,'HOTS'));
+ document.getElementById('saveReflection').addEventListener('click',()=>{document.getElementById('reflectStatus').textContent='Refleksi sudah tersimpan sementara pada halaman ini. Untuk menyimpan permanen, cetak halaman atau salin jawabanmu.';toast('Refleksi tercatat pada halaman ini.')});document.getElementById('clearReflection').addEventListener('click',()=>{['reflect1','reflect2','reflect3'].forEach(id=>document.getElementById(id).value='');document.getElementById('reflectStatus').textContent='Jawaban refleksi telah dikosongkan.'});document.getElementById('restartAll').addEventListener('click',()=>{go(0);toast('Kamu dapat memulai pembelajaran kembali.')});
+})();
+</script>
+</body></html>

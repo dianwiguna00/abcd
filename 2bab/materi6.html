@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101735"><title>Perkalian dan Pembagian Pecahan | KELAS BELAJAR</title>
+<style>
+:root{--bg:#080f27;--navy:#101735;--panel:#17234a;--panel2:#1d2d5d;--line:#35477d;--blue:#4da3ff;--cyan:#52e0e0;--purple:#9b78ff;--yellow:#ffd166;--text:#f4f6ff;--muted:#c2cce8;--green:#55d6a2;--red:#ff858e;--radius:22px;--shadow:0 18px 50px #02071880}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#33236c 0,transparent 34%),linear-gradient(135deg,#08132d,#101b42 55%,#25164f);color:var(--text);font:20px/1.6 "Trebuchet MS",Arial,sans-serif;min-height:100vh}button,input,textarea{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}p{color:var(--muted);margin:.45rem 0 1rem}h1,h2,h3{line-height:1.2;margin:0 0 14px}h1{font-size:clamp(34px,5vw,54px)}h2{font-size:clamp(28px,3.4vw,38px)}h3{font-size:25px}.app{display:grid;grid-template-columns:290px minmax(0,1fr);min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;padding:25px 18px;background:#0c1532eF;border-right:1px solid #344575;display:flex;flex-direction:column;gap:20px;z-index:5}.brand{padding:8px 10px 18px;border-bottom:1px solid #344575}.brand-mark{display:inline-grid;place-items:center;width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,var(--blue),var(--purple));font-size:25px;font-weight:900;margin-bottom:12px}.brand strong{display:block;font-size:24px;letter-spacing:.06em}.brand small{display:block;color:var(--cyan);font-size:20px}.nav-label{color:#9eacd4;font-size:20px;font-weight:800;padding:0 10px}.nav{display:grid;gap:10px}.nav button{width:100%;text-align:left;padding:14px 15px;border:1px solid transparent;border-radius:15px;background:transparent;color:var(--muted);font-weight:800;transition:.2s}.nav button:hover{background:#1b2a55}.nav button.active{background:linear-gradient(100deg,#24539b,#553b9b);border-color:#718be0;color:white;box-shadow:0 8px 22px #050a2080}.side-note{margin-top:auto;background:#15234a;border:1px solid #344575;border-radius:16px;padding:15px;color:var(--muted)}.side-note strong{color:var(--yellow)}.main{min-width:0;padding:24px clamp(16px,3vw,42px) 60px;max-width:1500px;width:100%;margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;margin-bottom:24px}.crumb{color:var(--cyan);font-weight:800}.tools{display:flex;gap:10px;flex-wrap:wrap}.tool-btn,.btn{border:1px solid #52679f;border-radius:13px;background:#1a2b59;padding:11px 16px;font-weight:800;min-height:48px}.tool-btn:hover,.btn:hover{filter:brightness(1.15);transform:translateY(-1px)}.btn.primary{background:linear-gradient(100deg,#2378d4,#7454d6);border:0}.btn.yellow{background:var(--yellow);color:#1b2140;border:0}.btn.ghost{background:transparent}.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}.screen{display:none;animation:fade .25s ease}.screen.active{display:block}@keyframes fade{from{opacity:.3;transform:translateY(8px)}to{opacity:1;transform:none}}.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:22px;align-items:center;padding:clamp(24px,4vw,46px);border:1px solid #4b5fa0;border-radius:28px;background:linear-gradient(120deg,#172c5b,#35276d);box-shadow:var(--shadow);overflow:hidden}.eyebrow{color:var(--cyan);font-weight:900;letter-spacing:.09em;text-transform:uppercase;margin-bottom:12px}.hero p{font-size:22px}.hero-art{min-height:230px;display:grid;place-items:center;background:radial-gradient(circle,#526bdc55,transparent 65%);position:relative}.orbit{width:min(260px,80%);aspect-ratio:1;border:3px dashed #8e9de8;border-radius:50%;display:grid;place-items:center;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;width:24px;height:24px;border-radius:50%;background:var(--yellow);box-shadow:0 0 24px #ffd166}.orbit:before{left:5%;top:48%}.orbit:after{right:5%;top:48%;background:var(--cyan)}.orbit strong{font-size:56px;color:white}.pill{display:inline-block;border-radius:99px;padding:7px 14px;background:#243d79;color:#dce8ff;font-weight:800}.grid{display:grid;gap:18px}.two{grid-template-columns:repeat(2,minmax(0,1fr))}.three{grid-template-columns:repeat(3,minmax(0,1fr))}.card{background:linear-gradient(145deg,#18264f,#121e40);border:1px solid #344879;border-radius:var(--radius);padding:22px;box-shadow:0 10px 30px #03091e45}.card h3{color:#fff}.card strong{color:#fff}.section-head{margin:8px 0 24px}.section-head p{max-width:900px;font-size:21px}.callout{border-left:5px solid var(--yellow);background:#26315b;padding:18px 20px;border-radius:0 16px 16px 0;margin:20px 0}.callout p{margin:6px 0 0}.step-list{padding-left:28px;color:var(--muted)}.step-list li{padding:5px 0}.numberline-wrap{padding:22px;background:#101a38;border-radius:18px;border:1px solid #40558d;margin:15px 0}.numberline{display:grid;grid-template-columns:repeat(41,minmax(22px,1fr));gap:4px;position:relative}.numberline:before{content:"";position:absolute;left:5%;right:5%;height:4px;background:#8094d2;top:27px;border-radius:5px}.point{position:relative;z-index:1;display:grid;justify-items:center;gap:10px;color:var(--muted);font-weight:900}.dot{width:18px;height:18px;border-radius:50%;background:var(--blue);border:3px solid #dce9ff}.point.zero .dot{background:var(--yellow);width:24px;height:24px}.point.current .dot{background:var(--green);box-shadow:0 0 0 7px #55d6a233}.sim-controls{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:18px}.sim-controls input{flex:1;min-width:180px;accent-color:var(--cyan)}.big-value{font-size:32px;font-weight:900;color:var(--yellow)}.choice-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:15px 0}.choice{padding:13px 16px;text-align:left;border:1px solid #53699f;background:#1b2c59;border-radius:13px;min-height:54px}.choice:hover:not(:disabled){background:#2a4079}.choice.selected{border:2px solid var(--cyan);background:#214a70}.choice.correct{border:2px solid var(--green);background:#164b48}.choice.incorrect{border:2px solid var(--red);background:#542b49}.feedback{min-height:32px;padding:8px 0;font-weight:800}.feedback.good{color:var(--green)}.feedback.try{color:var(--yellow)}.explain{background:#101a38;border:1px solid #3c5084;border-radius:14px;padding:15px;margin-top:10px;color:var(--muted)}.question-card{margin-bottom:17px}.meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--cyan);font-weight:800}.progress{height:10px;background:#34436e;border-radius:99px;overflow:hidden;margin:15px 0 25px}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--cyan),var(--purple));transition:width .25s}.result-score{font-size:54px;font-weight:900;color:var(--yellow)}.field{width:100%;background:#0e1937;border:1px solid #50649a;color:white;border-radius:14px;padding:14px;min-height:130px;resize:vertical}.field::placeholder{color:#a8b5d7}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.reflection-prompt{padding:15px;border:1px solid #43588c;border-radius:14px;background:#111d3d;margin:12px 0}.muted{color:var(--muted)}.small-note{font-size:20px;color:#aebbe0}.footer{text-align:center;color:#9eacd4;padding:30px 10px 0}.hidden{display:none!important}.toast{position:fixed;bottom:20px;right:20px;background:#1b3760;border:1px solid var(--cyan);padding:14px 18px;border-radius:14px;z-index:20;display:none}.mobile-title{display:none}
+@media(max-width:1000px){.app{grid-template-columns:240px minmax(0,1fr)}.three{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr .6fr}}
+@media(max-width:760px){.app{display:block}.sidebar{position:relative;height:auto;padding:14px;gap:12px;border-right:0;border-bottom:1px solid #344575}.brand{display:flex;align-items:center;gap:12px;padding:0 4px 10px}.brand-mark{margin:0;width:44px;height:44px}.brand strong{font-size:22px}.brand small{font-size:20px}.nav-label,.side-note{display:none}.nav{display:flex;overflow-x:auto;padding-bottom:5px}.nav button{width:auto;min-width:max-content;padding:11px 14px;font-size:20px}.main{padding:16px 14px 42px}.topbar{margin-bottom:16px}.hero{grid-template-columns:1fr}.hero-art{min-height:150px}.two,.three{grid-template-columns:1fr}.choice-list{grid-template-columns:1fr}.tools{width:100%}.tool-btn{flex:1}.numberline-wrap{overflow-x:auto}.numberline{min-width:1100px}}
+@media print{body{background:white!important;color:#111!important;font-size:20px}.sidebar,.topbar,.actions,.tools,.nav,.footer{display:none!important}.app{display:block}.main{padding:0;max-width:none}.screen{display:block!important;break-inside:avoid}.card,.hero,.callout,.numberline-wrap{background:white!important;color:#111!important;border:1px solid #777!important;box-shadow:none!important}.card p,.hero p,.section-head p,.callout p,.step-list,.muted{color:#222!important}.choice{background:white!important;color:#111!important;border:1px solid #777!important}.screen:not(.active){display:block!important}.field{border:1px solid #777;color:#111}.hero-art{display:none}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+ <div class="brand"><div class="brand-mark">KB</div><div><strong>KELAS BELAJAR</strong><small>MPI MATEMATIKA SMP</small></div></div>
+ <div class="nav-label">MENU PEMBELAJARAN</div>
+ <nav class="nav" aria-label="Menu pembelajaran">
+  <button class="active" data-screen="0">01 · Tujuan Pembelajaran</button>
+  <button data-screen="1">02 · Materi &amp; Simulasi</button>
+  <button data-screen="2">03 · Soal Interaktif</button>
+  <button data-screen="3">04 · Refleksi</button>
+ </nav>
+ <div class="side-note"><strong>Strategi belajar</strong><br>Amati contoh → pahami konsep → coba sendiri → evaluasi pemahaman.</div>
+</aside>
+<main class="main">
+ <div class="topbar"><div class="crumb" id="crumb">KELAS BELAJAR / TUJUAN PEMBELAJARAN</div><div class="tools"><button class="tool-btn" id="fullscreen">⛶ Layar penuh</button><button class="tool-btn" id="print">▤ Cetak</button></div></div>
+ <section class="screen active" id="screen-0">
+  <div class="hero">
+   <div><span class="pill">MATEMATIKA SMP · BILANGAN</span><p class="eyebrow">Ayo kalikan dan bagikan pecahan</p>
+    <h1>Perkalian dan Pembagian Pecahan</h1>
+    <p>Pelajari cara mengalikan dan membagi pecahan biasa maupun pecahan campuran melalui ilustrasi, langkah hitung, dan simulasi interaktif.</p>
+    <button class="btn yellow" data-go="1">Mulai belajar →</button></div>
+   <div class="hero-art"><svg viewBox="0 0 320 230" class="svg-fluid" role="img" aria-label="Ilustrasi perkalian pecahan">
+    <text x="160" y="28" fill="#ffd166" font-size="20" text-anchor="middle" font-weight="bold">Perkalian pecahan</text>
+    <rect x="32" y="54" width="110" height="62" rx="8" fill="#273b76" stroke="#fff" stroke-width="2"/>
+    <rect x="32" y="54" width="73" height="62" fill="#52e0e0"/>
+    <path d="M68.5 54V116 M105 54V116" stroke="#fff" stroke-width="2"/>
+    <text x="87" y="143" fill="#52e0e0" font-size="20" text-anchor="middle">2/3</text>
+    <text x="160" y="94" fill="#ffd166" font-size="30" text-anchor="middle">×</text>
+    <rect x="178" y="54" width="110" height="62" rx="8" fill="#273b76" stroke="#fff" stroke-width="2"/>
+    <rect x="178" y="54" width="55" height="62" fill="#9b78ff"/>
+    <path d="M233 54V116" stroke="#fff" stroke-width="2"/>
+    <text x="233" y="143" fill="#c5b4ff" font-size="20" text-anchor="middle">1/2</text>
+    <text x="160" y="202" fill="#ffd166" font-size="23" text-anchor="middle" font-weight="bold">2/3 × 1/2 = 1/3</text></svg></div>
+  </div>
+  <section class="card" style="margin-top:20px">
+   <p class="eyebrow">SEBELUM MEMULAI · AMATI ILUSTRASI</p><h2>💡 Apersepsi: Membuat Paket Jus</h2>
+   <p>Satu botol jus berisi 3/4 liter. Untuk membuat satu paket kecil, digunakan 1/2 dari isi botol. Berapa liter jus yang digunakan? Jika tersedia 2 1/2 liter jus dan setiap botol kecil menampung 1/2 liter, berapa botol yang dapat diisi penuh? Kedua situasi tersebut menggunakan perkalian dan pembagian pecahan.</p>
+   <div class="grid two" style="margin-top:16px">
+    <article class="card"><h3>Perkalian sebagai bagian dari bagian</h3>
+     <svg viewBox="0 0 320 126" class="svg-fluid" role="img" aria-label="Setengah dari tiga perempat ditunjukkan sebagai bagian yang diarsir">
+      <rect x="12" y="18" width="296" height="42" rx="7" fill="#273b76" stroke="#fff" stroke-width="2"/>
+      <rect x="12" y="18" width="222" height="42" fill="#52e0e0"/>
+      <path d="M86 18V60 M160 18V60 M234 18V60" stroke="#fff" stroke-width="2"/>
+      <rect x="12" y="70" width="148" height="22" rx="5" fill="#9b78ff" opacity=".95"/>
+      <text x="160" y="119" fill="#ffd166" font-size="20" text-anchor="middle">1/2 × 3/4 = 3/8</text></svg>
+    </article>
+    <article class="card"><h3>Pembagian sebagai banyak kelompok</h3>
+     <svg viewBox="0 0 320 126" class="svg-fluid" role="img" aria-label="Dua liter dibagi menjadi kelompok setengah liter">
+      <rect x="12" y="18" width="296" height="42" rx="7" fill="#273b76" stroke="#fff" stroke-width="2"/>
+      <rect x="12" y="18" width="296" height="42" fill="#9b78ff"/>
+      <path d="M86 18V60 M160 18V60 M234 18V60" stroke="#fff" stroke-width="3"/>
+      <text x="160" y="94" fill="#52e0e0" font-size="20" text-anchor="middle">4 kelompok × 1/2 liter</text>
+      <text x="160" y="120" fill="#ffd166" font-size="20" text-anchor="middle">2 ÷ 1/2 = 4</text></svg>
+    </article>
+   </div>
+   <div class="callout"><strong>Ayo pikirkan!</strong><p>Mengapa perkalian pecahan dilakukan dengan mengalikan pembilang dengan pembilang dan penyebut dengan penyebut? Mengapa pembagian pecahan dapat diubah menjadi perkalian dengan kebalikan pecahan pembagi?</p></div>
+  </section>
+  <div class="grid two" style="margin-top:20px">
+   <article class="card"><h3>🎯 Tujuan pembelajaran</h3><p>Melalui ilustrasi dan latihan interaktif, peserta didik mampu menyelesaikan operasi perkalian dan pembagian bilangan pecahan dalam bentuk pecahan biasa maupun pecahan campuran dengan benar.</p><p>Secara khusus, peserta didik diharapkan mampu:</p>
+    <ol class="step-list"><li>Menjelaskan perkalian pecahan sebagai bagian dari suatu bagian atau pengulangan kelompok.</li><li>Mengalikan pecahan biasa dengan pecahan biasa.</li><li>Membagi pecahan biasa dengan pecahan biasa menggunakan kebalikan pecahan pembagi.</li><li>Mengubah pecahan campuran menjadi pecahan biasa sebelum melakukan operasi.</li><li>Menyelesaikan masalah kontekstual yang melibatkan perkalian dan pembagian pecahan biasa maupun campuran.</li></ol></article>
+   <article class="card"><h3>🧭 Cara menggunakan MPI</h3><ol class="step-list"><li>Amati ilustrasi perkalian dan pembagian pecahan.</li><li>Pelajari aturan operasi pecahan biasa.</li><li>Pelajari cara mengubah pecahan campuran menjadi pecahan biasa.</li><li>Gunakan simulasi untuk mencoba perkalian dan pembagian.</li><li>Kerjakan aktivitas pemahaman, evaluasi, dan HOTS.</li></ol></article>
+  </div>
+  <article class="card" style="margin-top:20px"><h3>🌍 Manfaat dalam kehidupan sehari-hari</h3><p>Perkalian dan pembagian pecahan membantu menghitung bagian dari suatu jumlah, ukuran resep, serta banyak kelompok yang dapat dibentuk.</p>
+   <ol class="step-list"><li><strong>Memasak:</strong> menghitung setengah dari 3/4 cangkir bahan atau menggandakan resep.</li><li><strong>Membagi minuman:</strong> menentukan banyak gelas berukuran 1/4 liter dari persediaan 2 liter.</li><li><strong>Kerajinan:</strong> menghitung panjang potongan pita yang merupakan 2/3 dari panjang semula.</li><li><strong>Persediaan:</strong> menentukan banyak paket dengan isi pecahan kilogram atau liter.</li></ol>
+  </article>
+  <div class="callout"><strong>Ingat!</strong><p>Kalikan pecahan dengan mengalikan pembilang dan penyebut. Untuk pembagian, kalikan pecahan pertama dengan kebalikan pecahan kedua. Ubah pecahan campuran menjadi pecahan biasa sebelum menghitung, lalu sederhanakan hasilnya.</p></div>
+  <div class="actions"><button class="btn primary" data-go="1">Lanjut ke Materi &amp; Simulasi →</button></div>
+ </section>
+<section class="screen" id="screen-1">
+  <div class="section-head"><p class="eyebrow">BAGIAN 02 · PAHAMI KONSEP</p><h2>Perkalian dan Pembagian Bilangan Pecahan</h2><p>Pelajari aturan perkalian dan pembagian pecahan biasa, lalu terapkan pada pecahan campuran dengan mengubahnya menjadi pecahan biasa terlebih dahulu.</p></div>
+  <article class="card"><h3>✖️ 1. Perkalian pecahan biasa</h3>
+   <p>Kalikan pembilang dengan pembilang dan penyebut dengan penyebut. Jika memungkinkan, sederhanakan hasilnya.</p>
+   <div class="callout"><strong>Contoh</strong><div class="big-value">2/3 × 3/5 = 6/15 = 2/5</div><p>Pembilang: 2 × 3 = 6. Penyebut: 3 × 5 = 15. Sederhanakan 6/15 dengan membagi keduanya dengan 3.</p></div>
+   <svg viewBox="0 0 620 150" class="svg-fluid" role="img" aria-label="Model persegi panjang yang menunjukkan dua per tiga dikalikan tiga per lima">
+    <text x="160" y="24" fill="#52e0e0" font-size="20" text-anchor="middle">2/3</text><rect x="25" y="36" width="270" height="75" rx="5" fill="#273b76" stroke="#fff" stroke-width="2"/><rect x="25" y="36" width="180" height="75" fill="#52e0e0" opacity=".8"/>
+    <path d="M115 36V111 M205 36V111 M25 73.5H295" stroke="#fff" stroke-width="2"/>
+    <rect x="25" y="36" width="180" height="75" fill="#9b78ff" opacity=".32"/>
+    <text x="455" y="72" fill="#ffd166" font-size="24" text-anchor="middle">2 × 3</text><text x="455" y="106" fill="#c5b4ff" font-size="24" text-anchor="middle">3 × 5</text>
+    <text x="310" y="140" fill="#ffd166" font-size="21" text-anchor="middle">Hasil perkalian = 6/15 = 2/5</text></svg>
+  </article>
+  <article class="card" style="margin-top:18px"><h3>➗ 2. Pembagian pecahan biasa</h3>
+   <p>Untuk membagi pecahan, pertahankan pecahan pertama, ubah tanda pembagian menjadi perkalian, lalu balik pecahan kedua (pembagi).</p>
+   <div class="callout"><strong>Contoh</strong><div class="big-value">3/4 ÷ 2/5 = 3/4 × 5/2 = 15/8</div><p>Kebalikan dari 2/5 adalah 5/2. Hasil 15/8 dapat ditulis sebagai 1 7/8.</p></div>
+  </article>
+  <article class="card" style="margin-top:18px"><h3>🔁 3. Mengubah pecahan campuran menjadi pecahan biasa</h3>
+   <p>Kalikan bilangan bulat dengan penyebut, lalu tambahkan pembilang. Hasilnya menjadi pembilang baru, sedangkan penyebut tetap.</p>
+   <div class="callout"><strong>Contoh</strong><div class="big-value">1 2/3 = (1 × 3 + 2)/3 = 5/3</div><p>Bilangan campuran diubah menjadi pecahan biasa agar mudah dikalikan atau dibagi.</p></div>
+   <div class="grid two">
+    <div class="callout"><strong>Perkalian campuran</strong><p>1 1/2 × 2/3 = 3/2 × 2/3 = 6/6 = 1.</p></div>
+    <div class="callout"><strong>Pembagian campuran</strong><p>2 1/4 ÷ 3/4 = 9/4 × 4/3 = 36/12 = 3.</p></div>
+   </div>
+  </article>
+  <article class="card" style="margin-top:18px"><h3>🪜 4. Langkah menyelesaikan operasi pecahan</h3>
+   <ol class="step-list"><li>Identifikasi operasi yang digunakan: perkalian atau pembagian.</li><li>Jika ada pecahan campuran, ubah menjadi pecahan biasa.</li><li>Untuk perkalian, kalikan pembilang dengan pembilang dan penyebut dengan penyebut.</li><li>Untuk pembagian, balik pecahan pembagi lalu lakukan perkalian.</li><li>Sederhanakan hasil dan ubah menjadi pecahan campuran jika nilainya lebih dari satu.</li><li>Periksa kembali perhitungan dan kesesuaian hasil dengan konteks soal.</li></ol>
+   <div class="callout"><strong>Contoh lengkap</strong><p>1 1/4 ÷ 1/2 = 5/4 × 2/1 = 10/4 = 5/2 = 2 1/2.</p></div>
+  </article>
+  <article class="card" style="margin-top:18px"><h3>🎮 Simulasi Interaktif: Perkalian dan Pembagian Pecahan</h3>
+   <p>Masukkan bilangan bulat, pembilang, dan penyebut untuk masing-masing pecahan. Isi bilangan bulat dengan 0 jika menggunakan pecahan biasa. Pilih operasi, lalu tekan Hitung.</p>
+   <div class="grid two">
+    <div class="card"><h3>Pecahan A</h3><div class="grid three"><div><label for="whole1"><strong>Bilangan bulat</strong></label><input id="whole1" class="field" type="number" min="0" max="10" value="1"></div><div><label for="num1"><strong>Pembilang</strong></label><input id="num1" class="field" type="number" min="0" max="30" value="1"></div><div><label for="den1"><strong>Penyebut</strong></label><input id="den1" class="field" type="number" min="1" max="20" value="2"></div></div></div>
+    <div class="card"><h3>Pecahan B</h3><div class="grid three"><div><label for="whole2"><strong>Bilangan bulat</strong></label><input id="whole2" class="field" type="number" min="0" max="10" value="0"></div><div><label for="num2"><strong>Pembilang</strong></label><input id="num2" class="field" type="number" min="0" max="30" value="2"></div><div><label for="den2"><strong>Penyebut</strong></label><input id="den2" class="field" type="number" min="1" max="20" value="3"></div></div></div>
+   </div>
+   <div class="sim-controls"><label for="operation"><strong>Operasi</strong></label><select id="operation" class="field" style="max-width:260px;min-height:58px"><option value="*">Perkalian (×)</option><option value="/">Pembagian (÷)</option></select></div>
+   <div class="actions"><button class="btn primary" id="calculateFractions">Hitung hasil</button><button class="btn ghost" id="fractionReset">Atur ulang</button></div>
+   <div id="conversionResult" class="card" style="margin-top:16px" aria-live="polite"></div>
+  </article>
+  <div class="actions"><button class="btn primary" data-go="2">Lanjut ke Soal Interaktif →</button></div>
+ </section>
+<section class="screen" id="screen-2">
+  <div class="section-head"><p class="eyebrow">BAGIAN 03 · LATIHAN DAN TANTANGAN</p><h2>Soal Interaktif: Perkalian dan Pembagian Pecahan</h2><p>Selesaikan operasi perkalian dan pembagian pecahan biasa maupun campuran. Setelah memeriksa, baca umpan balik dan langkah penyelesaiannya.</p></div>
+  <div class="card"><div class="meta"><span>AKTIVITAS PEMAHAMAN</span><span>3 soal · masing-masing 4 pilihan</span></div><div id="practice"></div></div>
+  <div class="card" style="margin-top:18px"><div class="meta"><span>EVALUASI PEMBELAJARAN</span><span>6 soal</span></div><div class="progress"><span id="quizProgress"></span></div><div id="quiz"></div><div class="actions"><button class="btn primary" id="finishQuiz">Lihat hasil evaluasi</button><button class="btn ghost" id="resetQuiz">Ulangi evaluasi</button></div><p class="feedback" id="quizNotice" aria-live="polite"></p><div id="quizResult" class="callout hidden" aria-live="polite"></div></div>
+  <div class="card" style="margin-top:18px"><div class="meta"><span>TANTANGAN HOTS</span><span>5 soal pilihan ganda · 4 opsi</span></div><p>Analisis setiap situasi, pilih satu dari empat jawaban, lalu tekan Periksa jawaban untuk melihat umpan balik dan cara penyelesaiannya.</p><div id="hots"></div></div>
+  <div class="actions"><button class="btn ghost" data-go="1">← Kembali ke Materi</button><button class="btn primary" data-go="3">Lanjut ke Refleksi →</button></div>
+ </section>
+ <section class="screen" id="screen-3">
+  <div class="section-head"><p class="eyebrow">BAGIAN 04 · PIKIRKAN KEMBALI</p><h2>Refleksi Pembelajaran</h2><p>Refleksi membantu kamu menyadari apa yang sudah dipahami dan bagian mana yang masih perlu dipelajari.</p></div>
+  <div class="grid two">
+   <article class="card"><h3>💡 Coba jelaskan dengan kata-katamu</h3><div class="reflection-prompt"><strong>1. Bagaimana cara mengalikan dua pecahan biasa?</strong></div><textarea class="field" id="reflect1" placeholder="Tuliskan jawabanmu di sini..."></textarea><div class="reflection-prompt"><strong>2. Mengapa pembagian pecahan dapat diubah menjadi perkalian dengan kebalikan pecahan pembagi?</strong></div><textarea class="field" id="reflect2" placeholder="Tuliskan jawabanmu di sini..."></textarea><div class="reflection-prompt"><strong>3. Jelaskan langkah menghitung 1 1/2 ÷ 3/4 sampai hasil paling sederhana.</strong></div><textarea class="field" id="reflect3" placeholder="Tuliskan contoh dan penjelasannya..."></textarea><div class="actions"><button class="btn primary" id="saveReflection">Simpan refleksi di halaman ini</button><button class="btn ghost" id="clearReflection">Hapus jawaban</button></div><p class="small-note" id="reflectStatus" aria-live="polite">Jawaban refleksi tidak dikirim ke server.</p></article>
+   <article class="card"><h3>✅ Cek pemahaman diri</h3><p>Berikan tanda centang pada pernyataan yang sudah dapat kamu lakukan.</p><label><input type="checkbox"> Saya dapat mengalikan pecahan biasa dengan pecahan biasa.</label><br><br><label><input type="checkbox"> Saya dapat membagi pecahan dengan menggunakan kebalikan pembagi.</label><br><br><label><input type="checkbox"> Saya dapat mengubah pecahan campuran menjadi pecahan biasa.</label><br><br><label><input type="checkbox"> Saya dapat menyelesaikan soal cerita perkalian dan pembagian pecahan.</label><div class="callout"><strong>Pesan belajar</strong><p>Jika masih ada yang belum kamu kuasai, kembali ke bagian Materi &amp; Simulasi. Belajar kembali adalah bagian dari proses memahami.</p></div></article>
+  </div>
+  <div class="actions"><button class="btn ghost" data-go="2">← Kembali ke Soal</button><button class="btn yellow" id="restartAll">Ulangi dari awal ↺</button></div>
+ </section>
+ <div class="footer">KELAS BELAJAR · Amati · Pahami · Coba · Refleksi</div>
+</main>
+</div><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(()=>{
+ const screens=[...document.querySelectorAll('.screen')],nav=[...document.querySelectorAll('[data-screen]')],crumb=document.getElementById('crumb');
+ const names=['TUJUAN PEMBELAJARAN','MATERI & SIMULASI','SOAL INTERAKTIF','REFLEKSI'];
+ function go(n){n=Math.max(0,Math.min(3,Number(n)));screens.forEach((s,i)=>s.classList.toggle('active',i===n));nav.forEach((b,i)=>{b.classList.toggle('active',i===n);if(i===n)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current')});crumb.textContent='KELAS BELAJAR / '+names[n];window.scrollTo({top:0,behavior:'smooth'});}
+ nav.forEach(b=>b.addEventListener('click',()=>go(b.dataset.screen)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
+ document.getElementById('fullscreen').addEventListener('click',async()=>{try{if(!document.fullscreenElement)await document.documentElement.requestFullscreen();else await document.exitFullscreen()}catch(e){toast('Mode layar penuh tidak didukung pada browser ini.')}});
+ document.getElementById('print').addEventListener('click',()=>window.print());
+ function toast(t){const el=document.getElementById('toast');el.textContent=t;el.style.display='block';setTimeout(()=>el.style.display='none',2600)}
+
+
+ // Simulasi operasi perkalian dan pembagian pecahan biasa/campuran.
+ const whole1=document.getElementById('whole1'),num1=document.getElementById('num1'),den1=document.getElementById('den1');
+ const whole2=document.getElementById('whole2'),num2=document.getElementById('num2'),den2=document.getElementById('den2');
+ const operation=document.getElementById('operation'),out=document.getElementById('conversionResult');
+ const gcd=(a,b)=>b===0?Math.abs(a):gcd(b,a%b);
+ function mixedToImproper(w,n,d){return {n:w*d+n,d};}
+ function formatFraction(n,d){
+  if(d===1)return String(n);
+  const whole=Math.floor(n/d),rem=n%d;
+  if(whole===0)return `${n}/${d}`;
+  return rem===0?String(whole):`${whole} ${rem}/${d}`;
+ }
+ function calculateFractions(){
+  const w1=Number(whole1.value),a=Number(num1.value),b=Number(den1.value);
+  const w2=Number(whole2.value),c=Number(num2.value),d=Number(den2.value),op=operation.value;
+  if(![w1,a,b,w2,c,d].every(Number.isInteger)||w1<0||w2<0||w1>10||w2>10||a<0||c<0||a>30||c>30||b<1||d<1||b>20||d>20||(w1>0&&a>=b)||(w2>0&&c>=d)||((w1===0&&a===0)||(w2===0&&c===0))){
+   out.innerHTML='<p class="feedback try">Masukkan bilangan bulat 0–10, pembilang 0–30, dan penyebut 1–20. Untuk pecahan campuran, pembilang pecahan harus lebih kecil daripada penyebut. Nilai pecahan pembagi tidak boleh nol.</p>';return;
+  }
+  const A=mixedToImproper(w1,a,b),B=mixedToImproper(w2,c,d);
+  if(op==='/'&&B.n===0){out.innerHTML='<p class="feedback try">Pembagi tidak boleh bernilai nol.</p>';return;}
+  let rawN,rawD,formula,operationName;
+  if(op==='*'){rawN=A.n*B.n;rawD=A.d*B.d;formula=`${A.n}/${A.d} × ${B.n}/${B.d}`;operationName='Perkalian';}
+  else{rawN=A.n*B.d;rawD=A.d*B.n;formula=`${A.n}/${A.d} × ${B.d}/${B.n}`;operationName='Pembagian dengan kebalikan';}
+  const divisor=gcd(rawN,rawD),simpleN=rawN/divisor,simpleD=rawD/divisor;
+  const inputA=w1?`${w1} ${a}/${b}`:`${a}/${b}`,inputB=w2?`${w2} ${c}/${d}`:`${c}/${d}`;
+  const sign=op==='*'?'×':'÷',result=formatFraction(simpleN,simpleD);
+  const reduced=divisor>1?`${rawN}/${rawD} ÷ ${divisor}/${divisor} = ${result}`:`${rawN}/${rawD} sudah paling sederhana.`;
+  out.innerHTML=`<div class="callout"><strong>Langkah 1 · Ubah ke pecahan biasa</strong><p>${inputA} = ${A.n}/${A.d} dan ${inputB} = ${B.n}/${B.d}.</p></div>
+   <div class="callout"><strong>Langkah 2 · ${operationName}</strong><p>${op==='/'?`Balik pecahan pembagi ${B.n}/${B.d} menjadi ${B.d}/${B.n}.`: 'Kalikan pembilang dengan pembilang dan penyebut dengan penyebut.'}</p><p>${formula} = ${rawN}/${rawD}</p></div>
+   <div class="callout"><strong>Langkah 3 · Sederhanakan hasil</strong><p>${reduced}</p><div class="big-value">${inputA} ${sign} ${inputB} = ${result}</div></div>`;
+ }
+ document.getElementById('calculateFractions').addEventListener('click',calculateFractions);
+ document.getElementById('fractionReset').addEventListener('click',()=>{whole1.value=1;num1.value=1;den1.value=2;whole2.value=0;num2.value=2;den2.value=3;operation.value='*';calculateFractions()});
+ calculateFractions();
+
+
+ const practices=[
+  {q:'Hasil dari 2/3 × 3/5 dalam bentuk paling sederhana adalah …',c:['2/5','5/8','6/8','1/5'],a:0,e:'Kalikan pembilang dan penyebut: (2 × 3)/(3 × 5) = 6/15. Sederhanakan dengan membagi 6 dan 15 dengan 3 sehingga menjadi 2/5.'},
+  {q:'Hasil dari 3/4 ÷ 1/2 adalah …',c:['3/8','3/2','4/3','2/3'],a:1,e:'Balik 1/2 menjadi 2/1, lalu 3/4 × 2/1 = 6/4 = 3/2 atau 1 1/2.'},
+  {q:'Hasil dari 1 1/2 × 2/3 adalah …',c:['1','1 1/2','2','3'],a:0,e:'Ubah 1 1/2 menjadi 3/2. Kemudian 3/2 × 2/3 = 6/6 = 1.'}
+ ];
+ const questions=[
+  {cat:'Perkalian pecahan biasa',q:'Hasil paling sederhana dari 2/5 × 3/4 adalah …',c:['3/10','5/9','6/9','2/20'],a:0,e:'Kalikan pembilang dan penyebut: 2 × 3 = 6 dan 5 × 4 = 20. Jadi 6/20 = 3/10.'},
+  {cat:'Pembagian pecahan biasa',q:'Hasil dari 5/6 ÷ 2/3 adalah …',c:['5/9','5/4','7/9','10/18'],a:1,e:'Balik pembagi 2/3 menjadi 3/2. Maka 5/6 × 3/2 = 15/12 = 5/4 atau 1 1/4.'},
+  {cat:'Pecahan campuran',q:'Hasil dari 1 2/3 × 3/5 adalah …',c:['1','1 1/5','2/5','3/8'],a:0,e:'Ubah 1 2/3 menjadi 5/3. Lalu 5/3 × 3/5 = 15/15 = 1.'},
+  {cat:'Pembagian pecahan campuran',q:'Hasil dari 2 1/4 ÷ 3/4 adalah …',c:['2','2 1/4','3','3 1/4'],a:2,e:'Ubah 2 1/4 menjadi 9/4. Kemudian 9/4 ÷ 3/4 = 9/4 × 4/3 = 36/12 = 3.'},
+  {cat:'Penyederhanaan hasil',q:'Hasil paling sederhana dari 3/7 × 14/9 adalah …',c:['2/3','3/2','6/7','42/16'],a:0,e:'Kalikan: 3 × 14 = 42 dan 7 × 9 = 63. Sederhanakan 42/63 dengan membagi 21 sehingga menjadi 2/3.'},
+  {cat:'Operasi pecahan campuran',q:'Hasil dari 1 1/2 ÷ 3/4 adalah …',c:['1','1 1/2','2','2 1/2'],a:2,e:'Ubah 1 1/2 menjadi 3/2. Balik 3/4 menjadi 4/3. Maka 3/2 × 4/3 = 12/6 = 2.'}
+ ];
+ const hots=[
+  {q:'Untuk membuat satu loyang kue diperlukan 2 1/2 cangkir tepung. Ibu hanya membuat 3/5 bagian resep. Berapa cangkir tepung yang diperlukan?',c:['1 1/2 cangkir','1 3/5 cangkir','2 cangkir','2 1/2 cangkir'],a:0,e:'Ubah 2 1/2 menjadi 5/2. Kalikan 5/2 × 3/5 = 15/10 = 3/2 = 1 1/2 cangkir.'},
+  {q:'Tersedia 3 1/3 liter jus. Setiap botol kecil menampung 2/3 liter. Berapa botol yang dapat diisi penuh?',c:['4 botol','5 botol','6 botol','7 botol'],a:1,e:'Ubah 3 1/3 menjadi 10/3. Hitung 10/3 ÷ 2/3 = 10/3 × 3/2 = 30/6 = 5 botol.'},
+  {q:'Seorang siswa menulis 2/3 × 3/4 = 5/7. Apa kesalahan utama pada penyelesaian tersebut?',c:['Ia menjumlahkan pembilang dan penyebut, bukan mengalikannya','Ia seharusnya membalik pecahan pertama','Ia seharusnya menyamakan penyebut dengan KPK','Ia seharusnya mengurangkan kedua pembilang'],a:0,e:'Pada perkalian pecahan, pembilang dikalikan dengan pembilang dan penyebut dikalikan dengan penyebut. Perhitungan yang benar adalah 6/12 = 1/2.'},
+  {q:'Panjang pita 1 1/4 meter. Untuk satu hiasan diperlukan 2/5 dari panjang pita tersebut. Berapa meter pita yang digunakan?',c:['1/2 meter','2/5 meter','3/4 meter','1 meter'],a:0,e:'Ubah 1 1/4 menjadi 5/4. Kemudian 5/4 × 2/5 = 10/20 = 1/2 meter.'},
+  {q:'Sebuah wadah berisi 4/5 liter sirup. Satu takaran gelas berukuran 2/3 liter. Berapa banyak takaran gelas yang setara dengan persediaan sirup?',c:['6/5 takaran gelas','6/7 takaran gelas','8/15 takaran gelas','5/6 takaran gelas'],a:0,e:'Hitung 4/5 ÷ 2/3 = 4/5 × 3/2 = 12/10 = 6/5. Artinya jumlahnya 1 1/5 takaran gelas, yaitu satu gelas penuh dan sebagian gelas berikutnya.'}
+ ];
+
+ function buildChoiceQuestion(item,index,container,kind){const el=document.createElement('article');el.className='question-card';el.innerHTML=`<div class="meta"><span>${kind} ${index+1}</span><span>Pilih satu jawaban</span></div><h3>${item.q}</h3><div class="choice-list">${item.c.map((c,j)=>`<button class="choice" type="button" aria-pressed="false">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="actions"><button type="button" class="btn ghost check">Periksa jawaban</button><button type="button" class="btn ghost retry">Coba lagi</button></div><div class="feedback" aria-live="polite"></div><div class="explain hidden"></div>`;container.appendChild(el);let selected=null;const buttons=[...el.querySelectorAll('.choice')],feedback=el.querySelector('.feedback'),explain=el.querySelector('.explain');buttons.forEach((b,j)=>b.addEventListener('click',()=>{selected=j;buttons.forEach((x,k)=>{x.classList.toggle('selected',k===j);x.setAttribute('aria-pressed',String(k===j));x.classList.remove('correct','incorrect')});feedback.textContent='Pilihan tersimpan. Tekan Periksa jawaban untuk melihat umpan balik.';feedback.className='feedback';explain.classList.add('hidden')}));el.querySelector('.check').addEventListener('click',()=>{if(selected===null){feedback.textContent='Pilih satu jawaban terlebih dahulu.';feedback.className='feedback try';return}buttons.forEach((b,j)=>{b.classList.remove('correct','incorrect');if(j===selected)b.classList.add(j===item.a?'correct':'incorrect')});feedback.textContent=selected===item.a?'Tepat! Jawabanmu benar.':'Belum tepat. Tidak apa-apa, pelajari kembali alasannya.';feedback.className='feedback '+(selected===item.a?'good':'try');explain.textContent='Pembahasan dan cara penyelesaian: '+item.e;explain.classList.remove('hidden')});el.querySelector('.retry').addEventListener('click',()=>{selected=null;buttons.forEach(b=>{b.classList.remove('selected','correct','incorrect');b.setAttribute('aria-pressed','false')});feedback.textContent='Silakan pilih jawaban lagi.';feedback.className='feedback';explain.classList.add('hidden')});return {getSelected:()=>selected};}
+ const practiceRoot=document.getElementById('practice');practices.forEach((q,i)=>buildChoiceQuestion(q,i,practiceRoot,'Aktivitas'));
+ // Evaluation
+ const quizRoot=document.getElementById('quiz');let quizState=[];
+ function renderQuiz(){quizRoot.innerHTML='';quizState=questions.map(()=>({selected:null,checked:false}));questions.forEach((q,i)=>{const el=document.createElement('article');el.className='question-card card';el.innerHTML=`<div class="meta"><span>${q.cat}</span><span>Soal ${i+1} dari ${questions.length}</span></div><h3>${q.q}</h3><div class="choice-list">${q.c.map((c,j)=>`<button type="button" class="choice" aria-pressed="false">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="actions"><button class="btn ghost check" type="button">Periksa jawaban</button></div><div class="feedback" aria-live="polite"></div><div class="explain hidden"></div>`;quizRoot.appendChild(el);const st=quizState[i],bs=[...el.querySelectorAll('.choice')],fb=el.querySelector('.feedback'),ex=el.querySelector('.explain');bs.forEach((b,j)=>b.addEventListener('click',()=>{st.selected=j;st.checked=false;bs.forEach((x,k)=>{x.classList.toggle('selected',j===k);x.classList.remove('correct','incorrect');x.setAttribute('aria-pressed',String(j===k))});fb.textContent='Pilihan diperbarui. Periksa kembali jawabanmu.';fb.className='feedback';ex.classList.add('hidden');updateProgress()}));el.querySelector('.check').addEventListener('click',()=>{if(st.selected===null){fb.textContent='Pilih satu jawaban sebelum memeriksa.';fb.className='feedback try';return}st.checked=true;bs.forEach((b,j)=>{b.classList.remove('correct','incorrect');if(j===st.selected)b.classList.add(j===q.a?'correct':'incorrect')});fb.textContent=st.selected===q.a?'Benar! Kamu memahami konsep ini.':'Belum tepat. Baca pembahasan, lalu ubah pilihan jika diperlukan.';fb.className='feedback '+(st.selected===q.a?'good':'try');ex.textContent='Pembahasan: '+q.e;ex.classList.remove('hidden');updateProgress()})});updateProgress()}
+ function updateProgress(){const done=quizState.filter(s=>s.checked).length;document.getElementById('quizProgress').style.width=(done/questions.length*100)+'%'}
+ renderQuiz();document.getElementById('resetQuiz').addEventListener('click',()=>{renderQuiz();document.getElementById('quizResult').classList.add('hidden');document.getElementById('quizNotice').textContent='Evaluasi sudah diatur ulang.'});
+ document.getElementById('finishQuiz').addEventListener('click',()=>{const missing=quizState.findIndex(s=>!s.checked);const notice=document.getElementById('quizNotice'),result=document.getElementById('quizResult');if(missing!==-1){notice.textContent=`Periksa jawaban soal ${missing+1} terlebih dahulu.`;notice.className='feedback try';quizRoot.children[missing].scrollIntoView({behavior:'smooth',block:'center'});return}const score=quizState.reduce((sum,s,i)=>sum+(s.selected===questions[i].a?1:0),0),pct=Math.round(score/questions.length*100);const weak=[...new Set(questions.filter((q,i)=>quizState[i].selected!==q.a).map(q=>q.cat))];result.innerHTML=`<h3>Hasil evaluasi: <span class="result-score">${pct}</span></h3><p>${score} dari ${questions.length} jawaban benar.</p><p>${pct===100?'Luar biasa! Semua jawaban tepat.':pct>=67?'Bagus! Kamu sudah memahami sebagian besar materi. Pelajari kembali soal yang belum tepat.':'Terus berlatih. Baca ulang materi tentang perkalian dan pembagian pecahan berpenyebut sama maupun berbeda.'}</p><p><strong>Bagian yang perlu ditinjau:</strong> ${weak.length?weak.join(', '):'Tidak ada. Semua kategori terjawab benar.'}</p>`;result.classList.remove('hidden');notice.textContent='Hasil berhasil dihitung berdasarkan pilihan terakhir yang sudah diperiksa.';notice.className='feedback good';result.scrollIntoView({behavior:'smooth',block:'center'})});
+ const hotsRoot=document.getElementById('hots');hots.forEach((q,i)=>buildChoiceQuestion(q,i,hotsRoot,'HOTS'));
+ document.getElementById('saveReflection').addEventListener('click',()=>{document.getElementById('reflectStatus').textContent='Refleksi sudah tersimpan sementara pada halaman ini. Untuk menyimpan permanen, cetak halaman atau salin jawabanmu.';toast('Refleksi tercatat pada halaman ini.')});document.getElementById('clearReflection').addEventListener('click',()=>{['reflect1','reflect2','reflect3'].forEach(id=>document.getElementById(id).value='');document.getElementById('reflectStatus').textContent='Jawaban refleksi telah dikosongkan.'});document.getElementById('restartAll').addEventListener('click',()=>{go(0);toast('Kamu dapat memulai pembelajaran kembali.')});
+})();
+</script>
+</body></html>

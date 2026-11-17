@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101735"><title>Bangun Ruang Sisi Lengkung | KELAS BELAJAR V151.0</title>
+<style>
+:root{--bg:#080f27;--navy:#101735;--panel:#17234a;--panel2:#1d2d5d;--line:#35477d;--blue:#4da3ff;--cyan:#52e0e0;--purple:#9b78ff;--yellow:#ffd166;--text:#f4f6ff;--muted:#c2cce8;--green:#55d6a2;--red:#ff858e;--radius:22px;--shadow:0 18px 50px #02071880}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#33236c 0,transparent 34%),linear-gradient(135deg,#08132d,#101b42 55%,#25164f);color:var(--text);font:20px/1.6 "Trebuchet MS",Arial,sans-serif;min-height:100vh}button,input,textarea,select{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}p{color:var(--muted);margin:.45rem 0 1rem}h1,h2,h3{line-height:1.2;margin:0 0 14px}h1{font-size:clamp(34px,5vw,54px)}h2{font-size:clamp(28px,3.4vw,38px)}h3{font-size:25px}.app{display:grid;grid-template-columns:290px minmax(0,1fr);min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;padding:25px 18px;background:#0c1532ef;border-right:1px solid #344575;display:flex;flex-direction:column;gap:20px;z-index:5}.brand{padding:8px 10px 18px;border-bottom:1px solid #344575}.brand-mark{display:inline-grid;place-items:center;width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,var(--blue),var(--purple));font-size:25px;font-weight:900;margin-bottom:12px}.brand strong{display:block;font-size:24px;letter-spacing:.06em}.brand small{display:block;color:var(--cyan);font-size:20px}.nav-label{color:#9eacd4;font-size:20px;font-weight:800;padding:0 10px}.nav{display:grid;gap:10px}.nav button{width:100%;text-align:left;padding:14px 15px;border:1px solid transparent;border-radius:15px;background:transparent;color:var(--muted);font-weight:800;transition:.2s}.nav button:hover{background:#1b2a55}.nav button.active{background:linear-gradient(100deg,#24539b,#553b9b);border-color:#718be0;color:white;box-shadow:0 8px 22px #050a2080}.side-note{margin-top:auto;background:#15234a;border:1px solid #344575;border-radius:16px;padding:15px;color:var(--muted)}.side-note strong{color:var(--yellow)}.main{min-width:0;padding:24px clamp(16px,3vw,42px) 60px;max-width:1500px;width:100%;margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;margin-bottom:24px}.crumb{color:var(--cyan);font-weight:800}.tools{display:flex;gap:10px;flex-wrap:wrap}.tool-btn,.btn{border:1px solid #52679f;border-radius:13px;background:#1a2b59;padding:11px 16px;font-weight:800;min-height:48px}.tool-btn:hover,.btn:hover{filter:brightness(1.15);transform:translateY(-1px)}.btn.primary{background:linear-gradient(100deg,#2378d4,#7454d6);border:0}.btn.yellow{background:var(--yellow);color:#1b2140;border:0}.btn.ghost{background:transparent}.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}.screen{display:none;animation:fade .25s ease}.screen.active{display:block}@keyframes fade{from{opacity:.3;transform:translateY(8px)}to{opacity:1;transform:none}}.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:22px;align-items:center;padding:clamp(24px,4vw,46px);border:1px solid #4b5fa0;border-radius:28px;background:linear-gradient(120deg,#172c5b,#35276d);box-shadow:var(--shadow);overflow:hidden}.eyebrow{color:var(--cyan);font-weight:900;letter-spacing:.09em;text-transform:uppercase;margin-bottom:12px}.hero p{font-size:22px}.hero-art{min-height:230px;display:grid;place-items:center;background:radial-gradient(circle,#526bdc55,transparent 65%);position:relative}.pill{display:inline-block;border-radius:99px;padding:7px 14px;background:#243d79;color:#dce8ff;font-weight:800}.grid{display:grid;gap:18px}.two{grid-template-columns:repeat(2,minmax(0,1fr))}.three{grid-template-columns:repeat(3,minmax(0,1fr))}.card{background:linear-gradient(145deg,#18264f,#121e40);border:1px solid #344879;border-radius:var(--radius);padding:22px;box-shadow:0 10px 30px #03091e45}.card h3{color:#fff}.card strong{color:#fff}.section-head{margin:8px 0 24px}.section-head p{max-width:900px;font-size:21px}.callout{border-left:5px solid var(--yellow);background:#26315b;padding:18px 20px;border-radius:0 16px 16px 0;margin:20px 0}.callout p{margin:6px 0 0}.step-list{padding-left:28px;color:var(--muted)}.shape-stage{display:flex;align-items:center;justify-content:center;gap:clamp(18px,5vw,65px);flex-wrap:wrap;background:#101a38;border:1px solid #40558d;border-radius:18px;padding:24px;margin:16px 0}.shape-unit{display:grid;gap:8px;justify-items:center;min-width:145px}.shape-unit svg{width:min(220px,40vw);height:155px;overflow:visible}.shape-label{font-weight:900;color:var(--cyan)}.sim-controls{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:18px}.sim-controls select{flex:1;min-width:220px;background:#0e1937;color:white;border:1px solid #50649a;border-radius:14px;padding:12px;min-height:58px}.big-value{font-size:32px;font-weight:900;color:var(--yellow)}.choice-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:15px 0}.choice{padding:13px 16px;text-align:left;border:1px solid #53699f;background:#1b2c59;border-radius:13px;min-height:54px}.choice:hover:not(:disabled){background:#2a4079}.choice.selected{border:2px solid var(--cyan);background:#214a70}.choice.correct{border:2px solid var(--green);background:#164b48}.choice.incorrect{border:2px solid var(--red);background:#542b49}.feedback{min-height:32px;padding:8px 0;font-weight:800}.feedback.good{color:var(--green)}.feedback.try{color:var(--yellow)}.explain{background:#101a38;border:1px solid #3c5084;border-radius:14px;padding:15px;margin-top:10px;color:var(--muted)}.question-card{margin-bottom:17px}.meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--cyan);font-weight:800}.progress{height:10px;background:#34436e;border-radius:99px;overflow:hidden;margin:15px 0 25px}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--cyan),var(--purple));transition:width .25s}.result-score{font-size:54px;font-weight:900;color:var(--yellow)}.field{width:100%;background:#0e1937;border:1px solid #50649a;color:white;border-radius:14px;padding:14px;min-height:130px;resize:vertical}.field::placeholder{color:#a8b5d7}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.reflection-prompt{padding:15px;border:1px solid #43588c;border-radius:14px;background:#111d3d;margin:12px 0}.small-note{font-size:20px;color:#aebbe0}.footer{text-align:center;color:#9eacd4;padding:30px 10px 0}.hidden{display:none!important}.toast{position:fixed;bottom:20px;right:20px;background:#1b3760;border:1px solid var(--cyan);padding:14px 18px;border-radius:14px;z-index:20;display:none}.criterion{border:1px solid #43588c;background:#111d3d;border-radius:16px;padding:17px}.criterion h3{color:var(--yellow)}.formula{font-size:24px;color:var(--cyan);font-weight:900;letter-spacing:.02em}.svg-caption{font-size:20px;fill:#f4f6ff;font-weight:bold}
+@media(max-width:1000px){.app{grid-template-columns:240px minmax(0,1fr)}.three{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr .6fr}}
+@media(max-width:760px){.app{display:block}.sidebar{position:relative;height:auto;padding:14px;gap:12px;border-right:0;border-bottom:1px solid #344575}.brand{display:flex;align-items:center;gap:12px;padding:0 4px 10px}.brand-mark{margin:0;width:44px;height:44px}.brand strong{font-size:22px}.brand small{font-size:20px}.nav-label,.side-note{display:none}.nav{display:flex;overflow-x:auto;padding-bottom:5px}.nav button{width:auto;min-width:max-content;padding:11px 14px;font-size:20px}.main{padding:16px 14px 42px}.topbar{margin-bottom:16px}.hero{grid-template-columns:1fr}.hero-art{min-height:150px}.two,.three{grid-template-columns:1fr}.choice-list{grid-template-columns:1fr}.tools{width:100%}.tool-btn{flex:1}.shape-stage{gap:16px}.shape-unit svg{width:150px;height:120px}}
+@media print{body{background:white!important;color:#111!important;font-size:20px}.sidebar,.topbar,.actions,.tools,.nav,.footer{display:none!important}.app{display:block}.main{padding:0;max-width:none}.screen{display:block!important;break-inside:avoid}.card,.hero,.callout,.shape-stage,.criterion{background:white!important;color:#111!important;border:1px solid #777!important;box-shadow:none!important}.card p,.hero p,.section-head p,.callout p,.step-list,.muted{color:#222!important}.choice{background:white!important;color:#111!important;border:1px solid #777!important}.field{border:1px solid #777;color:#111}.hero-art{display:none}}
+</style>
+<style>
+.navbtn{text-align:left} .content{max-width:1180px;margin:auto;padding:30px} .section{display:none} .section.active{display:block}
+.hero-art{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0}
+.shape{background:#17234a;border:1px solid #43558c;border-radius:18px;padding:18px;text-align:center}
+.shape svg{width:100%;height:130px;max-width:190px} .shape strong{display:block;color:#ffd166;margin-top:8px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.info{background:#17234a;border:1px solid #35477d;border-radius:18px;padding:20px;margin:16px 0}
+.tag{display:inline-block;padding:5px 12px;border-radius:99px;background:#263b70;color:#aeefff;margin:3px}
+.simrow{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.simrow button,.check-btn,.primary{border:0;border-radius:12px;background:linear-gradient(100deg,#397fe5,#825ce8);padding:12px 18px;color:white;font-weight:bold}
+.simresult{background:#0d1735;border-radius:14px;padding:16px;margin-top:12px;min-height:60px}
+.qcard{background:#17234a;border:1px solid #35477d;border-radius:18px;padding:20px;margin:16px 0}
+.option{display:flex;gap:10px;align-items:flex-start;background:#202f5c;padding:10px 14px;border-radius:12px;margin:8px 0;cursor:pointer}
+.option input{width:22px;height:22px;flex:none;margin-top:4px;accent-color:#52e0e0}
+.feedback{margin-top:12px;padding:12px;border-radius:12px;display:none;background:#0d1735}
+.feedback.show{display:block} .correct{border:2px solid #55d6a2} .wrong{border:2px solid #ff858e}
+.progress{height:14px;background:#0d1735;border-radius:99px;overflow:hidden} .progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,#52e0e0,#9b78ff)}
+input[type=text],textarea{width:100%;padding:12px;border-radius:12px;background:#0d1735;color:white;border:1px solid #53679e}
+@media(max-width:850px){.app{display:block}.sidebar{height:auto;position:sticky;padding:12px;gap:8px}.brand{padding:4px 8px;border:0}.nav{display:flex;overflow-x:auto;gap:8px}.nav button{white-space:nowrap}.content{padding:18px}}
+@media(max-width:620px){.hero-art,.grid2{grid-template-columns:1fr}}
+@media print{.sidebar,.actions,.check-btn,.simrow button{display:none!important}.section{display:block!important}body{background:white;color:#111}p{color:#222}.info,.qcard,.shape{break-inside:avoid}}
+</style></head><body>
+<div class="app">
+<aside class="sidebar"><div class="brand"><div class="brand-mark">✦</div><h2>KELAS BELAJAR</h2><p>MPI Matematika SMP • V151.0</p></div>
+<nav class="nav">
+<button class="navbtn active" onclick="showSection('tujuan',this)">1. Tujuan Pembelajaran</button>
+<button class="navbtn" onclick="showSection('materi',this)">2. Materi & Simulasi</button>
+<button class="navbtn" onclick="showSection('soal',this)">3. Soal Interaktif</button>
+<button class="navbtn" onclick="showSection('refleksi',this)">4. Refleksi</button>
+</nav><div class="actions"><button onclick="toggleFull()">⛶ Layar Penuh</button> <button onclick="window.print()">Cetak</button></div></aside>
+<main class="content">
+<section id="tujuan" class="section active">
+<div class="hero"><span class="tag">MATEMATIKA SMP</span><h1>Menjelajahi Bangun Ruang Sisi Lengkung</h1>
+<p>Kenali bentuk tabung, kerucut, dan bola melalui benda di sekitar serta model geometri.</p></div>
+<div class="hero-art">
+<div class="shape"><svg viewBox="0 0 160 130" role="img" aria-label="Ilustrasi tabung"><ellipse cx="80" cy="28" rx="48" ry="15" fill="#52e0e0" stroke="#fff" stroke-width="2"/><path d="M32 28V98 M128 28V98" stroke="#fff" stroke-width="2"/><path d="M32 98a48 15 0 0 0 96 0" fill="#397fe5" stroke="#fff" stroke-width="2"/><path d="M32 28a48 15 0 0 0 96 0" fill="none" stroke="#fff" stroke-width="2"/></svg><strong>TABUNG</strong><span>Kaleng • gelas silinder</span></div>
+<div class="shape"><svg viewBox="0 0 160 130" role="img" aria-label="Ilustrasi kerucut"><ellipse cx="80" cy="105" rx="48" ry="15" fill="#52e0e0" stroke="#fff" stroke-width="2"/><path d="M80 12L32 105 M80 12L128 105" stroke="#fff" stroke-width="3"/><path d="M32 105a48 15 0 0 0 96 0" fill="none" stroke="#fff" stroke-width="2"/></svg><strong>KERUCUT</strong><span>Topi pesta • corong</span></div>
+<div class="shape"><svg viewBox="0 0 160 130" role="img" aria-label="Ilustrasi bola"><circle cx="80" cy="65" r="48" fill="#825ce8" stroke="#fff" stroke-width="2"/><path d="M33 65Q80 20 127 65Q80 110 33 65" fill="none" stroke="#aeefff" stroke-width="2"/><path d="M80 17Q48 65 80 113Q112 65 80 17" fill="none" stroke="#aeefff" stroke-width="2"/></svg><strong>BOLA</strong><span>Bola basket • kelereng</span></div></div>
+<div class="info"><h2>Tujuan Pembelajaran</h2><p><strong>Melalui pengamatan benda konkret dan model bangun ruang, peserta didik mampu mengidentifikasi jenis-jenis bangun ruang sisi lengkung serta unsur-unsur tabung, kerucut, dan bola dengan benar.</strong></p>
+<h3>Apersepsi</h3><p>Perhatikan kaleng minuman, topi ulang tahun, dan bola. Ketiganya memiliki bentuk ruang yang berbeda. Apa ciri yang membedakan ketiga benda tersebut?</p>
+<h3>Pertanyaan Pemantik</h3><ul><li>Mengapa kaleng memiliki dua bidang lingkaran, sedangkan kerucut hanya satu?</li><li>Apakah bola memiliki rusuk atau titik sudut?</li><li>Bagaimana cara mengenali unsur bangun ruang dari benda nyata?</li></ul>
+<h3>Manfaat dalam kehidupan</h3><p>Mengenali bentuk dan unsur bangun ruang membantu kita memahami kemasan, peralatan rumah tangga, konstruksi, permainan, dan benda sehari-hari.</p></div>
+<div class="info"><h3>Peta Belajar</h3><p><span class="tag">Jenis bangun ruang sisi lengkung</span> → <span class="tag">Unsur tabung</span> → <span class="tag">Unsur kerucut</span> → <span class="tag">Unsur bola</span> → <span class="tag">Identifikasi benda</span></p></div>
+</section>
+
+<section id="materi" class="section">
+<h1>Materi & Simulasi</h1><p>Amati model dan hubungkan setiap unsur dengan bagian bangun ruang yang tepat.</p>
+<div class="info"><h2>1. Jenis Bangun Ruang Sisi Lengkung</h2><div class="grid2">
+<div><h3>Tabung</h3><p>Memiliki dua alas berbentuk lingkaran yang sejajar dan sama ukuran, serta satu selimut lengkung.</p><p><b>Unsur:</b> alas, tutup, selimut, jari-jari, diameter, dan tinggi.</p></div>
+<div><h3>Kerucut</h3><p>Memiliki satu alas lingkaran, satu selimut lengkung, dan satu titik puncak.</p><p><b>Unsur:</b> alas, selimut, titik puncak, jari-jari, diameter, tinggi, dan garis pelukis.</p></div>
+<div><h3>Bola</h3><p>Memiliki satu permukaan lengkung yang seluruh titik permukaannya berjarak sama dari titik pusat.</p><p><b>Unsur:</b> titik pusat, jari-jari, diameter, dan sisi lengkung.</p></div>
+<div><h3>Catatan penting</h3><p>Dalam pembelajaran bangun ruang sisi lengkung, tabung, kerucut, dan bola dikenali melalui bentuk permukaan serta unsur penyusunnya.</p></div>
+</div></div>
+<div class="info"><h2>2. Mengenali Unsur Tabung</h2><p>Tabung memiliki dua lingkaran sejajar (alas dan tutup), selimut lengkung, tinggi, jari-jari, serta diameter.</p>
+<ul><li><b>Jari-jari (r):</b> jarak pusat lingkaran ke tepi lingkaran.</li><li><b>Diameter (d):</b> garis melalui pusat yang menghubungkan dua titik pada lingkaran; d = 2r.</li><li><b>Tinggi (t):</b> jarak tegak lurus antara bidang alas dan tutup.</li></ul></div>
+<div class="info"><h2>3. Mengenali Unsur Kerucut</h2><p>Kerucut memiliki satu alas lingkaran, satu titik puncak, dan selimut lengkung.</p><ul><li><b>Tinggi:</b> jarak tegak lurus dari puncak ke pusat alas.</li><li><b>Garis pelukis (s):</b> ruas garis dari puncak ke titik pada keliling alas.</li><li><b>Jari-jari dan diameter:</b> unsur pada alas lingkaran.</li></ul></div>
+<div class="info"><h2>4. Mengenali Unsur Bola</h2><p>Bola memiliki titik pusat, jari-jari, diameter, dan satu sisi lengkung. Bola tidak memiliki alas, tutup, rusuk, atau titik sudut.</p><ul><li><b>Jari-jari:</b> jarak dari pusat bola ke permukaan.</li><li><b>Diameter:</b> garis lurus melalui pusat yang menghubungkan dua titik pada permukaan; d = 2r.</li></ul></div>
+<div class="info"><h2>5. Simulasi Identifikasi Model</h2><p>Pilih model bangun ruang untuk melihat ciri dan unsur utamanya.</p><div class="simrow"><button onclick="simulate('tabung')">Tabung</button><button onclick="simulate('kerucut')">Kerucut</button><button onclick="simulate('bola')">Bola</button></div><div class="simresult" id="simresult">Pilih salah satu model di atas.</div></div>
+<div class="info"><h2>Contoh Analisis</h2><p><b>Situasi:</b> Sebuah wadah memiliki alas dan tutup lingkaran yang sama besar, sejajar, serta sisi tegak melengkung.</p><p><b>Analisis:</b> Ciri tersebut menunjukkan tabung. Unsur yang dapat ditunjuk adalah alas, tutup, selimut, tinggi, jari-jari, dan diameter.</p>
+<p><b>Situasi lain:</b> Bola permainan tidak mempunyai alas atau puncak. Permukaannya melengkung seluruhnya, sehingga modelnya adalah bola.</p></div>
+</section>
+
+<section id="soal" class="section">
+<h1>Soal Interaktif</h1><p>Pilih satu jawaban, lalu tekan <b>Periksa Jawaban</b>. Jawaban akan dikunci setelah diperiksa.</p>
+<div class="info"><h2>Aktivitas Pemahaman (3 soal)</h2><p>Kenali bentuk bangun ruang dari benda konkret.</p><article class="qcard" data-group="0" data-index="0">
+      <h3>1. Benda manakah yang paling tepat dimodelkan sebagai tabung?</h3>
+      <div class="options"><label class="option"><input type="radio" name="q0" value="0"><span>A. Kaleng minuman</span></label><label class="option"><input type="radio" name="q0" value="1"><span>B. Bola sepak</span></label><label class="option"><input type="radio" name="q0" value="2"><span>C. Topi ulang tahun</span></label><label class="option"><input type="radio" name="q0" value="3"><span>D. Dadu</span></label></div>
+      <button class="check-btn" onclick="checkQuestion(0)">Periksa Jawaban</button>
+      <div class="feedback" id="fb0" aria-live="polite"></div>
+    </article><article class="qcard" data-group="0" data-index="1">
+      <h3>2. Bangun ruang sisi lengkung yang memiliki satu titik puncak adalah ....</h3>
+      <div class="options"><label class="option"><input type="radio" name="q1" value="0"><span>A. Tabung</span></label><label class="option"><input type="radio" name="q1" value="1"><span>B. Kerucut</span></label><label class="option"><input type="radio" name="q1" value="2"><span>C. Bola</span></label><label class="option"><input type="radio" name="q1" value="3"><span>D. Kubus</span></label></div>
+      <button class="check-btn" onclick="checkQuestion(1)">Periksa Jawaban</button>
+      <div class="feedback" id="fb1" aria-live="polite"></div>
+    </article><article class="qcard" data-group="0" data-index="2">
+      <h3>3. Bangun ruang yang seluruh permukaannya lengkung dan tidak memiliki rusuk maupun titik sudut adalah ....</h3>
+      <div class="options"><label class="option"><input type="radio" name="q2" value="0"><span>A. Tabung</span></label><label class="option"><input type="radio" name="q2" value="1"><span>B. Kerucut</span></label><label class="option"><input type="radio" name="q2" value="2"><span>C. Bola</span></label><label class="option"><input type="radio" name="q2" value="3"><span>D. Prisma</span></label></div>
+      <button class="check-btn" onclick="checkQuestion(2)">Periksa Jawaban</button>
+      <div class="feedback" id="fb2" aria-live="polite"></div>
+    </article></div>
+<div class="info"><h2>Evaluasi (6 soal)</h2><p>Identifikasi unsur tabung, kerucut, dan bola.</p><article class="qcard" data-group="1" data-index="3">
+      <h3>4. Unsur tabung yang berbentuk dua lingkaran kongruen dan sejajar disebut ....</h3>
+      <div class="options"><label class="option"><input type="radio" name="q3" value="0"><span>A. Selimut</span></label><label class="option"><input type="radio" name="q3" value="1"><span>B. Titik puncak</span></label><label class="option"><input type="radio" name="q3" value="2"><span>C. Alas dan tutup</span></label><label class="option"><input type="radio" name="q3" value="3"><span>D. Garis pelukis</span></label></div>
+      <button class="check-btn" onclick="checkQuestion(3)">Periksa Jawaban</button>
+      <div class="feedback" id="fb3" aria-live="polite"></div>
+    </article><article class="qcard" data-group="1" data-index="4">
+      <h3>5. Jarak tegak lurus antara pusat alas dan pusat tutup tabung disebut ....</h3>
+      <div class="options"><label class="option"><input type="radio" name="q4" value="0"><span>A. Jari-jari</span></label><label class="option"><input type="radio" name="q4" value="1"><span>B. Diameter</span></label><label class="option"><input type="radio" name="q4" value="2"><span>C. Tinggi</span></label><label class="option"><input type="radio" name="q4" value="3"><span>D. Garis pelukis</span></label></div>
+      <button class="check-btn" onclick="checkQuestion(4)">Periksa Jawaban</button>
+      <div class="feedback" id="fb4" aria-live="polite"></div>
+    </article><article class="qcard" data-group="1" data-index="5">
+      <h3>6. Garis dari pusat lingkaran alas menuju tepi lingkaran disebut ....</h3>
+      <div class="options"><label class="option"><input type="radio" name="q5" value="0"><span>A. Jari-jari</span></label><label class="option"><input type="radio" name="q5" value="1"><span>B. Tinggi</span></label><label class="option"><input type="radio" name="q5" value="2"><span>C. Rusuk</span></label><label class="option"><input type="radio" name="q5" value="3"><span>D. Garis pelukis</span></label></div>
+      <button class="check-btn" onclick="checkQuestion(5)">Periksa Jawaban</button>
+      <div class="feedback" id="fb5" aria-live="polite"></div>
+    </article><article class="qcard" data-group="1" data-index="6">
+      <h3>7. Pada kerucut, ruas garis dari titik puncak ke titik pada keliling alas disebut ....</h3>
+      <div class="options"><label class="option"><input type="radio" name="q6" value="0"><span>A. Diameter</span></label><label class="option"><input type="radio" name="q6" value="1"><span>B. Garis pelukis</span></label><label class="option"><input type="radio" name="q6" value="2"><span>C. Tinggi</span></label><label class="option"><input type="radio" name="q6" value="3"><span>D. Jari-jari</span></label></div>
+      <button class="check-btn" onclick="checkQuestion(6)">Periksa Jawaban</button>
+      <div class="feedback" id="fb6" aria-live="polite"></div>
+    </article><article class="qcard" data-group="1" data-index="7">
+      <h3>8. Kerucut mempunyai ....</h3>
+      <div class="options"><label class="option"><input type="radio" name="q7" value="0"><span>A. Dua alas lingkaran</span></label><label class="option"><input type="radio" name="q7" value="1"><span>B. Satu alas lingkaran dan satu titik puncak</span></label><label class="option"><input type="radio" name="q7" value="2"><span>C. Dua titik puncak</span></label><label class="option"><input type="radio" name="q7" value="3"><span>D. Tidak memiliki alas</span></label></div>
+      <button class="check-btn" onclick="checkQuestion(7)">Periksa Jawaban</button>
+      <div class="feedback" id="fb7" aria-live="polite"></div>
+    </article><article class="qcard" data-group="1" data-index="8">
+      <h3>9. Pernyataan yang tepat tentang bola adalah ....</h3>
+      <div class="options"><label class="option"><input type="radio" name="q8" value="0"><span>A. Memiliki dua alas</span></label><label class="option"><input type="radio" name="q8" value="1"><span>B. Memiliki satu titik puncak</span></label><label class="option"><input type="radio" name="q8" value="2"><span>C. Memiliki satu sisi lengkung</span></label><label class="option"><input type="radio" name="q8" value="3"><span>D. Memiliki tiga rusuk</span></label></div>
+      <button class="check-btn" onclick="checkQuestion(8)">Periksa Jawaban</button>
+      <div class="feedback" id="fb8" aria-live="polite"></div>
+    </article><div class="progress"><span id="evalbar"></span></div><p id="evalstatus">Evaluasi diperiksa: 0 dari 6</p></div>
+<div class="info"><h2>HOTS (5 soal)</h2><p>Analisis ciri bangun ruang dan pernyataan tentang unsur-unsurnya.</p><article class="qcard" data-group="2" data-index="9">
+      <h3>10. Jika sebuah benda memiliki alas dan tutup lingkaran sejajar serta satu selimut lengkung, benda itu paling mungkin ....</h3>
+      <div class="options"><label class="option"><input type="radio" name="q9" value="0"><span>A. Tabung</span></label><label class="option"><input type="radio" name="q9" value="1"><span>B. Kerucut</span></label><label class="option"><input type="radio" name="q9" value="2"><span>C. Bola</span></label><label class="option"><input type="radio" name="q9" value="3"><span>D. Limas</span></label></div>
+      <button class="check-btn" onclick="checkQuestion(9)">Periksa Jawaban</button>
+      <div class="feedback" id="fb9" aria-live="polite"></div>
+    </article><article class="qcard" data-group="2" data-index="10">
+      <h3>11. Sebuah topi pesta berbentuk kerucut. Bagian lingkaran di bawah topi disebut ....</h3>
+      <div class="options"><label class="option"><input type="radio" name="q10" value="0"><span>A. Titik puncak</span></label><label class="option"><input type="radio" name="q10" value="1"><span>B. Alas</span></label><label class="option"><input type="radio" name="q10" value="2"><span>C. Garis pelukis</span></label><label class="option"><input type="radio" name="q10" value="3"><span>D. Tinggi</span></label></div>
+      <button class="check-btn" onclick="checkQuestion(10)">Periksa Jawaban</button>
+      <div class="feedback" id="fb10" aria-live="polite"></div>
+    </article><article class="qcard" data-group="2" data-index="11">
+      <h3>12. Rani mengamati bola basket. Ia menyatakan bola memiliki sisi lengkung, dua rusuk, dan satu titik puncak. Penilaian yang benar adalah ....</h3>
+      <div class="options"><label class="option"><input type="radio" name="q11" value="0"><span>A. Semua benar</span></label><label class="option"><input type="radio" name="q11" value="1"><span>B. Hanya sisi lengkung benar</span></label><label class="option"><input type="radio" name="q11" value="2"><span>C. Rusuk dan titik puncak benar</span></label><label class="option"><input type="radio" name="q11" value="3"><span>D. Tidak ada yang benar</span></label></div>
+      <button class="check-btn" onclick="checkQuestion(11)">Periksa Jawaban</button>
+      <div class="feedback" id="fb11" aria-live="polite"></div>
+    </article><article class="qcard" data-group="2" data-index="12">
+      <h3>13. Dua benda: kaleng berbentuk tabung dan topi pesta berbentuk kerucut. Kesamaan unsur keduanya adalah ....</h3>
+      <div class="options"><label class="option"><input type="radio" name="q12" value="0"><span>A. Memiliki dua alas lingkaran</span></label><label class="option"><input type="radio" name="q12" value="1"><span>B. Memiliki alas lingkaran dan selimut lengkung</span></label><label class="option"><input type="radio" name="q12" value="2"><span>C. Memiliki titik puncak</span></label><label class="option"><input type="radio" name="q12" value="3"><span>D. Tidak memiliki sisi datar</span></label></div>
+      <button class="check-btn" onclick="checkQuestion(12)">Periksa Jawaban</button>
+      <div class="feedback" id="fb12" aria-live="polite"></div>
+    </article><article class="qcard" data-group="2" data-index="13">
+      <h3>14. Doni menyebut garis tegak dari puncak kerucut ke pusat alas sebagai garis pelukis. Koreksi paling tepat adalah ....</h3>
+      <div class="options"><label class="option"><input type="radio" name="q13" value="0"><span>A. Benar, itu garis pelukis</span></label><label class="option"><input type="radio" name="q13" value="1"><span>B. Itu tinggi kerucut</span></label><label class="option"><input type="radio" name="q13" value="2"><span>C. Itu diameter alas</span></label><label class="option"><input type="radio" name="q13" value="3"><span>D. Itu jari-jari alas</span></label></div>
+      <button class="check-btn" onclick="checkQuestion(13)">Periksa Jawaban</button>
+      <div class="feedback" id="fb13" aria-live="polite"></div>
+    </article></div>
+<div class="info"><h2>Rekap Hasil</h2><p id="score">Belum ada jawaban yang diperiksa.</p></div>
+</section>
+
+<section id="refleksi" class="section">
+<h1>Refleksi & Penutup</h1><div class="info"><h2>Refleksi Belajar</h2>
+<p>1. Apa perbedaan utama tabung, kerucut, dan bola?</p><textarea id="r1" rows="3" placeholder="Tuliskan jawabanmu..."></textarea>
+<p>2. Unsur bangun ruang mana yang paling mudah kamu identifikasi? Mengapa?</p><textarea id="r2" rows="3" placeholder="Tuliskan jawabanmu..."></textarea>
+<p>3. Bagian mana yang masih perlu kamu pelajari kembali?</p><textarea id="r3" rows="3" placeholder="Tuliskan jawabanmu..."></textarea>
+<button class="primary" onclick="saveReflection()">Simpan Refleksi</button><p id="reflectStatus"></p></div>
+<div class="info"><h2>Rangkuman</h2><ul><li>Bangun ruang sisi lengkung yang dipelajari adalah tabung, kerucut, dan bola.</li><li>Tabung memiliki dua alas lingkaran sejajar, selimut, dan tinggi.</li><li>Kerucut memiliki satu alas lingkaran, selimut, titik puncak, tinggi, dan garis pelukis.</li><li>Bola memiliki titik pusat, jari-jari, diameter, dan satu sisi lengkung; tidak memiliki rusuk atau titik sudut.</li></ul></div>
+<div class="info"><h2>Tantangan Akhir</h2><p>Temukan satu benda berbentuk tabung, kerucut, dan bola di sekitarmu. Tuliskan nama benda serta minimal dua unsur atau ciri yang dapat kamu identifikasi pada setiap benda.</p><textarea rows="4" placeholder="Catatan hasil pengamatan..."></textarea></div>
+</section>
+<footer><p>© KELAS BELAJAR • MPI Matematika SMP • V151.0</p></footer>
+</main></div>
+<script>
+const questionData=[{"prompt": "Benda manakah yang paling tepat dimodelkan sebagai tabung?", "options": ["Kaleng minuman", "Bola sepak", "Topi ulang tahun", "Dadu"], "correct": 0, "explanation": "Kaleng memiliki dua alas lingkaran sejajar dan selimut lengkung."}, {"prompt": "Bangun ruang sisi lengkung yang memiliki satu titik puncak adalah ....", "options": ["Tabung", "Kerucut", "Bola", "Kubus"], "correct": 1, "explanation": "Kerucut memiliki satu alas lingkaran dan satu titik puncak."}, {"prompt": "Bangun ruang yang seluruh permukaannya lengkung dan tidak memiliki rusuk maupun titik sudut adalah ....", "options": ["Tabung", "Kerucut", "Bola", "Prisma"], "correct": 2, "explanation": "Bola memiliki satu sisi lengkung, tanpa rusuk dan titik sudut."}, {"prompt": "Unsur tabung yang berbentuk dua lingkaran kongruen dan sejajar disebut ....", "options": ["Selimut", "Titik puncak", "Alas dan tutup", "Garis pelukis"], "correct": 2, "explanation": "Tabung memiliki alas dan tutup berbentuk lingkaran yang sejajar."}, {"prompt": "Jarak tegak lurus antara pusat alas dan pusat tutup tabung disebut ....", "options": ["Jari-jari", "Diameter", "Tinggi", "Garis pelukis"], "correct": 2, "explanation": "Tinggi tabung adalah jarak antara dua bidang alas dan tutup."}, {"prompt": "Garis dari pusat lingkaran alas menuju tepi lingkaran disebut ....", "options": ["Jari-jari", "Tinggi", "Rusuk", "Garis pelukis"], "correct": 0, "explanation": "Jari-jari menghubungkan pusat lingkaran dengan titik pada keliling."}, {"prompt": "Pada kerucut, ruas garis dari titik puncak ke titik pada keliling alas disebut ....", "options": ["Diameter", "Garis pelukis", "Tinggi", "Jari-jari"], "correct": 1, "explanation": "Garis pelukis berada pada selimut kerucut dari puncak ke tepi alas."}, {"prompt": "Kerucut mempunyai ....", "options": ["Dua alas lingkaran", "Satu alas lingkaran dan satu titik puncak", "Dua titik puncak", "Tidak memiliki alas"], "correct": 1, "explanation": "Kerucut memiliki satu alas berbentuk lingkaran dan satu titik puncak."}, {"prompt": "Pernyataan yang tepat tentang bola adalah ....", "options": ["Memiliki dua alas", "Memiliki satu titik puncak", "Memiliki satu sisi lengkung", "Memiliki tiga rusuk"], "correct": 2, "explanation": "Permukaan bola merupakan satu sisi lengkung yang menyelubungi ruang."}, {"prompt": "Jika sebuah benda memiliki alas dan tutup lingkaran sejajar serta satu selimut lengkung, benda itu paling mungkin ....", "options": ["Tabung", "Kerucut", "Bola", "Limas"], "correct": 0, "explanation": "Ciri tersebut merupakan karakteristik tabung."}, {"prompt": "Sebuah topi pesta berbentuk kerucut. Bagian lingkaran di bawah topi disebut ....", "options": ["Titik puncak", "Alas", "Garis pelukis", "Tinggi"], "correct": 1, "explanation": "Lingkaran pada bagian bawah kerucut adalah alas."}, {"prompt": "Rani mengamati bola basket. Ia menyatakan bola memiliki sisi lengkung, dua rusuk, dan satu titik puncak. Penilaian yang benar adalah ....", "options": ["Semua benar", "Hanya sisi lengkung benar", "Rusuk dan titik puncak benar", "Tidak ada yang benar"], "correct": 1, "explanation": "Bola hanya memiliki sisi lengkung; tidak memiliki rusuk atau titik sudut."}, {"prompt": "Dua benda: kaleng berbentuk tabung dan topi pesta berbentuk kerucut. Kesamaan unsur keduanya adalah ....", "options": ["Memiliki dua alas lingkaran", "Memiliki alas lingkaran dan selimut lengkung", "Memiliki titik puncak", "Tidak memiliki sisi datar"], "correct": 1, "explanation": "Keduanya memiliki alas lingkaran dan permukaan selimut lengkung; tabung punya dua alas, kerucut satu."}, {"prompt": "Doni menyebut garis tegak dari puncak kerucut ke pusat alas sebagai garis pelukis. Koreksi paling tepat adalah ....", "options": ["Benar, itu garis pelukis", "Itu tinggi kerucut", "Itu diameter alas", "Itu jari-jari alas"], "correct": 1, "explanation": "Tinggi kerucut menghubungkan puncak dengan pusat alas secara tegak lurus; garis pelukis menuju tepi alas."}];
+const checked=new Set(), results={};
+function showSection(id,btn){document.querySelectorAll('.section').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.navbtn').forEach(x=>x.classList.remove('active'));if(btn)btn.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
+function simulate(type){
+ const data={
+ tabung:'<b>Tabung:</b> dua alas lingkaran sejajar dan sama besar, satu selimut lengkung, tinggi, jari-jari, dan diameter. Contoh: kaleng.',
+ kerucut:'<b>Kerucut:</b> satu alas lingkaran, satu titik puncak, selimut lengkung, tinggi, jari-jari, diameter, dan garis pelukis. Contoh: topi pesta.',
+ bola:'<b>Bola:</b> satu sisi lengkung, titik pusat, jari-jari, dan diameter. Tidak memiliki alas, tutup, rusuk, atau titik sudut. Contoh: bola basket.'
+ };document.getElementById('simresult').innerHTML=data[type];
+}
+function checkQuestion(i){
+ if(checked.has(i))return;
+ const selected=document.querySelector('input[name="q'+i+'"]:checked');
+ const fb=document.getElementById('fb'+i);
+ if(!selected){fb.textContent='Pilih salah satu jawaban terlebih dahulu.';fb.className='feedback show';return;}
+ const chosen=Number(selected.value),q=questionData[i],ok=chosen===q.correct;
+ checked.add(i);results[i]=ok;
+ document.querySelectorAll('input[name="q'+i+'"]').forEach(x=>x.disabled=true);
+ fb.className='feedback show '+(ok?'correct':'wrong');
+ fb.innerHTML=(ok?'<b>Benar!</b> ':'<b>Belum tepat.</b> Jawaban benar: <b>'+String.fromCharCode(65+q.correct)+'. '+q.options[q.correct]+'</b>. ')+q.explanation;
+ const card=document.querySelector('.qcard[data-index="'+i+'"]');card.querySelector('.check-btn').disabled=true;card.querySelector('.check-btn').textContent='Sudah diperiksa';
+ updateScore();
+}
+function updateScore(){
+ const total=Object.keys(results).length,correct=Object.values(results).filter(Boolean).length;
+ const ev=[3,4,5,6,7,8].filter(i=>checked.has(i)).length;
+ document.getElementById('evalbar').style.width=(ev/6*100)+'%';
+ document.getElementById('evalstatus').textContent='Evaluasi diperiksa: '+ev+' dari 6'+(ev===6?' • Nilai evaluasi: '+( [3,4,5,6,7,8].filter(i=>results[i]).length/6*100).toFixed(0):'');
+ document.getElementById('score').textContent=total===14?'Selesai! Jawaban benar '+correct+' dari 14. Nilai keseluruhan: '+(correct/14*100).toFixed(0):'Sudah diperiksa '+total+' dari 14 soal. Jawaban benar: '+correct+'.';
+}
+function saveReflection(){const vals=['r1','r2','r3'].map(id=>document.getElementById(id).value.trim());document.getElementById('reflectStatus').textContent=vals.every(Boolean)?'Refleksi berhasil dicatat pada halaman ini.':'Lengkapi ketiga refleksi agar catatan belajarmu utuh.';}
+function toggleFull(){if(!document.fullscreenElement)document.documentElement.requestFullscreen?.();else document.exitFullscreen?.();}
+</script></body></html>

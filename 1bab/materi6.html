@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101735"><title>Operasi Hitung Campuran Bilangan Bulat | KELAS BELAJAR</title>
+<style>
+:root{--bg:#080f27;--navy:#101735;--panel:#17234a;--panel2:#1d2d5d;--line:#35477d;--blue:#4da3ff;--cyan:#52e0e0;--purple:#9b78ff;--yellow:#ffd166;--text:#f4f6ff;--muted:#c2cce8;--green:#55d6a2;--red:#ff858e;--radius:22px;--shadow:0 18px 50px #02071880}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#33236c 0,transparent 34%),linear-gradient(135deg,#08132d,#101b42 55%,#25164f);color:var(--text);font:20px/1.6 "Trebuchet MS",Arial,sans-serif;min-height:100vh}button,input,textarea{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}p{color:var(--muted);margin:.45rem 0 1rem}h1,h2,h3{line-height:1.2;margin:0 0 14px}h1{font-size:clamp(34px,5vw,54px)}h2{font-size:clamp(28px,3.4vw,38px)}h3{font-size:25px}.app{display:grid;grid-template-columns:290px minmax(0,1fr);min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;padding:25px 18px;background:#0c1532eF;border-right:1px solid #344575;display:flex;flex-direction:column;gap:20px;z-index:5}.brand{padding:8px 10px 18px;border-bottom:1px solid #344575}.brand-mark{display:inline-grid;place-items:center;width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,var(--blue),var(--purple));font-size:25px;font-weight:900;margin-bottom:12px}.brand strong{display:block;font-size:24px;letter-spacing:.06em}.brand small{display:block;color:var(--cyan);font-size:20px}.nav-label{color:#9eacd4;font-size:20px;font-weight:800;padding:0 10px}.nav{display:grid;gap:10px}.nav button{width:100%;text-align:left;padding:14px 15px;border:1px solid transparent;border-radius:15px;background:transparent;color:var(--muted);font-weight:800;transition:.2s}.nav button:hover{background:#1b2a55}.nav button.active{background:linear-gradient(100deg,#24539b,#553b9b);border-color:#718be0;color:white;box-shadow:0 8px 22px #050a2080}.side-note{margin-top:auto;background:#15234a;border:1px solid #344575;border-radius:16px;padding:15px;color:var(--muted)}.side-note strong{color:var(--yellow)}.main{min-width:0;padding:24px clamp(16px,3vw,42px) 60px;max-width:1500px;width:100%;margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;margin-bottom:24px}.crumb{color:var(--cyan);font-weight:800}.tools{display:flex;gap:10px;flex-wrap:wrap}.tool-btn,.btn{border:1px solid #52679f;border-radius:13px;background:#1a2b59;padding:11px 16px;font-weight:800;min-height:48px}.tool-btn:hover,.btn:hover{filter:brightness(1.15);transform:translateY(-1px)}.btn.primary{background:linear-gradient(100deg,#2378d4,#7454d6);border:0}.btn.yellow{background:var(--yellow);color:#1b2140;border:0}.btn.ghost{background:transparent}.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}.screen{display:none;animation:fade .25s ease}.screen.active{display:block}@keyframes fade{from{opacity:.3;transform:translateY(8px)}to{opacity:1;transform:none}}.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:22px;align-items:center;padding:clamp(24px,4vw,46px);border:1px solid #4b5fa0;border-radius:28px;background:linear-gradient(120deg,#172c5b,#35276d);box-shadow:var(--shadow);overflow:hidden}.eyebrow{color:var(--cyan);font-weight:900;letter-spacing:.09em;text-transform:uppercase;margin-bottom:12px}.hero p{font-size:22px}.hero-art{min-height:230px;display:grid;place-items:center;background:radial-gradient(circle,#526bdc55,transparent 65%);position:relative}.orbit{width:min(260px,80%);aspect-ratio:1;border:3px dashed #8e9de8;border-radius:50%;display:grid;place-items:center;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;width:24px;height:24px;border-radius:50%;background:var(--yellow);box-shadow:0 0 24px #ffd166}.orbit:before{left:5%;top:48%}.orbit:after{right:5%;top:48%;background:var(--cyan)}.orbit strong{font-size:56px;color:white}.pill{display:inline-block;border-radius:99px;padding:7px 14px;background:#243d79;color:#dce8ff;font-weight:800}.grid{display:grid;gap:18px}.two{grid-template-columns:repeat(2,minmax(0,1fr))}.three{grid-template-columns:repeat(3,minmax(0,1fr))}.card{background:linear-gradient(145deg,#18264f,#121e40);border:1px solid #344879;border-radius:var(--radius);padding:22px;box-shadow:0 10px 30px #03091e45}.card h3{color:#fff}.card strong{color:#fff}.section-head{margin:8px 0 24px}.section-head p{max-width:900px;font-size:21px}.callout{border-left:5px solid var(--yellow);background:#26315b;padding:18px 20px;border-radius:0 16px 16px 0;margin:20px 0}.callout p{margin:6px 0 0}.step-list{padding-left:28px;color:var(--muted)}.step-list li{padding:5px 0}.numberline-wrap{padding:22px;background:#101a38;border-radius:18px;border:1px solid #40558d;margin:15px 0}.numberline{display:grid;grid-template-columns:repeat(41,minmax(22px,1fr));gap:4px;position:relative}.numberline:before{content:"";position:absolute;left:5%;right:5%;height:4px;background:#8094d2;top:27px;border-radius:5px}.point{position:relative;z-index:1;display:grid;justify-items:center;gap:10px;color:var(--muted);font-weight:900}.dot{width:18px;height:18px;border-radius:50%;background:var(--blue);border:3px solid #dce9ff}.point.zero .dot{background:var(--yellow);width:24px;height:24px}.point.current .dot{background:var(--green);box-shadow:0 0 0 7px #55d6a233}.sim-controls{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:18px}.sim-controls input{flex:1;min-width:180px;accent-color:var(--cyan)}.big-value{font-size:32px;font-weight:900;color:var(--yellow)}.choice-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:15px 0}.choice{padding:13px 16px;text-align:left;border:1px solid #53699f;background:#1b2c59;border-radius:13px;min-height:54px}.choice:hover:not(:disabled){background:#2a4079}.choice.selected{border:2px solid var(--cyan);background:#214a70}.choice.correct{border:2px solid var(--green);background:#164b48}.choice.incorrect{border:2px solid var(--red);background:#542b49}.feedback{min-height:32px;padding:8px 0;font-weight:800}.feedback.good{color:var(--green)}.feedback.try{color:var(--yellow)}.explain{background:#101a38;border:1px solid #3c5084;border-radius:14px;padding:15px;margin-top:10px;color:var(--muted)}.question-card{margin-bottom:17px}.meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--cyan);font-weight:800}.progress{height:10px;background:#34436e;border-radius:99px;overflow:hidden;margin:15px 0 25px}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--cyan),var(--purple));transition:width .25s}.result-score{font-size:54px;font-weight:900;color:var(--yellow)}.field{width:100%;background:#0e1937;border:1px solid #50649a;color:white;border-radius:14px;padding:14px;min-height:130px;resize:vertical}.field::placeholder{color:#a8b5d7}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.reflection-prompt{padding:15px;border:1px solid #43588c;border-radius:14px;background:#111d3d;margin:12px 0}.muted{color:var(--muted)}.small-note{font-size:20px;color:#aebbe0}.footer{text-align:center;color:#9eacd4;padding:30px 10px 0}.hidden{display:none!important}.toast{position:fixed;bottom:20px;right:20px;background:#1b3760;border:1px solid var(--cyan);padding:14px 18px;border-radius:14px;z-index:20;display:none}.mobile-title{display:none}
+@media(max-width:1000px){.app{grid-template-columns:240px minmax(0,1fr)}.three{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr .6fr}}
+@media(max-width:760px){.app{display:block}.sidebar{position:relative;height:auto;padding:14px;gap:12px;border-right:0;border-bottom:1px solid #344575}.brand{display:flex;align-items:center;gap:12px;padding:0 4px 10px}.brand-mark{margin:0;width:44px;height:44px}.brand strong{font-size:22px}.brand small{font-size:20px}.nav-label,.side-note{display:none}.nav{display:flex;overflow-x:auto;padding-bottom:5px}.nav button{width:auto;min-width:max-content;padding:11px 14px;font-size:20px}.main{padding:16px 14px 42px}.topbar{margin-bottom:16px}.hero{grid-template-columns:1fr}.hero-art{min-height:150px}.two,.three{grid-template-columns:1fr}.choice-list{grid-template-columns:1fr}.tools{width:100%}.tool-btn{flex:1}.numberline-wrap{overflow-x:auto}.numberline{min-width:1100px}}
+@media print{body{background:white!important;color:#111!important;font-size:20px}.sidebar,.topbar,.actions,.tools,.nav,.footer{display:none!important}.app{display:block}.main{padding:0;max-width:none}.screen{display:block!important;break-inside:avoid}.card,.hero,.callout,.numberline-wrap{background:white!important;color:#111!important;border:1px solid #777!important;box-shadow:none!important}.card p,.hero p,.section-head p,.callout p,.step-list,.muted{color:#222!important}.choice{background:white!important;color:#111!important;border:1px solid #777!important}.screen:not(.active){display:block!important}.field{border:1px solid #777;color:#111}.hero-art{display:none}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+ <div class="brand"><div class="brand-mark">KB</div><div><strong>KELAS BELAJAR</strong><small>MPI MATEMATIKA SMP</small></div></div>
+ <div class="nav-label">MENU PEMBELAJARAN</div>
+ <nav class="nav" aria-label="Menu pembelajaran">
+  <button class="active" data-screen="0">01 · Tujuan Pembelajaran</button>
+  <button data-screen="1">02 · Materi &amp; Simulasi</button>
+  <button data-screen="2">03 · Soal Interaktif</button>
+  <button data-screen="3">04 · Refleksi</button>
+ </nav>
+ <div class="side-note"><strong>Strategi belajar</strong><br>Amati contoh → pahami konsep → coba sendiri → evaluasi pemahaman.</div>
+</aside>
+<main class="main">
+ <div class="topbar"><div class="crumb" id="crumb">KELAS BELAJAR / TUJUAN PEMBELAJARAN</div><div class="tools"><button class="tool-btn" id="fullscreen">⛶ Layar penuh</button><button class="tool-btn" id="print">▤ Cetak</button></div></div>
+ <section class="screen active" id="screen-0">
+  <div class="hero">
+   <div><span class="pill">MATEMATIKA SMP · BILANGAN</span><p class="eyebrow">Ayo belajar dengan mudah</p><h1>Operasi Hitung Campuran Bilangan Bulat</h1><p>Pelajari urutan operasi hitung campuran, susun model matematika, dan selesaikan masalah kehidupan sehari-hari yang melibatkan bilangan bulat.</p><button class="btn yellow" data-go="1">Mulai belajar →</button></div>
+   <div class="hero-art" aria-hidden="true"><div class="orbit"><strong>2 + 3 × (−4) = −10</strong></div></div>
+  </div>
+  <section class="card" aria-labelledby="apersepsi-title" style="margin-top:20px">
+   <p class="eyebrow">SEBELUM MEMULAI · AMATI ILUSTRASI</p>
+   <h2 id="apersepsi-title">💡 Apersepsi: Perubahan Saldo dan Pengeluaran</h2>
+   <p>Dina memiliki saldo awal Rp20.000. Selama 3 hari, ia menggunakan Rp4.000 setiap hari. Setelah itu, ia menerima tambahan uang Rp5.000. Berapa saldo Dina sekarang? Situasi ini dapat dimodelkan dengan operasi bilangan bulat: 20.000 + 3 × (−4.000) + 5.000.</p>
+   <div class="grid three" style="margin-top:16px">
+    <article class="card"><h3>💰 Saldo awal</h3><p>Saldo awal dinyatakan positif, yaitu +20.000.</p></article>
+    <article class="card"><h3>🧾 Pengeluaran berulang</h3><p>Pengeluaran Rp4.000 selama 3 hari dimodelkan sebagai 3 × (−4.000).</p></article>
+    <article class="card"><h3>🎁 Uang tambahan</h3><p>Uang yang diterima menambah saldo, yaitu +5.000.</p></article>
+   </div>
+   <div class="callout"><strong>Ayo pikirkan!</strong><p>Mengapa perkalian 3 × (−4.000) dihitung sebelum penjumlahan saldo awal dan uang tambahan?</p></div>
+  </section>
+  <div class="grid two" style="margin-top:20px">
+   <article class="card"><h3>🎯 Tujuan pembelajaran</h3><p>Melalui penyajian soal dan permasalahan kontekstual, peserta didik mampu:</p><ol class="step-list"><li>Menerapkan urutan operasi hitung campuran bilangan bulat dengan tepat.</li><li>Menyelesaikan operasi hitung campuran yang melibatkan penjumlahan, pengurangan, perkalian, dan pembagian.</li><li>Mengidentifikasi informasi penting dan menentukan bilangan positif atau negatif dalam suatu permasalahan.</li><li>Menyusun model matematika dari masalah kehidupan sehari-hari dan menyelesaikannya dengan benar.</li></ol></article>
+   <article class="card"><h3>🧭 Cara menggunakan MPI</h3><ol class="step-list"><li>Amati apersepsi dan pahami tujuan pembelajaran.</li><li>Pelajari urutan operasi dan cara memodelkan permasalahan.</li><li>Gunakan simulasi untuk melihat model matematika dari situasi sehari-hari.</li><li>Kerjakan aktivitas pemahaman, evaluasi, dan tantangan HOTS.</li><li>Baca pembahasan serta langkah penyelesaian, lalu tuliskan refleksi.</li></ol></article>
+  </div>
+  <article class="card" style="margin-top:20px">
+   <h3>🌍 Manfaat Operasi Hitung Campuran Bilangan Bulat</h3>
+   <p>Kemampuan memodelkan masalah dengan bilangan bulat membantu kita mengambil keputusan dan menghitung perubahan dalam kehidupan sehari-hari.</p>
+   <ol class="step-list">
+    <li><strong>Keuangan pribadi:</strong> menghitung saldo awal, pemasukan, dan pengeluaran berulang.</li>
+    <li><strong>Suhu:</strong> menghitung perubahan suhu yang naik dan turun beberapa kali.</li>
+    <li><strong>Elevator dan ketinggian:</strong> menghitung perpindahan naik atau turun dari posisi awal.</li>
+    <li><strong>Permainan dan kompetisi:</strong> menghitung akumulasi poin positif dan pengurangan poin.</li>
+   </ol>
+  </article>
+  <div class="callout"><strong>Ingat!</strong><p>Kerjakan operasi dalam tanda kurung terlebih dahulu. Selanjutnya perkalian dan pembagian dari kiri ke kanan, kemudian penjumlahan dan pengurangan dari kiri ke kanan. Selalu sesuaikan tanda bilangan dengan makna situasi.</p></div>
+  <div class="actions"><button class="btn primary" data-go="1">Lanjut ke Materi &amp; Simulasi →</button></div>
+ </section><section class="screen" id="screen-1">
+  <div class="section-head"><p class="eyebrow">BAGIAN 02 · PAHAMI KONSEP</p><h2>Operasi Hitung Campuran dan Pemodelan Masalah</h2><p>Gunakan aturan urutan operasi, makna bilangan positif-negatif, dan model matematika untuk menyelesaikan masalah.</p></div>
+  <article class="card">
+   <h3>📘 Urutan Operasi Hitung Campuran</h3>
+   <ol class="step-list">
+    <li>Kerjakan operasi yang berada di dalam tanda kurung terlebih dahulu.</li>
+    <li>Kerjakan perkalian dan pembagian secara berurutan dari kiri ke kanan.</li>
+    <li>Kerjakan penjumlahan dan pengurangan secara berurutan dari kiri ke kanan.</li>
+   </ol>
+   <div class="callout"><strong>Contoh 1: Tanpa tanda kurung</strong><p>18 − 3 × 4 + (−6) ÷ 2</p><ol class="step-list"><li>Perkalian dan pembagian: 3 × 4 = 12 dan (−6) ÷ 2 = −3.</li><li>Ekspresi menjadi 18 − 12 + (−3).</li><li>Hitung dari kiri ke kanan: 18 − 12 = 6, lalu 6 + (−3) = 3.</li></ol><div class="big-value">Hasil = 3</div></div>
+  </article>
+  <article class="card" style="margin-top:18px">
+   <h3>🧩 Contoh 2: Menggunakan tanda kurung</h3>
+   <p>Hitung (−8 + 3) × 4 − 6.</p>
+   <ol class="step-list"><li>Kerjakan tanda kurung: −8 + 3 = −5.</li><li>Kerjakan perkalian: (−5) × 4 = −20.</li><li>Kerjakan pengurangan: −20 − 6 = −26.</li></ol>
+   <div class="callout"><strong>Hasil akhir:</strong><div class="big-value">−26</div></div>
+  </article>
+  <article class="card" style="margin-top:18px">
+   <h3>📝 Langkah Memodelkan Masalah Kontekstual</h3>
+   <ol class="step-list">
+    <li><strong>Pahami cerita:</strong> tentukan apa yang diketahui dan apa yang ditanyakan.</li>
+    <li><strong>Tentukan tanda:</strong> gunakan bilangan positif untuk penambahan/kenaikan dan negatif untuk pengurangan/penurunan sesuai konteks.</li>
+    <li><strong>Pilih operasi:</strong> ubah informasi menjadi penjumlahan, pengurangan, perkalian, atau pembagian.</li>
+    <li><strong>Tulis model matematika:</strong> susun operasi sesuai urutan kejadian dan aturan hitung.</li>
+    <li><strong>Hitung dan tafsirkan:</strong> selesaikan model, lalu tulis jawaban dengan satuan dan makna yang sesuai.</li>
+   </ol>
+  </article>
+  <article class="card" style="margin-top:18px">
+   <h3>🎮 Simulasi Interaktif: Modelkan Situasi Sehari-hari</h3>
+   <p>Pilih satu situasi. Amati informasi, model matematika, urutan penyelesaian, dan makna hasilnya.</p>
+   <label for="contextCase"><strong>Pilih situasi</strong></label>
+   <select id="contextCase" class="field" style="min-height:58px;padding:10px;width:100%">
+    <option value="saldo">Saldo uang Dina</option>
+    <option value="lift">Perjalanan lift</option>
+    <option value="suhu">Perubahan suhu</option>
+    <option value="skor">Skor pertandingan</option>
+   </select>
+   <div class="grid two" style="margin-top:16px">
+    <div class="callout"><p>Informasi situasi</p><div id="contextStory">Saldo awal Dina Rp20.000. Ia mengeluarkan Rp4.000 per hari selama 3 hari, lalu menerima Rp5.000.</div></div>
+    <div class="callout"><p>Model matematika</p><div class="big-value" id="contextEquation">20.000 + 3 × (−4.000) + 5.000</div></div>
+   </div>
+   <div class="callout" style="margin-top:14px"><strong>Langkah penyelesaian</strong><p id="contextSteps">3 × (−4.000) = −12.000. Kemudian 20.000 − 12.000 + 5.000 = 13.000.</p><div class="big-value" id="contextAnswer">Saldo akhir Dina Rp13.000.</div></div>
+  </article>
+  <div class="grid two" style="margin-top:18px">
+   <article class="card"><h3>🔎 Contoh 3: Posisi lift</h3><p>Lift mulai dari lantai 2, turun 3 lantai setiap perjalanan selama 4 perjalanan, lalu naik 5 lantai.</p><ol class="step-list"><li>Model: 2 + 4 × (−3) + 5.</li><li>Perkalian: 4 × (−3) = −12.</li><li>Hitung: 2 − 12 + 5 = −5.</li></ol><div class="callout"><strong>Kesimpulan:</strong><p>Lift berhenti di lantai −5.</p></div></article>
+   <article class="card"><h3>🔎 Contoh 4: Skor pertandingan</h3><p>Tim memiliki 10 poin. Dalam 3 babak, tim mendapat pengurangan 4 poin setiap babak, lalu memperoleh bonus 6 poin.</p><ol class="step-list"><li>Model: 10 + 3 × (−4) + 6.</li><li>Perkalian: 3 × (−4) = −12.</li><li>Hitung: 10 − 12 + 6 = 4.</li></ol><div class="callout"><strong>Kesimpulan:</strong><p>Skor akhir tim adalah 4 poin.</p></div></article>
+  </div>
+  <div class="callout"><strong>Periksa kewajaran jawaban!</strong><p>Pastikan tanda positif atau negatif sesuai cerita, operasi sudah dikerjakan dengan urutan yang benar, dan satuan jawaban sesuai pertanyaan.</p></div>
+  <div class="actions"><button class="btn ghost" data-go="0">← Kembali</button><button class="btn primary" data-go="2">Mulai Soal Interaktif →</button></div>
+ </section>
+<section class="screen" id="screen-2">
+  <div class="section-head"><p class="eyebrow">BAGIAN 03 · LATIHAN DAN TANTANGAN</p><h2>Soal Interaktif: Operasi Hitung Campuran Bilangan Bulat</h2><p>Pilih jawaban yang menurutmu tepat. Setelah memeriksa, baca alasan dan pembahasan. Kamu dapat mengganti pilihan dan memeriksa kembali.</p></div>
+  <div class="card"><div class="meta"><span>AKTIVITAS PEMAHAMAN</span><span>3 soal · masing-masing 4 pilihan</span></div><div id="practice"></div></div>
+  <div class="card" style="margin-top:18px"><div class="meta"><span>EVALUASI PEMBELAJARAN</span><span>6 soal</span></div><div class="progress"><span id="quizProgress"></span></div><div id="quiz"></div><div class="actions"><button class="btn primary" id="finishQuiz">Lihat hasil evaluasi</button><button class="btn ghost" id="resetQuiz">Ulangi evaluasi</button></div><p class="feedback" id="quizNotice" aria-live="polite"></p><div id="quizResult" class="callout hidden" aria-live="polite"></div></div>
+  <div class="card" style="margin-top:18px"><div class="meta"><span>TANTANGAN HOTS</span><span>5 soal pilihan ganda · 4 opsi</span></div><p>Analisis setiap situasi, pilih satu dari empat jawaban, lalu tekan Periksa jawaban untuk melihat umpan balik dan cara penyelesaiannya.</p><div id="hots"></div></div>
+  <div class="actions"><button class="btn ghost" data-go="1">← Kembali ke Materi</button><button class="btn primary" data-go="3">Lanjut ke Refleksi →</button></div>
+ </section>
+ <section class="screen" id="screen-3">
+  <div class="section-head"><p class="eyebrow">BAGIAN 04 · PIKIRKAN KEMBALI</p><h2>Refleksi Pembelajaran</h2><p>Refleksi membantu kamu menyadari apa yang sudah dipahami dan bagian mana yang masih perlu dipelajari.</p></div>
+  <div class="grid two">
+   <article class="card"><h3>💡 Coba jelaskan dengan kata-katamu</h3><div class="reflection-prompt"><strong>1. Bagaimana urutan mengerjakan operasi hitung campuran?</strong></div><textarea class="field" id="reflect1" placeholder="Tuliskan jawabanmu di sini..."></textarea><div class="reflection-prompt"><strong>2. Mengapa perkalian dan pembagian dikerjakan sebelum penjumlahan dan pengurangan?</strong></div><textarea class="field" id="reflect2" placeholder="Tuliskan jawabanmu di sini..."></textarea><div class="reflection-prompt"><strong>3. Buat satu masalah kehidupan sehari-hari, tuliskan model matematika, lalu jelaskan penyelesaiannya.</strong></div><textarea class="field" id="reflect3" placeholder="Tuliskan contoh dan penjelasannya..."></textarea><div class="actions"><button class="btn primary" id="saveReflection">Simpan refleksi di halaman ini</button><button class="btn ghost" id="clearReflection">Hapus jawaban</button></div><p class="small-note" id="reflectStatus" aria-live="polite">Jawaban refleksi tidak dikirim ke server.</p></article>
+   <article class="card"><h3>✅ Cek pemahaman diri</h3><p>Berikan tanda centang pada pernyataan yang sudah dapat kamu lakukan.</p><label><input type="checkbox"> Saya dapat menerapkan urutan operasi hitung campuran.</label><br><br><label><input type="checkbox"> Saya dapat menyelesaikan operasi campuran yang melibatkan empat operasi hitung.</label><br><br><label><input type="checkbox"> Saya dapat menyusun model matematika dari permasalahan kontekstual.</label><br><br><label><input type="checkbox"> Saya dapat menafsirkan hasil perhitungan sesuai konteks dan satuannya.</label><div class="callout"><strong>Pesan belajar</strong><p>Jika masih ada yang belum kamu kuasai, kembali ke bagian Materi &amp; Simulasi. Belajar kembali adalah bagian dari proses memahami.</p></div></article>
+  </div>
+  <div class="actions"><button class="btn ghost" data-go="2">← Kembali ke Soal</button><button class="btn yellow" id="restartAll">Ulangi dari awal ↺</button></div>
+ </section>
+ <div class="footer">KELAS BELAJAR · Amati · Pahami · Coba · Refleksi</div>
+</main>
+</div><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(()=>{
+ const screens=[...document.querySelectorAll('.screen')],nav=[...document.querySelectorAll('[data-screen]')],crumb=document.getElementById('crumb');
+ const names=['TUJUAN PEMBELAJARAN','MATERI & SIMULASI','SOAL INTERAKTIF','REFLEKSI'];
+ function go(n){n=Math.max(0,Math.min(3,Number(n)));screens.forEach((s,i)=>s.classList.toggle('active',i===n));nav.forEach((b,i)=>{b.classList.toggle('active',i===n);if(i===n)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current')});crumb.textContent='KELAS BELAJAR / '+names[n];window.scrollTo({top:0,behavior:'smooth'});}
+ nav.forEach(b=>b.addEventListener('click',()=>go(b.dataset.screen)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
+ document.getElementById('fullscreen').addEventListener('click',async()=>{try{if(!document.fullscreenElement)await document.documentElement.requestFullscreen();else await document.exitFullscreen()}catch(e){toast('Mode layar penuh tidak didukung pada browser ini.')}});
+ document.getElementById('print').addEventListener('click',()=>window.print());
+ function toast(t){const el=document.getElementById('toast');el.textContent=t;el.style.display='block';setTimeout(()=>el.style.display='none',2600)}
+ // Simulasi pemodelan masalah kontekstual
+ const contextCase=document.getElementById('contextCase');
+ const contextData={
+  saldo:{story:'Saldo awal Dina Rp20.000. Ia mengeluarkan Rp4.000 per hari selama 3 hari, lalu menerima Rp5.000.',equation:'20.000 + 3 × (−4.000) + 5.000',steps:'3 × (−4.000) = −12.000. Kemudian 20.000 − 12.000 + 5.000 = 13.000.',answer:'Saldo akhir Dina Rp13.000.'},
+  lift:{story:'Lift mulai dari lantai 2, turun 3 lantai setiap perjalanan selama 4 perjalanan, lalu naik 5 lantai.',equation:'2 + 4 × (−3) + 5',steps:'4 × (−3) = −12. Kemudian 2 − 12 + 5 = −5.',answer:'Lift berhenti di lantai −5.'},
+  suhu:{story:'Suhu awal −4°C. Suhu naik 3°C setiap jam selama 5 jam, lalu turun 2°C.',equation:'−4 + 5 × 3 − 2',steps:'5 × 3 = 15. Kemudian −4 + 15 − 2 = 9.',answer:'Suhu akhirnya 9°C.'},
+  skor:{story:'Tim memiliki 10 poin. Tim mendapat pengurangan 4 poin setiap babak selama 3 babak, lalu mendapat bonus 6 poin.',equation:'10 + 3 × (−4) + 6',steps:'3 × (−4) = −12. Kemudian 10 − 12 + 6 = 4.',answer:'Skor akhir tim adalah 4 poin.'}
+ };
+ function updateContext(){
+  const item=contextData[contextCase.value];
+  document.getElementById('contextStory').textContent=item.story;
+  document.getElementById('contextEquation').textContent=item.equation;
+  document.getElementById('contextSteps').textContent=item.steps;
+  document.getElementById('contextAnswer').textContent=item.answer;
+ }
+ contextCase.addEventListener('change',updateContext);
+ updateContext();
+ // Practice activities
+ const practices=[
+  {q:'Hasil dari 12 − 3 × 5 adalah …',c:['45','−3','3','−45'],a:1,e:'Kerjakan perkalian lebih dahulu: 3 × 5 = 15. Kemudian 12 − 15 = −3.'},
+  {q:'Hasil dari (−18 + 6) ÷ 3 adalah …',c:['−8','−4','4','8'],a:1,e:'Kerjakan tanda kurung: −18 + 6 = −12. Kemudian −12 ÷ 3 = −4.'},
+  {q:'Model matematika untuk saldo Rp15.000 yang berkurang Rp2.000 setiap hari selama 4 hari adalah …',c:['15.000 + 4 × 2.000','15.000 − 4 × (−2.000)','15.000 + 4 × (−2.000)','(15.000 + 4) × (−2.000)'],a:2,e:'Saldo awal bernilai positif dan pengeluaran harian bernilai −2.000. Selama 4 hari modelnya 15.000 + 4 × (−2.000).'}
+ ];
+ function buildChoiceQuestion(item,index,container,kind){const el=document.createElement('article');el.className='question-card';el.innerHTML=`<div class="meta"><span>${kind} ${index+1}</span><span>Pilih satu jawaban</span></div><h3>${item.q}</h3><div class="choice-list">${item.c.map((c,j)=>`<button class="choice" type="button" aria-pressed="false">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="actions"><button type="button" class="btn ghost check">Periksa jawaban</button><button type="button" class="btn ghost retry">Coba lagi</button></div><div class="feedback" aria-live="polite"></div><div class="explain hidden"></div>`;container.appendChild(el);let selected=null;const buttons=[...el.querySelectorAll('.choice')],feedback=el.querySelector('.feedback'),explain=el.querySelector('.explain');buttons.forEach((b,j)=>b.addEventListener('click',()=>{selected=j;buttons.forEach((x,k)=>{x.classList.toggle('selected',k===j);x.setAttribute('aria-pressed',String(k===j));x.classList.remove('correct','incorrect')});feedback.textContent='Pilihan tersimpan. Tekan Periksa jawaban untuk melihat umpan balik.';feedback.className='feedback';explain.classList.add('hidden')}));el.querySelector('.check').addEventListener('click',()=>{if(selected===null){feedback.textContent='Pilih satu jawaban terlebih dahulu.';feedback.className='feedback try';return}buttons.forEach((b,j)=>{b.classList.remove('correct','incorrect');if(j===selected)b.classList.add(j===item.a?'correct':'incorrect')});feedback.textContent=selected===item.a?'Tepat! Jawabanmu benar.':'Belum tepat. Tidak apa-apa, pelajari kembali alasannya.';feedback.className='feedback '+(selected===item.a?'good':'try');explain.textContent='Pembahasan dan cara penyelesaian: '+item.e;explain.classList.remove('hidden')});el.querySelector('.retry').addEventListener('click',()=>{selected=null;buttons.forEach(b=>{b.classList.remove('selected','correct','incorrect');b.setAttribute('aria-pressed','false')});feedback.textContent='Silakan pilih jawaban lagi.';feedback.className='feedback';explain.classList.add('hidden')});return {getSelected:()=>selected};}
+ const practiceRoot=document.getElementById('practice');practices.forEach((q,i)=>buildChoiceQuestion(q,i,practiceRoot,'Aktivitas'));
+ // Evaluation
+ const questions=[
+  {cat:'Urutan operasi',q:'Nilai dari 24 ÷ (−6) + 3 × (−2) adalah …',c:['−10','−2','2','10'],a:0,e:'Kerjakan pembagian dan perkalian: 24 ÷ (−6) = −4 dan 3 × (−2) = −6. Jumlahkan: −4 + (−6) = −10.'},
+  {cat:'Tanda kurung',q:'Nilai dari 5 × (−3 + 7) − 12 adalah …',c:['−32','−8','8','32'],a:2,e:'Kerjakan kurung: −3 + 7 = 4. Kemudian 5 × 4 − 12 = 20 − 12 = 8. Periksa: opsi hasil 8 adalah nilai yang benar.'},
+  {cat:'Operasi campuran',q:'Hasil dari −30 ÷ 5 × (−2) + 7 adalah …',c:['−5','5','19','−19'],a:2,e:'Pembagian dan perkalian dari kiri ke kanan: −30 ÷ 5 = −6, lalu −6 × (−2) = 12. Terakhir 12 + 7 = 19.'},
+  {cat:'Pemodelan masalah',q:'Suhu awal −4°C. Suhu naik 3°C setiap jam selama 5 jam, lalu turun 2°C. Model yang tepat untuk suhu akhir adalah …',c:['−4 + 5 × 3 − 2','−4 × 5 + 3 − 2','−4 + 3 × (5 − 2)','(−4 + 5) × 3 − 2'],a:0,e:'Suhu awal −4°C, kenaikan selama 5 jam adalah 5 × 3, lalu turun 2°C. Modelnya −4 + 5 × 3 − 2.'},
+  {cat:'Pemodelan masalah',q:'Lift berada di lantai −2. Lift naik 4 lantai sebanyak 3 kali, kemudian turun 5 lantai. Di lantai berapa lift berhenti?',c:['−19','−5','5','15'],a:2,e:'Model: −2 + 3 × 4 − 5. Perkalian 3 × 4 = 12, lalu −2 + 12 − 5 = 5. Lift berhenti di lantai 5.'},
+  {cat:'Interpretasi hasil',q:'Sebuah tim memiliki 18 poin. Tim mendapat penalti 6 poin pada masing-masing dari 4 babak. Setelah itu tim mendapat bonus 9 poin. Skor akhirnya adalah …',c:['−15 poin','3 poin','9 poin','15 poin'],a:1,e:'Model: 18 + 4 × (−6) + 9. Hitung 4 × (−6) = −24, lalu 18 − 24 + 9 = 3. Jadi skor akhir 3 poin.'}
+ ];
+ const quizRoot=document.getElementById('quiz');let quizState=[];
+ function renderQuiz(){quizRoot.innerHTML='';quizState=questions.map(()=>({selected:null,checked:false}));questions.forEach((q,i)=>{const el=document.createElement('article');el.className='question-card card';el.innerHTML=`<div class="meta"><span>${q.cat}</span><span>Soal ${i+1} dari ${questions.length}</span></div><h3>${q.q}</h3><div class="choice-list">${q.c.map((c,j)=>`<button type="button" class="choice" aria-pressed="false">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="actions"><button class="btn ghost check" type="button">Periksa jawaban</button></div><div class="feedback" aria-live="polite"></div><div class="explain hidden"></div>`;quizRoot.appendChild(el);const st=quizState[i],bs=[...el.querySelectorAll('.choice')],fb=el.querySelector('.feedback'),ex=el.querySelector('.explain');bs.forEach((b,j)=>b.addEventListener('click',()=>{st.selected=j;st.checked=false;bs.forEach((x,k)=>{x.classList.toggle('selected',j===k);x.classList.remove('correct','incorrect');x.setAttribute('aria-pressed',String(j===k))});fb.textContent='Pilihan diperbarui. Periksa kembali jawabanmu.';fb.className='feedback';ex.classList.add('hidden');updateProgress()}));el.querySelector('.check').addEventListener('click',()=>{if(st.selected===null){fb.textContent='Pilih satu jawaban sebelum memeriksa.';fb.className='feedback try';return}st.checked=true;bs.forEach((b,j)=>{b.classList.remove('correct','incorrect');if(j===st.selected)b.classList.add(j===q.a?'correct':'incorrect')});fb.textContent=st.selected===q.a?'Benar! Kamu memahami konsep ini.':'Belum tepat. Baca pembahasan, lalu ubah pilihan jika diperlukan.';fb.className='feedback '+(st.selected===q.a?'good':'try');ex.textContent='Pembahasan: '+q.e;ex.classList.remove('hidden');updateProgress()})});updateProgress()}
+ function updateProgress(){const done=quizState.filter(s=>s.checked).length;document.getElementById('quizProgress').style.width=(done/questions.length*100)+'%'}
+ renderQuiz();document.getElementById('resetQuiz').addEventListener('click',()=>{renderQuiz();document.getElementById('quizResult').classList.add('hidden');document.getElementById('quizNotice').textContent='Evaluasi sudah diatur ulang.'});
+ document.getElementById('finishQuiz').addEventListener('click',()=>{const missing=quizState.findIndex(s=>!s.checked);const notice=document.getElementById('quizNotice'),result=document.getElementById('quizResult');if(missing!==-1){notice.textContent=`Periksa jawaban soal ${missing+1} terlebih dahulu.`;notice.className='feedback try';quizRoot.children[missing].scrollIntoView({behavior:'smooth',block:'center'});return}const score=quizState.reduce((sum,s,i)=>sum+(s.selected===questions[i].a?1:0),0),pct=Math.round(score/questions.length*100);const weak=[...new Set(questions.filter((q,i)=>quizState[i].selected!==q.a).map(q=>q.cat))];result.innerHTML=`<h3>Hasil evaluasi: <span class="result-score">${pct}</span></h3><p>${score} dari ${questions.length} jawaban benar.</p><p>${pct===100?'Luar biasa! Semua jawaban tepat.':pct>=67?'Bagus! Kamu sudah memahami sebagian besar materi. Pelajari kembali soal yang belum tepat.':'Terus berlatih. Baca ulang materi tentang urutan operasi hitung campuran.'}</p><p><strong>Bagian yang perlu ditinjau:</strong> ${weak.length?weak.join(', '):'Tidak ada. Semua kategori terjawab benar.'}</p>`;result.classList.remove('hidden');notice.textContent='Hasil berhasil dihitung berdasarkan pilihan terakhir yang sudah diperiksa.';notice.className='feedback good';result.scrollIntoView({behavior:'smooth',block:'center'})});
+ // HOTS: pilihan ganda dengan kunci, umpan balik, dan langkah penyelesaian
+ const hots=[
+  {q:'Sebuah toko memiliki 5 kotak apel. Setiap kotak berisi 12 apel. Sebanyak 18 apel terjual pada pagi hari dan 9 apel rusak. Berapa apel yang masih dapat dijual?',c:['27 apel','33 apel','42 apel','51 apel'],a:1,e:'Langkah 1: Jumlah awal apel = 5 × 12 = 60. Langkah 2: Apel yang tidak dapat dijual = 18 + 9 = 27. Langkah 3: Apel tersisa = 60 − 27 = 33 apel.'},
+  {q:'Sebuah kapal selam berada pada kedalaman 15 meter di bawah permukaan laut. Kapal naik 4 meter setiap menit selama 3 menit, kemudian turun 2 meter. Bagaimana posisi akhirnya?',c:['−29 meter','−11 meter','−5 meter','5 meter'],a:1,e:'Langkah 1: Posisi awal −15 meter. Langkah 2: Naik 4 meter selama 3 menit: 3 × 4 = 12 meter. Langkah 3: Posisi setelah naik = −15 + 12 = −3 meter. Langkah 4: Turun 2 meter: −3 − 2 = −5 meter. Jadi posisi akhir −5 meter.'},
+  {q:'Sebuah gedung memiliki 8 lantai di atas tanah dan 3 lantai bawah tanah. Lift mulai dari lantai 2. Lift turun 2 lantai sebanyak 4 kali, lalu naik 3 lantai. Di lantai berapa lift berhenti?',c:['−7','−3','−1','3'],a:1,e:'Langkah 1: Posisi awal +2. Langkah 2: Turun 2 lantai sebanyak 4 kali dimodelkan 4 × (−2) = −8. Langkah 3: Naik 3 lantai berarti +3. Langkah 4: 2 − 8 + 3 = −3. Jadi lift berhenti di lantai −3.'},
+  {q:'Saldo awal sebuah rekening adalah −Rp25.000 karena terdapat tagihan. Pemilik membayar Rp8.000 setiap minggu selama 2 minggu, lalu menerima pengembalian Rp6.000 yang mengurangi tagihan. Berapa sisa tagihannya?',c:['Rp3.000','Rp9.000','Rp35.000','Rp47.000'],a:1,e:'Langkah 1: Posisi awal −25.000. Langkah 2: Pembayaran 2 × 8.000 = 16.000 mengurangi tagihan, sehingga posisi menjadi −25.000 + 16.000 = −9.000. Langkah 3: Pengembalian 6.000 mengurangi tagihan lagi: −9.000 + 6.000 = −3.000. Sisa tagihan adalah Rp3.000.'},
+  {q:'Dalam kuis, jawaban benar bernilai +5 poin dan jawaban salah bernilai −3 poin. Bima menjawab benar 6 soal dan salah 4 soal. Ia kemudian mendapat bonus 7 poin. Berapa skor total perubahan poin Bima?',c:['19 poin','25 poin','31 poin','49 poin'],a:1,e:'Langkah 1: Poin jawaban benar = 6 × 5 = 30. Langkah 2: Poin jawaban salah = 4 × (−3) = −12. Langkah 3: Tambahkan bonus 7: 30 − 12 + 7 = 25 poin.'}
+ ];
+ const hotsRoot=document.getElementById('hots');hots.forEach((q,i)=>buildChoiceQuestion(q,i,hotsRoot,'HOTS'));
+ document.getElementById('saveReflection').addEventListener('click',()=>{document.getElementById('reflectStatus').textContent='Refleksi sudah tersimpan sementara pada halaman ini. Untuk menyimpan permanen, cetak halaman atau salin jawabanmu.';toast('Refleksi tercatat pada halaman ini.')});document.getElementById('clearReflection').addEventListener('click',()=>{['reflect1','reflect2','reflect3'].forEach(id=>document.getElementById(id).value='');document.getElementById('reflectStatus').textContent='Jawaban refleksi telah dikosongkan.'});document.getElementById('restartAll').addEventListener('click',()=>{go(0);toast('Kamu dapat memulai pembelajaran kembali.')});
+})();
+</script>
+</body></html>

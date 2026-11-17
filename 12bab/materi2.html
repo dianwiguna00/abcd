@@ -1,0 +1,228 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101735"><title>Menentukan Aturan Pembentukan Barisan Bilangan | KELAS BELAJAR V65.0</title><style>
+:root{--bg:#080f27;--navy:#101735;--panel:#17234a;--panel2:#1d2d5d;--line:#35477d;--blue:#4da3ff;--cyan:#52e0e0;--purple:#9b78ff;--yellow:#ffd166;--text:#f4f6ff;--muted:#c2cce8;--green:#55d6a2;--red:#ff858e;--radius:22px;--shadow:0 18px 50px #02071880}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#33236c 0,transparent 34%),linear-gradient(135deg,#08132d,#101b42 55%,#25164f);color:var(--text);font:20px/1.6 "Trebuchet MS",Arial,sans-serif;min-height:100vh}button,input,textarea{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}p{color:var(--muted);margin:.45rem 0 1rem}h1,h2,h3{line-height:1.2;margin:0 0 14px}h1{font-size:clamp(34px,5vw,54px)}h2{font-size:clamp(28px,3.4vw,38px)}h3{font-size:25px}.app{display:grid;grid-template-columns:290px minmax(0,1fr);min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;padding:25px 18px;background:#0c1532eF;border-right:1px solid #344575;display:flex;flex-direction:column;gap:20px;z-index:5}.brand{padding:8px 10px 18px;border-bottom:1px solid #344575}.brand-mark{display:inline-grid;place-items:center;width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,var(--blue),var(--purple));font-size:25px;font-weight:900;margin-bottom:12px}.brand strong{display:block;font-size:24px;letter-spacing:.06em}.brand small{display:block;color:var(--cyan);font-size:20px}.nav-label{color:#9eacd4;font-size:20px;font-weight:800;padding:0 10px}.nav{display:grid;gap:10px}.nav button{width:100%;text-align:left;padding:14px 15px;border:1px solid transparent;border-radius:15px;background:transparent;color:var(--muted);font-weight:800;transition:.2s}.nav button:hover{background:#1b2a55}.nav button.active{background:linear-gradient(100deg,#24539b,#553b9b);border-color:#718be0;color:white;box-shadow:0 8px 22px #050a2080}.side-note{margin-top:auto;background:#15234a;border:1px solid #344575;border-radius:16px;padding:15px;color:var(--muted)}.side-note strong{color:var(--yellow)}.main{min-width:0;padding:24px clamp(16px,3vw,42px) 60px;max-width:1500px;width:100%;margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;margin-bottom:24px}.crumb{color:var(--cyan);font-weight:800}.tools{display:flex;gap:10px;flex-wrap:wrap}.tool-btn,.btn{border:1px solid #52679f;border-radius:13px;background:#1a2b59;padding:11px 16px;font-weight:800;min-height:48px}.tool-btn:hover,.btn:hover{filter:brightness(1.15);transform:translateY(-1px)}.btn.primary{background:linear-gradient(100deg,#2378d4,#7454d6);border:0}.btn.yellow{background:var(--yellow);color:#1b2140;border:0}.btn.ghost{background:transparent}.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}.screen{display:none;animation:fade .25s ease}.screen.active{display:block}@keyframes fade{from{opacity:.3;transform:translateY(8px)}to{opacity:1;transform:none}}.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:22px;align-items:center;padding:clamp(24px,4vw,46px);border:1px solid #4b5fa0;border-radius:28px;background:linear-gradient(120deg,#172c5b,#35276d);box-shadow:var(--shadow);overflow:hidden}.eyebrow{color:var(--cyan);font-weight:900;letter-spacing:.09em;text-transform:uppercase;margin-bottom:12px}.hero p{font-size:22px}.hero-art{min-height:230px;display:grid;place-items:center;background:radial-gradient(circle,#526bdc55,transparent 65%);position:relative}.orbit{width:min(260px,80%);aspect-ratio:1;border:3px dashed #8e9de8;border-radius:50%;display:grid;place-items:center;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;width:24px;height:24px;border-radius:50%;background:var(--yellow);box-shadow:0 0 24px #ffd166}.orbit:before{left:5%;top:48%}.orbit:after{right:5%;top:48%;background:var(--cyan)}.orbit strong{font-size:56px;color:white}.pill{display:inline-block;border-radius:99px;padding:7px 14px;background:#243d79;color:#dce8ff;font-weight:800}.grid{display:grid;gap:18px}.two{grid-template-columns:repeat(2,minmax(0,1fr))}.three{grid-template-columns:repeat(3,minmax(0,1fr))}.card{background:linear-gradient(145deg,#18264f,#121e40);border:1px solid #344879;border-radius:var(--radius);padding:22px;box-shadow:0 10px 30px #03091e45}.card h3{color:#fff}.card strong{color:#fff}.section-head{margin:8px 0 24px}.section-head p{max-width:900px;font-size:21px}.callout{border-left:5px solid var(--yellow);background:#26315b;padding:18px 20px;border-radius:0 16px 16px 0;margin:20px 0}.callout p{margin:6px 0 0}.step-list{padding-left:28px;color:var(--muted)}.step-list li{padding:5px 0}.numberline-wrap{padding:22px;background:#101a38;border-radius:18px;border:1px solid #40558d;margin:15px 0}.numberline{display:grid;grid-template-columns:repeat(41,minmax(22px,1fr));gap:4px;position:relative}.numberline:before{content:"";position:absolute;left:5%;right:5%;height:4px;background:#8094d2;top:27px;border-radius:5px}.point{position:relative;z-index:1;display:grid;justify-items:center;gap:10px;color:var(--muted);font-weight:900}.dot{width:18px;height:18px;border-radius:50%;background:var(--blue);border:3px solid #dce9ff}.point.zero .dot{background:var(--yellow);width:24px;height:24px}.point.current .dot{background:var(--green);box-shadow:0 0 0 7px #55d6a233}.sim-controls{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:18px}.sim-controls input{flex:1;min-width:180px;accent-color:var(--cyan)}.big-value{font-size:32px;font-weight:900;color:var(--yellow)}.choice-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:15px 0}.choice{padding:13px 16px;text-align:left;border:1px solid #53699f;background:#1b2c59;border-radius:13px;min-height:54px}.choice:hover:not(:disabled){background:#2a4079}.choice.selected{border:2px solid var(--cyan);background:#214a70}.choice.correct{border:2px solid var(--green);background:#164b48}.choice.incorrect{border:2px solid var(--red);background:#542b49}.feedback{min-height:32px;padding:8px 0;font-weight:800}.feedback.good{color:var(--green)}.feedback.try{color:var(--yellow)}.explain{background:#101a38;border:1px solid #3c5084;border-radius:14px;padding:15px;margin-top:10px;color:var(--muted)}.question-card{margin-bottom:17px}.meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--cyan);font-weight:800}.progress{height:10px;background:#34436e;border-radius:99px;overflow:hidden;margin:15px 0 25px}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--cyan),var(--purple));transition:width .25s}.result-score{font-size:54px;font-weight:900;color:var(--yellow)}.field{width:100%;background:#0e1937;border:1px solid #50649a;color:white;border-radius:14px;padding:14px;min-height:130px;resize:vertical}.field::placeholder{color:#a8b5d7}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.reflection-prompt{padding:15px;border:1px solid #43588c;border-radius:14px;background:#111d3d;margin:12px 0}.muted{color:var(--muted)}.small-note{font-size:20px;color:#aebbe0}.footer{text-align:center;color:#9eacd4;padding:30px 10px 0}.hidden{display:none!important}.toast{position:fixed;bottom:20px;right:20px;background:#1b3760;border:1px solid var(--cyan);padding:14px 18px;border-radius:14px;z-index:20;display:none}.mobile-title{display:none}
+@media(max-width:1000px){.app{grid-template-columns:240px minmax(0,1fr)}.three{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr .6fr}}
+@media(max-width:760px){.app{display:block}.sidebar{position:relative;height:auto;padding:14px;gap:12px;border-right:0;border-bottom:1px solid #344575}.brand{display:flex;align-items:center;gap:12px;padding:0 4px 10px}.brand-mark{margin:0;width:44px;height:44px}.brand strong{font-size:22px}.brand small{font-size:20px}.nav-label,.side-note{display:none}.nav{display:flex;overflow-x:auto;padding-bottom:5px}.nav button{width:auto;min-width:max-content;padding:11px 14px;font-size:20px}.main{padding:16px 14px 42px}.topbar{margin-bottom:16px}.hero{grid-template-columns:1fr}.hero-art{min-height:150px}.two,.three{grid-template-columns:1fr}.choice-list{grid-template-columns:1fr}.tools{width:100%}.tool-btn{flex:1}.numberline-wrap{overflow-x:auto}.numberline{min-width:1100px}}
+@media print{body{background:white!important;color:#111!important;font-size:20px}.sidebar,.topbar,.actions,.tools,.nav,.footer{display:none!important}.app{display:block}.main{padding:0;max-width:none}.screen{display:block!important;break-inside:avoid}.card,.hero,.callout,.numberline-wrap{background:white!important;color:#111!important;border:1px solid #777!important;box-shadow:none!important}.card p,.hero p,.section-head p,.callout p,.step-list,.muted{color:#222!important}.choice{background:white!important;color:#111!important;border:1px solid #777!important}.screen:not(.active){display:block!important}.field{border:1px solid #777;color:#111}.hero-art{display:none}}
+</style></head><body>
+<div class="app">
+<aside class="sidebar">
+ <div class="brand"><div class="brand-mark">KB</div><div><strong>KELAS BELAJAR</strong><small>MPI MATEMATIKA SMP</small></div></div>
+ <div class="nav-label">MENU PEMBELAJARAN</div>
+ <nav class="nav" aria-label="Menu pembelajaran">
+  <button class="active" data-screen="0">01 · Tujuan Pembelajaran</button>
+  <button data-screen="1">02 · Materi &amp; Simulasi</button>
+  <button data-screen="2">03 · Soal Interaktif</button>
+  <button data-screen="3">04 · Refleksi</button>
+ </nav>
+ <div class="side-note"><strong>Strategi belajar</strong><p>Amati dan lengkapi barisan bilangan, temukan aturan pembentukannya, lalu gunakan aturan tersebut untuk menentukan suku yang belum diketahui.</p></div>
+</aside>
+<main class="main">
+ <div class="topbar"><div class="crumb" id="crumb">KELAS BELAJAR / TUJUAN PEMBELAJARAN</div><div class="tools"><button class="tool-btn" id="fullscreen">⛶ Layar penuh</button><button class="tool-btn" id="print">▤ Cetak</button></div></div>
+ <section class="screen active" id="screen-0">
+  <div class="hero">
+   <div>
+    <p class="eyebrow">MPI MATEMATIKA SMP · V65.0</p>
+    <h1>Menentukan Aturan Pembentukan Barisan Bilangan</h1>
+    <p>Setiap barisan bilangan dapat dibentuk dengan aturan tertentu. Dengan mengamati beberapa suku, membandingkan perubahan, dan melengkapi bagian yang kosong, kita dapat menemukan aturan pembentuk barisan.</p>
+    <button class="btn yellow" data-go="1">Mulai belajar →</button>
+   </div>
+   <div class="hero-art">
+    <svg viewBox="0 0 340 220" role="img" aria-label="Barisan bilangan dengan suku yang bertambah secara teratur">
+     <rect x="10" y="10" width="320" height="200" rx="22" fill="#1d2d5d" stroke="#52e0e0" stroke-width="3"/>
+     <g fill="#ffd166" font-size="25" font-weight="bold" text-anchor="middle"><text x="55" y="105">4</text><text x="125" y="105">7</text><text x="195" y="105">10</text><text x="265" y="105">13</text></g>
+     <g fill="#52e0e0" font-size="16" font-weight="bold" text-anchor="middle"><text x="90" y="75">+3</text><text x="160" y="75">+3</text><text x="230" y="75">+3</text></g>
+     <path d="M55 125H265" stroke="#9b78ff" stroke-width="3" stroke-dasharray="5 5"/>
+     <g fill="#fff" font-size="13" text-anchor="middle"><text x="55" y="155">Suku 1</text><text x="125" y="155">Suku 2</text><text x="195" y="155">Suku 3</text><text x="265" y="155">Suku 4</text></g>
+     <text x="170" y="188" fill="#52e0e0" font-size="14" text-anchor="middle">Aturan: bertambah 3</text>
+    </svg>
+   </div>
+  </div>
+  <section class="card" style="margin-top:20px">
+   <p class="eyebrow">APERSEPSI · MELENGKAPI BARISAN</p>
+   <h2>🔢 Dapatkah kamu menemukan bilangan yang hilang?</h2>
+   <p>Perhatikan barisan 4, 7, 10, 13, … . Setiap suku bertambah 3 dari suku sebelumnya. Dengan aturan yang sama, kita dapat melengkapi barisan dan menentukan bilangan berikutnya.</p>
+   <p>Menentukan aturan berarti menjelaskan cara suatu suku diperoleh dari suku sebelumnya atau dari posisi suku dalam barisan.</p>
+   <div class="callout"><strong>Pertanyaan pemantik</strong><p>Jika barisan 6, 10, 14, □, 22, … memiliki aturan yang tetap, bilangan apa yang harus mengisi kotak? Bagaimana kamu membuktikan pilihanmu?</p></div>
+  </section>
+  <div class="grid two" style="margin-top:20px">
+   <article class="card">
+    <h3>🎯 Tujuan pembelajaran</h3>
+    <p>Melalui kegiatan mengamati dan melengkapi berbagai barisan bilangan, peserta didik mampu menentukan aturan atau pola pembentukan suatu barisan bilangan dengan benar.</p>
+    <p><strong>Indikator keberhasilan:</strong></p>
+    <ol class="step-list">
+     <li>Mengamati beberapa suku pada barisan bilangan.</li>
+     <li>Mengidentifikasi hubungan atau perubahan antar suku berurutan.</li>
+     <li>Menentukan aturan pembentukan barisan berdasarkan keteraturan yang ditemukan.</li>
+     <li>Melengkapi suku yang hilang dengan menerapkan aturan barisan.</li>
+     <li>Memeriksa kesesuaian aturan pada seluruh suku yang tersedia.</li>
+    </ol>
+   </article>
+   <article class="card">
+    <h3>🧭 Peta belajar</h3>
+    <ol class="step-list">
+     <li>Mengenali suku dan urutan dalam barisan.</li>
+     <li>Membandingkan suku berurutan.</li>
+     <li>Menentukan aturan penambahan, pengurangan, perkalian, atau pembagian.</li>
+     <li>Melengkapi suku yang belum diketahui.</li>
+     <li>Menguji aturan pada beberapa suku barisan.</li>
+    </ol>
+   </article>
+  </div>
+  <article class="card" style="margin-top:20px">
+   <h3>🌍 Manfaat dalam kehidupan sehari-hari</h3>
+   <p>Aturan barisan dapat membantu memperkirakan jumlah benda yang disusun bertahap, menghitung tabungan yang bertambah teratur, membaca susunan kursi, dan mengenali perubahan jumlah dari waktu ke waktu.</p>
+  </article>
+  <div class="actions"><button class="btn primary" data-go="1">Lanjut ke Materi & Simulasi →</button></div>
+ </section>
+ <section class="screen" id="screen-1">
+  <div class="section-head"><p class="eyebrow">BAGIAN 02 · MATERI & SIMULASI</p><h2>Aturan Pembentukan Barisan Bilangan</h2><p>Pelajari cara menemukan aturan dari hubungan antarsuku dan gunakan aturan itu untuk melengkapi barisan.</p></div>
+  <article class="card">
+   <h3>1. Mengenal barisan dan suku</h3>
+   <p>Barisan bilangan adalah susunan bilangan yang ditulis menurut urutan tertentu. Setiap bilangan dalam barisan disebut suku. Suku pertama biasanya ditulis U₁, suku kedua U₂, dan seterusnya.</p>
+   <p>Contoh: 5, 8, 11, 14, … memiliki U₁ = 5, U₂ = 8, U₃ = 11, dan U₄ = 14.</p>
+  </article>
+  <article class="card" style="margin-top:18px">
+   <h3>2. Menentukan aturan dari perubahan antar suku</h3>
+   <p>Bandingkan suku yang berdekatan untuk mengetahui cara barisan terbentuk.</p>
+   <ul class="step-list">
+    <li>8, 12, 16, 20, … : setiap suku bertambah 4.</li>
+    <li>25, 20, 15, 10, … : setiap suku berkurang 5.</li>
+    <li>3, 6, 12, 24, … : setiap suku dikalikan 2.</li>
+    <li>64, 32, 16, 8, … : setiap suku dibagi 2.</li>
+   </ul>
+   <div class="callout"><strong>Catatan penting</strong><p>Jangan langsung menyimpulkan aturan hanya dari dua suku. Periksa beberapa pasangan suku untuk memastikan aturan yang ditemukan konsisten.</p></div>
+  </article>
+  <article class="card" style="margin-top:18px">
+   <h3>3. Melengkapi suku yang hilang</h3>
+   <p>Untuk melengkapi barisan, tentukan terlebih dahulu aturan pembentuknya.</p>
+   <p>Contoh: 6, 10, 14, □, 22, …</p>
+   <ol class="step-list">
+    <li>Selisih 10 − 6 = 4.</li>
+    <li>Selisih 14 − 10 = 4.</li>
+    <li>Aturannya bertambah 4.</li>
+    <li>Suku yang hilang adalah 14 + 4 = 18.</li>
+    <li>Periksa: 18 + 4 = 22, sehingga aturan tetap sesuai.</li>
+   </ol>
+  </article>
+  <article class="card" style="margin-top:18px">
+   <h3>4. Aturan berdasarkan operasi berbeda</h3>
+   <p>Tidak semua barisan dibentuk dengan menambah atau mengurangi bilangan yang sama. Beberapa barisan menggunakan perkalian atau pembagian.</p>
+   <div class="grid two">
+    <div class="card"><strong>Perkalian</strong><p>2, 6, 18, 54, …</p><p>Setiap suku dikalikan 3.</p></div>
+    <div class="card"><strong>Pembagian</strong><p>96, 48, 24, 12, …</p><p>Setiap suku dibagi 2.</p></div>
+   </div>
+   <p>Jika selisih antar suku tidak tetap, periksa apakah ada hubungan perkalian, pembagian, atau aturan lain yang berulang.</p>
+  </article>
+  <article class="card" style="margin-top:18px">
+   <h3>5. Simulasi interaktif: temukan aturan dan lengkapi barisan</h3>
+   <p>Pilih jenis aturan, masukkan bilangan awal, lalu amati barisan yang terbentuk. Kamu juga dapat mencoba melengkapi suku yang hilang.</p>
+   <div class="grid two">
+    <div><label for="ruleType"><strong>Jenis aturan</strong></label><select id="ruleType" class="field" style="min-height:58px"><option value="add">Tambah</option><option value="subtract">Kurang</option><option value="multiply">Kali</option><option value="divide">Bagi</option></select></div>
+    <div><label for="ruleValue"><strong>Nilai perubahan / operasi</strong></label><input id="ruleValue" class="field" type="number" min="1" max="20" value="3"></div>
+   </div>
+   <div class="grid two" style="margin-top:12px">
+    <div><label for="ruleStart"><strong>Suku pertama</strong></label><input id="ruleStart" class="field" type="number" min="-100" max="100" value="4"></div>
+    <div><label for="ruleCount"><strong>Banyak suku</strong></label><input id="ruleCount" class="field" type="number" min="3" max="7" value="5"></div>
+   </div>
+   <div class="actions"><button class="btn primary" id="generateSequence">Bentuk barisan</button><button class="btn ghost" id="resetSequence">Atur ulang</button></div>
+   <div id="sequenceBoard" style="margin-top:16px" aria-live="polite"></div>
+   <div id="ruleResult" class="callout" style="margin-top:12px" aria-live="polite"></div>
+   <div class="divider"></div>
+   <p><strong>Latihan melengkapi:</strong> perhatikan barisan berikut dan pilih bilangan yang tepat untuk mengisi bagian kosong.</p>
+   <div id="missingSequence" class="card" style="margin-top:12px"></div>
+   <div id="missingChoices" class="choice-list"></div>
+   <div id="missingFeedback" class="callout" aria-live="polite">Pilih bilangan yang tepat untuk melengkapi barisan.</div>
+   <div class="actions"><button class="btn primary" id="nextMissing">Barisan berikutnya</button></div>
+  </article>
+  <div class="actions"><button class="btn ghost" data-go="0">← Kembali</button><button class="btn primary" data-go="2">Kerjakan Soal Interaktif →</button></div>
+ </section>
+ <section class="screen" id="screen-2">
+  <div class="section-head"><p class="eyebrow">BAGIAN 03 · LATIHAN DAN TANTANGAN</p><h2>Soal Interaktif: Menentukan Aturan Pembentukan Barisan Bilangan</h2><p>Pilih jawaban terlebih dahulu, lalu tekan Periksa jawaban untuk melihat umpan balik, kunci, dan pembahasan.</p></div>
+  <div class="card"><div class="meta"><span>AKTIVITAS PEMAHAMAN</span><span>3 soal · 4 pilihan</span></div><div id="practice"></div></div>
+  <div class="card" style="margin-top:18px"><div class="meta"><span>EVALUASI PEMBELAJARAN</span><span>6 soal</span></div><div class="progress"><span id="quizProgress"></span></div><div id="quiz"></div><div class="actions"><button class="btn primary" id="finishQuiz">Lihat hasil evaluasi</button><button class="btn ghost" id="resetQuiz">Ulangi evaluasi</button></div><p class="feedback" id="quizNotice" aria-live="polite"></p><div id="quizResult" class="callout hidden" aria-live="polite"></div></div>
+  <div class="card" style="margin-top:18px"><div class="meta"><span>TANTANGAN HOTS</span><span>5 soal · 4 pilihan</span></div><p>Tentukan aturan pembentukan barisan dan gunakan aturan tersebut untuk melengkapi suku yang belum diketahui.</p><div id="hots"></div></div>
+  <div class="actions"><button class="btn ghost" data-go="1">← Kembali ke Materi</button><button class="btn primary" data-go="3">Lanjut ke Refleksi →</button></div>
+ </section>
+ <section class="screen" id="screen-3">
+  <div class="section-head"><p class="eyebrow">BAGIAN 04 · REFLEKSI</p><h2>Refleksi Pembelajaran</h2><p>Renungkan bagaimana kamu menemukan aturan dan melengkapi suku yang belum diketahui.</p></div>
+  <article class="card"><h3>📝 Cek pemahaman diri</h3>
+   <div class="reflection-prompt"><label for="reflect1"><strong>1. Bagaimana cara menentukan aturan pada barisan 7, 11, 15, 19, …?</strong></label><textarea id="reflect1" class="field" placeholder="Tuliskan langkah pengamatanmu..."></textarea></div>
+   <div class="reflection-prompt"><label for="reflect2"><strong>2. Apa yang kamu lakukan jika selisih antar suku tidak tetap?</strong></label><textarea id="reflect2" class="field" placeholder="Jelaskan cara menemukan aturan lainnya..."></textarea></div>
+   <div class="reflection-prompt"><label for="reflect3"><strong>3. Mengapa aturan barisan perlu diperiksa pada beberapa suku?</strong></label><textarea id="reflect3" class="field" placeholder="Tuliskan alasanmu..."></textarea></div>
+   <div class="actions"><button class="btn primary" id="saveReflection">Simpan refleksi sementara</button><button class="btn ghost" id="clearReflection">Kosongkan jawaban</button></div><p id="reflectStatus" class="feedback" aria-live="polite"></p>
+  </article>
+  <article class="card" style="margin-top:18px"><h3>⭐ Rangkuman</h3><ul class="step-list">
+   <li>Barisan bilangan tersusun dari suku-suku menurut urutan tertentu.</li>
+   <li>Aturan pembentukan menjelaskan hubungan dari satu suku ke suku berikutnya.</li>
+   <li>Aturan dapat berupa penambahan, pengurangan, perkalian, atau pembagian dengan bilangan tertentu.</li>
+   <li>Suku yang hilang dapat ditentukan dengan menerapkan aturan yang konsisten.</li>
+   <li>Periksa aturan pada beberapa suku agar semua bagian barisan sesuai.</li>
+  </ul></article>
+  <div class="callout"><strong>Pesan pembelajaran</strong><p>Barisan yang tampak sederhana dapat menyimpan aturan yang menarik. Amati, bandingkan, uji, lalu jelaskan aturan yang kamu temukan.</p></div>
+  <div class="actions"><button class="btn primary" id="restartAll">↻ Ulangi pembelajaran</button></div>
+ </section>
+ <div class="footer">KELAS BELAJAR · MPI Matematika SMP · V65.0</div>
+
+<script>
+(()=>{
+ const screens=[...document.querySelectorAll('.screen')],nav=[...document.querySelectorAll('[data-screen]')],crumb=document.getElementById('crumb'),names=['TUJUAN PEMBELAJARAN','MATERI & SIMULASI','SOAL INTERAKTIF','REFLEKSI'];
+ function go(n){n=Math.max(0,Math.min(3,Number(n)));screens.forEach((s,i)=>s.classList.toggle('active',i===n));nav.forEach((b,i)=>{b.classList.toggle('active',i===n);if(i===n)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current')});crumb.textContent='KELAS BELAJAR / '+names[n];window.scrollTo({top:0,behavior:'smooth'})}
+ nav.forEach(b=>b.addEventListener('click',()=>go(b.dataset.screen)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
+ document.getElementById('fullscreen').addEventListener('click',async()=>{try{if(!document.fullscreenElement)await document.documentElement.requestFullscreen();else await document.exitFullscreen()}catch(e){toast('Mode layar penuh tidak didukung browser ini.')}});
+ document.getElementById('print').addEventListener('click',()=>window.print());
+ function toast(t){const el=document.getElementById('toast');el.textContent=t;el.style.display='block';setTimeout(()=>el.style.display='none',2600)}
+ const ruleType=document.getElementById('ruleType'),ruleValue=document.getElementById('ruleValue'),ruleStart=document.getElementById('ruleStart'),ruleCount=document.getElementById('ruleCount');
+ const sequenceBoard=document.getElementById('sequenceBoard'),ruleResult=document.getElementById('ruleResult');
+ function generateSequence(){
+  const type=ruleType.value,value=Number(ruleValue.value),start=Number(ruleStart.value),count=Number(ruleCount.value);
+  if(!Number.isInteger(value)||value<1||value>20||!Number.isInteger(start)||start< -100||start>100||!Number.isInteger(count)||count<3||count>7||(type==='divide'&&start%Math.pow(value, count-1)!==0)){
+   sequenceBoard.innerHTML='';ruleResult.textContent='Periksa input. Gunakan nilai operasi 1–20, suku pertama −100 sampai 100, dan 3–7 suku. Untuk pembagian, pilih suku awal yang menghasilkan bilangan bulat.';return;
+  }
+  const vals=[start];
+  for(let i=1;i<count;i++){
+   const prev=vals[i-1];
+   vals.push(type==='add'?prev+value:type==='subtract'?prev-value:type==='multiply'?prev*value:prev/value);
+  }
+  const ops={add:`ditambah ${value}`,subtract:`dikurangi ${value}`,multiply:`dikalikan ${value}`,divide:`dibagi ${value}`};
+  sequenceBoard.innerHTML='<div class="grid three">'+vals.map((v,i)=>`<div class="card" style="text-align:center"><p class="muted">Suku ${i+1}</p><div class="big-value">${v}</div>${i?`<p>${ops[type]}</p>`:'<p>Suku pertama</p>'}</div>`).join('')+'</div>';
+  ruleResult.innerHTML=`<strong>Aturan pembentukan:</strong><p>Mulai dari ${start}, kemudian setiap suku ${ops[type]}.</p><p>Barisan: ${vals.join(', ')}.</p>`;
+ }
+ document.getElementById('generateSequence').addEventListener('click',generateSequence);
+ document.getElementById('resetSequence').addEventListener('click',()=>{ruleType.value='add';ruleValue.value=3;ruleStart.value=4;ruleCount.value=5;generateSequence()});
+ generateSequence();
+
+ const missingSequence=document.getElementById('missingSequence'),missingChoices=document.getElementById('missingChoices'),missingFeedback=document.getElementById('missingFeedback');
+ const missingTasks=[
+  {seq:'5, 9, 13, □, 21',opts:['17','16','18','19'],a:0,why:'Setiap suku bertambah 4. Setelah 13 adalah 17, lalu 21.'},
+  {seq:'48, 24, □, 6, 3',opts:['12','18','9','15'],a:0,why:'Setiap suku dibagi 2. Setelah 24 adalah 12, lalu 6 dan 3.'},
+  {seq:'3, 6, 12, □, 48',opts:['24','18','30','36'],a:0,why:'Setiap suku dikalikan 2. Setelah 12 adalah 24, lalu 48.'},
+  {seq:'31, 26, 21, □, 11',opts:['16','15','17','18'],a:0,why:'Setiap suku berkurang 5. Setelah 21 adalah 16, lalu 11.'}
+ ];
+ let missingIndex=0,missingLocked=false;
+ function showMissing(){
+  const t=missingTasks[missingIndex%missingTasks.length];missingLocked=false;
+  missingSequence.innerHTML=`<p class="eyebrow">BARISAN ${missingIndex%missingTasks.length+1}</p><h3 style="text-align:center;font-size:30px;color:var(--yellow)">${t.seq}</h3><p>Bilangan yang tepat untuk mengisi kotak adalah …</p>`;
+  missingChoices.innerHTML=t.opts.map((o,i)=>`<button class="choice" type="button" data-missing="${i}">${String.fromCharCode(65+i)}. ${o}</button>`).join('');
+  missingChoices.querySelectorAll('button').forEach(btn=>btn.addEventListener('click',()=>{
+   if(missingLocked)return;missingLocked=true;const selected=Number(btn.dataset.missing);
+   missingChoices.querySelectorAll('button').forEach((b,i)=>{b.disabled=true;if(i===selected)b.classList.add(i===t.a?'correct':'incorrect')});
+   missingFeedback.innerHTML=selected===t.a?`<strong>Tepat!</strong><p>${t.why}</p>`:`<strong>Belum tepat.</strong><p>Jawaban yang benar adalah ${t.opts[t.a]}. ${t.why}</p>`;
+  }));
+  missingFeedback.textContent='Pilih bilangan yang tepat untuk melengkapi barisan.';
+ }
+ document.getElementById('nextMissing').addEventListener('click',()=>{missingIndex++;showMissing()});
+ showMissing();
+ const practices=[{"q": "Perhatikan barisan 4, 7, 10, 13, … . Aturan pembentukannya adalah …", "c": ["Setiap suku bertambah 3", "Setiap suku bertambah 4", "Setiap suku dikurangi 3", "Setiap suku dikalikan 3"], "a": 0, "e": "Selisih suku berurutan selalu 3, sehingga setiap suku diperoleh dengan menambah 3."}, {"q": "Bilangan yang tepat untuk melengkapi barisan 9, 18, 27, □, 45 adalah …", "c": ["36", "35", "37", "39"], "a": 0, "e": "Setiap suku bertambah 9. Setelah 27 adalah 36, kemudian 45."}, {"q": "Barisan 64, 32, 16, 8, … dibentuk dengan aturan …", "c": ["Setiap suku dibagi 2", "Setiap suku dikurangi 2", "Setiap suku dikalikan 2", "Setiap suku dibagi 4"], "a": 0, "e": "32 adalah 64 dibagi 2, 16 adalah 32 dibagi 2, dan 8 adalah 16 dibagi 2."}],questions=[{"cat": "Menentukan aturan", "q": "Barisan 12, 17, 22, 27, … memiliki aturan pembentukan …", "c": ["Menambah 5 pada setiap suku", "Menambah 4 pada setiap suku", "Mengurangi 5 pada setiap suku", "Mengalikan setiap suku dengan 5"], "a": 0, "e": "17−12 = 5, 22−17 = 5, dan 27−22 = 5. Aturannya menambah 5."}, {"cat": "Melengkapi barisan", "q": "Bilangan yang tepat untuk mengisi bagian kosong pada 50, 45, 40, □, 30 adalah …", "c": ["35", "34", "36", "38"], "a": 0, "e": "Barisan berkurang 5 setiap suku, sehingga 40−5 = 35 dan 35−5 = 30."}, {"cat": "Mengenali operasi", "q": "Barisan 5, 15, 45, 135, … dibentuk dengan cara …", "c": ["Mengalikan setiap suku dengan 3", "Menambah 10 pada setiap suku", "Mengalikan setiap suku dengan 5", "Menambah 30 pada setiap suku"], "a": 0, "e": "15 = 5×3, 45 = 15×3, dan 135 = 45×3."}, {"cat": "Menguji aturan", "q": "Seorang siswa menyatakan barisan 7, 11, 15, 19, … dibentuk dengan menambah 4. Pemeriksaan yang mendukung pernyataan itu adalah …", "c": ["Semua selisih suku berurutan sama dengan 4", "Semua suku merupakan kelipatan 4", "Setiap suku dikalikan 4", "Selisih suku berurutan selalu 3"], "a": 0, "e": "11−7 = 4, 15−11 = 4, dan 19−15 = 4. Selisihnya konsisten."}, {"cat": "Menentukan suku hilang", "q": "Barisan 2, 6, □, 54, 162 mengikuti aturan perkalian dengan bilangan yang sama. Suku yang hilang adalah …", "c": ["18", "12", "24", "27"], "a": 0, "e": "Setiap suku dikalikan 3: 2×3 = 6, 6×3 = 18, 18×3 = 54, dan 54×3 = 162."}, {"cat": "Membedakan pola", "q": "Manakah aturan yang sesuai untuk barisan 100, 50, 25, 12,5, …?", "c": ["Membagi setiap suku dengan 2", "Mengurangi setiap suku dengan 2", "Membagi setiap suku dengan 4", "Mengurangi setiap suku dengan 25"], "a": 0, "e": "50 = 100÷2, 25 = 50÷2, dan 12,5 = 25÷2."}],hots=[{"q": "Barisan 4, 9, 14, 19, … memiliki satu suku yang belum ditulis di antara 19 dan 29. Suku yang hilang dan alasan yang tepat adalah …", "c": ["24, karena setiap suku bertambah 5", "23, karena setiap suku bertambah 4", "25, karena setiap suku bertambah 6", "26, karena setiap suku bertambah 7"], "a": 0, "e": "Selisih setiap suku adalah 5. Maka setelah 19 adalah 24, lalu 29."}, {"q": "Diketahui barisan 3, 12, 48, 192, … . Jika aturan yang sama diteruskan, suku berikutnya adalah …", "c": ["768", "576", "384", "960"], "a": 0, "e": "Setiap suku dikalikan 4. Jadi 192×4 = 768."}, {"q": "Dua barisan berikut diamati: A = 2, 5, 8, 11, … dan B = 2, 4, 8, 16, … . Kesimpulan yang tepat adalah …", "c": ["A bertambah 3, sedangkan B dikalikan 2", "A dikalikan 2, sedangkan B bertambah 3", "Keduanya bertambah 3", "Keduanya dikalikan 2"], "a": 0, "e": "Barisan A memiliki selisih tetap 3. Barisan B memiliki aturan mengalikan 2."}, {"q": "Jumlah tabungan Raka setiap pekan tercatat Rp10.000, Rp15.000, Rp20.000, dan Rp25.000. Jika keteraturan berlanjut, jumlah tabungan pada pekan kelima adalah …", "c": ["Rp30.000", "Rp28.000", "Rp35.000", "Rp40.000"], "a": 0, "e": "Tabungan bertambah Rp5.000 setiap pekan. Pekan kelima adalah Rp25.000 + Rp5.000 = Rp30.000."}, {"q": "Barisan 2, 5, 10, 17, 26, … memiliki selisih berturut-turut 3, 5, 7, dan 9. Suku berikutnya dapat ditentukan dengan menambahkan …", "c": ["11", "9", "10", "12"], "a": 0, "e": "Selisihnya membentuk barisan bilangan ganjil 3, 5, 7, 9, sehingga selisih berikutnya 11. Suku selanjutnya adalah 26+11 = 37."}];
+ function buildQuestion(item,index,container,kind){const el=document.createElement('article');el.className='question-card';el.innerHTML=`<div class="meta"><span>${kind} ${index+1}</span><span>Pilih satu jawaban</span></div><h3>${item.q}</h3><div class="choice-list">${item.c.map((c,j)=>`<button class="choice" type="button" aria-pressed="false">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="actions"><button type="button" class="btn ghost check">Periksa jawaban</button><button type="button" class="btn ghost retry">Coba lagi</button></div><div class="feedback" aria-live="polite"></div><div class="explain hidden"></div>`;container.appendChild(el);let selected=null;const buttons=[...el.querySelectorAll('.choice')],fb=el.querySelector('.feedback'),ex=el.querySelector('.explain');buttons.forEach((b,j)=>b.addEventListener('click',()=>{selected=j;buttons.forEach((x,k)=>{x.classList.toggle('selected',k===j);x.setAttribute('aria-pressed',String(k===j));x.classList.remove('correct','incorrect')});fb.textContent='Pilihan tersimpan. Tekan Periksa jawaban untuk melihat umpan balik.';fb.className='feedback';ex.classList.add('hidden')}));el.querySelector('.check').addEventListener('click',()=>{if(selected===null){fb.textContent='Pilih satu jawaban terlebih dahulu.';fb.className='feedback try';return}buttons.forEach((b,j)=>{b.classList.remove('correct','incorrect');if(j===selected)b.classList.add(j===item.a?'correct':'incorrect')});fb.textContent=selected===item.a?'Tepat! Jawabanmu benar.':'Belum tepat. Amati kembali perubahan antarbilangan dan uji aturan pada setiap suku.';fb.className='feedback '+(selected===item.a?'good':'try');ex.textContent='Kunci jawaban: '+item.c[item.a]+'. Pembahasan: '+item.e;ex.classList.remove('hidden')});el.querySelector('.retry').addEventListener('click',()=>{selected=null;buttons.forEach(b=>{b.classList.remove('selected','correct','incorrect');b.setAttribute('aria-pressed','false')});fb.textContent='Silakan pilih jawaban lagi.';fb.className='feedback';ex.classList.add('hidden')})}
+ const practiceRoot=document.getElementById('practice');practices.forEach((q,i)=>buildQuestion(q,i,practiceRoot,'Aktivitas'));
+ const quizRoot=document.getElementById('quiz');let state=[];function renderQuiz(){quizRoot.innerHTML='';state=questions.map(()=>({selected:null,checked:false}));questions.forEach((q,i)=>{const el=document.createElement('article');el.className='question-card card';el.innerHTML=`<div class="meta"><span>${q.cat}</span><span>Soal ${i+1} dari ${questions.length}</span></div><h3>${q.q}</h3><div class="choice-list">${q.c.map((c,j)=>`<button type="button" class="choice" aria-pressed="false">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="actions"><button class="btn ghost check" type="button">Periksa jawaban</button></div><div class="feedback" aria-live="polite"></div><div class="explain hidden"></div>`;quizRoot.appendChild(el);const st=state[i],bs=[...el.querySelectorAll('.choice')],fb=el.querySelector('.feedback'),ex=el.querySelector('.explain');bs.forEach((b,j)=>b.addEventListener('click',()=>{st.selected=j;st.checked=false;bs.forEach((x,k)=>{x.classList.toggle('selected',j===k);x.classList.remove('correct','incorrect');x.setAttribute('aria-pressed',String(j===k))});fb.textContent='Pilihan diperbarui. Periksa kembali jawabanmu.';fb.className='feedback';ex.classList.add('hidden');progress()}));el.querySelector('.check').addEventListener('click',()=>{if(st.selected===null){fb.textContent='Pilih satu jawaban sebelum memeriksa.';fb.className='feedback try';return}st.checked=true;bs.forEach((b,j)=>{b.classList.remove('correct','incorrect');if(j===st.selected)b.classList.add(j===q.a?'correct':'incorrect')});fb.textContent=st.selected===q.a?'Benar! Kamu membaca dan menafsirkan data dengan tepat.':'Belum tepat. Baca pembahasan dan periksa kembali bukti datanya.';fb.className='feedback '+(st.selected===q.a?'good':'try');ex.textContent='Kunci jawaban: '+q.c[q.a]+'. Pembahasan: '+q.e;ex.classList.remove('hidden');progress()})});progress()}
+ function progress(){document.getElementById('quizProgress').style.width=(state.filter(s=>s.checked).length/questions.length*100)+'%'}renderQuiz();
+ document.getElementById('resetQuiz').addEventListener('click',()=>{renderQuiz();document.getElementById('quizResult').classList.add('hidden');document.getElementById('quizNotice').textContent='Evaluasi sudah diatur ulang.'});
+ document.getElementById('finishQuiz').addEventListener('click',()=>{const missing=state.findIndex(s=>!s.checked),notice=document.getElementById('quizNotice'),result=document.getElementById('quizResult');if(missing!==-1){notice.textContent='Periksa jawaban soal '+(missing+1)+' terlebih dahulu.';notice.className='feedback try';quizRoot.children[missing].scrollIntoView({behavior:'smooth',block:'center'});return}const score=state.reduce((sum,s,i)=>sum+(s.selected===questions[i].a?1:0),0),pct=Math.round(score/questions.length*100);result.innerHTML=`<h3>Hasil evaluasi: <span class="result-score">${pct}</span></h3><p>${score} dari ${questions.length} jawaban benar.</p><p>${pct===100?'Luar biasa! Semua jawaban tepat.':pct>=67?'Bagus! Tinjau kembali soal yang belum tepat.':'Terus berlatih membaca nilai, membandingkan data, dan menyusun kesimpulan.'}</p>`;result.classList.remove('hidden');notice.textContent='Hasil berhasil dihitung.';notice.className='feedback good';result.scrollIntoView({behavior:'smooth',block:'center'})});
+ const hotsRoot=document.getElementById('hots');hots.forEach((q,i)=>buildQuestion(q,i,hotsRoot,'HOTS'));
+ document.getElementById('saveReflection').addEventListener('click',()=>{document.getElementById('reflectStatus').textContent='Refleksi tercatat sementara pada halaman ini. Untuk menyimpan permanen, cetak halaman atau salin jawabanmu.';toast('Refleksi tercatat pada halaman ini.')});
+ document.getElementById('clearReflection').addEventListener('click',()=>{['reflect1','reflect2','reflect3'].forEach(id=>document.getElementById(id).value='');document.getElementById('reflectStatus').textContent='Jawaban refleksi telah dikosongkan.'});
+ document.getElementById('restartAll').addEventListener('click',()=>{go(0);toast('Kamu dapat memulai pembelajaran kembali.')});
+})();
+</script></body></html>

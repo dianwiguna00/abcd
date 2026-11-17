@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101735"><title>Pertidaksamaan Linear Satu Variabel | KELAS BELAJAR</title>
+<style>
+:root{--bg:#080f27;--navy:#101735;--panel:#17234a;--panel2:#1d2d5d;--line:#35477d;--blue:#4da3ff;--cyan:#52e0e0;--purple:#9b78ff;--yellow:#ffd166;--text:#f4f6ff;--muted:#c2cce8;--green:#55d6a2;--red:#ff858e;--radius:22px;--shadow:0 18px 50px #02071880}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#33236c 0,transparent 34%),linear-gradient(135deg,#08132d,#101b42 55%,#25164f);color:var(--text);font:20px/1.6 "Trebuchet MS",Arial,sans-serif;min-height:100vh}button,input,textarea{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}p{color:var(--muted);margin:.45rem 0 1rem}h1,h2,h3{line-height:1.2;margin:0 0 14px}h1{font-size:clamp(34px,5vw,54px)}h2{font-size:clamp(28px,3.4vw,38px)}h3{font-size:25px}.app{display:grid;grid-template-columns:290px minmax(0,1fr);min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;padding:25px 18px;background:#0c1532eF;border-right:1px solid #344575;display:flex;flex-direction:column;gap:20px;z-index:5}.brand{padding:8px 10px 18px;border-bottom:1px solid #344575}.brand-mark{display:inline-grid;place-items:center;width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,var(--blue),var(--purple));font-size:25px;font-weight:900;margin-bottom:12px}.brand strong{display:block;font-size:24px;letter-spacing:.06em}.brand small{display:block;color:var(--cyan);font-size:20px}.nav-label{color:#9eacd4;font-size:20px;font-weight:800;padding:0 10px}.nav{display:grid;gap:10px}.nav button{width:100%;text-align:left;padding:14px 15px;border:1px solid transparent;border-radius:15px;background:transparent;color:var(--muted);font-weight:800;transition:.2s}.nav button:hover{background:#1b2a55}.nav button.active{background:linear-gradient(100deg,#24539b,#553b9b);border-color:#718be0;color:white;box-shadow:0 8px 22px #050a2080}.side-note{margin-top:auto;background:#15234a;border:1px solid #344575;border-radius:16px;padding:15px;color:var(--muted)}.side-note strong{color:var(--yellow)}.main{min-width:0;padding:24px clamp(16px,3vw,42px) 60px;max-width:1500px;width:100%;margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;margin-bottom:24px}.crumb{color:var(--cyan);font-weight:800}.tools{display:flex;gap:10px;flex-wrap:wrap}.tool-btn,.btn{border:1px solid #52679f;border-radius:13px;background:#1a2b59;padding:11px 16px;font-weight:800;min-height:48px}.tool-btn:hover,.btn:hover{filter:brightness(1.15);transform:translateY(-1px)}.btn.primary{background:linear-gradient(100deg,#2378d4,#7454d6);border:0}.btn.yellow{background:var(--yellow);color:#1b2140;border:0}.btn.ghost{background:transparent}.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}.screen{display:none;animation:fade .25s ease}.screen.active{display:block}@keyframes fade{from{opacity:.3;transform:translateY(8px)}to{opacity:1;transform:none}}.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:22px;align-items:center;padding:clamp(24px,4vw,46px);border:1px solid #4b5fa0;border-radius:28px;background:linear-gradient(120deg,#172c5b,#35276d);box-shadow:var(--shadow);overflow:hidden}.eyebrow{color:var(--cyan);font-weight:900;letter-spacing:.09em;text-transform:uppercase;margin-bottom:12px}.hero p{font-size:22px}.hero-art{min-height:230px;display:grid;place-items:center;background:radial-gradient(circle,#526bdc55,transparent 65%);position:relative}.orbit{width:min(260px,80%);aspect-ratio:1;border:3px dashed #8e9de8;border-radius:50%;display:grid;place-items:center;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;width:24px;height:24px;border-radius:50%;background:var(--yellow);box-shadow:0 0 24px #ffd166}.orbit:before{left:5%;top:48%}.orbit:after{right:5%;top:48%;background:var(--cyan)}.orbit strong{font-size:56px;color:white}.pill{display:inline-block;border-radius:99px;padding:7px 14px;background:#243d79;color:#dce8ff;font-weight:800}.grid{display:grid;gap:18px}.two{grid-template-columns:repeat(2,minmax(0,1fr))}.three{grid-template-columns:repeat(3,minmax(0,1fr))}.card{background:linear-gradient(145deg,#18264f,#121e40);border:1px solid #344879;border-radius:var(--radius);padding:22px;box-shadow:0 10px 30px #03091e45}.card h3{color:#fff}.card strong{color:#fff}.section-head{margin:8px 0 24px}.section-head p{max-width:900px;font-size:21px}.callout{border-left:5px solid var(--yellow);background:#26315b;padding:18px 20px;border-radius:0 16px 16px 0;margin:20px 0}.callout p{margin:6px 0 0}.step-list{padding-left:28px;color:var(--muted)}.step-list li{padding:5px 0}.numberline-wrap{padding:22px;background:#101a38;border-radius:18px;border:1px solid #40558d;margin:15px 0}.numberline{display:grid;grid-template-columns:repeat(41,minmax(22px,1fr));gap:4px;position:relative}.numberline:before{content:"";position:absolute;left:5%;right:5%;height:4px;background:#8094d2;top:27px;border-radius:5px}.point{position:relative;z-index:1;display:grid;justify-items:center;gap:10px;color:var(--muted);font-weight:900}.dot{width:18px;height:18px;border-radius:50%;background:var(--blue);border:3px solid #dce9ff}.point.zero .dot{background:var(--yellow);width:24px;height:24px}.point.current .dot{background:var(--green);box-shadow:0 0 0 7px #55d6a233}.sim-controls{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:18px}.sim-controls input{flex:1;min-width:180px;accent-color:var(--cyan)}.big-value{font-size:32px;font-weight:900;color:var(--yellow)}.choice-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:15px 0}.choice{padding:13px 16px;text-align:left;border:1px solid #53699f;background:#1b2c59;border-radius:13px;min-height:54px}.choice:hover:not(:disabled){background:#2a4079}.choice.selected{border:2px solid var(--cyan);background:#214a70}.choice.correct{border:2px solid var(--green);background:#164b48}.choice.incorrect{border:2px solid var(--red);background:#542b49}.feedback{min-height:32px;padding:8px 0;font-weight:800}.feedback.good{color:var(--green)}.feedback.try{color:var(--yellow)}.explain{background:#101a38;border:1px solid #3c5084;border-radius:14px;padding:15px;margin-top:10px;color:var(--muted)}.question-card{margin-bottom:17px}.meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--cyan);font-weight:800}.progress{height:10px;background:#34436e;border-radius:99px;overflow:hidden;margin:15px 0 25px}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--cyan),var(--purple));transition:width .25s}.result-score{font-size:54px;font-weight:900;color:var(--yellow)}.field{width:100%;background:#0e1937;border:1px solid #50649a;color:white;border-radius:14px;padding:14px;min-height:130px;resize:vertical}.field::placeholder{color:#a8b5d7}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.reflection-prompt{padding:15px;border:1px solid #43588c;border-radius:14px;background:#111d3d;margin:12px 0}.muted{color:var(--muted)}.small-note{font-size:20px;color:#aebbe0}.footer{text-align:center;color:#9eacd4;padding:30px 10px 0}.hidden{display:none!important}.toast{position:fixed;bottom:20px;right:20px;background:#1b3760;border:1px solid var(--cyan);padding:14px 18px;border-radius:14px;z-index:20;display:none}.mobile-title{display:none}
+@media(max-width:1000px){.app{grid-template-columns:240px minmax(0,1fr)}.three{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr .6fr}}
+@media(max-width:760px){.app{display:block}.sidebar{position:relative;height:auto;padding:14px;gap:12px;border-right:0;border-bottom:1px solid #344575}.brand{display:flex;align-items:center;gap:12px;padding:0 4px 10px}.brand-mark{margin:0;width:44px;height:44px}.brand strong{font-size:22px}.brand small{font-size:20px}.nav-label,.side-note{display:none}.nav{display:flex;overflow-x:auto;padding-bottom:5px}.nav button{width:auto;min-width:max-content;padding:11px 14px;font-size:20px}.main{padding:16px 14px 42px}.topbar{margin-bottom:16px}.hero{grid-template-columns:1fr}.hero-art{min-height:150px}.two,.three{grid-template-columns:1fr}.choice-list{grid-template-columns:1fr}.tools{width:100%}.tool-btn{flex:1}.numberline-wrap{overflow-x:auto}.numberline{min-width:1100px}}
+@media print{body{background:white!important;color:#111!important;font-size:20px}.sidebar,.topbar,.actions,.tools,.nav,.footer{display:none!important}.app{display:block}.main{padding:0;max-width:none}.screen{display:block!important;break-inside:avoid}.card,.hero,.callout,.numberline-wrap{background:white!important;color:#111!important;border:1px solid #777!important;box-shadow:none!important}.card p,.hero p,.section-head p,.callout p,.step-list,.muted{color:#222!important}.choice{background:white!important;color:#111!important;border:1px solid #777!important}.screen:not(.active){display:block!important}.field{border:1px solid #777;color:#111}.hero-art{display:none}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+ <div class="brand"><div class="brand-mark">KB</div><div><strong>KELAS BELAJAR</strong><small>MPI MATEMATIKA SMP</small></div></div>
+ <div class="nav-label">MENU PEMBELAJARAN</div>
+ <nav class="nav" aria-label="Menu pembelajaran">
+  <button class="active" data-screen="0">01 · Tujuan Pembelajaran</button>
+  <button data-screen="1">02 · Materi &amp; Simulasi</button>
+  <button data-screen="2">03 · Soal Interaktif</button>
+  <button data-screen="3">04 · Refleksi</button>
+ </nav>
+ <div class="side-note"><strong>Strategi belajar</strong><br>Amati contoh → pahami konsep → coba sendiri → evaluasi pemahaman.</div>
+</aside>
+<main class="main">
+ <div class="topbar"><div class="crumb" id="crumb">KELAS BELAJAR / TUJUAN PEMBELAJARAN</div><div class="tools"><button class="tool-btn" id="fullscreen">⛶ Layar penuh</button><button class="tool-btn" id="print">▤ Cetak</button></div></div>
+
+
+ <section class="screen active" id="screen-0">
+  <div class="hero">
+   <div><span class="pill">MATEMATIKA SMP · PERTIDAKSAMAAN</span><p class="eyebrow">Mengenal kalimat matematika dengan tanda ketaksamaan</p>
+    <h1>Pertidaksamaan Linear Satu Variabel</h1>
+    <p>Kenali kalimat matematika yang membandingkan dua nilai menggunakan tanda kurang dari, lebih dari, atau tanda ketaksamaan lainnya.</p>
+    <button class="btn yellow" data-go="1">Mulai belajar →</button></div>
+   <div class="hero-art"><svg viewBox="0 0 320 230" class="svg-fluid" role="img" aria-label="Ilustrasi pertidaksamaan linear satu variabel">
+    <rect x="22" y="42" width="276" height="142" rx="20" fill="#1d2d5d" stroke="#52e0e0" stroke-width="3"/>
+    <text x="160" y="88" fill="#ffd166" font-size="27" text-anchor="middle" font-weight="bold">x + 3 &lt; 8</text>
+    <path d="M160 102 L160 133" stroke="#52e0e0" stroke-width="4" stroke-linecap="round"/>
+    <path d="M149 123 L160 136 L171 123" fill="none" stroke="#52e0e0" stroke-width="4" stroke-linecap="round"/>
+    <text x="160" y="165" fill="#fff" font-size="25" text-anchor="middle">x &lt; 5</text></svg></div>
+  </div>
+  <section class="card" style="margin-top:20px">
+   <p class="eyebrow">SEBELUM MEMULAI · AMATI GAMBAR</p><h2>💡 Apersepsi: Batas Uang Saku untuk Membeli Buku</h2>
+   <p>Rani membawa uang saku Rp30.000. Ia ingin membeli sebuah buku seharga Rp18.000 dan beberapa pensil dengan harga Rp3.000 per buah. Jika banyak pensil dinyatakan dengan x, total belanja tidak boleh melebihi uang yang dibawa. Situasi ini dapat ditulis 18.000 + 3.000x ≤ 30.000. Tanda ≤ menyatakan bahwa total belanja boleh sama dengan atau kurang dari Rp30.000.</p>
+   <div class="callout"><strong>Amati perbedaan tanda ketaksamaan</strong><div class="grid three" style="margin-top:12px">
+    <div class="card"><strong>Kurang dari</strong><div class="big-value">&lt;</div><p>Nilai di kiri lebih kecil.</p></div>
+    <div class="card"><strong>Lebih dari</strong><div class="big-value">&gt;</div><p>Nilai di kiri lebih besar.</p></div>
+    <div class="card"><strong>Paling banyak</strong><div class="big-value">≤</div><p>Boleh sama dengan batas.</p></div>
+   </div><p>Kalimat “tidak melebihi” berarti kurang dari atau sama dengan. Kalimat “sekurang-kurangnya” berarti lebih dari atau sama dengan.</p></div>
+  </section>
+  <div class="grid two" style="margin-top:20px">
+   <article class="card"><h3>🎯 Tujuan pembelajaran</h3><p>Melalui pengamatan gambar dan permasalahan kontekstual, peserta didik mampu menjelaskan pengertian pertidaksamaan linear satu variabel serta mengidentifikasi unsur dan ciri-cirinya dengan benar.</p><p>Secara khusus, peserta didik diharapkan mampu:</p>
+    <ol class="step-list"><li>Menjelaskan pengertian pertidaksamaan linear satu variabel.</li><li>Mengenali tanda &lt;, &gt;, ≤, dan ≥ beserta maknanya.</li><li>Mengidentifikasi variabel, koefisien, konstanta, dan tanda pertidaksamaan.</li><li>Membedakan pertidaksamaan linear satu variabel dengan persamaan atau bentuk bukan linear.</li><li>Mengubah pernyataan sederhana dalam kehidupan sehari-hari menjadi model pertidaksamaan.</li></ol></article>
+   <article class="card"><h3>🧭 Cara menggunakan MPI</h3><ol class="step-list"><li>Amati ilustrasi batas uang saku dan makna tanda ketaksamaan.</li><li>Pelajari pengertian, bentuk umum, unsur, dan ciri pertidaksamaan linear satu variabel.</li><li>Gunakan simulasi untuk mencocokkan kalimat dengan model matematikanya.</li><li>Kerjakan aktivitas pemahaman, evaluasi, dan HOTS.</li><li>Baca umpan balik dan pembahasan setelah memeriksa jawaban.</li></ol></article>
+  </div>
+  <article class="card" style="margin-top:20px"><h3>🌍 Manfaat dalam kehidupan sehari-hari</h3><p>Pertidaksamaan membantu menyatakan batas, syarat minimum, dan kapasitas maksimum dalam berbagai situasi.</p>
+   <ol class="step-list"><li><strong>Belanja:</strong> menjaga jumlah pengeluaran agar tidak melebihi uang yang tersedia.</li><li><strong>Kapasitas:</strong> menyatakan jumlah orang atau barang yang tidak boleh melampaui kapasitas.</li><li><strong>Target:</strong> menyatakan nilai minimum yang harus dicapai.</li><li><strong>Waktu:</strong> memodelkan batas waktu suatu kegiatan.</li></ol>
+  </article>
+  <div class="callout"><strong>Ingat!</strong><p>Pertidaksamaan membandingkan dua bentuk menggunakan salah satu tanda &lt;, &gt;, ≤, atau ≥. Disebut linear satu variabel jika hanya memuat satu variabel berpangkat satu.</p></div>
+  <div class="actions"><button class="btn primary" data-go="1">Lanjut ke Materi &amp; Simulasi →</button></div>
+ </section>
+
+
+<section class="screen" id="screen-1">
+  <div class="section-head"><p class="eyebrow">BAGIAN 02 · PAHAMI KONSEP</p><h2>Pertidaksamaan Linear Satu Variabel</h2><p>Kenali bentuk, tanda, unsur, dan ciri-ciri pertidaksamaan linear satu variabel melalui contoh visual dan situasi sehari-hari.</p></div>
+  <article class="card"><h3>📘 1. Pengertian pertidaksamaan</h3><p>Pertidaksamaan adalah kalimat matematika yang menyatakan hubungan dua bentuk yang nilainya tidak harus sama. Hubungan tersebut ditunjukkan oleh tanda &lt;, &gt;, ≤, atau ≥.</p>
+   <div class="callout"><strong>Empat tanda pertidaksamaan</strong><div class="grid two" style="margin-top:12px">
+    <div class="card"><div class="big-value">a &lt; b</div><p>a kurang dari b.</p></div><div class="card"><div class="big-value">a &gt; b</div><p>a lebih dari b.</p></div>
+    <div class="card"><div class="big-value">a ≤ b</div><p>a kurang dari atau sama dengan b.</p></div><div class="card"><div class="big-value">a ≥ b</div><p>a lebih dari atau sama dengan b.</p></div>
+   </div></div>
+  </article>
+  <article class="card" style="margin-top:18px"><h3>✍️ 2. Pengertian pertidaksamaan linear satu variabel</h3><p>Pertidaksamaan linear satu variabel adalah kalimat matematika yang memuat satu variabel berpangkat satu dan menggunakan tanda pertidaksamaan. Bentuk sederhananya dapat ditulis ax + b &lt; c, ax + b &gt; c, ax + b ≤ c, atau ax + b ≥ c, dengan a ≠ 0.</p>
+   <div class="callout"><strong>Contoh: 2x + 3 ≤ 11</strong><ol class="step-list"><li>Variabelnya adalah x.</li><li>Koefisien x adalah 2.</li><li>Konstanta pada ruas kiri adalah 3, sedangkan bilangan pada ruas kanan adalah 11.</li><li>Tanda pertidaksamaannya adalah ≤, dibaca “kurang dari atau sama dengan”.</li></ol><div class="big-value">2x + 3 ≤ 11</div></div>
+  </article>
+  <article class="card" style="margin-top:18px"><h3>🔎 3. Unsur-unsur pertidaksamaan</h3><p>Perhatikan model 4x − 5 &gt; 7. Setiap bagian memiliki peran yang berbeda.</p>
+   <div class="grid two">
+    <div class="callout"><strong>Variabel: x</strong><p>Huruf yang mewakili nilai yang belum diketahui.</p></div>
+    <div class="callout"><strong>Koefisien: 4</strong><p>Bilangan yang mengalikan variabel x.</p></div>
+    <div class="callout"><strong>Konstanta: −5 dan 7</strong><p>Bilangan tetap yang tidak memuat variabel.</p></div>
+    <div class="callout"><strong>Tanda: &gt;</strong><p>Menunjukkan bahwa ruas kiri lebih besar daripada ruas kanan.</p></div>
+   </div>
+  </article>
+  <article class="card" style="margin-top:18px"><h3>🧭 4. Ciri-ciri dan bukan contohnya</h3><ol class="step-list"><li>Memuat tepat satu variabel.</li><li>Pangkat tertinggi variabel adalah satu.</li><li>Menggunakan salah satu tanda &lt;, &gt;, ≤, atau ≥.</li><li>Koefisien variabel tidak sama dengan nol.</li><li>Memiliki dua ruas yang dibandingkan.</li></ol>
+   <div class="callout"><strong>Bandingkan contoh</strong><div class="grid two" style="margin-top:10px">
+    <div class="card"><strong style="color:var(--green)">Termasuk</strong><p>3x + 2 &lt; 14</p><p>−2y ≥ 8</p><p>5 − z ≤ 10</p></div>
+    <div class="card"><strong style="color:var(--red)">Bukan PLSV</strong><p>x + 2 = 7 (persamaan)</p><p>x² &gt; 4 (pangkat dua)</p><p>2x + y &lt; 9 (dua variabel)</p></div>
+   </div></div>
+  </article>
+  <article class="card" style="margin-top:18px"><h3>🖼️ 5. Ilustrasi garis bilangan</h3><p>Garis bilangan dapat membantu menggambarkan batas nilai. Lingkaran kosong berarti batas tidak ikut, sedangkan lingkaran penuh berarti batas ikut. Contoh berikut hanya memperlihatkan arti simbol batas.</p>
+   <div class="numberline-wrap"><svg viewBox="0 0 620 150" role="img" aria-label="Ilustrasi garis bilangan dengan lingkaran kosong di angka 3 dan panah ke kanan" style="width:100%;height:auto"><line x1="55" y1="75" x2="565" y2="75" stroke="#91a7df" stroke-width="4"/><path d="M555 65 L570 75 L555 85" fill="none" stroke="#91a7df" stroke-width="4"/><g fill="#c2cce8" font-size="20" text-anchor="middle"><text x="100" y="112">1</text><text x="210" y="112">2</text><text x="320" y="112">3</text><text x="430" y="112">4</text><text x="540" y="112">5</text></g><line x1="320" y1="75" x2="560" y2="75" stroke="#52e0e0" stroke-width="8" stroke-linecap="round"/><circle cx="320" cy="75" r="12" fill="#101735" stroke="#ffd166" stroke-width="5"/><text x="320" y="35" fill="#ffd166" font-size="20" text-anchor="middle">batas terbuka</text></svg><p>Lingkaran kosong pada 3 dengan arah ke kanan menggambarkan nilai lebih dari 3, yaitu x &gt; 3.</p></div>
+  </article>
+  <article class="card" style="margin-top:18px"><h3>🎮 6. Simulasi Interaktif: Kenali Model Pertidaksamaan</h3><p>Pilih situasi, lalu amati model matematika, tanda, dan unsur yang ditunjukkan.</p>
+   <label for="expressionSelect"><strong>Pilih situasi</strong></label><select id="expressionSelect" class="field" style="min-height:58px">
+    <option value="0">Usia minimal 12 tahun</option><option value="1">Berat tas tidak lebih dari 5 kg</option><option value="2">Suhu lebih dari 20°C</option><option value="3">Uang belanja paling banyak Rp50.000</option><option value="4">Nilai sekurang-kurangnya 75</option><option value="5">Jumlah kursi kurang dari 30</option>
+   </select>
+   <div class="callout"><p><strong>Pernyataan matematika</strong></p><div class="big-value" id="substitutedExpression">x ≥ 12</div><p><strong>Makna tanda dan unsur</strong></p><div class="big-value" id="substitutionResult">≥ berarti minimal</div><p id="substitutionSteps">Variabel x menyatakan usia dalam tahun. Usia minimal 12 tahun berarti x ≥ 12.</p></div>
+   <div class="actions"><button class="btn primary" id="calculateSubstitution">Tampilkan penjelasan</button><button class="btn ghost" id="resetSubstitution">Atur ulang</button></div>
+  </article>
+  <div class="actions"><button class="btn primary" data-go="2">Lanjut ke Soal Interaktif →</button></div>
+ </section>
+
+<section class="screen" id="screen-2">
+  <div class="section-head"><p class="eyebrow">BAGIAN 03 · LATIHAN DAN TANTANGAN</p><h2>Soal Interaktif: Pertidaksamaan Linear Satu Variabel</h2><p>Jawab soal tentang pengertian, tanda, unsur, dan ciri pertidaksamaan linear satu variabel. Setelah memeriksa, baca umpan balik dan pembahasannya.</p></div>
+  <div class="card"><div class="meta"><span>AKTIVITAS PEMAHAMAN</span><span>3 soal · masing-masing 4 pilihan</span></div><div id="practice"></div></div>
+  <div class="card" style="margin-top:18px"><div class="meta"><span>EVALUASI PEMBELAJARAN</span><span>6 soal</span></div><div class="progress"><span id="quizProgress"></span></div><div id="quiz"></div><div class="actions"><button class="btn primary" id="finishQuiz">Lihat hasil evaluasi</button><button class="btn ghost" id="resetQuiz">Ulangi evaluasi</button></div><p class="feedback" id="quizNotice" aria-live="polite"></p><div id="quizResult" class="callout hidden" aria-live="polite"></div></div>
+  <div class="card" style="margin-top:18px"><div class="meta"><span>TANTANGAN HOTS</span><span>5 soal pilihan ganda · 4 opsi</span></div><p>Analisis setiap situasi, pilih satu dari empat jawaban, lalu tekan Periksa jawaban untuk melihat umpan balik dan cara penyelesaiannya.</p><div id="hots"></div></div>
+  <div class="actions"><button class="btn ghost" data-go="1">← Kembali ke Materi</button><button class="btn primary" data-go="3">Lanjut ke Refleksi →</button></div>
+ </section>
+
+
+ <section class="screen" id="screen-3">
+  <div class="section-head"><p class="eyebrow">BAGIAN 04 · PIKIRKAN KEMBALI</p><h2>Refleksi Pembelajaran</h2><p>Renungkan makna tanda ketaksamaan, unsur-unsur, dan cara mengenali pertidaksamaan linear satu variabel.</p></div>
+  <div class="grid two">
+   <article class="card"><h3>💡 Coba jelaskan dengan kata-katamu</h3><div class="reflection-prompt"><strong>1. Apa yang dimaksud dengan pertidaksamaan linear satu variabel?</strong></div><textarea class="field" id="reflect1" placeholder="Tuliskan penjelasanmu di sini..."></textarea><div class="reflection-prompt"><strong>2. Sebutkan empat tanda pertidaksamaan dan maknanya.</strong></div><textarea class="field" id="reflect2" placeholder="Tuliskan jawabanmu di sini..."></textarea><div class="reflection-prompt"><strong>3. Identifikasi variabel, koefisien, konstanta, dan tanda pada 5x − 4 ≤ 16.</strong></div><textarea class="field" id="reflect3" placeholder="Tuliskan hasil identifikasimu..."></textarea><div class="actions"><button class="btn primary" id="saveReflection">Simpan refleksi di halaman ini</button><button class="btn ghost" id="clearReflection">Hapus jawaban</button></div><p class="small-note" id="reflectStatus" aria-live="polite">Jawaban refleksi tidak dikirim ke server.</p></article>
+   <article class="card"><h3>✅ Cek pemahaman diri</h3><p>Berikan tanda centang pada pernyataan yang sudah dapat kamu lakukan.</p><label><input type="checkbox"> Saya dapat menjelaskan pengertian pertidaksamaan linear satu variabel.</label><br><br><label><input type="checkbox"> Saya dapat membedakan tanda &lt;, &gt;, ≤, dan ≥.</label><br><br><label><input type="checkbox"> Saya dapat mengidentifikasi variabel, koefisien, konstanta, dan tanda pertidaksamaan.</label><br><br><label><input type="checkbox"> Saya dapat mengenali ciri dan contoh pertidaksamaan linear satu variabel.</label><div class="callout"><strong>Pesan belajar</strong><p>Perhatikan kata kunci seperti “lebih dari”, “kurang dari”, “paling banyak”, dan “sekurang-kurangnya” agar tepat memilih tanda pertidaksamaan.</p></div></article>
+  </div>
+  <div class="actions"><button class="btn ghost" data-go="2">← Kembali ke Soal</button><button class="btn yellow" id="restartAll">Ulangi dari awal ↺</button></div>
+ </section>
+
+ <div class="footer">KELAS BELAJAR · Amati · Pahami · Coba · Refleksi · V24.0</div>
+</main>
+</div><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(()=>{
+ const screens=[...document.querySelectorAll('.screen')],nav=[...document.querySelectorAll('[data-screen]')],crumb=document.getElementById('crumb');
+ const names=['TUJUAN PEMBELAJARAN','MATERI & SIMULASI','SOAL INTERAKTIF','REFLEKSI'];
+ function go(n){n=Math.max(0,Math.min(3,Number(n)));screens.forEach((s,i)=>s.classList.toggle('active',i===n));nav.forEach((b,i)=>{b.classList.toggle('active',i===n);if(i===n)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current')});crumb.textContent='KELAS BELAJAR / '+names[n];window.scrollTo({top:0,behavior:'smooth'});}
+ nav.forEach(b=>b.addEventListener('click',()=>go(b.dataset.screen)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
+ document.getElementById('fullscreen').addEventListener('click',async()=>{try{if(!document.fullscreenElement)await document.documentElement.requestFullscreen();else await document.exitFullscreen()}catch(e){toast('Mode layar penuh tidak didukung pada browser ini.')}});
+ document.getElementById('print').addEventListener('click',()=>window.print());
+ function toast(t){const el=document.getElementById('toast');el.textContent=t;el.style.display='block';setTimeout(()=>el.style.display='none',2600)}
+
+
+
+
+ // Simulasi pengenalan pertidaksamaan linear satu variabel.
+ const expressionSelect=document.getElementById('expressionSelect');
+ const operationCases=[
+  {expr:'x ≥ 12',result:'≥ berarti minimal',steps:'Variabel x menyatakan usia dalam tahun. Usia minimal 12 tahun berarti x ≥ 12.'},
+  {expr:'b ≤ 5',result:'≤ berarti tidak lebih dari',steps:'Variabel b menyatakan berat tas dalam kilogram. Berat tidak lebih dari 5 kg berarti b ≤ 5.'},
+  {expr:'s > 20',result:'> berarti lebih dari',steps:'Variabel s menyatakan suhu dalam derajat Celsius. Suhu lebih dari 20°C berarti s > 20.'},
+  {expr:'18.000 + 3.000x ≤ 50.000',result:'≤ berarti paling banyak',steps:'x menyatakan banyak pensil. Total belanja tidak boleh melebihi Rp50.000, sehingga total biaya ≤ 50.000.'},
+  {expr:'n ≥ 75',result:'≥ berarti sekurang-kurangnya',steps:'Variabel n menyatakan nilai. Nilai sekurang-kurangnya 75 berarti n ≥ 75.'},
+  {expr:'k < 30',result:'< berarti kurang dari',steps:'Variabel k menyatakan jumlah kursi. Jumlah kursi kurang dari 30 berarti k < 30.'}
+ ];
+ function updateSubstitution(){
+  const d=operationCases[Number(expressionSelect.value)];
+  document.getElementById('substitutedExpression').textContent=d.expr;
+  document.getElementById('substitutionResult').textContent=d.result;
+  document.getElementById('substitutionSteps').textContent='Penjelasan: '+d.steps;
+ }
+ expressionSelect.addEventListener('change',updateSubstitution);
+ document.getElementById('calculateSubstitution').addEventListener('click',updateSubstitution);
+ document.getElementById('resetSubstitution').addEventListener('click',()=>{expressionSelect.value='0';updateSubstitution()});
+ updateSubstitution();
+
+ const practices=[
+  {q:'Manakah yang merupakan pertidaksamaan linear satu variabel?',c:['3x + 2 < 11','3x + 2 = 11','x² > 4','x + y ≤ 8'],a:0,e:'3x + 2 < 11 memuat satu variabel x berpangkat satu dan menggunakan tanda <.'},
+  {q:'Tanda “paling sedikit” atau “sekurang-kurangnya” dinyatakan dengan …',c:['<','>','≤','≥'],a:3,e:'Sekurang-kurangnya berarti nilai tersebut boleh sama dengan batas atau lebih besar, sehingga tandanya ≥.'},
+  {q:'Pada 5x − 4 ≤ 16, variabelnya adalah …',c:['5','x','−4','16'],a:1,e:'Variabel adalah huruf yang mewakili nilai yang belum diketahui, yaitu x.'}
+ ];
+ const questions=[
+  {cat:'Pengertian',q:'Pertidaksamaan adalah kalimat matematika yang …',c:['selalu menyatakan dua ruas sama','membandingkan dua bentuk dengan tanda ketaksamaan','hanya memuat operasi perkalian','tidak boleh memuat bilangan'],a:1,e:'Pertidaksamaan membandingkan dua bentuk menggunakan tanda <, >, ≤, atau ≥.'},
+  {cat:'Tanda pertidaksamaan',q:'Pernyataan “nilai p lebih dari 9” ditulis …',c:['p < 9','p ≤ 9','p > 9','p ≥ 9'],a:2,e:'Kata “lebih dari” berarti lebih besar dan tidak termasuk sama dengan, sehingga p > 9.'},
+  {cat:'Tanda pertidaksamaan',q:'Pernyataan “jumlah peserta paling banyak 40 orang” ditulis …',c:['n < 40','n ≤ 40','n > 40','n ≥ 40'],a:1,e:'Paling banyak berarti boleh mencapai 40, tetapi tidak boleh melebihinya: n ≤ 40.'},
+  {cat:'Unsur pertidaksamaan',q:'Pada 7x + 3 ≥ 24, koefisien variabel x adalah …',c:['7','3','24','−7'],a:0,e:'Koefisien adalah bilangan pengali variabel. Pada 7x, koefisiennya 7.'},
+  {cat:'Ciri-ciri',q:'Manakah yang bukan pertidaksamaan linear satu variabel?',c:['2x − 1 > 5','−3a ≤ 12','y + 7 ≥ 0','m² < 16'],a:3,e:'m² < 16 memuat variabel berpangkat dua, sehingga bukan bentuk linear.'},
+  {cat:'Model kontekstual',q:'Suhu ruangan harus berada di bawah 28°C. Jika suhu dinyatakan t, model yang tepat adalah …',c:['t > 28','t ≥ 28','t < 28','t ≤ 28'],a:2,e:'“Di bawah 28°C” berarti kurang dari 28°C dan tidak termasuk 28°C, sehingga t < 28.'}
+ ];
+ const hots=[
+  {q:'Sebuah lift memiliki kapasitas maksimal 600 kg. Jika berat seluruh penumpang dinyatakan W kg, model yang tepat adalah …',c:['W > 600','W ≥ 600','W < 600','W ≤ 600'],a:3,e:'Kapasitas maksimal 600 kg berarti berat total boleh sama dengan 600 kg, tetapi tidak boleh melebihinya: W ≤ 600.'},
+  {q:'Dina memiliki uang Rp80.000. Ia membeli buku seharga Rp25.000 dan beberapa pulpen seharga Rp5.000 per buah. Jika banyak pulpen x, model agar uangnya cukup adalah …',c:['25.000 + 5.000x ≤ 80.000','25.000 + 5.000x ≥ 80.000','5.000x − 25.000 < 80.000','25.000x + 5.000 ≤ 80.000'],a:0,e:'Total belanja adalah 25.000 + 5.000x. Agar uang cukup, total belanja tidak boleh melebihi 80.000, sehingga menggunakan tanda ≤.'},
+  {q:'Perhatikan bentuk 4 − 2x < 10. Pernyataan yang benar tentang unsur dan cirinya adalah …',c:['Memiliki dua variabel','Koefisien x adalah −2 dan variabel berpangkat satu','Konstantanya hanya 10','Merupakan persamaan linear'],a:1,e:'Bentuk tersebut hanya memuat variabel x berpangkat satu. Koefisien x adalah −2; konstanta pada ruas kiri 4 dan ruas kanan 10.'},
+  {q:'Panitia membutuhkan sekurang-kurangnya 150 buku untuk kegiatan. Saat ini tersedia 95 buku dan setiap donatur menyumbang 5 buku. Jika d adalah jumlah donatur, model yang tepat adalah …',c:['95 + 5d ≤ 150','95d + 5 ≥ 150','95 + 5d ≥ 150','5d − 95 < 150'],a:2,e:'Jumlah buku setelah donasi adalah 95 + 5d. Sekurang-kurangnya 150 berarti jumlahnya minimal 150, sehingga ≥ 150.'},
+  {q:'Seorang siswa menyatakan 3x + 2 ≤ 14 sebagai pertidaksamaan linear satu variabel. Alasan paling tepat adalah …',c:['Karena memuat tanda sama dengan saja','Karena x berpangkat satu, hanya ada satu variabel, dan memakai tanda ≤','Karena semua bilangan di dalamnya positif','Karena tidak memiliki konstanta'],a:1,e:'Bentuk tersebut memenuhi ciri PLSV: satu variabel x, pangkat tertinggi satu, dan tanda pertidaksamaan ≤.'}
+ ];
+
+ function buildChoiceQuestion(item,index,container,kind){const el=document.createElement('article');el.className='question-card';el.innerHTML=`<div class="meta"><span>${kind} ${index+1}</span><span>Pilih satu jawaban</span></div><h3>${item.q}</h3><div class="choice-list">${item.c.map((c,j)=>`<button class="choice" type="button" aria-pressed="false">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="actions"><button type="button" class="btn ghost check">Periksa jawaban</button><button type="button" class="btn ghost retry">Coba lagi</button></div><div class="feedback" aria-live="polite"></div><div class="explain hidden"></div>`;container.appendChild(el);let selected=null;const buttons=[...el.querySelectorAll('.choice')],feedback=el.querySelector('.feedback'),explain=el.querySelector('.explain');buttons.forEach((b,j)=>b.addEventListener('click',()=>{selected=j;buttons.forEach((x,k)=>{x.classList.toggle('selected',k===j);x.setAttribute('aria-pressed',String(k===j));x.classList.remove('correct','incorrect')});feedback.textContent='Pilihan tersimpan. Tekan Periksa jawaban untuk melihat umpan balik.';feedback.className='feedback';explain.classList.add('hidden')}));el.querySelector('.check').addEventListener('click',()=>{if(selected===null){feedback.textContent='Pilih satu jawaban terlebih dahulu.';feedback.className='feedback try';return}buttons.forEach((b,j)=>{b.classList.remove('correct','incorrect');if(j===selected)b.classList.add(j===item.a?'correct':'incorrect')});feedback.textContent=selected===item.a?'Tepat! Jawabanmu benar.':'Belum tepat. Tidak apa-apa, pelajari kembali alasannya.';feedback.className='feedback '+(selected===item.a?'good':'try');explain.textContent='Pembahasan dan cara penyelesaian: '+item.e;explain.classList.remove('hidden')});el.querySelector('.retry').addEventListener('click',()=>{selected=null;buttons.forEach(b=>{b.classList.remove('selected','correct','incorrect');b.setAttribute('aria-pressed','false')});feedback.textContent='Silakan pilih jawaban lagi.';feedback.className='feedback';explain.classList.add('hidden')});return {getSelected:()=>selected};}
+ const practiceRoot=document.getElementById('practice');practices.forEach((q,i)=>buildChoiceQuestion(q,i,practiceRoot,'Aktivitas'));
+ // Evaluation
+ const quizRoot=document.getElementById('quiz');let quizState=[];
+ function renderQuiz(){quizRoot.innerHTML='';quizState=questions.map(()=>({selected:null,checked:false}));questions.forEach((q,i)=>{const el=document.createElement('article');el.className='question-card card';el.innerHTML=`<div class="meta"><span>${q.cat}</span><span>Soal ${i+1} dari ${questions.length}</span></div><h3>${q.q}</h3><div class="choice-list">${q.c.map((c,j)=>`<button type="button" class="choice" aria-pressed="false">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="actions"><button class="btn ghost check" type="button">Periksa jawaban</button></div><div class="feedback" aria-live="polite"></div><div class="explain hidden"></div>`;quizRoot.appendChild(el);const st=quizState[i],bs=[...el.querySelectorAll('.choice')],fb=el.querySelector('.feedback'),ex=el.querySelector('.explain');bs.forEach((b,j)=>b.addEventListener('click',()=>{st.selected=j;st.checked=false;bs.forEach((x,k)=>{x.classList.toggle('selected',j===k);x.classList.remove('correct','incorrect');x.setAttribute('aria-pressed',String(j===k))});fb.textContent='Pilihan diperbarui. Periksa kembali jawabanmu.';fb.className='feedback';ex.classList.add('hidden');updateProgress()}));el.querySelector('.check').addEventListener('click',()=>{if(st.selected===null){fb.textContent='Pilih satu jawaban sebelum memeriksa.';fb.className='feedback try';return}st.checked=true;bs.forEach((b,j)=>{b.classList.remove('correct','incorrect');if(j===st.selected)b.classList.add(j===q.a?'correct':'incorrect')});fb.textContent=st.selected===q.a?'Benar! Kamu memahami konsep ini.':'Belum tepat. Baca pembahasan, lalu ubah pilihan jika diperlukan.';fb.className='feedback '+(st.selected===q.a?'good':'try');ex.textContent='Pembahasan: '+q.e;ex.classList.remove('hidden');updateProgress()})});updateProgress()}
+ function updateProgress(){const done=quizState.filter(s=>s.checked).length;document.getElementById('quizProgress').style.width=(done/questions.length*100)+'%'}
+ renderQuiz();document.getElementById('resetQuiz').addEventListener('click',()=>{renderQuiz();document.getElementById('quizResult').classList.add('hidden');document.getElementById('quizNotice').textContent='Evaluasi sudah diatur ulang.'});
+ document.getElementById('finishQuiz').addEventListener('click',()=>{const missing=quizState.findIndex(s=>!s.checked);const notice=document.getElementById('quizNotice'),result=document.getElementById('quizResult');if(missing!==-1){notice.textContent=`Periksa jawaban soal ${missing+1} terlebih dahulu.`;notice.className='feedback try';quizRoot.children[missing].scrollIntoView({behavior:'smooth',block:'center'});return}const score=quizState.reduce((sum,s,i)=>sum+(s.selected===questions[i].a?1:0),0),pct=Math.round(score/questions.length*100);const weak=[...new Set(questions.filter((q,i)=>quizState[i].selected!==q.a).map(q=>q.cat))];result.innerHTML=`<h3>Hasil evaluasi: <span class="result-score">${pct}</span></h3><p>${score} dari ${questions.length} jawaban benar.</p><p>${pct===100?'Luar biasa! Semua jawaban tepat.':pct>=67?'Bagus! Kamu sudah memahami sebagian besar materi. Pelajari kembali soal yang belum tepat.':'Terus berlatih. Baca ulang makna tanda ketaksamaan serta unsur dan ciri pertidaksamaan linear satu variabel.'}</p><p><strong>Bagian yang perlu ditinjau:</strong> ${weak.length?weak.join(', '):'Tidak ada. Semua kategori terjawab benar.'}</p>`;result.classList.remove('hidden');notice.textContent='Hasil berhasil dihitung berdasarkan pilihan terakhir yang sudah diperiksa.';notice.className='feedback good';result.scrollIntoView({behavior:'smooth',block:'center'})});
+ const hotsRoot=document.getElementById('hots');hots.forEach((q,i)=>buildChoiceQuestion(q,i,hotsRoot,'HOTS'));
+ document.getElementById('saveReflection').addEventListener('click',()=>{document.getElementById('reflectStatus').textContent='Refleksi sudah tersimpan sementara pada halaman ini. Untuk menyimpan permanen, cetak halaman atau salin jawabanmu.';toast('Refleksi tercatat pada halaman ini.')});document.getElementById('clearReflection').addEventListener('click',()=>{['reflect1','reflect2','reflect3'].forEach(id=>document.getElementById(id).value='');document.getElementById('reflectStatus').textContent='Jawaban refleksi telah dikosongkan.'});document.getElementById('restartAll').addEventListener('click',()=>{go(0);toast('Kamu dapat memulai pembelajaran kembali.')});
+})();
+</script>
+</body></html>

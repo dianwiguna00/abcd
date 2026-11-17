@@ -1,0 +1,226 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101735"><title>Menggambar dan Membaca Koordinat Titik | KELAS BELAJAR V62.0</title><style>
+:root{--bg:#080f27;--navy:#101735;--panel:#17234a;--panel2:#1d2d5d;--line:#35477d;--blue:#4da3ff;--cyan:#52e0e0;--purple:#9b78ff;--yellow:#ffd166;--text:#f4f6ff;--muted:#c2cce8;--green:#55d6a2;--red:#ff858e;--radius:22px;--shadow:0 18px 50px #02071880}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#33236c 0,transparent 34%),linear-gradient(135deg,#08132d,#101b42 55%,#25164f);color:var(--text);font:20px/1.6 "Trebuchet MS",Arial,sans-serif;min-height:100vh}button,input,textarea{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}p{color:var(--muted);margin:.45rem 0 1rem}h1,h2,h3{line-height:1.2;margin:0 0 14px}h1{font-size:clamp(34px,5vw,54px)}h2{font-size:clamp(28px,3.4vw,38px)}h3{font-size:25px}.app{display:grid;grid-template-columns:290px minmax(0,1fr);min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;padding:25px 18px;background:#0c1532eF;border-right:1px solid #344575;display:flex;flex-direction:column;gap:20px;z-index:5}.brand{padding:8px 10px 18px;border-bottom:1px solid #344575}.brand-mark{display:inline-grid;place-items:center;width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,var(--blue),var(--purple));font-size:25px;font-weight:900;margin-bottom:12px}.brand strong{display:block;font-size:24px;letter-spacing:.06em}.brand small{display:block;color:var(--cyan);font-size:20px}.nav-label{color:#9eacd4;font-size:20px;font-weight:800;padding:0 10px}.nav{display:grid;gap:10px}.nav button{width:100%;text-align:left;padding:14px 15px;border:1px solid transparent;border-radius:15px;background:transparent;color:var(--muted);font-weight:800;transition:.2s}.nav button:hover{background:#1b2a55}.nav button.active{background:linear-gradient(100deg,#24539b,#553b9b);border-color:#718be0;color:white;box-shadow:0 8px 22px #050a2080}.side-note{margin-top:auto;background:#15234a;border:1px solid #344575;border-radius:16px;padding:15px;color:var(--muted)}.side-note strong{color:var(--yellow)}.main{min-width:0;padding:24px clamp(16px,3vw,42px) 60px;max-width:1500px;width:100%;margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;margin-bottom:24px}.crumb{color:var(--cyan);font-weight:800}.tools{display:flex;gap:10px;flex-wrap:wrap}.tool-btn,.btn{border:1px solid #52679f;border-radius:13px;background:#1a2b59;padding:11px 16px;font-weight:800;min-height:48px}.tool-btn:hover,.btn:hover{filter:brightness(1.15);transform:translateY(-1px)}.btn.primary{background:linear-gradient(100deg,#2378d4,#7454d6);border:0}.btn.yellow{background:var(--yellow);color:#1b2140;border:0}.btn.ghost{background:transparent}.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}.screen{display:none;animation:fade .25s ease}.screen.active{display:block}@keyframes fade{from{opacity:.3;transform:translateY(8px)}to{opacity:1;transform:none}}.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:22px;align-items:center;padding:clamp(24px,4vw,46px);border:1px solid #4b5fa0;border-radius:28px;background:linear-gradient(120deg,#172c5b,#35276d);box-shadow:var(--shadow);overflow:hidden}.eyebrow{color:var(--cyan);font-weight:900;letter-spacing:.09em;text-transform:uppercase;margin-bottom:12px}.hero p{font-size:22px}.hero-art{min-height:230px;display:grid;place-items:center;background:radial-gradient(circle,#526bdc55,transparent 65%);position:relative}.orbit{width:min(260px,80%);aspect-ratio:1;border:3px dashed #8e9de8;border-radius:50%;display:grid;place-items:center;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;width:24px;height:24px;border-radius:50%;background:var(--yellow);box-shadow:0 0 24px #ffd166}.orbit:before{left:5%;top:48%}.orbit:after{right:5%;top:48%;background:var(--cyan)}.orbit strong{font-size:56px;color:white}.pill{display:inline-block;border-radius:99px;padding:7px 14px;background:#243d79;color:#dce8ff;font-weight:800}.grid{display:grid;gap:18px}.two{grid-template-columns:repeat(2,minmax(0,1fr))}.three{grid-template-columns:repeat(3,minmax(0,1fr))}.card{background:linear-gradient(145deg,#18264f,#121e40);border:1px solid #344879;border-radius:var(--radius);padding:22px;box-shadow:0 10px 30px #03091e45}.card h3{color:#fff}.card strong{color:#fff}.section-head{margin:8px 0 24px}.section-head p{max-width:900px;font-size:21px}.callout{border-left:5px solid var(--yellow);background:#26315b;padding:18px 20px;border-radius:0 16px 16px 0;margin:20px 0}.callout p{margin:6px 0 0}.step-list{padding-left:28px;color:var(--muted)}.step-list li{padding:5px 0}.numberline-wrap{padding:22px;background:#101a38;border-radius:18px;border:1px solid #40558d;margin:15px 0}.numberline{display:grid;grid-template-columns:repeat(41,minmax(22px,1fr));gap:4px;position:relative}.numberline:before{content:"";position:absolute;left:5%;right:5%;height:4px;background:#8094d2;top:27px;border-radius:5px}.point{position:relative;z-index:1;display:grid;justify-items:center;gap:10px;color:var(--muted);font-weight:900}.dot{width:18px;height:18px;border-radius:50%;background:var(--blue);border:3px solid #dce9ff}.point.zero .dot{background:var(--yellow);width:24px;height:24px}.point.current .dot{background:var(--green);box-shadow:0 0 0 7px #55d6a233}.sim-controls{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:18px}.sim-controls input{flex:1;min-width:180px;accent-color:var(--cyan)}.big-value{font-size:32px;font-weight:900;color:var(--yellow)}.choice-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:15px 0}.choice{padding:13px 16px;text-align:left;border:1px solid #53699f;background:#1b2c59;border-radius:13px;min-height:54px}.choice:hover:not(:disabled){background:#2a4079}.choice.selected{border:2px solid var(--cyan);background:#214a70}.choice.correct{border:2px solid var(--green);background:#164b48}.choice.incorrect{border:2px solid var(--red);background:#542b49}.feedback{min-height:32px;padding:8px 0;font-weight:800}.feedback.good{color:var(--green)}.feedback.try{color:var(--yellow)}.explain{background:#101a38;border:1px solid #3c5084;border-radius:14px;padding:15px;margin-top:10px;color:var(--muted)}.question-card{margin-bottom:17px}.meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--cyan);font-weight:800}.progress{height:10px;background:#34436e;border-radius:99px;overflow:hidden;margin:15px 0 25px}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--cyan),var(--purple));transition:width .25s}.result-score{font-size:54px;font-weight:900;color:var(--yellow)}.field{width:100%;background:#0e1937;border:1px solid #50649a;color:white;border-radius:14px;padding:14px;min-height:130px;resize:vertical}.field::placeholder{color:#a8b5d7}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.reflection-prompt{padding:15px;border:1px solid #43588c;border-radius:14px;background:#111d3d;margin:12px 0}.muted{color:var(--muted)}.small-note{font-size:20px;color:#aebbe0}.footer{text-align:center;color:#9eacd4;padding:30px 10px 0}.hidden{display:none!important}.toast{position:fixed;bottom:20px;right:20px;background:#1b3760;border:1px solid var(--cyan);padding:14px 18px;border-radius:14px;z-index:20;display:none}.mobile-title{display:none}
+@media(max-width:1000px){.app{grid-template-columns:240px minmax(0,1fr)}.three{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr .6fr}}
+@media(max-width:760px){.app{display:block}.sidebar{position:relative;height:auto;padding:14px;gap:12px;border-right:0;border-bottom:1px solid #344575}.brand{display:flex;align-items:center;gap:12px;padding:0 4px 10px}.brand-mark{margin:0;width:44px;height:44px}.brand strong{font-size:22px}.brand small{font-size:20px}.nav-label,.side-note{display:none}.nav{display:flex;overflow-x:auto;padding-bottom:5px}.nav button{width:auto;min-width:max-content;padding:11px 14px;font-size:20px}.main{padding:16px 14px 42px}.topbar{margin-bottom:16px}.hero{grid-template-columns:1fr}.hero-art{min-height:150px}.two,.three{grid-template-columns:1fr}.choice-list{grid-template-columns:1fr}.tools{width:100%}.tool-btn{flex:1}.numberline-wrap{overflow-x:auto}.numberline{min-width:1100px}}
+@media print{body{background:white!important;color:#111!important;font-size:20px}.sidebar,.topbar,.actions,.tools,.nav,.footer{display:none!important}.app{display:block}.main{padding:0;max-width:none}.screen{display:block!important;break-inside:avoid}.card,.hero,.callout,.numberline-wrap{background:white!important;color:#111!important;border:1px solid #777!important;box-shadow:none!important}.card p,.hero p,.section-head p,.callout p,.step-list,.muted{color:#222!important}.choice{background:white!important;color:#111!important;border:1px solid #777!important}.screen:not(.active){display:block!important}.field{border:1px solid #777;color:#111}.hero-art{display:none}}
+</style></head><body>
+<div class="app">
+<aside class="sidebar">
+ <div class="brand"><div class="brand-mark">KB</div><div><strong>KELAS BELAJAR</strong><small>MPI MATEMATIKA SMP</small></div></div>
+ <div class="nav-label">MENU PEMBELAJARAN</div>
+ <nav class="nav" aria-label="Menu pembelajaran">
+  <button class="active" data-screen="0">01 · Tujuan Pembelajaran</button>
+  <button data-screen="1">02 · Materi &amp; Simulasi</button>
+  <button data-screen="2">03 · Soal Interaktif</button>
+  <button data-screen="3">04 · Refleksi</button>
+ </nav>
+ <div class="side-note"><strong>Strategi belajar</strong><p>Amati informasi, kenali jenis dan sumber data, lalu pilih cara pengumpulan yang sesuai.</p></div>
+</aside>
+<main class="main">
+ <div class="topbar"><div class="crumb" id="crumb">KELAS BELAJAR / TUJUAN PEMBELAJARAN</div><div class="tools"><button class="tool-btn" id="fullscreen">⛶ Layar penuh</button><button class="tool-btn" id="print">▤ Cetak</button></div></div>
+ <section class="screen active" id="screen-0">
+  <div class="hero">
+   <div>
+    <p class="eyebrow">MPI MATEMATIKA SMP · V62.0</p>
+    <h1>Menggambar dan Membaca Koordinat Titik</h1>
+    <p>Bidang koordinat dapat digunakan untuk menggambar posisi titik sekaligus membaca koordinat titik yang sudah ditampilkan. Ketelitian membaca sumbu dan skala membantu kita menentukan pasangan berurutan dengan benar.</p>
+    <button class="btn yellow" data-go="1">Mulai belajar →</button>
+   </div>
+   <div class="hero-art">
+    <svg viewBox="0 0 340 220" role="img" aria-label="Bidang koordinat dengan titik-titik yang dapat dibaca">
+     <rect x="10" y="10" width="320" height="200" rx="22" fill="#1d2d5d" stroke="#52e0e0" stroke-width="3"/>
+     <path d="M170 24 V194 M34 110 H307" stroke="#fff" stroke-width="2.5"/>
+     <path d="M307 110 l-10 -6 v12z M170 24 l-6 10 h12z" fill="#ffd166"/>
+     <g stroke="#91a8d9" stroke-width="1"><path d="M135 105 V115 M205 105 V115 M165 75 H175 M165 145 H175"/></g>
+     <circle cx="240" cy="60" r="7" fill="#52e0e0" stroke="#fff" stroke-width="2"/>
+     <circle cx="100" cy="145" r="7" fill="#ffd166" stroke="#fff" stroke-width="2"/>
+     <g fill="#fff" font-size="13"><text x="250" y="55">A</text><text x="83" y="163">B</text><text x="311" y="104">X</text><text x="180" y="24">Y</text><text x="180" y="126">O</text></g>
+     <path d="M170 110 L240 110 L240 60 M170 110 L100 110 L100 145" stroke="#ffd166" stroke-dasharray="4 4" stroke-width="1.7" fill="none"/>
+    </svg>
+   </div>
+  </div>
+  <section class="card" style="margin-top:20px">
+   <p class="eyebrow">APERSEPSI · MEMBACA DENAH BERPETAK</p>
+   <h2>🧭 Bisakah kamu menggambar lokasi dari petunjuk dan membaca lokasinya dari gambar?</h2>
+   <p>Bayangkan denah taman sekolah memiliki titik acuan di tengah. Pos taman bunga berada 3 petak ke kanan dan 2 petak ke atas. Kita dapat menggambarnya sebagai titik (3, 2). Sebaliknya, jika pada denah terlihat sebuah titik 4 petak ke kiri dan 1 petak ke bawah, kita dapat membaca koordinatnya sebagai (−4, −1).</p>
+   <p>Kegiatan ini memiliki dua arah keterampilan: mengubah pasangan berurutan menjadi gambar titik, dan mengubah gambar titik menjadi pasangan berurutan.</p>
+   <div class="callout"><strong>Pertanyaan pemantik</strong><p>Jika sebuah titik terlihat 2 satuan ke kiri dan 3 satuan ke atas dari titik asal, bagaimana kamu menggambarnya? Bagaimana cara membaca koordinatnya kembali dari bidang?</p></div>
+  </section>
+  <div class="grid two" style="margin-top:20px">
+   <article class="card">
+    <h3>🎯 Tujuan pembelajaran</h3>
+    <p>Melalui penggunaan bidang koordinat dan latihan soal, peserta didik mampu menggambar titik berdasarkan pasangan berurutan dan menentukan koordinat suatu titik pada bidang Kartesius dengan benar.</p>
+    <p><strong>Indikator keberhasilan:</strong></p>
+    <ol class="step-list">
+     <li>Membaca skala dan arah positif-negatif pada kedua sumbu.</li>
+     <li>Menggambar titik berdasarkan pasangan berurutan (x, y).</li>
+     <li>Menentukan koordinat x dengan membaca posisi mendatar titik.</li>
+     <li>Menentukan koordinat y dengan membaca posisi tegak titik.</li>
+     <li>Menuliskan koordinat titik dengan urutan (x, y) secara tepat.</li>
+     <li>Memeriksa kembali posisi titik melalui proyeksi ke sumbu-X dan sumbu-Y.</li>
+    </ol>
+   </article>
+   <article class="card">
+    <h3>🧭 Peta belajar</h3>
+    <ol class="step-list">
+     <li>Membaca sumbu dan skala bidang koordinat.</li>
+     <li>Menggambar titik dari pasangan berurutan.</li>
+     <li>Membaca koordinat dari gambar titik.</li>
+     <li>Menggunakan garis bantu atau proyeksi ke sumbu.</li>
+     <li>Berlatih menggambar dan membaca titik secara bergantian.</li>
+    </ol>
+   </article>
+  </div>
+  <article class="card" style="margin-top:20px">
+   <h3>🌍 Manfaat dalam kehidupan sehari-hari</h3>
+   <p>Keterampilan menggambar dan membaca koordinat digunakan saat membaca denah, membuat peta sederhana, menyusun posisi objek pada permainan, dan memahami titik pada grafik. Kita tidak hanya dapat mengikuti petunjuk posisi, tetapi juga menjelaskan posisi yang terlihat pada gambar.</p>
+  </article>
+  <div class="actions"><button class="btn primary" data-go="1">Lanjut ke Materi & Simulasi →</button></div>
+ </section>
+ <section class="screen" id="screen-1">
+  <div class="section-head"><p class="eyebrow">BAGIAN 02 · MATERI & SIMULASI</p><h2>Menggambar dan Menentukan Koordinat Titik</h2><p>Pelajari cara menggambar titik dari pasangan koordinat dan membaca kembali pasangan koordinat dari bidang.</p></div>
+  <article class="card">
+   <h3>1. Membaca sumbu dan skala</h3>
+   <p>Sumbu-X menunjukkan posisi mendatar. Ke kanan bernilai positif dan ke kiri bernilai negatif. Sumbu-Y menunjukkan posisi tegak. Ke atas bernilai positif dan ke bawah bernilai negatif. Perhatikan jarak antargaris pada bidang: setiap satu kotak mewakili satu satuan jika skala menunjukkan demikian.</p>
+   <div class="callout"><strong>Periksa skala terlebih dahulu</strong><p>Jangan langsung menghitung kotak tanpa membaca angka pada sumbu. Jika jarak antartanda bernilai 1, setiap satu langkah adalah 1 satuan. Jika skala berbeda, ikuti angka yang tertulis.</p></div>
+  </article>
+  <article class="card" style="margin-top:18px">
+   <h3>2. Menggambar titik dari pasangan berurutan</h3>
+   <p>Untuk menggambar titik A(3, 2), lakukan langkah berikut:</p>
+   <ol class="step-list">
+    <li>Mulai dari titik asal O(0, 0).</li>
+    <li>Baca koordinat pertama, yaitu x = 3. Bergerak 3 satuan ke kanan.</li>
+    <li>Baca koordinat kedua, yaitu y = 2. Bergerak 2 satuan ke atas.</li>
+    <li>Tandai posisi akhir dan beri nama titik A.</li>
+   </ol>
+   <p>Untuk titik B(−4, −1), bergerak 4 satuan ke kiri lalu 1 satuan ke bawah. Selalu baca x lebih dahulu, kemudian y.</p>
+  </article>
+  <article class="card" style="margin-top:18px">
+   <h3>3. Membaca koordinat dari gambar titik</h3>
+   <p>Jika sebuah titik sudah ditampilkan pada bidang, tarik atau bayangkan garis bantu tegak lurus menuju kedua sumbu. Baca posisi mendatar titik pada sumbu-X untuk memperoleh x, lalu baca posisi tegaknya pada sumbu-Y untuk memperoleh y.</p>
+   <svg viewBox="0 0 380 280" role="img" aria-label="Contoh titik A pada koordinat 3,2 dengan garis bantu ke sumbu">
+    <rect x="30" y="15" width="320" height="245" rx="12" fill="#14234a"/>
+    <path d="M45 145 H340 M175 245 V25" stroke="#fff" stroke-width="2.5"/>
+    <path d="M340 145 l-9 -5 v10z M175 25 l-5 9 h10z" fill="#ffd166"/>
+    <g stroke="#ffffff30" stroke-width="1"><path d="M115 30 V245 M145 30 V245 M205 30 V245 M235 30 V245 M265 30 V245 M295 30 V245 M45 55 H340 M45 85 H340 M45 115 H340 M45 175 H340 M45 205 H340"/></g>
+    <path d="M265 145 V85 M175 85 H265" stroke="#ffd166" stroke-width="2.5" stroke-dasharray="5 4"/>
+    <circle cx="265" cy="85" r="7" fill="#52e0e0" stroke="#fff" stroke-width="2"/>
+    <g fill="#fff" font-size="13"><text x="275" y="78">A</text><text x="265" y="164" text-anchor="middle">3</text><text x="160" y="89" text-anchor="end">2</text><text x="183" y="161">O</text><text x="345" y="139">X</text><text x="183" y="25">Y</text></g>
+    <text x="190" y="275" text-anchor="middle" fill="#52e0e0" font-size="13">Titik A = (3, 2)</text>
+   </svg>
+   <div class="callout"><strong>Urutan membaca</strong><p>Koordinat mendatar (x) dibaca terlebih dahulu, kemudian koordinat tegak (y). Pada gambar, titik A memiliki koordinat (3, 2), bukan (2, 3).</p></div>
+  </article>
+  <article class="card" style="margin-top:18px">
+   <h3>4. Contoh membaca beberapa titik</h3>
+   <div class="table-wrap"><table><thead><tr><th>Nama titik</th><th>Posisi mendatar</th><th>Posisi tegak</th><th>Koordinat</th></tr></thead><tbody><tr><td>P</td><td>2 ke kanan</td><td>3 ke atas</td><td>(2, 3)</td></tr><tr><td>Q</td><td>3 ke kiri</td><td>2 ke atas</td><td>(−3, 2)</td></tr><tr><td>R</td><td>2 ke kiri</td><td>3 ke bawah</td><td>(−2, −3)</td></tr><tr><td>S</td><td>4 ke kanan</td><td>1 ke bawah</td><td>(4, −1)</td></tr></tbody></table></div>
+  </article>
+  <article class="card" style="margin-top:18px">
+   <h3>5. Simulasi interaktif: gambar dan baca koordinat</h3>
+   <p><strong>Mode A – Menggambar:</strong> masukkan koordinat, lalu amati titik yang muncul pada bidang.</p>
+   <div class="grid two">
+    <div><label for="coordX"><strong>Koordinat x</strong></label><input id="coordX" class="field" type="number" min="-5" max="5" step="1" value="3"></div>
+    <div><label for="coordY"><strong>Koordinat y</strong></label><input id="coordY" class="field" type="number" min="-5" max="5" step="1" value="2"></div>
+   </div>
+   <div id="coordBoard" style="margin-top:16px" aria-live="polite"></div>
+   <div id="coordResult" class="callout" style="margin-top:12px" aria-live="polite"></div>
+   <div class="actions"><button class="btn ghost" id="resetPoint">Atur titik ke (3, 2)</button></div>
+   <div class="divider"></div>
+   <p><strong>Mode B – Membaca:</strong> amati titik misteri pada bidang berikut, lalu pilih pasangan koordinatnya.</p>
+   <div id="readBoard" style="margin-top:12px"></div>
+   <div id="readChoices" class="grid two" style="margin-top:12px"></div>
+   <div id="readFeedback" class="callout" style="margin-top:12px" aria-live="polite">Pilih koordinat yang sesuai dengan posisi titik misteri.</div>
+   <div class="actions"><button class="btn primary" id="newReadPoint">Titik misteri berikutnya</button></div>
+   <p class="muted">Semua titik pada simulasi menggunakan bilangan bulat dari −5 sampai 5. Baca sumbu-X lebih dahulu, kemudian sumbu-Y.</p>
+  </article>
+  <div class="actions"><button class="btn ghost" data-go="0">← Kembali</button><button class="btn primary" data-go="2">Kerjakan Soal Interaktif →</button></div>
+ </section>
+ <section class="screen" id="screen-2">
+  <div class="section-head"><p class="eyebrow">BAGIAN 03 · LATIHAN DAN TANTANGAN</p><h2>Soal Interaktif: Menggambar dan Membaca Koordinat Titik</h2><p>Pilih jawaban terlebih dahulu, lalu tekan Periksa jawaban untuk melihat umpan balik, kunci, dan pembahasan.</p></div>
+  <div class="card"><div class="meta"><span>AKTIVITAS PEMAHAMAN</span><span>3 soal · 4 pilihan</span></div><div id="practice"></div></div>
+  <div class="card" style="margin-top:18px"><div class="meta"><span>EVALUASI PEMBELAJARAN</span><span>6 soal</span></div><div class="progress"><span id="quizProgress"></span></div><div id="quiz"></div><div class="actions"><button class="btn primary" id="finishQuiz">Lihat hasil evaluasi</button><button class="btn ghost" id="resetQuiz">Ulangi evaluasi</button></div><p class="feedback" id="quizNotice" aria-live="polite"></p><div id="quizResult" class="callout hidden" aria-live="polite"></div></div>
+  <div class="card" style="margin-top:18px"><div class="meta"><span>TANTANGAN HOTS</span><span>5 soal · 4 pilihan</span></div><p>Gambarkan titik dari pasangan berurutan dan baca kembali koordinat titik dari bidang Kartesius.</p><div id="hots"></div></div>
+  <div class="actions"><button class="btn ghost" data-go="1">← Kembali ke Materi</button><button class="btn primary" data-go="3">Lanjut ke Refleksi →</button></div>
+ </section>
+ <section class="screen" id="screen-3">
+  <div class="section-head"><p class="eyebrow">BAGIAN 04 · REFLEKSI</p><h2>Refleksi Pembelajaran</h2><p>Periksa pemahamanmu dalam menggambar titik dan membaca koordinat dari bidang Kartesius.</p></div>
+  <article class="card"><h3>📝 Cek pemahaman diri</h3>
+   <div class="reflection-prompt"><label for="reflect1"><strong>1. Bagaimana langkah menggambar titik A(−3, 2) dari titik asal?</strong></label><textarea id="reflect1" class="field" placeholder="Tuliskan langkah-langkahnya..."></textarea></div>
+   <div class="reflection-prompt"><label for="reflect2"><strong>2. Bagaimana cara membaca koordinat sebuah titik yang sudah tergambar?</strong></label><textarea id="reflect2" class="field" placeholder="Jelaskan dengan bahasamu sendiri..."></textarea></div>
+   <div class="reflection-prompt"><label for="reflect3"><strong>3. Mengapa urutan koordinat (x, y) tidak boleh tertukar?</strong></label><textarea id="reflect3" class="field" placeholder="Tuliskan alasanmu..."></textarea></div>
+   <div class="actions"><button class="btn primary" id="saveReflection">Simpan refleksi sementara</button><button class="btn ghost" id="clearReflection">Kosongkan jawaban</button></div><p id="reflectStatus" class="feedback" aria-live="polite"></p>
+  </article>
+  <article class="card" style="margin-top:18px"><h3>⭐ Rangkuman</h3><ul class="step-list"><li>Pasangan berurutan (x, y) menyatakan posisi titik dengan koordinat x dibaca lebih dahulu.</li><li>Menggambar titik dilakukan dengan bergerak mendatar sesuai x, kemudian tegak sesuai y.</li><li>Membaca koordinat dilakukan dengan memperhatikan proyeksi titik ke sumbu-X dan sumbu-Y.</li><li>Nilai positif dan negatif menentukan arah kanan/kiri serta atas/bawah.</li><li>Periksa skala bidang koordinat agar nilai yang dibaca tepat.</li></ul></article>
+  <div class="callout"><strong>Pesan pembelajaran</strong><p>Kemampuan menggambar dan membaca koordinat membuat kita dapat berpindah dari informasi angka ke gambar, serta dari gambar kembali ke informasi angka.</p></div>
+  <div class="actions"><button class="btn primary" id="restartAll">↻ Ulangi pembelajaran</button></div>
+ </section>
+ <div class="footer">KELAS BELAJAR · MPI Matematika SMP · V62.0</div>
+
+<script>
+(()=>{
+ const screens=[...document.querySelectorAll('.screen')],nav=[...document.querySelectorAll('[data-screen]')],crumb=document.getElementById('crumb'),names=['TUJUAN PEMBELAJARAN','MATERI & SIMULASI','SOAL INTERAKTIF','REFLEKSI'];
+ function go(n){n=Math.max(0,Math.min(3,Number(n)));screens.forEach((s,i)=>s.classList.toggle('active',i===n));nav.forEach((b,i)=>{b.classList.toggle('active',i===n);if(i===n)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current')});crumb.textContent='KELAS BELAJAR / '+names[n];window.scrollTo({top:0,behavior:'smooth'})}
+ nav.forEach(b=>b.addEventListener('click',()=>go(b.dataset.screen)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
+ document.getElementById('fullscreen').addEventListener('click',async()=>{try{if(!document.fullscreenElement)await document.documentElement.requestFullscreen();else await document.exitFullscreen()}catch(e){toast('Mode layar penuh tidak didukung browser ini.')}});
+ document.getElementById('print').addEventListener('click',()=>window.print());
+ function toast(t){const el=document.getElementById('toast');el.textContent=t;el.style.display='block';setTimeout(()=>el.style.display='none',2600)}
+ const coordX=document.getElementById('coordX'),coordY=document.getElementById('coordY');
+ const coordBoard=document.getElementById('coordBoard'),coordResult=document.getElementById('coordResult');
+ function makeBoard(x,y,label='A'){
+  const px=160+x*24,py=160-y*24;let grid='',labels='';
+  for(let i=-5;i<=5;i++){
+   const gx=160+i*24,gy=160-i*24;
+   grid+=`<path d="M${gx} 40 V280 M40 ${gy} H280" stroke="#ffffff22" stroke-width="1"/>`;
+   if(i!==0)labels+=`<text x="${gx}" y="178" text-anchor="middle" fill="#dce8ff" font-size="11">${i}</text><text x="148" y="${gy+4}" text-anchor="end" fill="#dce8ff" font-size="11">${i}</text>`;
+  }
+  return `<svg viewBox="0 0 320 320" role="img" aria-label="Bidang koordinat dengan titik ${label}" style="width:100%;max-width:360px;display:block;margin:auto;background:#101d40;border-radius:14px">${grid}<path d="M35 160 H290 M160 290 V30" stroke="#fff" stroke-width="2.5"/><path d="M290 160 l-9 -5 v10z M160 30 l-5 9 h10z" fill="#ffd166"/>${labels}<text x="296" y="153" fill="#ffd166" font-size="13">X</text><text x="168" y="25" fill="#ffd166" font-size="13">Y</text><text x="168" y="175" fill="#fff" font-size="12">O</text><path d="M160 160 L${px} 160 L${px} ${py}" stroke="#ffd166" stroke-width="2" stroke-dasharray="4 3" fill="none"/><circle cx="${px}" cy="${py}" r="7" fill="#52e0e0" stroke="#fff" stroke-width="2"/><text x="${Math.min(250,px+10)}" y="${Math.max(20,py-10)}" fill="#ffd166" font-size="13">${label}</text></svg>`;
+ }
+ function updateCoordinate(){
+  const x=Number(coordX.value),y=Number(coordY.value);
+  if(!Number.isInteger(x)||!Number.isInteger(y)||x< -5||x>5||y< -5||y>5){
+   coordResult.textContent='Masukkan bilangan bulat dari −5 sampai 5.';
+   coordBoard.innerHTML='';return;
+  }
+  coordBoard.innerHTML=makeBoard(x,y,'A');
+  const q=x===0||y===0?'berada pada sumbu (bukan kuadran)':x>0&&y>0?'Kuadran I':x<0&&y>0?'Kuadran II':x<0&&y<0?'Kuadran III':'Kuadran IV';
+  coordResult.innerHTML=`<strong>Titik A(${x}, ${y})</strong><p>Gerak mendatar: ${x===0?'0 satuan':Math.abs(x)+' satuan ke '+(x>0?'kanan':'kiri')}.</p><p>Gerak tegak: ${y===0?'0 satuan':Math.abs(y)+' satuan ke '+(y>0?'atas':'bawah')}.</p><p><strong>Letak:</strong> ${q}.</p>`;
+ }
+ coordX.addEventListener('input',updateCoordinate);coordY.addEventListener('input',updateCoordinate);
+ document.getElementById('resetPoint').addEventListener('click',()=>{coordX.value=3;coordY.value=2;updateCoordinate()});
+ updateCoordinate();
+
+ const readBoard=document.getElementById('readBoard'),readChoices=document.getElementById('readChoices'),readFeedback=document.getElementById('readFeedback');
+ let target={x:-2,y:3},readAnswered=false;
+ function newReadPoint(){
+  let x=0,y=0;while(x===0)x=Math.floor(Math.random()*11)-5;while(y===0)y=Math.floor(Math.random()*11)-5;
+  target={x,y};readAnswered=false;
+  readBoard.innerHTML=makeBoard(x,y,'?');
+  let opts=[[x,y],[Math.max(-5,Math.min(5,x+(x>0?-1:1))),y],[x,Math.max(-5,Math.min(5,y+(y>0?-1:1)))],[y,x]];
+  let seen=new Set(),unique=[];
+  for(const o of opts){const k=o.join(',');if(!seen.has(k)){seen.add(k);unique.push(o)}}
+  while(unique.length<4){let ox=Math.floor(Math.random()*11)-5,oy=Math.floor(Math.random()*11)-5,k=ox+','+oy;if(!seen.has(k)){seen.add(k);unique.push([ox,oy])}}
+  unique.sort(()=>Math.random()-.5);
+  readChoices.innerHTML=unique.map((o,i)=>`<button class="btn ghost" data-read="${o[0]},${o[1]}">(${o[0]}, ${o[1]})</button>`).join('');
+  readChoices.querySelectorAll('[data-read]').forEach(btn=>btn.addEventListener('click',()=>{
+   if(readAnswered)return;readAnswered=true;
+   const val=btn.dataset.read,correct=val===`${target.x},${target.y}`;
+   readFeedback.innerHTML=correct?`<strong>Benar!</strong><p>Koordinat titik pada gambar adalah (${target.x}, ${target.y}). Baca x terlebih dahulu, lalu y.</p>`:`<strong>Belum tepat.</strong><p>Koordinat yang benar adalah (${target.x}, ${target.y}). Perhatikan posisi mendatar titik pada sumbu-X, lalu posisi tegaknya pada sumbu-Y.</p>`;
+   readChoices.querySelectorAll('button').forEach(b=>b.disabled=true);
+  }));
+  readFeedback.textContent='Pilih pasangan koordinat yang sesuai dengan posisi titik pada gambar.';
+ }
+ document.getElementById('newReadPoint').addEventListener('click',newReadPoint);
+ newReadPoint();
+ const practices=[{"q": "Pasangan koordinat (−3, 2) digambar dengan cara …", "c": ["3 satuan ke kiri, lalu 2 satuan ke atas", "3 satuan ke kanan, lalu 2 satuan ke atas", "2 satuan ke kiri, lalu 3 satuan ke bawah", "3 satuan ke kanan, lalu 2 satuan ke bawah"], "a": 0, "e": "Koordinat x = −3 berarti bergerak 3 satuan ke kiri, lalu y = 2 berarti bergerak 2 satuan ke atas."}, {"q": "Pada bidang koordinat, sebuah titik berada 4 satuan ke kanan dan 1 satuan ke bawah dari O. Koordinat titik tersebut adalah …", "c": ["(4, −1)", "(−4, 1)", "(1, −4)", "(4, 1)"], "a": 0, "e": "Ke kanan bernilai x positif 4 dan ke bawah bernilai y negatif 1. Koordinatnya (4, −1)."}, {"q": "Saat membaca titik yang sudah tergambar, nilai koordinat yang dibaca terlebih dahulu adalah …", "c": ["Koordinat x pada arah mendatar", "Koordinat y pada arah tegak", "Nilai kuadran", "Jarak dari titik asal tanpa arah"], "a": 0, "e": "Pasangan berurutan ditulis (x, y), sehingga nilai x atau posisi mendatar dibaca terlebih dahulu."}],questions=[{"cat": "Menggambar titik", "q": "Titik A(2, 4) harus digambar dengan bergerak …", "c": ["2 satuan ke kanan dan 4 satuan ke atas", "4 satuan ke kanan dan 2 satuan ke atas", "2 satuan ke kiri dan 4 satuan ke bawah", "4 satuan ke kiri dan 2 satuan ke bawah"], "a": 0, "e": "Nilai x = 2 berarti ke kanan 2 satuan dan y = 4 berarti ke atas 4 satuan."}, {"cat": "Menggambar titik", "q": "Koordinat B(−5, −2) menunjukkan posisi …", "c": ["5 satuan ke kiri dan 2 satuan ke bawah", "5 satuan ke kanan dan 2 satuan ke bawah", "2 satuan ke kiri dan 5 satuan ke atas", "5 satuan ke kiri dan 2 satuan ke atas"], "a": 0, "e": "Nilai x negatif menunjukkan ke kiri, sedangkan y negatif menunjukkan ke bawah."}, {"cat": "Membaca koordinat", "q": "Sebuah titik pada gambar berada 3 satuan ke kiri dan 4 satuan ke atas dari titik asal. Koordinatnya adalah …", "c": ["(−3, 4)", "(3, 4)", "(−4, 3)", "(3, −4)"], "a": 0, "e": "Posisi mendatar 3 ke kiri berarti x = −3, dan tegak 4 ke atas berarti y = 4."}, {"cat": "Membaca koordinat", "q": "Titik C terlihat 2 satuan ke kanan dan 5 satuan ke bawah dari O. Pasangan koordinatnya adalah …", "c": ["(2, −5)", "(−2, 5)", "(5, −2)", "(2, 5)"], "a": 0, "e": "Ke kanan adalah x positif 2, sedangkan ke bawah adalah y negatif 5."}, {"cat": "Membaca koordinat", "q": "Pada gambar, titik D berada tepat pada sumbu-Y, 3 satuan di atas titik asal. Koordinat D adalah …", "c": ["(0, 3)", "(3, 0)", "(0, −3)", "(−3, 0)"], "a": 0, "e": "Karena berada pada sumbu-Y, x = 0. Tiga satuan di atas berarti y = 3."}, {"cat": "Memeriksa koordinat", "q": "Seorang siswa menulis titik E(4, −2) sebagai (−2, 4). Apa yang terjadi?", "c": ["Koordinat x dan y tertukar sehingga posisi titik berubah", "Koordinat tetap sama", "Titik hanya berpindah ke kanan", "Titik menjadi titik asal"], "a": 0, "e": "Urutan pasangan berurutan penting. (4, −2) dan (−2, 4) menunjukkan posisi yang berbeda."}],hots=[{"q": "Pada denah, titik P terlihat 4 kotak ke kiri dan 3 kotak ke atas dari O. Seorang siswa menulis P(3, −4). Perbaikan yang tepat adalah …", "c": ["P(−4, 3), karena x dibaca mendatar lebih dahulu", "P(4, −3), karena kiri positif", "P(−3, 4), karena urutannya dibalik", "P(3, 4), karena kedua nilai positif"], "a": 0, "e": "Empat kotak ke kiri berarti x = −4 dan tiga kotak ke atas berarti y = 3. Koordinat yang benar adalah (−4, 3)."}, {"q": "Titik A(−2, 3) dan B(3, −2) memiliki angka yang sama tetapi urutannya berbeda. Kesimpulan yang benar adalah …", "c": ["Keduanya menunjukkan lokasi berbeda karena koordinat x dan y tertukar", "Keduanya menunjukkan lokasi yang sama", "Keduanya berada di titik asal", "Keduanya berada pada sumbu-Y"], "a": 0, "e": "A memiliki x = −2 dan y = 3, sedangkan B memiliki x = 3 dan y = −2. Posisi keduanya berbeda."}, {"q": "Pada bidang koordinat berskala satu satuan per kotak, titik M berada 2 kotak ke kanan dan 3 kotak ke bawah. Jika gambar dibaca sebagai M(2, 3), kesalahan pembaca adalah …", "c": ["Tanda koordinat y seharusnya negatif karena titik berada di bawah sumbu-X", "Tanda koordinat x seharusnya negatif karena titik di kanan", "Nilai x dan y seharusnya nol", "Titik seharusnya berada di Kuadran II"], "a": 0, "e": "Posisi di kanan memberi x = 2, sedangkan posisi di bawah memberi y = −3. Jadi koordinat yang tepat (2, −3)."}, {"q": "Sebuah titik N pada gambar berada di sumbu-X, 5 satuan ke kiri dari O. Koordinat N adalah …", "c": ["(−5, 0)", "(0, −5)", "(5, 0)", "(0, 5)"], "a": 0, "e": "Lima satuan ke kiri berarti x = −5. Karena berada pada sumbu-X, y = 0."}, {"q": "Dua kelompok menggambar titik yang sama. Kelompok 1 memulai dari O, bergerak 3 satuan ke kiri lalu 2 satuan ke bawah. Kelompok 2 menulis koordinat (−3, −2). Penilaian yang benar adalah …", "c": ["Keduanya benar dan menunjukkan titik yang sama", "Kelompok 1 salah karena harus ke kanan", "Kelompok 2 salah karena nilai y harus positif", "Keduanya menunjukkan titik yang berbeda"], "a": 0, "e": "Gerak 3 satuan ke kiri berarti x = −3 dan 2 satuan ke bawah berarti y = −2. Jadi pasangan koordinatnya (−3, −2)."}];
+ function buildQuestion(item,index,container,kind){const el=document.createElement('article');el.className='question-card';el.innerHTML=`<div class="meta"><span>${kind} ${index+1}</span><span>Pilih satu jawaban</span></div><h3>${item.q}</h3><div class="choice-list">${item.c.map((c,j)=>`<button class="choice" type="button" aria-pressed="false">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="actions"><button type="button" class="btn ghost check">Periksa jawaban</button><button type="button" class="btn ghost retry">Coba lagi</button></div><div class="feedback" aria-live="polite"></div><div class="explain hidden"></div>`;container.appendChild(el);let selected=null;const buttons=[...el.querySelectorAll('.choice')],fb=el.querySelector('.feedback'),ex=el.querySelector('.explain');buttons.forEach((b,j)=>b.addEventListener('click',()=>{selected=j;buttons.forEach((x,k)=>{x.classList.toggle('selected',k===j);x.setAttribute('aria-pressed',String(k===j));x.classList.remove('correct','incorrect')});fb.textContent='Pilihan tersimpan. Tekan Periksa jawaban untuk melihat umpan balik.';fb.className='feedback';ex.classList.add('hidden')}));el.querySelector('.check').addEventListener('click',()=>{if(selected===null){fb.textContent='Pilih satu jawaban terlebih dahulu.';fb.className='feedback try';return}buttons.forEach((b,j)=>{b.classList.remove('correct','incorrect');if(j===selected)b.classList.add(j===item.a?'correct':'incorrect')});fb.textContent=selected===item.a?'Tepat! Jawabanmu benar.':'Belum tepat. Baca kembali informasi pada tabel atau diagram dan periksa perbandingan yang digunakan.';fb.className='feedback '+(selected===item.a?'good':'try');ex.textContent='Kunci jawaban: '+item.c[item.a]+'. Pembahasan: '+item.e;ex.classList.remove('hidden')});el.querySelector('.retry').addEventListener('click',()=>{selected=null;buttons.forEach(b=>{b.classList.remove('selected','correct','incorrect');b.setAttribute('aria-pressed','false')});fb.textContent='Silakan pilih jawaban lagi.';fb.className='feedback';ex.classList.add('hidden')})}
+ const practiceRoot=document.getElementById('practice');practices.forEach((q,i)=>buildQuestion(q,i,practiceRoot,'Aktivitas'));
+ const quizRoot=document.getElementById('quiz');let state=[];function renderQuiz(){quizRoot.innerHTML='';state=questions.map(()=>({selected:null,checked:false}));questions.forEach((q,i)=>{const el=document.createElement('article');el.className='question-card card';el.innerHTML=`<div class="meta"><span>${q.cat}</span><span>Soal ${i+1} dari ${questions.length}</span></div><h3>${q.q}</h3><div class="choice-list">${q.c.map((c,j)=>`<button type="button" class="choice" aria-pressed="false">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="actions"><button class="btn ghost check" type="button">Periksa jawaban</button></div><div class="feedback" aria-live="polite"></div><div class="explain hidden"></div>`;quizRoot.appendChild(el);const st=state[i],bs=[...el.querySelectorAll('.choice')],fb=el.querySelector('.feedback'),ex=el.querySelector('.explain');bs.forEach((b,j)=>b.addEventListener('click',()=>{st.selected=j;st.checked=false;bs.forEach((x,k)=>{x.classList.toggle('selected',j===k);x.classList.remove('correct','incorrect');x.setAttribute('aria-pressed',String(j===k))});fb.textContent='Pilihan diperbarui. Periksa kembali jawabanmu.';fb.className='feedback';ex.classList.add('hidden');progress()}));el.querySelector('.check').addEventListener('click',()=>{if(st.selected===null){fb.textContent='Pilih satu jawaban sebelum memeriksa.';fb.className='feedback try';return}st.checked=true;bs.forEach((b,j)=>{b.classList.remove('correct','incorrect');if(j===st.selected)b.classList.add(j===q.a?'correct':'incorrect')});fb.textContent=st.selected===q.a?'Benar! Kamu membaca dan menafsirkan data dengan tepat.':'Belum tepat. Baca pembahasan dan periksa kembali bukti datanya.';fb.className='feedback '+(st.selected===q.a?'good':'try');ex.textContent='Kunci jawaban: '+q.c[q.a]+'. Pembahasan: '+q.e;ex.classList.remove('hidden');progress()})});progress()}
+ function progress(){document.getElementById('quizProgress').style.width=(state.filter(s=>s.checked).length/questions.length*100)+'%'}renderQuiz();
+ document.getElementById('resetQuiz').addEventListener('click',()=>{renderQuiz();document.getElementById('quizResult').classList.add('hidden');document.getElementById('quizNotice').textContent='Evaluasi sudah diatur ulang.'});
+ document.getElementById('finishQuiz').addEventListener('click',()=>{const missing=state.findIndex(s=>!s.checked),notice=document.getElementById('quizNotice'),result=document.getElementById('quizResult');if(missing!==-1){notice.textContent='Periksa jawaban soal '+(missing+1)+' terlebih dahulu.';notice.className='feedback try';quizRoot.children[missing].scrollIntoView({behavior:'smooth',block:'center'});return}const score=state.reduce((sum,s,i)=>sum+(s.selected===questions[i].a?1:0),0),pct=Math.round(score/questions.length*100);result.innerHTML=`<h3>Hasil evaluasi: <span class="result-score">${pct}</span></h3><p>${score} dari ${questions.length} jawaban benar.</p><p>${pct===100?'Luar biasa! Semua jawaban tepat.':pct>=67?'Bagus! Tinjau kembali soal yang belum tepat.':'Terus berlatih membaca nilai, membandingkan data, dan menyusun kesimpulan.'}</p>`;result.classList.remove('hidden');notice.textContent='Hasil berhasil dihitung.';notice.className='feedback good';result.scrollIntoView({behavior:'smooth',block:'center'})});
+ const hotsRoot=document.getElementById('hots');hots.forEach((q,i)=>buildQuestion(q,i,hotsRoot,'HOTS'));
+ document.getElementById('saveReflection').addEventListener('click',()=>{document.getElementById('reflectStatus').textContent='Refleksi tercatat sementara pada halaman ini. Untuk menyimpan permanen, cetak halaman atau salin jawabanmu.';toast('Refleksi tercatat pada halaman ini.')});
+ document.getElementById('clearReflection').addEventListener('click',()=>{['reflect1','reflect2','reflect3'].forEach(id=>document.getElementById(id).value='');document.getElementById('reflectStatus').textContent='Jawaban refleksi telah dikosongkan.'});
+ document.getElementById('restartAll').addEventListener('click',()=>{go(0);toast('Kamu dapat memulai pembelajaran kembali.')});
+})();
+</script></body></html>

@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101735"><title>Membandingkan dan Mengurutkan Pecahan | KELAS BELAJAR</title>
+<style>
+:root{--bg:#080f27;--navy:#101735;--panel:#17234a;--panel2:#1d2d5d;--line:#35477d;--blue:#4da3ff;--cyan:#52e0e0;--purple:#9b78ff;--yellow:#ffd166;--text:#f4f6ff;--muted:#c2cce8;--green:#55d6a2;--red:#ff858e;--radius:22px;--shadow:0 18px 50px #02071880}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#33236c 0,transparent 34%),linear-gradient(135deg,#08132d,#101b42 55%,#25164f);color:var(--text);font:20px/1.6 "Trebuchet MS",Arial,sans-serif;min-height:100vh}button,input,textarea{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}p{color:var(--muted);margin:.45rem 0 1rem}h1,h2,h3{line-height:1.2;margin:0 0 14px}h1{font-size:clamp(34px,5vw,54px)}h2{font-size:clamp(28px,3.4vw,38px)}h3{font-size:25px}.app{display:grid;grid-template-columns:290px minmax(0,1fr);min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;padding:25px 18px;background:#0c1532eF;border-right:1px solid #344575;display:flex;flex-direction:column;gap:20px;z-index:5}.brand{padding:8px 10px 18px;border-bottom:1px solid #344575}.brand-mark{display:inline-grid;place-items:center;width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,var(--blue),var(--purple));font-size:25px;font-weight:900;margin-bottom:12px}.brand strong{display:block;font-size:24px;letter-spacing:.06em}.brand small{display:block;color:var(--cyan);font-size:20px}.nav-label{color:#9eacd4;font-size:20px;font-weight:800;padding:0 10px}.nav{display:grid;gap:10px}.nav button{width:100%;text-align:left;padding:14px 15px;border:1px solid transparent;border-radius:15px;background:transparent;color:var(--muted);font-weight:800;transition:.2s}.nav button:hover{background:#1b2a55}.nav button.active{background:linear-gradient(100deg,#24539b,#553b9b);border-color:#718be0;color:white;box-shadow:0 8px 22px #050a2080}.side-note{margin-top:auto;background:#15234a;border:1px solid #344575;border-radius:16px;padding:15px;color:var(--muted)}.side-note strong{color:var(--yellow)}.main{min-width:0;padding:24px clamp(16px,3vw,42px) 60px;max-width:1500px;width:100%;margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;margin-bottom:24px}.crumb{color:var(--cyan);font-weight:800}.tools{display:flex;gap:10px;flex-wrap:wrap}.tool-btn,.btn{border:1px solid #52679f;border-radius:13px;background:#1a2b59;padding:11px 16px;font-weight:800;min-height:48px}.tool-btn:hover,.btn:hover{filter:brightness(1.15);transform:translateY(-1px)}.btn.primary{background:linear-gradient(100deg,#2378d4,#7454d6);border:0}.btn.yellow{background:var(--yellow);color:#1b2140;border:0}.btn.ghost{background:transparent}.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}.screen{display:none;animation:fade .25s ease}.screen.active{display:block}@keyframes fade{from{opacity:.3;transform:translateY(8px)}to{opacity:1;transform:none}}.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:22px;align-items:center;padding:clamp(24px,4vw,46px);border:1px solid #4b5fa0;border-radius:28px;background:linear-gradient(120deg,#172c5b,#35276d);box-shadow:var(--shadow);overflow:hidden}.eyebrow{color:var(--cyan);font-weight:900;letter-spacing:.09em;text-transform:uppercase;margin-bottom:12px}.hero p{font-size:22px}.hero-art{min-height:230px;display:grid;place-items:center;background:radial-gradient(circle,#526bdc55,transparent 65%);position:relative}.orbit{width:min(260px,80%);aspect-ratio:1;border:3px dashed #8e9de8;border-radius:50%;display:grid;place-items:center;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;width:24px;height:24px;border-radius:50%;background:var(--yellow);box-shadow:0 0 24px #ffd166}.orbit:before{left:5%;top:48%}.orbit:after{right:5%;top:48%;background:var(--cyan)}.orbit strong{font-size:56px;color:white}.pill{display:inline-block;border-radius:99px;padding:7px 14px;background:#243d79;color:#dce8ff;font-weight:800}.grid{display:grid;gap:18px}.two{grid-template-columns:repeat(2,minmax(0,1fr))}.three{grid-template-columns:repeat(3,minmax(0,1fr))}.card{background:linear-gradient(145deg,#18264f,#121e40);border:1px solid #344879;border-radius:var(--radius);padding:22px;box-shadow:0 10px 30px #03091e45}.card h3{color:#fff}.card strong{color:#fff}.section-head{margin:8px 0 24px}.section-head p{max-width:900px;font-size:21px}.callout{border-left:5px solid var(--yellow);background:#26315b;padding:18px 20px;border-radius:0 16px 16px 0;margin:20px 0}.callout p{margin:6px 0 0}.step-list{padding-left:28px;color:var(--muted)}.step-list li{padding:5px 0}.numberline-wrap{padding:22px;background:#101a38;border-radius:18px;border:1px solid #40558d;margin:15px 0}.numberline{display:grid;grid-template-columns:repeat(41,minmax(22px,1fr));gap:4px;position:relative}.numberline:before{content:"";position:absolute;left:5%;right:5%;height:4px;background:#8094d2;top:27px;border-radius:5px}.point{position:relative;z-index:1;display:grid;justify-items:center;gap:10px;color:var(--muted);font-weight:900}.dot{width:18px;height:18px;border-radius:50%;background:var(--blue);border:3px solid #dce9ff}.point.zero .dot{background:var(--yellow);width:24px;height:24px}.point.current .dot{background:var(--green);box-shadow:0 0 0 7px #55d6a233}.sim-controls{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:18px}.sim-controls input{flex:1;min-width:180px;accent-color:var(--cyan)}.big-value{font-size:32px;font-weight:900;color:var(--yellow)}.choice-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:15px 0}.choice{padding:13px 16px;text-align:left;border:1px solid #53699f;background:#1b2c59;border-radius:13px;min-height:54px}.choice:hover:not(:disabled){background:#2a4079}.choice.selected{border:2px solid var(--cyan);background:#214a70}.choice.correct{border:2px solid var(--green);background:#164b48}.choice.incorrect{border:2px solid var(--red);background:#542b49}.feedback{min-height:32px;padding:8px 0;font-weight:800}.feedback.good{color:var(--green)}.feedback.try{color:var(--yellow)}.explain{background:#101a38;border:1px solid #3c5084;border-radius:14px;padding:15px;margin-top:10px;color:var(--muted)}.question-card{margin-bottom:17px}.meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--cyan);font-weight:800}.progress{height:10px;background:#34436e;border-radius:99px;overflow:hidden;margin:15px 0 25px}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--cyan),var(--purple));transition:width .25s}.result-score{font-size:54px;font-weight:900;color:var(--yellow)}.field{width:100%;background:#0e1937;border:1px solid #50649a;color:white;border-radius:14px;padding:14px;min-height:130px;resize:vertical}.field::placeholder{color:#a8b5d7}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.reflection-prompt{padding:15px;border:1px solid #43588c;border-radius:14px;background:#111d3d;margin:12px 0}.muted{color:var(--muted)}.small-note{font-size:20px;color:#aebbe0}.footer{text-align:center;color:#9eacd4;padding:30px 10px 0}.hidden{display:none!important}.toast{position:fixed;bottom:20px;right:20px;background:#1b3760;border:1px solid var(--cyan);padding:14px 18px;border-radius:14px;z-index:20;display:none}.mobile-title{display:none}
+@media(max-width:1000px){.app{grid-template-columns:240px minmax(0,1fr)}.three{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr .6fr}}
+@media(max-width:760px){.app{display:block}.sidebar{position:relative;height:auto;padding:14px;gap:12px;border-right:0;border-bottom:1px solid #344575}.brand{display:flex;align-items:center;gap:12px;padding:0 4px 10px}.brand-mark{margin:0;width:44px;height:44px}.brand strong{font-size:22px}.brand small{font-size:20px}.nav-label,.side-note{display:none}.nav{display:flex;overflow-x:auto;padding-bottom:5px}.nav button{width:auto;min-width:max-content;padding:11px 14px;font-size:20px}.main{padding:16px 14px 42px}.topbar{margin-bottom:16px}.hero{grid-template-columns:1fr}.hero-art{min-height:150px}.two,.three{grid-template-columns:1fr}.choice-list{grid-template-columns:1fr}.tools{width:100%}.tool-btn{flex:1}.numberline-wrap{overflow-x:auto}.numberline{min-width:1100px}}
+@media print{body{background:white!important;color:#111!important;font-size:20px}.sidebar,.topbar,.actions,.tools,.nav,.footer{display:none!important}.app{display:block}.main{padding:0;max-width:none}.screen{display:block!important;break-inside:avoid}.card,.hero,.callout,.numberline-wrap{background:white!important;color:#111!important;border:1px solid #777!important;box-shadow:none!important}.card p,.hero p,.section-head p,.callout p,.step-list,.muted{color:#222!important}.choice{background:white!important;color:#111!important;border:1px solid #777!important}.screen:not(.active){display:block!important}.field{border:1px solid #777;color:#111}.hero-art{display:none}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+ <div class="brand"><div class="brand-mark">KB</div><div><strong>KELAS BELAJAR</strong><small>MPI MATEMATIKA SMP</small></div></div>
+ <div class="nav-label">MENU PEMBELAJARAN</div>
+ <nav class="nav" aria-label="Menu pembelajaran">
+  <button class="active" data-screen="0">01 · Tujuan Pembelajaran</button>
+  <button data-screen="1">02 · Materi &amp; Simulasi</button>
+  <button data-screen="2">03 · Soal Interaktif</button>
+  <button data-screen="3">04 · Refleksi</button>
+ </nav>
+ <div class="side-note"><strong>Strategi belajar</strong><br>Amati contoh → pahami konsep → coba sendiri → evaluasi pemahaman.</div>
+</aside>
+<main class="main">
+ <div class="topbar"><div class="crumb" id="crumb">KELAS BELAJAR / TUJUAN PEMBELAJARAN</div><div class="tools"><button class="tool-btn" id="fullscreen">⛶ Layar penuh</button><button class="tool-btn" id="print">▤ Cetak</button></div></div>
+ <section class="screen active" id="screen-0">
+  <div class="hero">
+   <div><span class="pill">MATEMATIKA SMP · BILANGAN</span><p class="eyebrow">Ayo bandingkan dan urutkan pecahan</p>
+    <h1>Membandingkan dan Mengurutkan Pecahan</h1>
+    <p>Gunakan model visual dan garis bilangan untuk menentukan pecahan yang lebih besar, lebih kecil, atau sama, lalu urutkan dari nilai terkecil hingga terbesar.</p>
+    <button class="btn yellow" data-go="1">Mulai belajar →</button></div>
+   <div class="hero-art"><svg viewBox="0 0 320 230" class="svg-fluid" role="img" aria-label="Garis bilangan dengan titik seperempat, setengah, dan tiga perempat">
+    <text x="160" y="25" fill="#ffd166" font-size="20" text-anchor="middle" font-weight="bold">Bandingkan posisi nilai</text>
+    <path d="M28 112H292" stroke="#a8b9ff" stroke-width="4"/>
+    <path d="M28 100V124 M94 100V124 M160 100V124 M226 100V124 M292 100V124" stroke="#fff" stroke-width="3"/>
+    <circle cx="94" cy="112" r="8" fill="#52e0e0"/><circle cx="160" cy="112" r="8" fill="#ffd166"/><circle cx="226" cy="112" r="8" fill="#9b78ff"/>
+    <text x="94" y="82" fill="#52e0e0" font-size="17" text-anchor="middle">1/4</text><text x="160" y="62" fill="#ffd166" font-size="17" text-anchor="middle">1/2</text><text x="226" y="82" fill="#9b78ff" font-size="17" text-anchor="middle">3/4</text>
+    <text x="28" y="148" fill="#fff" font-size="16" text-anchor="middle">0</text><text x="292" y="148" fill="#fff" font-size="16" text-anchor="middle">1</text>
+    <text x="160" y="192" fill="#fff" font-size="20" text-anchor="middle" font-weight="bold">1/4 &lt; 1/2 &lt; 3/4</text></svg></div>
+  </div>
+  <section class="card" style="margin-top:20px">
+   <p class="eyebrow">SEBELUM MEMULAI · AMATI GAMBAR</p><h2>💡 Apersepsi: Membagi Pita</h2>
+   <p>Dua pita memiliki panjang yang sama. Pita pertama digunakan sepanjang 1/2 bagian, sedangkan pita kedua digunakan sepanjang 3/4 bagian. Bagaimana menentukan pita mana yang digunakan lebih banyak? Gambar dan garis bilangan dapat membantu kita membandingkan nilainya.</p>
+   <div class="grid two" style="margin-top:16px">
+    <article class="card"><h3>Model visual 1/2</h3>
+     <svg viewBox="0 0 320 100" class="svg-fluid" role="img" aria-label="Setengah pita diarsir">
+      <rect x="10" y="16" width="300" height="48" rx="7" fill="#273b76" stroke="#fff" stroke-width="2"/><rect x="10" y="16" width="150" height="48" rx="7" fill="#52e0e0"/><path d="M160 16V64" stroke="#fff" stroke-width="3"/><text x="160" y="91" fill="#fff" font-size="18" text-anchor="middle">1/2 bagian</text></svg>
+    </article>
+    <article class="card"><h3>Model visual 3/4</h3>
+     <svg viewBox="0 0 320 100" class="svg-fluid" role="img" aria-label="Tiga per empat pita diarsir">
+      <rect x="10" y="16" width="300" height="48" rx="7" fill="#273b76" stroke="#fff" stroke-width="2"/><rect x="10" y="16" width="225" height="48" rx="7" fill="#9b78ff"/><path d="M85 16V64 M160 16V64 M235 16V64" stroke="#fff" stroke-width="3"/><text x="160" y="91" fill="#fff" font-size="18" text-anchor="middle">3/4 bagian</text></svg>
+    </article>
+   </div>
+   <div class="callout"><strong>Ayo pikirkan!</strong><p>Manakah yang lebih besar, 1/2 atau 3/4? Bagaimana posisi keduanya pada garis bilangan dari 0 sampai 1?</p></div>
+  </section>
+  <div class="grid two" style="margin-top:20px">
+   <article class="card"><h3>🎯 Tujuan pembelajaran</h3><p>Melalui penggunaan model visual dan garis bilangan, peserta didik mampu:</p>
+    <ol class="step-list"><li>Membandingkan dua bilangan pecahan dengan tanda lebih dari, kurang dari, atau sama dengan.</li><li>Membandingkan pecahan biasa, pecahan campuran, desimal, dan persen.</li><li>Menentukan posisi berbagai bentuk pecahan pada garis bilangan.</li><li>Mengurutkan beberapa bilangan pecahan dari terkecil ke terbesar atau sebaliknya dengan benar.</li></ol></article>
+   <article class="card"><h3>🧭 Cara menggunakan MPI</h3><ol class="step-list"><li>Amati model visual dan tentukan bagian yang lebih besar.</li><li>Pelajari cara menyamakan penyebut dan mengubah bentuk pecahan.</li><li>Gunakan garis bilangan untuk memeriksa urutan nilai.</li><li>Gunakan simulasi untuk membandingkan dan mengurutkan bilangan.</li><li>Kerjakan aktivitas pemahaman, evaluasi, dan HOTS.</li></ol></article>
+  </div>
+  <article class="card" style="margin-top:20px"><h3>🌍 Manfaat dalam kehidupan sehari-hari</h3><p>Membandingkan dan mengurutkan pecahan membantu kita mengambil keputusan berdasarkan ukuran atau bagian.</p>
+   <ol class="step-list"><li><strong>Memasak:</strong> membandingkan 1/2 cangkir dan 3/4 cangkir bahan.</li><li><strong>Belanja:</strong> membandingkan diskon 25%, 1/3, dan 0,4.</li><li><strong>Olahraga:</strong> membandingkan bagian jarak yang sudah ditempuh.</li><li><strong>Pengukuran:</strong> mengurutkan panjang benda yang dinyatakan dalam meter, desimal, atau pecahan.</li></ol>
+  </article>
+  <div class="callout"><strong>Ingat!</strong><p>Pada garis bilangan, bilangan yang letaknya lebih ke kanan memiliki nilai lebih besar. Bilangan yang letaknya lebih ke kiri memiliki nilai lebih kecil.</p></div>
+  <div class="actions"><button class="btn primary" data-go="1">Lanjut ke Materi &amp; Simulasi →</button></div>
+ </section>
+<section class="screen" id="screen-1">
+  <div class="section-head"><p class="eyebrow">BAGIAN 02 · PAHAMI KONSEP</p><h2>Membandingkan dan Mengurutkan Berbagai Bentuk Pecahan</h2><p>Ubah bentuk bilangan jika diperlukan, lalu gunakan model visual dan garis bilangan untuk menentukan urutannya.</p></div>
+  <article class="card"><h3>📘 1. Membandingkan pecahan dengan model visual</h3>
+   <p>Model visual membantu melihat bagian dari keseluruhan. Jika keseluruhannya sama, bagian yang diarsir lebih banyak menunjukkan pecahan yang lebih besar.</p>
+   <svg viewBox="0 0 620 160" class="svg-fluid" role="img" aria-label="Model visual satu per dua dibandingkan dengan tiga per empat">
+    <text x="150" y="25" fill="#fff" font-size="20" text-anchor="middle">1/2</text><rect x="20" y="38" width="260" height="40" rx="6" fill="#273b76" stroke="#fff" stroke-width="2"/><rect x="20" y="38" width="130" height="40" rx="6" fill="#52e0e0"/><path d="M150 38V78" stroke="#fff" stroke-width="2"/>
+    <text x="470" y="25" fill="#fff" font-size="20" text-anchor="middle">3/4</text><rect x="340" y="38" width="260" height="40" rx="6" fill="#273b76" stroke="#fff" stroke-width="2"/><rect x="340" y="38" width="195" height="40" rx="6" fill="#9b78ff"/><path d="M405 38V78 M470 38V78 M535 38V78" stroke="#fff" stroke-width="2"/>
+    <text x="310" y="125" fill="#ffd166" font-size="24" text-anchor="middle" font-weight="bold">1/2 &lt; 3/4</text></svg>
+   <div class="callout"><strong>Simbol perbandingan</strong><p>&lt; berarti kurang dari, &gt; berarti lebih dari, dan = berarti sama dengan. Contoh: 1/2 &lt; 3/4.</p></div>
+  </article>
+  <article class="card" style="margin-top:18px"><h3>🧮 2. Membandingkan pecahan biasa</h3>
+   <p>Jika penyebut sama, bandingkan pembilangnya. Jika penyebut berbeda, samakan penyebut atau ubah menjadi bentuk desimal yang mudah dibandingkan.</p>
+   <div class="grid two">
+    <div class="callout"><strong>Penyebut sama</strong><div class="big-value">3/8 &lt; 5/8</div><p>Karena 3 &lt; 5, maka 3/8 lebih kecil dari 5/8.</p></div>
+    <div class="callout"><strong>Penyebut berbeda</strong><div class="big-value">1/2 = 2/4</div><p>Bandingkan 2/4 dan 3/4, sehingga 1/2 &lt; 3/4.</p></div>
+   </div>
+  </article>
+  <article class="card" style="margin-top:18px"><h3>🔄 3. Membandingkan berbagai bentuk pecahan</h3>
+   <p>Untuk membandingkan pecahan biasa, campuran, desimal, dan persen, ubah bilangan ke bentuk yang sama jika diperlukan.</p>
+   <div class="conversion-grid">
+    <div class="conversion-cell"><strong>1/2</strong><span>Pecahan biasa</span></div><div class="conversion-cell"><strong>0,5</strong><span>Desimal</span></div><div class="conversion-cell"><strong>50%</strong><span>Persen</span></div><div class="conversion-cell"><strong>1/2</strong><span>Setengah</span></div>
+   </div>
+   <div class="callout"><strong>Contoh membandingkan</strong><p>0,6 = 60%, sedangkan 1/2 = 0,5 = 50%. Karena 0,6 lebih besar daripada 0,5, maka 0,6 &gt; 1/2.</p></div>
+   <div class="callout"><strong>Bilangan campuran</strong><p>1 1/4 = 1,25. Karena 1,25 lebih besar dari 1,2, maka 1 1/4 &gt; 1,2.</p></div>
+  </article>
+  <article class="card" style="margin-top:18px"><h3>📍 4. Menggunakan garis bilangan</h3>
+   <p>Letakkan bilangan pada posisi yang sesuai. Semakin ke kanan letaknya, semakin besar nilainya.</p>
+   <svg viewBox="0 0 620 155" class="svg-fluid" role="img" aria-label="Garis bilangan dari nol sampai satu dengan titik seperempat, setengah, tiga perempat">
+    <path d="M40 70H580" stroke="#a8b9ff" stroke-width="4"/>
+    <path d="M40 57V83 M175 57V83 M310 57V83 M445 57V83 M580 57V83" stroke="#fff" stroke-width="3"/>
+    <circle cx="175" cy="70" r="9" fill="#52e0e0"/><circle cx="310" cy="70" r="9" fill="#ffd166"/><circle cx="445" cy="70" r="9" fill="#9b78ff"/>
+    <text x="40" y="112" fill="#fff" font-size="18" text-anchor="middle">0</text><text x="175" y="38" fill="#52e0e0" font-size="18" text-anchor="middle">1/4</text><text x="310" y="38" fill="#ffd166" font-size="18" text-anchor="middle">1/2</text><text x="445" y="38" fill="#9b78ff" font-size="18" text-anchor="middle">3/4</text><text x="580" y="112" fill="#fff" font-size="18" text-anchor="middle">1</text>
+    <text x="310" y="145" fill="#fff" font-size="18" text-anchor="middle">Urutan dari kiri ke kanan: 1/4, 1/2, 3/4</text></svg>
+  </article>
+  <article class="card" style="margin-top:18px"><h3>🪜 5. Langkah mengurutkan beberapa pecahan</h3>
+   <ol class="step-list"><li>Catat semua bilangan yang akan diurutkan.</li><li>Ubah ke bentuk yang sama, misalnya desimal.</li><li>Bandingkan nilai setiap bilangan.</li><li>Susun dari nilai terkecil ke terbesar atau sebaliknya.</li><li>Periksa kembali urutan menggunakan garis bilangan.</li></ol>
+   <div class="callout"><strong>Contoh</strong><p>Urutkan 1/2, 0,75, dan 2/5 dari terkecil. Ubah: 1/2 = 0,5; 0,75 = 0,75; 2/5 = 0,4. Jadi urutannya adalah 2/5 &lt; 1/2 &lt; 0,75.</p></div>
+  </article>
+  <article class="card" style="margin-top:18px"><h3>🎮 Simulasi Interaktif: Bandingkan dan Urutkan</h3>
+   <p>Masukkan tiga nilai dalam bentuk desimal. Simulasi menempatkan ketiganya pada garis bilangan 0 sampai 2 dan menyusun urutannya.</p>
+   <div class="grid three">
+    <div><label for="v1"><strong>Bilangan A</strong></label><input id="v1" class="field" type="number" step="0.01" min="0" max="2" value="0.5"></div>
+    <div><label for="v2"><strong>Bilangan B</strong></label><input id="v2" class="field" type="number" step="0.01" min="0" max="2" value="0.75"></div>
+    <div><label for="v3"><strong>Bilangan C</strong></label><input id="v3" class="field" type="number" step="0.01" min="0" max="2" value="0.4"></div>
+   </div>
+   <div class="actions"><button class="btn primary" id="convert">Bandingkan dan urutkan</button><button class="btn ghost" id="simReset">Atur ulang</button></div>
+   <div id="conversionResult" class="card" style="margin-top:16px" aria-live="polite"></div>
+   <svg id="numberLine" viewBox="0 0 640 150" class="svg-fluid" role="img" aria-label="Garis bilangan interaktif dari nol sampai dua"></svg>
+  </article>
+  <div class="actions"><button class="btn primary" data-go="2">Lanjut ke Soal Interaktif →</button></div>
+ </section>
+<section class="screen" id="screen-2">
+  <div class="section-head"><p class="eyebrow">BAGIAN 03 · LATIHAN DAN TANTANGAN</p><h2>Soal Interaktif: Mengubah Bentuk Pecahan</h2><p>Pilih jawaban yang menurutmu tepat. Setelah memeriksa, baca alasan dan pembahasan. Kamu dapat mengganti pilihan dan memeriksa kembali.</p></div>
+  <div class="card"><div class="meta"><span>AKTIVITAS PEMAHAMAN</span><span>3 soal · masing-masing 4 pilihan</span></div><div id="practice"></div></div>
+  <div class="card" style="margin-top:18px"><div class="meta"><span>EVALUASI PEMBELAJARAN</span><span>6 soal</span></div><div class="progress"><span id="quizProgress"></span></div><div id="quiz"></div><div class="actions"><button class="btn primary" id="finishQuiz">Lihat hasil evaluasi</button><button class="btn ghost" id="resetQuiz">Ulangi evaluasi</button></div><p class="feedback" id="quizNotice" aria-live="polite"></p><div id="quizResult" class="callout hidden" aria-live="polite"></div></div>
+  <div class="card" style="margin-top:18px"><div class="meta"><span>TANTANGAN HOTS</span><span>5 soal pilihan ganda · 4 opsi</span></div><p>Analisis setiap situasi, pilih satu dari empat jawaban, lalu tekan Periksa jawaban untuk melihat umpan balik dan cara penyelesaiannya.</p><div id="hots"></div></div>
+  <div class="actions"><button class="btn ghost" data-go="1">← Kembali ke Materi</button><button class="btn primary" data-go="3">Lanjut ke Refleksi →</button></div>
+ </section>
+ <section class="screen" id="screen-3">
+  <div class="section-head"><p class="eyebrow">BAGIAN 04 · PIKIRKAN KEMBALI</p><h2>Refleksi Pembelajaran</h2><p>Refleksi membantu kamu menyadari apa yang sudah dipahami dan bagian mana yang masih perlu dipelajari.</p></div>
+  <div class="grid two">
+   <article class="card"><h3>💡 Coba jelaskan dengan kata-katamu</h3><div class="reflection-prompt"><strong>1. Bagaimana model visual membantu membandingkan dua pecahan?</strong></div><textarea class="field" id="reflect1" placeholder="Tuliskan jawabanmu di sini..."></textarea><div class="reflection-prompt"><strong>2. Mengapa bilangan yang terletak lebih ke kanan pada garis bilangan bernilai lebih besar?</strong></div><textarea class="field" id="reflect2" placeholder="Tuliskan jawabanmu di sini..."></textarea><div class="reflection-prompt"><strong>3. Bagaimana cara mengurutkan pecahan biasa, desimal, dan persen secara bersamaan?</strong></div><textarea class="field" id="reflect3" placeholder="Tuliskan contoh dan penjelasannya..."></textarea><div class="actions"><button class="btn primary" id="saveReflection">Simpan refleksi di halaman ini</button><button class="btn ghost" id="clearReflection">Hapus jawaban</button></div><p class="small-note" id="reflectStatus" aria-live="polite">Jawaban refleksi tidak dikirim ke server.</p></article>
+   <article class="card"><h3>✅ Cek pemahaman diri</h3><p>Berikan tanda centang pada pernyataan yang sudah dapat kamu lakukan.</p><label><input type="checkbox"> Saya dapat membandingkan dua pecahan.</label><br><br><label><input type="checkbox"> Saya dapat membandingkan pecahan biasa, desimal, dan persen.</label><br><br><label><input type="checkbox"> Saya dapat menggunakan garis bilangan untuk membandingkan nilai.</label><br><br><label><input type="checkbox"> Saya dapat mengurutkan beberapa bentuk pecahan dari terkecil ke terbesar.</label><div class="callout"><strong>Pesan belajar</strong><p>Jika masih ada yang belum kamu kuasai, kembali ke bagian Materi &amp; Simulasi. Belajar kembali adalah bagian dari proses memahami.</p></div></article>
+  </div>
+  <div class="actions"><button class="btn ghost" data-go="2">← Kembali ke Soal</button><button class="btn yellow" id="restartAll">Ulangi dari awal ↺</button></div>
+ </section>
+ <div class="footer">KELAS BELAJAR · Amati · Pahami · Coba · Refleksi</div>
+</main>
+</div><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(()=>{
+ const screens=[...document.querySelectorAll('.screen')],nav=[...document.querySelectorAll('[data-screen]')],crumb=document.getElementById('crumb');
+ const names=['TUJUAN PEMBELAJARAN','MATERI & SIMULASI','SOAL INTERAKTIF','REFLEKSI'];
+ function go(n){n=Math.max(0,Math.min(3,Number(n)));screens.forEach((s,i)=>s.classList.toggle('active',i===n));nav.forEach((b,i)=>{b.classList.toggle('active',i===n);if(i===n)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current')});crumb.textContent='KELAS BELAJAR / '+names[n];window.scrollTo({top:0,behavior:'smooth'});}
+ nav.forEach(b=>b.addEventListener('click',()=>go(b.dataset.screen)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
+ document.getElementById('fullscreen').addEventListener('click',async()=>{try{if(!document.fullscreenElement)await document.documentElement.requestFullscreen();else await document.exitFullscreen()}catch(e){toast('Mode layar penuh tidak didukung pada browser ini.')}});
+ document.getElementById('print').addEventListener('click',()=>window.print());
+ function toast(t){const el=document.getElementById('toast');el.textContent=t;el.style.display='block';setTimeout(()=>el.style.display='none',2600)}
+
+
+ // Simulasi membandingkan tiga nilai dan menampilkannya pada garis bilangan.
+ const values=[document.getElementById('v1'),document.getElementById('v2'),document.getElementById('v3')],out=document.getElementById('conversionResult'),line=document.getElementById('numberLine');
+ const fmt=x=>Number(x.toFixed(3)).toString().replace('.',',');
+ function convert(){
+  const nums=values.map(x=>Number(x.value));
+  if(nums.some(x=>!Number.isFinite(x)||x<0||x>2)){out.innerHTML='<p class="feedback try">Masukkan nilai dari 0 sampai 2.</p>';return}
+  const items=nums.map((v,i)=>({v,label:String.fromCharCode(65+i)})).sort((a,b)=>a.v-b.v);
+  const groups=items.map(x=>x.label+' = '+fmt(x.v));
+  const order=items.map(x=>x.label+' ('+fmt(x.v)+')').join(' ≤ ');
+  out.innerHTML=`<div class="conversion-grid">${nums.map((v,i)=>`<div class="conversion-cell"><strong>${fmt(v)}</strong><span>Bilangan ${String.fromCharCode(65+i)}</span></div>`).join('')}</div>
+   <div class="callout"><strong>Urutan dari terkecil ke terbesar</strong><p>${order}</p><p>Jika ada dua nilai yang sama, keduanya menempati posisi yang sama pada garis bilangan.</p></div>`;
+  const x0=42,x1=598,px=v=>x0+(v/2)*(x1-x0);
+  line.innerHTML=`<path d="M${x0} 76H${x1}" stroke="#a8b9ff" stroke-width="4"/>${[0,.5,1,1.5,2].map(v=>`<path d="M${px(v)} 63V89" stroke="#fff" stroke-width="3"/><text x="${px(v)}" y="117" fill="#fff" font-size="17" text-anchor="middle">${String(v).replace('.',',')}</text>`).join('')}${nums.map((v,i)=>`<circle cx="${px(v)}" cy="${[76,56,96][i]}" r="8" fill="${['#52e0e0','#ffd166','#9b78ff'][i]}" stroke="#fff" stroke-width="2"/><text x="${px(v)}" y="${[38,28,135][i]}" fill="${['#52e0e0','#ffd166','#9b78ff'][i]}" font-size="17" text-anchor="middle">${String.fromCharCode(65+i)}</text>`).join('')}`;
+ }
+ document.getElementById('convert').addEventListener('click',convert);
+ document.getElementById('simReset').addEventListener('click',()=>{values[0].value='0.5';values[1].value='0.75';values[2].value='0.4';convert()});
+ convert();
+
+
+ const practices=[
+  {q:'Manakah yang lebih besar: 1/2 atau 1/4?',c:['1/2','1/4','Keduanya sama','Tidak dapat dibandingkan'],a:0,e:'Pada garis bilangan, 1/2 berada di kanan 1/4. Jadi 1/2 lebih besar.'},
+  {q:'Urutan dari terkecil untuk 1/4, 1/2, dan 3/4 adalah …',c:['1/2, 1/4, 3/4','3/4, 1/2, 1/4','1/4, 1/2, 3/4','1/4, 3/4, 1/2'],a:2,e:'Pada garis bilangan, posisi dari kiri ke kanan adalah 1/4, 1/2, lalu 3/4.'},
+  {q:'Manakah yang lebih besar: 0,6 atau 50%?',c:['0,6','50%','Keduanya sama','Tidak dapat ditentukan'],a:0,e:'50% = 0,5. Karena 0,6 lebih besar dari 0,5, maka 0,6 lebih besar.'}
+ ];
+ const questions=[
+  {cat:'Membandingkan pecahan',q:'Pernyataan yang benar adalah …',c:['2/5 > 3/5','3/4 < 1/2','1/3 < 1/2','5/8 = 3/8'],a:2,e:'1/3 sekitar 0,333 dan 1/2 = 0,5. Jadi 1/3 lebih kecil dari 1/2.'},
+  {cat:'Bentuk desimal dan persen',q:'Pernyataan yang benar adalah …',c:['0,45 > 50%','0,75 = 75%','0,3 < 25%','60% = 0,06'],a:1,e:'0,75 dikalikan 100% menjadi 75%. Jadi 0,75 = 75%.'},
+  {cat:'Pecahan campuran',q:'Manakah yang lebih besar: 1 1/4 atau 1,2?',c:['1 1/4','1,2','Keduanya sama','Tidak dapat dibandingkan'],a:0,e:'1 1/4 = 1,25. Karena 1,25 lebih besar dari 1,2, maka 1 1/4 lebih besar.'},
+  {cat:'Mengurutkan pecahan',q:'Urutan dari terkecil ke terbesar untuk 2/5, 0,5, dan 3/4 adalah …',c:['3/4, 0,5, 2/5','2/5, 0,5, 3/4','0,5, 2/5, 3/4','2/5, 3/4, 0,5'],a:1,e:'2/5 = 0,4; 0,5 tetap 0,5; dan 3/4 = 0,75. Jadi urutannya 2/5, 0,5, 3/4.'},
+  {cat:'Garis bilangan',q:'Pada garis bilangan, bilangan paling kanan di antara 0,25; 1/2; dan 70% adalah …',c:['0,25','1/2','70%','Semua sama'],a:2,e:'0,25 = 0,25; 1/2 = 0,5; dan 70% = 0,7. Nilai 0,7 paling besar.'},
+  {cat:'Membandingkan nilai',q:'Tanda perbandingan yang tepat untuk 5/6 … 0,8 adalah …',c:['<','>','=','Tidak dapat ditentukan'],a:1,e:'5/6 sekitar 0,8333. Nilai ini lebih besar dari 0,8, sehingga tandanya >.'}
+ ];
+ const hots=[
+  {q:'Tiga peserta berlari pada lintasan yang sama. A menyelesaikan 3/4 lintasan, B menyelesaikan 0,8 lintasan, dan C menyelesaikan 70% lintasan. Siapa yang menempuh bagian lintasan paling jauh?',c:['A','B','C','A dan C sama'],a:1,e:'A = 0,75; B = 0,8; C = 0,70. Nilai terbesar adalah 0,8, sehingga B paling jauh.'},
+  {q:'Empat botol berisi 1/2 liter, 0,65 liter, 60%, dan 3/5 liter. Urutan dari isi paling sedikit adalah …',c:['1/2; 60%; 3/5; 0,65','0,65; 3/5; 60%; 1/2','60%; 1/2; 0,65; 3/5','1/2; 3/5; 60%; 0,65'],a:0,e:'1/2 = 0,5; 60% = 0,6; 3/5 = 0,6; 0,65 = 0,65. Urutan tersebut benar dari terkecil.'},
+  {q:'Sebuah kelompok menyatakan 2/3 lebih kecil daripada 65%. Apakah pernyataan itu benar?',c:['Benar, karena 2/3 = 0,6','Benar, karena 65% = 0,75','Tidak benar, karena 2/3 sekitar 0,667 lebih besar dari 0,65','Tidak benar, karena 2/3 = 65%'],a:2,e:'65% = 0,65 sedangkan 2/3 = 0,666… Karena 0,666… lebih besar dari 0,65, pernyataan itu tidak benar.'},
+  {q:'Nilai empat kelompok dalam kuis adalah 7/10, 0,72, 3/4, dan 68%. Kelompok mana yang memiliki nilai tertinggi?',c:['7/10','0,72','3/4','68%'],a:2,e:'7/10 = 0,7; 0,72 = 0,72; 3/4 = 0,75; 68% = 0,68. Nilai tertinggi adalah 3/4.'},
+  {q:'Sebuah pita dipotong menjadi bagian 5/8 meter, 0,6 meter, dan 62%. Urutan dari terpanjang ke terpendek adalah …',c:['0,6; 62%; 5/8','5/8; 62%; 0,6','62%; 5/8; 0,6','5/8; 0,6; 62%'],a:1,e:'5/8 = 0,625; 62% = 0,62; dan 0,6 = 0,6. Jadi urutannya 5/8; 62%; 0,6.'}
+ ];
+
+ function buildChoiceQuestion(item,index,container,kind){const el=document.createElement('article');el.className='question-card';el.innerHTML=`<div class="meta"><span>${kind} ${index+1}</span><span>Pilih satu jawaban</span></div><h3>${item.q}</h3><div class="choice-list">${item.c.map((c,j)=>`<button class="choice" type="button" aria-pressed="false">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="actions"><button type="button" class="btn ghost check">Periksa jawaban</button><button type="button" class="btn ghost retry">Coba lagi</button></div><div class="feedback" aria-live="polite"></div><div class="explain hidden"></div>`;container.appendChild(el);let selected=null;const buttons=[...el.querySelectorAll('.choice')],feedback=el.querySelector('.feedback'),explain=el.querySelector('.explain');buttons.forEach((b,j)=>b.addEventListener('click',()=>{selected=j;buttons.forEach((x,k)=>{x.classList.toggle('selected',k===j);x.setAttribute('aria-pressed',String(k===j));x.classList.remove('correct','incorrect')});feedback.textContent='Pilihan tersimpan. Tekan Periksa jawaban untuk melihat umpan balik.';feedback.className='feedback';explain.classList.add('hidden')}));el.querySelector('.check').addEventListener('click',()=>{if(selected===null){feedback.textContent='Pilih satu jawaban terlebih dahulu.';feedback.className='feedback try';return}buttons.forEach((b,j)=>{b.classList.remove('correct','incorrect');if(j===selected)b.classList.add(j===item.a?'correct':'incorrect')});feedback.textContent=selected===item.a?'Tepat! Jawabanmu benar.':'Belum tepat. Tidak apa-apa, pelajari kembali alasannya.';feedback.className='feedback '+(selected===item.a?'good':'try');explain.textContent='Pembahasan dan cara penyelesaian: '+item.e;explain.classList.remove('hidden')});el.querySelector('.retry').addEventListener('click',()=>{selected=null;buttons.forEach(b=>{b.classList.remove('selected','correct','incorrect');b.setAttribute('aria-pressed','false')});feedback.textContent='Silakan pilih jawaban lagi.';feedback.className='feedback';explain.classList.add('hidden')});return {getSelected:()=>selected};}
+ const practiceRoot=document.getElementById('practice');practices.forEach((q,i)=>buildChoiceQuestion(q,i,practiceRoot,'Aktivitas'));
+ // Evaluation
+ const quizRoot=document.getElementById('quiz');let quizState=[];
+ function renderQuiz(){quizRoot.innerHTML='';quizState=questions.map(()=>({selected:null,checked:false}));questions.forEach((q,i)=>{const el=document.createElement('article');el.className='question-card card';el.innerHTML=`<div class="meta"><span>${q.cat}</span><span>Soal ${i+1} dari ${questions.length}</span></div><h3>${q.q}</h3><div class="choice-list">${q.c.map((c,j)=>`<button type="button" class="choice" aria-pressed="false">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="actions"><button class="btn ghost check" type="button">Periksa jawaban</button></div><div class="feedback" aria-live="polite"></div><div class="explain hidden"></div>`;quizRoot.appendChild(el);const st=quizState[i],bs=[...el.querySelectorAll('.choice')],fb=el.querySelector('.feedback'),ex=el.querySelector('.explain');bs.forEach((b,j)=>b.addEventListener('click',()=>{st.selected=j;st.checked=false;bs.forEach((x,k)=>{x.classList.toggle('selected',j===k);x.classList.remove('correct','incorrect');x.setAttribute('aria-pressed',String(j===k))});fb.textContent='Pilihan diperbarui. Periksa kembali jawabanmu.';fb.className='feedback';ex.classList.add('hidden');updateProgress()}));el.querySelector('.check').addEventListener('click',()=>{if(st.selected===null){fb.textContent='Pilih satu jawaban sebelum memeriksa.';fb.className='feedback try';return}st.checked=true;bs.forEach((b,j)=>{b.classList.remove('correct','incorrect');if(j===st.selected)b.classList.add(j===q.a?'correct':'incorrect')});fb.textContent=st.selected===q.a?'Benar! Kamu memahami konsep ini.':'Belum tepat. Baca pembahasan, lalu ubah pilihan jika diperlukan.';fb.className='feedback '+(st.selected===q.a?'good':'try');ex.textContent='Pembahasan: '+q.e;ex.classList.remove('hidden');updateProgress()})});updateProgress()}
+ function updateProgress(){const done=quizState.filter(s=>s.checked).length;document.getElementById('quizProgress').style.width=(done/questions.length*100)+'%'}
+ renderQuiz();document.getElementById('resetQuiz').addEventListener('click',()=>{renderQuiz();document.getElementById('quizResult').classList.add('hidden');document.getElementById('quizNotice').textContent='Evaluasi sudah diatur ulang.'});
+ document.getElementById('finishQuiz').addEventListener('click',()=>{const missing=quizState.findIndex(s=>!s.checked);const notice=document.getElementById('quizNotice'),result=document.getElementById('quizResult');if(missing!==-1){notice.textContent=`Periksa jawaban soal ${missing+1} terlebih dahulu.`;notice.className='feedback try';quizRoot.children[missing].scrollIntoView({behavior:'smooth',block:'center'});return}const score=quizState.reduce((sum,s,i)=>sum+(s.selected===questions[i].a?1:0),0),pct=Math.round(score/questions.length*100);const weak=[...new Set(questions.filter((q,i)=>quizState[i].selected!==q.a).map(q=>q.cat))];result.innerHTML=`<h3>Hasil evaluasi: <span class="result-score">${pct}</span></h3><p>${score} dari ${questions.length} jawaban benar.</p><p>${pct===100?'Luar biasa! Semua jawaban tepat.':pct>=67?'Bagus! Kamu sudah memahami sebagian besar materi. Pelajari kembali soal yang belum tepat.':'Terus berlatih. Baca ulang materi tentang konversi pecahan biasa, campuran, desimal, dan persen.'}</p><p><strong>Bagian yang perlu ditinjau:</strong> ${weak.length?weak.join(', '):'Tidak ada. Semua kategori terjawab benar.'}</p>`;result.classList.remove('hidden');notice.textContent='Hasil berhasil dihitung berdasarkan pilihan terakhir yang sudah diperiksa.';notice.className='feedback good';result.scrollIntoView({behavior:'smooth',block:'center'})});
+ const hotsRoot=document.getElementById('hots');hots.forEach((q,i)=>buildChoiceQuestion(q,i,hotsRoot,'HOTS'));
+ document.getElementById('saveReflection').addEventListener('click',()=>{document.getElementById('reflectStatus').textContent='Refleksi sudah tersimpan sementara pada halaman ini. Untuk menyimpan permanen, cetak halaman atau salin jawabanmu.';toast('Refleksi tercatat pada halaman ini.')});document.getElementById('clearReflection').addEventListener('click',()=>{['reflect1','reflect2','reflect3'].forEach(id=>document.getElementById(id).value='');document.getElementById('reflectStatus').textContent='Jawaban refleksi telah dikosongkan.'});document.getElementById('restartAll').addEventListener('click',()=>{go(0);toast('Kamu dapat memulai pembelajaran kembali.')});
+})();
+</script>
+</body></html>

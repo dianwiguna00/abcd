@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101735"><title>Perkalian dan Pembagian Bentuk Aljabar | KELAS BELAJAR</title>
+<style>
+:root{--bg:#080f27;--navy:#101735;--panel:#17234a;--panel2:#1d2d5d;--line:#35477d;--blue:#4da3ff;--cyan:#52e0e0;--purple:#9b78ff;--yellow:#ffd166;--text:#f4f6ff;--muted:#c2cce8;--green:#55d6a2;--red:#ff858e;--radius:22px;--shadow:0 18px 50px #02071880}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#33236c 0,transparent 34%),linear-gradient(135deg,#08132d,#101b42 55%,#25164f);color:var(--text);font:20px/1.6 "Trebuchet MS",Arial,sans-serif;min-height:100vh}button,input,textarea{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}p{color:var(--muted);margin:.45rem 0 1rem}h1,h2,h3{line-height:1.2;margin:0 0 14px}h1{font-size:clamp(34px,5vw,54px)}h2{font-size:clamp(28px,3.4vw,38px)}h3{font-size:25px}.app{display:grid;grid-template-columns:290px minmax(0,1fr);min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;padding:25px 18px;background:#0c1532eF;border-right:1px solid #344575;display:flex;flex-direction:column;gap:20px;z-index:5}.brand{padding:8px 10px 18px;border-bottom:1px solid #344575}.brand-mark{display:inline-grid;place-items:center;width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,var(--blue),var(--purple));font-size:25px;font-weight:900;margin-bottom:12px}.brand strong{display:block;font-size:24px;letter-spacing:.06em}.brand small{display:block;color:var(--cyan);font-size:20px}.nav-label{color:#9eacd4;font-size:20px;font-weight:800;padding:0 10px}.nav{display:grid;gap:10px}.nav button{width:100%;text-align:left;padding:14px 15px;border:1px solid transparent;border-radius:15px;background:transparent;color:var(--muted);font-weight:800;transition:.2s}.nav button:hover{background:#1b2a55}.nav button.active{background:linear-gradient(100deg,#24539b,#553b9b);border-color:#718be0;color:white;box-shadow:0 8px 22px #050a2080}.side-note{margin-top:auto;background:#15234a;border:1px solid #344575;border-radius:16px;padding:15px;color:var(--muted)}.side-note strong{color:var(--yellow)}.main{min-width:0;padding:24px clamp(16px,3vw,42px) 60px;max-width:1500px;width:100%;margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;margin-bottom:24px}.crumb{color:var(--cyan);font-weight:800}.tools{display:flex;gap:10px;flex-wrap:wrap}.tool-btn,.btn{border:1px solid #52679f;border-radius:13px;background:#1a2b59;padding:11px 16px;font-weight:800;min-height:48px}.tool-btn:hover,.btn:hover{filter:brightness(1.15);transform:translateY(-1px)}.btn.primary{background:linear-gradient(100deg,#2378d4,#7454d6);border:0}.btn.yellow{background:var(--yellow);color:#1b2140;border:0}.btn.ghost{background:transparent}.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}.screen{display:none;animation:fade .25s ease}.screen.active{display:block}@keyframes fade{from{opacity:.3;transform:translateY(8px)}to{opacity:1;transform:none}}.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:22px;align-items:center;padding:clamp(24px,4vw,46px);border:1px solid #4b5fa0;border-radius:28px;background:linear-gradient(120deg,#172c5b,#35276d);box-shadow:var(--shadow);overflow:hidden}.eyebrow{color:var(--cyan);font-weight:900;letter-spacing:.09em;text-transform:uppercase;margin-bottom:12px}.hero p{font-size:22px}.hero-art{min-height:230px;display:grid;place-items:center;background:radial-gradient(circle,#526bdc55,transparent 65%);position:relative}.orbit{width:min(260px,80%);aspect-ratio:1;border:3px dashed #8e9de8;border-radius:50%;display:grid;place-items:center;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;width:24px;height:24px;border-radius:50%;background:var(--yellow);box-shadow:0 0 24px #ffd166}.orbit:before{left:5%;top:48%}.orbit:after{right:5%;top:48%;background:var(--cyan)}.orbit strong{font-size:56px;color:white}.pill{display:inline-block;border-radius:99px;padding:7px 14px;background:#243d79;color:#dce8ff;font-weight:800}.grid{display:grid;gap:18px}.two{grid-template-columns:repeat(2,minmax(0,1fr))}.three{grid-template-columns:repeat(3,minmax(0,1fr))}.card{background:linear-gradient(145deg,#18264f,#121e40);border:1px solid #344879;border-radius:var(--radius);padding:22px;box-shadow:0 10px 30px #03091e45}.card h3{color:#fff}.card strong{color:#fff}.section-head{margin:8px 0 24px}.section-head p{max-width:900px;font-size:21px}.callout{border-left:5px solid var(--yellow);background:#26315b;padding:18px 20px;border-radius:0 16px 16px 0;margin:20px 0}.callout p{margin:6px 0 0}.step-list{padding-left:28px;color:var(--muted)}.step-list li{padding:5px 0}.numberline-wrap{padding:22px;background:#101a38;border-radius:18px;border:1px solid #40558d;margin:15px 0}.numberline{display:grid;grid-template-columns:repeat(41,minmax(22px,1fr));gap:4px;position:relative}.numberline:before{content:"";position:absolute;left:5%;right:5%;height:4px;background:#8094d2;top:27px;border-radius:5px}.point{position:relative;z-index:1;display:grid;justify-items:center;gap:10px;color:var(--muted);font-weight:900}.dot{width:18px;height:18px;border-radius:50%;background:var(--blue);border:3px solid #dce9ff}.point.zero .dot{background:var(--yellow);width:24px;height:24px}.point.current .dot{background:var(--green);box-shadow:0 0 0 7px #55d6a233}.sim-controls{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:18px}.sim-controls input{flex:1;min-width:180px;accent-color:var(--cyan)}.big-value{font-size:32px;font-weight:900;color:var(--yellow)}.choice-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:15px 0}.choice{padding:13px 16px;text-align:left;border:1px solid #53699f;background:#1b2c59;border-radius:13px;min-height:54px}.choice:hover:not(:disabled){background:#2a4079}.choice.selected{border:2px solid var(--cyan);background:#214a70}.choice.correct{border:2px solid var(--green);background:#164b48}.choice.incorrect{border:2px solid var(--red);background:#542b49}.feedback{min-height:32px;padding:8px 0;font-weight:800}.feedback.good{color:var(--green)}.feedback.try{color:var(--yellow)}.explain{background:#101a38;border:1px solid #3c5084;border-radius:14px;padding:15px;margin-top:10px;color:var(--muted)}.question-card{margin-bottom:17px}.meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--cyan);font-weight:800}.progress{height:10px;background:#34436e;border-radius:99px;overflow:hidden;margin:15px 0 25px}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--cyan),var(--purple));transition:width .25s}.result-score{font-size:54px;font-weight:900;color:var(--yellow)}.field{width:100%;background:#0e1937;border:1px solid #50649a;color:white;border-radius:14px;padding:14px;min-height:130px;resize:vertical}.field::placeholder{color:#a8b5d7}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.reflection-prompt{padding:15px;border:1px solid #43588c;border-radius:14px;background:#111d3d;margin:12px 0}.muted{color:var(--muted)}.small-note{font-size:20px;color:#aebbe0}.footer{text-align:center;color:#9eacd4;padding:30px 10px 0}.hidden{display:none!important}.toast{position:fixed;bottom:20px;right:20px;background:#1b3760;border:1px solid var(--cyan);padding:14px 18px;border-radius:14px;z-index:20;display:none}.mobile-title{display:none}
+@media(max-width:1000px){.app{grid-template-columns:240px minmax(0,1fr)}.three{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr .6fr}}
+@media(max-width:760px){.app{display:block}.sidebar{position:relative;height:auto;padding:14px;gap:12px;border-right:0;border-bottom:1px solid #344575}.brand{display:flex;align-items:center;gap:12px;padding:0 4px 10px}.brand-mark{margin:0;width:44px;height:44px}.brand strong{font-size:22px}.brand small{font-size:20px}.nav-label,.side-note{display:none}.nav{display:flex;overflow-x:auto;padding-bottom:5px}.nav button{width:auto;min-width:max-content;padding:11px 14px;font-size:20px}.main{padding:16px 14px 42px}.topbar{margin-bottom:16px}.hero{grid-template-columns:1fr}.hero-art{min-height:150px}.two,.three{grid-template-columns:1fr}.choice-list{grid-template-columns:1fr}.tools{width:100%}.tool-btn{flex:1}.numberline-wrap{overflow-x:auto}.numberline{min-width:1100px}}
+@media print{body{background:white!important;color:#111!important;font-size:20px}.sidebar,.topbar,.actions,.tools,.nav,.footer{display:none!important}.app{display:block}.main{padding:0;max-width:none}.screen{display:block!important;break-inside:avoid}.card,.hero,.callout,.numberline-wrap{background:white!important;color:#111!important;border:1px solid #777!important;box-shadow:none!important}.card p,.hero p,.section-head p,.callout p,.step-list,.muted{color:#222!important}.choice{background:white!important;color:#111!important;border:1px solid #777!important}.screen:not(.active){display:block!important}.field{border:1px solid #777;color:#111}.hero-art{display:none}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+ <div class="brand"><div class="brand-mark">KB</div><div><strong>KELAS BELAJAR</strong><small>MPI MATEMATIKA SMP</small></div></div>
+ <div class="nav-label">MENU PEMBELAJARAN</div>
+ <nav class="nav" aria-label="Menu pembelajaran">
+  <button class="active" data-screen="0">01 · Tujuan Pembelajaran</button>
+  <button data-screen="1">02 · Materi &amp; Simulasi</button>
+  <button data-screen="2">03 · Soal Interaktif</button>
+  <button data-screen="3">04 · Refleksi</button>
+ </nav>
+ <div class="side-note"><strong>Strategi belajar</strong><br>Amati contoh → pahami konsep → coba sendiri → evaluasi pemahaman.</div>
+</aside>
+<main class="main">
+ <div class="topbar"><div class="crumb" id="crumb">KELAS BELAJAR / TUJUAN PEMBELAJARAN</div><div class="tools"><button class="tool-btn" id="fullscreen">⛶ Layar penuh</button><button class="tool-btn" id="print">▤ Cetak</button></div></div>
+
+
+ <section class="screen active" id="screen-0">
+  <div class="hero">
+   <div><span class="pill">MATEMATIKA SMP · ALJABAR</span><p class="eyebrow">Menggabungkan suku sejenis dan sifat distributif</p>
+    <h1>Perkalian dan Pembagian Bentuk Aljabar</h1>
+    <p>Gabungkan suku-suku sejenis dan gunakan sifat distributif untuk memperoleh bentuk paling sederhana.</p>
+    <button class="btn yellow" data-go="1">Mulai belajar →</button></div>
+   <div class="hero-art"><svg viewBox="0 0 320 230" class="svg-fluid" role="img" aria-label="Ilustrasi perkalian dan pembagian bentuk aljabar">
+    <rect x="22" y="42" width="276" height="142" rx="20" fill="#1d2d5d" stroke="#52e0e0" stroke-width="3"/>
+    <text x="160" y="88" fill="#ffd166" font-size="27" text-anchor="middle" font-weight="bold">3x × 2</text>
+    <path d="M160 102 L160 133" stroke="#52e0e0" stroke-width="4" stroke-linecap="round"/>
+    <path d="M149 123 L160 136 L171 123" fill="none" stroke="#52e0e0" stroke-width="4" stroke-linecap="round"/>
+    <text x="160" y="165" fill="#fff" font-size="25" text-anchor="middle">3x × 2 = 6x</text></svg></div>
+  </div>
+  <section class="card" style="margin-top:20px">
+   <p class="eyebrow">SEBELUM MEMULAI · AMATI CONTOH</p><h2>💡 Apersepsi: Menghitung Luas dan Membagi Persediaan</h2>
+   <p>Sebuah papan berbentuk persegi panjang memiliki panjang 3x cm dan lebar 2 cm. Luasnya adalah 3x × 2 = 6x cm². Di tempat lain, 12x meter pita dibagi sama panjang menjadi 3 bagian. Panjang setiap bagian adalah 12x ÷ 3 = 4x meter. Perkalian dan pembagian bentuk aljabar membantu menghitung ukuran serta membagi persediaan secara teratur.</p>
+   <div class="callout"><strong>Perhatikan model perkalian dan pembagian</strong><div class="grid three" style="margin-top:12px">
+    <div class="card"><strong>Luas papan</strong><div class="big-value">3x × 2</div></div>
+    <div class="card"><strong>Kalikan koefisien</strong><div class="big-value">3 × 2x</div></div>
+    <div class="card"><strong>Luas papan</strong><div class="big-value">6x cm²</div></div>
+   </div><p>Pada perkalian suku sejenis, koefisien dikalikan dan pangkat variabel dijumlahkan. Pada pembagian, koefisien dibagi dan pangkat variabel dikurangkan jika basisnya sama.</p></div>
+  </section>
+  <div class="grid two" style="margin-top:20px">
+   <article class="card"><h3>🎯 Tujuan pembelajaran</h3><p>Melalui penyajian contoh dan permasalahan kontekstual, peserta didik mampu menyelesaikan operasi perkalian dan pembagian bentuk aljabar serta memodelkan masalah kehidupan sehari-hari menggunakan bentuk aljabar dengan benar.</p><p>Secara khusus, peserta didik diharapkan mampu:</p>
+    <ol class="step-list"><li>Mengalikan bentuk aljabar dengan bilangan dan suku aljabar.</li><li>Menggunakan aturan perkalian variabel dengan basis sama.</li><li>Membagi bentuk aljabar dengan bilangan atau suku aljabar sederhana.</li><li>Menyederhanakan hasil perkalian dan pembagian bentuk aljabar.</li><li>Membuat model aljabar dan menyelesaikan masalah kehidupan sehari-hari.</li></ol></article>
+   <article class="card"><h3>🧭 Cara menggunakan MPI</h3><ol class="step-list"><li>Amati model luas persegi panjang dan pembagian persediaan.</li><li>Pelajari aturan perkalian koefisien, pangkat variabel, dan pembagian bentuk aljabar.</li><li>Gunakan simulasi untuk menyelesaikan perkalian dan pembagian bentuk aljabar.</li><li>Kerjakan aktivitas pemahaman, evaluasi, dan HOTS.</li><li>Baca umpan balik dan pembahasan setelah memeriksa jawaban.</li></ol></article>
+  </div>
+  <article class="card" style="margin-top:20px"><h3>🌍 Manfaat dalam kehidupan sehari-hari</h3><p>Perkalian dan pembagian bentuk aljabar dapat digunakan untuk menghitung luas, menentukan jumlah barang dalam beberapa kelompok, dan membagi persediaan secara merata.</p>
+   <ol class="step-list"><li><strong>Geometri:</strong> menghitung luas persegi panjang ketika panjang sisinya dinyatakan dengan variabel.</li><li><strong>Koperasi:</strong> menentukan jumlah barang dalam beberapa paket yang sama.</li><li><strong>Pembagian persediaan:</strong> membagi bahan atau barang secara merata ke sejumlah kelompok.</li><li><strong>Produksi:</strong> menghitung jumlah bahan yang dibutuhkan untuk beberapa unit produk.</li></ol>
+  </article>
+  <div class="callout"><strong>Ingat langkah utamanya!</strong><p>Pada perkalian, kalikan koefisien dan jumlahkan pangkat variabel yang memiliki basis sama. Pada pembagian, bagi koefisien dan kurangkan pangkat variabel yang memiliki basis sama.</p></div>
+  <div class="actions"><button class="btn primary" data-go="1">Lanjut ke Materi &amp; Simulasi →</button></div>
+ </section>
+
+
+<section class="screen" id="screen-1">
+  <div class="section-head"><p class="eyebrow">BAGIAN 02 · PAHAMI KONSEP</p><h2>Perkalian dan Pembagian Bentuk Aljabar</h2><p>Gabungkan suku sejenis dan gunakan sifat distributif untuk menulis bentuk yang setara dan lebih sederhana.</p></div>
+  <article class="card"><h3>📘 1. Perkalian bentuk aljabar dengan bilangan</h3><p>Untuk mengalikan bentuk aljabar dengan bilangan, kalikan bilangan tersebut dengan koefisien setiap suku. Gunakan sifat distributif jika bentuk aljabar memiliki lebih dari satu suku.</p>
+   <div class="callout"><strong>Contoh: 3(2x + 4)</strong><ol class="step-list"><li>Kalikan 3 dengan setiap suku: 3 × 2x + 3 × 4.</li><li>Hitung hasil perkalian: 6x + 12.</li><li>Tuliskan bentuk sederhananya.</li></ol><div class="big-value">3(2x + 4) = 6x + 12</div></div>
+  </article>
+  <article class="card" style="margin-top:18px"><h3>✍️ 2. Perkalian suku dengan variabel</h3><p>Jika variabel dengan basis sama dikalikan, pangkatnya dijumlahkan. Koefisien dikalikan seperti perkalian bilangan biasa.</p><div class="callout"><strong>Contoh: 2x × 3x²</strong><ol class="step-list"><li>Kalikan koefisien: 2 × 3 = 6.</li><li>Kalikan variabel dengan basis sama: x × x² = x³.</li><li>Gabungkan hasilnya.</li></ol><div class="big-value">2x × 3x² = 6x³</div></div></article>
+  <article class="card" style="margin-top:18px"><h3>🔢 3. Pembagian bentuk aljabar</h3><p>Untuk membagi suku aljabar dengan basis variabel sama, bagi koefisien dan kurangkan pangkat variabelnya. Pastikan pembagi tidak bernilai nol.</p><div class="callout"><strong>Contoh: 12x³ ÷ 3x</strong><ol class="step-list"><li>Bagi koefisien: 12 ÷ 3 = 4.</li><li>Kurangkan pangkat variabel: x³ ÷ x = x².</li><li>Gabungkan hasilnya.</li></ol><div class="big-value">12x³ ÷ 3x = 4x²</div></div></article>
+  <article class="card" style="margin-top:18px"><h3>🧮 4. Memodelkan masalah kehidupan sehari-hari</h3><p>Gunakan variabel untuk menyatakan ukuran atau jumlah yang belum diketahui. Tentukan operasi yang sesuai dengan situasi, kemudian tulis model dan hitung hasilnya.</p><div class="callout"><strong>Contoh: Luas papan dan pembagian pita</strong><ol class="step-list"><li>Papan memiliki panjang 3x cm dan lebar 2 cm. Luas = 3x × 2 = 6x cm².</li><li>Pita sepanjang 12x meter dibagi sama rata menjadi 3 bagian. Setiap bagian = 12x ÷ 3 = 4x meter.</li><li>Periksa kembali apakah satuan dan operasi sesuai dengan pertanyaan.</li></ol><div class="big-value">Luas = 6x cm² · Tiap bagian = 4x m</div></div></article>
+  <article class="card" style="margin-top:18px"><h3>🎮 5. Simulasi Interaktif: Perkalian dan Pembagian</h3><p>Pilih contoh operasi, lalu amati langkah perkalian atau pembagian bentuk aljabar.</p>
+   <label for="expressionSelect"><strong>Pilih contoh operasi</strong></label><select id="expressionSelect" class="field" style="min-height:58px">
+    <option value="0">3(2x + 4)</option><option value="1">2x × 3x²</option><option value="2">12x³ ÷ 3x</option><option value="3">4a(2a − 3)</option><option value="4">15m²n ÷ 5mn</option><option value="5">Luas: (3x) × 2</option>
+   </select>
+   <div class="grid two" style="margin-top:15px;display:none">
+    <div class="callout"><label for="valueA"><strong>Koefisien atau faktor (tidak perlu diubah)</strong></label><input id="valueA" class="field" type="number" value="4" step="1" style="min-height:58px"><p id="labelA">Pilih bentuk aljabar</p></div>
+    <div class="callout"><label for="valueB"><strong>Kontrol tambahan</strong></label><input id="valueB" class="field" type="number" value="2" step="1" style="min-height:58px"><p id="labelB">Tidak digunakan</p></div>
+   </div>
+   <div class="callout"><p><strong>Operasi yang dipilih</strong></p><div class="big-value" id="substitutedExpression">3x × 2</div><p><strong>Hasil dan model</strong></p><div class="big-value" id="substitutionResult">5x − 4</div><p id="substitutionSteps">Langkah: (3 + 2)x − 4 = 5x − 4</p></div>
+   <div class="actions"><button class="btn primary" id="calculateSubstitution">Sederhanakan</button><button class="btn ghost" id="resetSubstitution">Atur ulang</button></div>
+  </article>
+  <div class="actions"><button class="btn primary" data-go="2">Lanjut ke Soal Interaktif →</button></div>
+ </section>
+
+<section class="screen" id="screen-2">
+  <div class="section-head"><p class="eyebrow">BAGIAN 03 · LATIHAN DAN TANTANGAN</p><h2>Soal Interaktif: Perkalian dan Pembagian Bentuk Aljabar</h2><p>Jawab soal tentang suku sejenis dan sifat distributif. Setelah memeriksa, baca umpan balik dan pembahasannya.</p></div>
+  <div class="card"><div class="meta"><span>AKTIVITAS PEMAHAMAN</span><span>3 soal · masing-masing 4 pilihan</span></div><div id="practice"></div></div>
+  <div class="card" style="margin-top:18px"><div class="meta"><span>EVALUASI PEMBELAJARAN</span><span>6 soal</span></div><div class="progress"><span id="quizProgress"></span></div><div id="quiz"></div><div class="actions"><button class="btn primary" id="finishQuiz">Lihat hasil evaluasi</button><button class="btn ghost" id="resetQuiz">Ulangi evaluasi</button></div><p class="feedback" id="quizNotice" aria-live="polite"></p><div id="quizResult" class="callout hidden" aria-live="polite"></div></div>
+  <div class="card" style="margin-top:18px"><div class="meta"><span>TANTANGAN HOTS</span><span>5 soal pilihan ganda · 4 opsi</span></div><p>Analisis setiap situasi, pilih satu dari empat jawaban, lalu tekan Periksa jawaban untuk melihat umpan balik dan cara penyelesaiannya.</p><div id="hots"></div></div>
+  <div class="actions"><button class="btn ghost" data-go="1">← Kembali ke Materi</button><button class="btn primary" data-go="3">Lanjut ke Refleksi →</button></div>
+ </section>
+
+
+ <section class="screen" id="screen-3">
+  <div class="section-head"><p class="eyebrow">BAGIAN 04 · PIKIRKAN KEMBALI</p><h2>Refleksi Pembelajaran</h2><p>Renungkan aturan perkalian dan pembagian variabel serta cara membangun model aljabar dari masalah kontekstual.</p></div>
+  <div class="grid two">
+   <article class="card"><h3>💡 Coba jelaskan dengan kata-katamu</h3><div class="reflection-prompt"><strong>1. Bagaimana aturan pangkat ketika variabel dengan basis sama dikalikan?</strong></div><textarea class="field" id="reflect1" placeholder="Tuliskan jawabanmu di sini..."></textarea><div class="reflection-prompt"><strong>2. Bagaimana aturan pangkat ketika variabel dengan basis sama dibagi?</strong></div><textarea class="field" id="reflect2" placeholder="Tuliskan jawabanmu di sini..."></textarea><div class="reflection-prompt"><strong>3. Sebuah paket berisi (3x + 2) barang. Berapa jumlah barang dalam 5 paket? Tuliskan model dan penyelesaiannya.</strong></div><textarea class="field" id="reflect3" placeholder="Tuliskan cara dan hasil perhitunganmu..."></textarea><div class="actions"><button class="btn primary" id="saveReflection">Simpan refleksi di halaman ini</button><button class="btn ghost" id="clearReflection">Hapus jawaban</button></div><p class="small-note" id="reflectStatus" aria-live="polite">Jawaban refleksi tidak dikirim ke server.</p></article>
+   <article class="card"><h3>✅ Cek pemahaman diri</h3><p>Berikan tanda centang pada pernyataan yang sudah dapat kamu lakukan.</p><label><input type="checkbox"> Saya dapat menggunakan sifat distributif dalam perkalian bentuk aljabar.</label><br><br><label><input type="checkbox"> Saya dapat mengalikan variabel dengan basis sama menggunakan aturan pangkat.</label><br><br><label><input type="checkbox"> Saya dapat membagi bentuk aljabar dengan memperhatikan koefisien dan pangkat variabel.</label><br><br><label><input type="checkbox"> Saya dapat membuat model dan menyelesaikan masalah kontekstual menggunakan perkalian atau pembagian bentuk aljabar.</label><div class="callout"><strong>Pesan belajar</strong><p>Perhatikan operasi pada koefisien dan pangkat variabel. Dalam masalah kontekstual, tentukan terlebih dahulu hubungan ukuran atau jumlah sebelum menuliskan model aljabarnya.</p></div></article>
+  </div>
+  <div class="actions"><button class="btn ghost" data-go="2">← Kembali ke Soal</button><button class="btn yellow" id="restartAll">Ulangi dari awal ↺</button></div>
+ </section>
+
+ <div class="footer">KELAS BELAJAR · Amati · Pahami · Coba · Refleksi</div>
+</main>
+</div><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(()=>{
+ const screens=[...document.querySelectorAll('.screen')],nav=[...document.querySelectorAll('[data-screen]')],crumb=document.getElementById('crumb');
+ const names=['TUJUAN PEMBELAJARAN','MATERI & SIMULASI','SOAL INTERAKTIF','REFLEKSI'];
+ function go(n){n=Math.max(0,Math.min(3,Number(n)));screens.forEach((s,i)=>s.classList.toggle('active',i===n));nav.forEach((b,i)=>{b.classList.toggle('active',i===n);if(i===n)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current')});crumb.textContent='KELAS BELAJAR / '+names[n];window.scrollTo({top:0,behavior:'smooth'});}
+ nav.forEach(b=>b.addEventListener('click',()=>go(b.dataset.screen)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
+ document.getElementById('fullscreen').addEventListener('click',async()=>{try{if(!document.fullscreenElement)await document.documentElement.requestFullscreen();else await document.exitFullscreen()}catch(e){toast('Mode layar penuh tidak didukung pada browser ini.')}});
+ document.getElementById('print').addEventListener('click',()=>window.print());
+ function toast(t){const el=document.getElementById('toast');el.textContent=t;el.style.display='block';setTimeout(()=>el.style.display='none',2600)}
+
+
+
+
+ // Simulasi perkalian dan pembagian bentuk aljabar.
+ const expressionSelect=document.getElementById('expressionSelect');
+ const valueA=document.getElementById('valueA'),valueB=document.getElementById('valueB');
+ const operationCases=[
+  {expr:'3(2x + 4)',result:'6x + 12',steps:'Gunakan sifat distributif: 3 × 2x + 3 × 4 = 6x + 12.'},
+  {expr:'2x × 3x²',result:'6x³',steps:'Kalikan koefisien 2 × 3 = 6. Jumlahkan pangkat x: 1 + 2 = 3. Hasilnya 6x³.'},
+  {expr:'12x³ ÷ 3x',result:'4x²',steps:'Bagi koefisien 12 ÷ 3 = 4. Kurangkan pangkat x: 3 − 1 = 2. Hasilnya 4x², dengan x ≠ 0.'},
+  {expr:'4a(2a − 3)',result:'8a² − 12a',steps:'Distribusikan 4a: 4a × 2a − 4a × 3 = 8a² − 12a.'},
+  {expr:'15m²n ÷ 5mn',result:'3m',steps:'Bagi koefisien 15 ÷ 5 = 3. Kurangkan pangkat m: 2 − 1 = 1. Faktor n habis dibagi. Hasilnya 3m, dengan m dan n ≠ 0.'},
+  {expr:'Luas = (3x) × 2',result:'6x cm²',steps:'Model luas persegi panjang = panjang × lebar = 3x cm × 2 cm = 6x cm².'}
+ ];
+ function updateSubstitution(){
+  const d=operationCases[Number(expressionSelect.value)];
+  valueA.disabled=true;valueB.disabled=true;
+  document.getElementById('labelA').textContent='Simulasi otomatis';
+  document.getElementById('labelB').textContent='Pilih contoh di atas';
+  document.getElementById('substitutedExpression').textContent=d.expr;
+  document.getElementById('substitutionResult').textContent=d.result;
+  document.getElementById('substitutionSteps').textContent='Pembahasan: '+d.steps;
+ }
+ expressionSelect.addEventListener('change',updateSubstitution);
+ document.getElementById('calculateSubstitution').addEventListener('click',updateSubstitution);
+ document.getElementById('resetSubstitution').addEventListener('click',()=>{expressionSelect.value='0';updateSubstitution()});
+ updateSubstitution();
+
+ const practices=[
+  {q:'Hasil dari 4(2x + 3) adalah …',c:['8x + 3','8x + 12','6x + 7','8x + 7'],a:1,e:'Kalikan 4 dengan setiap suku: 4 × 2x + 4 × 3 = 8x + 12.'},
+  {q:'Sederhanakan 3a × 5a².',c:['15a²','8a³','15a³','15a⁴'],a:2,e:'Koefisien 3 × 5 = 15 dan pangkat a dijumlahkan: 1 + 2 = 3. Hasilnya 15a³.'},
+  {q:'Hasil dari 18x⁴ ÷ 6x² adalah …',c:['3x²','12x²','3x⁶','3x²⁺'],a:0,e:'Bagi koefisien 18 ÷ 6 = 3 dan kurangkan pangkat 4 − 2 = 2. Hasilnya 3x², dengan x ≠ 0.'}
+ ];
+ const questions=[
+  {cat:'Perkalian distributif',q:'Hasil dari 5(3x − 2) adalah …',c:['15x − 2','15x − 10','8x − 10','15x + 10'],a:1,e:'Kalikan 5 dengan setiap suku: 5 × 3x = 15x dan 5 × (−2) = −10.'},
+  {cat:'Perkalian variabel',q:'Sederhanakan 4a² × 3a³.',c:['7a⁵','12a⁶','12a⁵','12a'],a:2,e:'Koefisien 4 × 3 = 12. Pangkat a dijumlahkan 2 + 3 = 5. Hasilnya 12a⁵.'},
+  {cat:'Perkalian dua suku',q:'Hasil dari 2x(3x + 4) adalah …',c:['6x² + 8x','6x + 8','5x² + 4','6x² + 4'],a:0,e:'Distribusikan 2x: 2x × 3x = 6x² dan 2x × 4 = 8x.'},
+  {cat:'Pembagian variabel',q:'Sederhanakan 20m⁵ ÷ 4m².',c:['5m³','16m³','5m⁷','5m²'],a:0,e:'Bagi koefisien 20 ÷ 4 = 5 dan kurangkan pangkat 5 − 2 = 3. Hasilnya 5m³, dengan m ≠ 0.'},
+  {cat:'Pembagian beberapa variabel',q:'Hasil dari 18p³q² ÷ 6pq adalah …',c:['3p²q','12p²q','3p⁴q³','3p²q²'],a:0,e:'18 ÷ 6 = 3; p³ ÷ p = p²; q² ÷ q = q. Hasilnya 3p²q, dengan p dan q ≠ 0.'},
+  {cat:'Pemodelan kontekstual',q:'Satu paket berisi (2x + 3) pensil. Jika terdapat 4 paket yang sama, model jumlah seluruh pensil setelah disederhanakan adalah …',c:['8x + 12','6x + 7','8x + 3','2x + 12'],a:0,e:'Jumlah empat paket = 4(2x + 3). Dengan sifat distributif: 8x + 12.'}
+ ];
+ const hots=[
+  {q:'Sederhanakan 3x(2x − 5) + 4x².',c:['10x² − 15x','6x² − 15x','10x² + 15x','6x² − 5x'],a:0,e:'Distribusikan 3x: 6x² − 15x. Tambahkan 4x²: 10x² − 15x.'},
+  {q:'Sebuah persegi panjang memiliki panjang 5a cm dan lebar (2a + 3) cm. Bentuk aljabar luasnya adalah …',c:['10a² + 15a cm²','7a² + 3a cm²','10a² + 3 cm²','10a + 15 cm²'],a:0,e:'Luas = panjang × lebar = 5a(2a + 3) = 10a² + 15a cm².'},
+  {q:'Sebuah tali sepanjang 24x meter dipotong menjadi 6 bagian sama panjang. Panjang setiap bagian adalah …',c:['4x meter','18x meter','30x meter','4x² meter'],a:0,e:'Panjang setiap bagian = 24x ÷ 6 = 4x meter.'},
+  {q:'Sebuah toko menyiapkan 3 kotak, masing-masing berisi (4x + 2) botol. Setelah itu, 5 botol dikeluarkan. Model jumlah botol yang tersisa adalah …',c:['12x + 1','12x + 6','7x + 1','12x − 3'],a:0,e:'Jumlah awal = 3(4x + 2) = 12x + 6. Setelah 5 botol dikeluarkan: 12x + 6 − 5 = 12x + 1.'},
+  {q:'Sederhanakan (12a³b² ÷ 3ab) × 2b.',c:['8a²b²','8a²b','8a³b²','4a²b²'],a:0,e:'Pembagian: 12a³b² ÷ 3ab = 4a²b. Kalikan 2b: 4a²b × 2b = 8a²b². Dengan a dan b ≠ 0 pada pembagian.'}
+ ];
+
+ function buildChoiceQuestion(item,index,container,kind){const el=document.createElement('article');el.className='question-card';el.innerHTML=`<div class="meta"><span>${kind} ${index+1}</span><span>Pilih satu jawaban</span></div><h3>${item.q}</h3><div class="choice-list">${item.c.map((c,j)=>`<button class="choice" type="button" aria-pressed="false">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="actions"><button type="button" class="btn ghost check">Periksa jawaban</button><button type="button" class="btn ghost retry">Coba lagi</button></div><div class="feedback" aria-live="polite"></div><div class="explain hidden"></div>`;container.appendChild(el);let selected=null;const buttons=[...el.querySelectorAll('.choice')],feedback=el.querySelector('.feedback'),explain=el.querySelector('.explain');buttons.forEach((b,j)=>b.addEventListener('click',()=>{selected=j;buttons.forEach((x,k)=>{x.classList.toggle('selected',k===j);x.setAttribute('aria-pressed',String(k===j));x.classList.remove('correct','incorrect')});feedback.textContent='Pilihan tersimpan. Tekan Periksa jawaban untuk melihat umpan balik.';feedback.className='feedback';explain.classList.add('hidden')}));el.querySelector('.check').addEventListener('click',()=>{if(selected===null){feedback.textContent='Pilih satu jawaban terlebih dahulu.';feedback.className='feedback try';return}buttons.forEach((b,j)=>{b.classList.remove('correct','incorrect');if(j===selected)b.classList.add(j===item.a?'correct':'incorrect')});feedback.textContent=selected===item.a?'Tepat! Jawabanmu benar.':'Belum tepat. Tidak apa-apa, pelajari kembali alasannya.';feedback.className='feedback '+(selected===item.a?'good':'try');explain.textContent='Pembahasan dan cara penyelesaian: '+item.e;explain.classList.remove('hidden')});el.querySelector('.retry').addEventListener('click',()=>{selected=null;buttons.forEach(b=>{b.classList.remove('selected','correct','incorrect');b.setAttribute('aria-pressed','false')});feedback.textContent='Silakan pilih jawaban lagi.';feedback.className='feedback';explain.classList.add('hidden')});return {getSelected:()=>selected};}
+ const practiceRoot=document.getElementById('practice');practices.forEach((q,i)=>buildChoiceQuestion(q,i,practiceRoot,'Aktivitas'));
+ // Evaluation
+ const quizRoot=document.getElementById('quiz');let quizState=[];
+ function renderQuiz(){quizRoot.innerHTML='';quizState=questions.map(()=>({selected:null,checked:false}));questions.forEach((q,i)=>{const el=document.createElement('article');el.className='question-card card';el.innerHTML=`<div class="meta"><span>${q.cat}</span><span>Soal ${i+1} dari ${questions.length}</span></div><h3>${q.q}</h3><div class="choice-list">${q.c.map((c,j)=>`<button type="button" class="choice" aria-pressed="false">${String.fromCharCode(65+j)}. ${c}</button>`).join('')}</div><div class="actions"><button class="btn ghost check" type="button">Periksa jawaban</button></div><div class="feedback" aria-live="polite"></div><div class="explain hidden"></div>`;quizRoot.appendChild(el);const st=quizState[i],bs=[...el.querySelectorAll('.choice')],fb=el.querySelector('.feedback'),ex=el.querySelector('.explain');bs.forEach((b,j)=>b.addEventListener('click',()=>{st.selected=j;st.checked=false;bs.forEach((x,k)=>{x.classList.toggle('selected',j===k);x.classList.remove('correct','incorrect');x.setAttribute('aria-pressed',String(j===k))});fb.textContent='Pilihan diperbarui. Periksa kembali jawabanmu.';fb.className='feedback';ex.classList.add('hidden');updateProgress()}));el.querySelector('.check').addEventListener('click',()=>{if(st.selected===null){fb.textContent='Pilih satu jawaban sebelum memeriksa.';fb.className='feedback try';return}st.checked=true;bs.forEach((b,j)=>{b.classList.remove('correct','incorrect');if(j===st.selected)b.classList.add(j===q.a?'correct':'incorrect')});fb.textContent=st.selected===q.a?'Benar! Kamu memahami konsep ini.':'Belum tepat. Baca pembahasan, lalu ubah pilihan jika diperlukan.';fb.className='feedback '+(st.selected===q.a?'good':'try');ex.textContent='Pembahasan: '+q.e;ex.classList.remove('hidden');updateProgress()})});updateProgress()}
+ function updateProgress(){const done=quizState.filter(s=>s.checked).length;document.getElementById('quizProgress').style.width=(done/questions.length*100)+'%'}
+ renderQuiz();document.getElementById('resetQuiz').addEventListener('click',()=>{renderQuiz();document.getElementById('quizResult').classList.add('hidden');document.getElementById('quizNotice').textContent='Evaluasi sudah diatur ulang.'});
+ document.getElementById('finishQuiz').addEventListener('click',()=>{const missing=quizState.findIndex(s=>!s.checked);const notice=document.getElementById('quizNotice'),result=document.getElementById('quizResult');if(missing!==-1){notice.textContent=`Periksa jawaban soal ${missing+1} terlebih dahulu.`;notice.className='feedback try';quizRoot.children[missing].scrollIntoView({behavior:'smooth',block:'center'});return}const score=quizState.reduce((sum,s,i)=>sum+(s.selected===questions[i].a?1:0),0),pct=Math.round(score/questions.length*100);const weak=[...new Set(questions.filter((q,i)=>quizState[i].selected!==q.a).map(q=>q.cat))];result.innerHTML=`<h3>Hasil evaluasi: <span class="result-score">${pct}</span></h3><p>${score} dari ${questions.length} jawaban benar.</p><p>${pct===100?'Luar biasa! Semua jawaban tepat.':pct>=67?'Bagus! Kamu sudah memahami sebagian besar materi. Pelajari kembali soal yang belum tepat.':'Terus berlatih. Baca ulang aturan tanda pada pengurangan dan cara menggabungkan suku sejenis.'}</p><p><strong>Bagian yang perlu ditinjau:</strong> ${weak.length?weak.join(', '):'Tidak ada. Semua kategori terjawab benar.'}</p>`;result.classList.remove('hidden');notice.textContent='Hasil berhasil dihitung berdasarkan pilihan terakhir yang sudah diperiksa.';notice.className='feedback good';result.scrollIntoView({behavior:'smooth',block:'center'})});
+ const hotsRoot=document.getElementById('hots');hots.forEach((q,i)=>buildChoiceQuestion(q,i,hotsRoot,'HOTS'));
+ document.getElementById('saveReflection').addEventListener('click',()=>{document.getElementById('reflectStatus').textContent='Refleksi sudah tersimpan sementara pada halaman ini. Untuk menyimpan permanen, cetak halaman atau salin jawabanmu.';toast('Refleksi tercatat pada halaman ini.')});document.getElementById('clearReflection').addEventListener('click',()=>{['reflect1','reflect2','reflect3'].forEach(id=>document.getElementById(id).value='');document.getElementById('reflectStatus').textContent='Jawaban refleksi telah dikosongkan.'});document.getElementById('restartAll').addEventListener('click',()=>{go(0);toast('Kamu dapat memulai pembelajaran kembali.')});
+})();
+</script>
+</body></html>
